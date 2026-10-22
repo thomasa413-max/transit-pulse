@@ -284,7 +284,8 @@ def bulletin_html(b: dict) -> str:
     check = ("Contrôle réussi du premier coup." if attempts == 1
              else "Première version refusée par le contrôle, version corrigée validée.")
     out.append(f'<aside class="provenance"><p>{badge("pass")} Rédigé par <strong>{escape(b["modele"])}</strong> à partir '
-               f'des données du jour, puis vérifié phrase par phrase par un second agent et chiffre par chiffre par du code. '
+               f'des données du jour, puis vérifié phrase par phrase par un second agent '
+               f'(<strong>{escape(b.get("modele_controle", "un autre modèle"))}</strong>) et chiffre par chiffre par du code. '
                f'{check} Publié le {local_time(b["genere_a"])}.</p></aside>')
     others = [(code, label) for code, label in config.LANGS.items() if code != "fr" and b.get(code)]
     if others:
@@ -435,13 +436,14 @@ def build_costs(runs: list[dict]) -> None:
     agents_rows = [[escape(AGENT_FR.get(k, k)), n(v[0], 0), n(v[1], 0), n(v[2], 0), usd(v[3])]
                    for k, v in sorted(by_agent.items(), key=lambda kv: -kv[1][3])]
     body = ('<h1>Coûts</h1><p class="lead">Chaque appel au modèle est compté au jeton près et converti au tarif public de l\'API. '
-            'Les tâches de tous les jours utilisent le plus petit modèle ; un plafond mensuel coupe tout dépassement.</p>'
+            'La rédaction et la traduction utilisent le plus petit modèle, le contrôle un modèle plus puissant ; un plafond mensuel coupe tout dépassement.</p>'
             + (f'<p class="notice">Données de démonstration : ces coûts viennent d\'une exécution de test hors ligne.</p>' if fake else "")
             + f'<div class="tiles">{tiles}</div>'
             + (section("Coût par jour", chart, "En centimes de dollar américain, 30 derniers jours.") if chart else "")
             + section("Par agent, depuis le début", table(["Agent", "Appels", "Jetons en entrée", "Jetons en sortie", "Coût"],
                                                           agents_rows, caption="Coût par agent"))
-            + '<p class="method">Tarif utilisé : Claude Haiku 5.5, 0,10 $ par million de jetons en entrée et 0,50 $ en sortie '
+            + '<p class="method">Tarifs utilisés : Claude Haiku 5.5, 0,10 $ par million de jetons en entrée et 0,50 $ en sortie ; '
+              'Claude Sonnet 5.5 (contrôleur), 2 $ et 10 $ '
               '(<a href="https://platform.claude.com/docs/en/about-claude/pricing">grille tarifaire officielle</a>).</p>')
     page("/couts/", "Coûts", body, "Coût de fonctionnement du pipeline d'agents IA.")
 
@@ -453,9 +455,9 @@ ARCH_SVG = """<svg class="diagram" viewBox="0 0 720 400" role="img" aria-label="
 <g class="box"><rect x="252" y="16" width="216" height="56" rx="8"/><text x="264" y="40" class="b">Perturbations SIRI-SX</text><text x="264" y="58">Toutes les 3 heures</text></g>
 <g class="box"><rect x="488" y="16" width="216" height="56" rx="8"/><text x="500" y="40" class="b">GitHub Actions</text><text x="500" y="58">Planification, aucun serveur</text></g>
 <g class="box"><rect x="16" y="112" width="688" height="56" rx="8"/><text x="28" y="136" class="b">Collecteur Python</text><text x="28" y="154">Lit le fichier en flux, garde Lausanne, calcule ponctualité, retards, suppressions</text></g>
-<g class="box group"><rect x="16" y="208" width="688" height="96" rx="8"/><text x="28" y="230" class="b">Agents IA · Claude Haiku 5.5</text>
+<g class="box group"><rect x="16" y="208" width="688" height="96" rx="8"/><text x="28" y="230" class="b">Agents IA · Claude Haiku 5.5 (rédaction, traduction) et Sonnet 5.5 (contrôle)</text>
 <rect x="32" y="244" width="200" height="48" rx="8" class="inner"/><text x="44" y="266" class="b">Rédacteur</text><text x="44" y="282">Bulletin en français</text>
-<rect x="260" y="244" width="200" height="48" rx="8" class="inner"/><text x="272" y="266" class="b">Contrôleur + code</text><text x="272" y="282">Phrases et chiffres</text>
+<rect x="260" y="244" width="200" height="48" rx="8" class="inner"/><text x="272" y="266" class="b">Contrôleur + code</text><text x="272" y="282">Sonnet 5.5 : phrases ; code : chiffres</text>
 <rect x="488" y="244" width="200" height="48" rx="8" class="inner"/><text x="500" y="266" class="b">Traducteur</text><text x="500" y="282">Allemand, italien, anglais</text></g>
 <g class="box"><rect x="16" y="336" width="320" height="48" rx="8"/><text x="28" y="358" class="b">Refusé deux fois</text><text x="28" y="374">Rien n'est publié, alerte e-mail</text></g>
 <g class="box accent"><rect x="384" y="336" width="320" height="48" rx="8"/><text x="396" y="358" class="b">Site statique · Cloudflare Pages</text><text x="396" y="374">Publié après chaque exécution réussie</text></g>

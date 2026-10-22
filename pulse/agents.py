@@ -29,8 +29,12 @@ VERDICT_SCHEMA = {
         "verdict": {"type": "string", "enum": ["pass", "fail"]},
         "problemes": {"type": "array", "items": {
             "type": "object",
-            "properties": {"phrase": {"type": "string"}, "raison": {"type": "string"}},
-            "required": ["phrase", "raison"]}},
+            "properties": {
+                "phrase": {"type": "string"},
+                "raison": {"type": "string"},
+                "erreur": {"type": "boolean", "description": "true only if the sentence is wrong or unsupported"},
+            },
+            "required": ["phrase", "raison", "erreur"]}},
     },
     "required": ["verdict", "problemes"],
 }
@@ -59,7 +63,7 @@ def bulletin_text(b: dict) -> str:
 
 def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dict:
     t = agg["total"]
-    comparison = {}
+    comparison: dict = {}
     prev = [h for h in history if h["date"] < agg["date"]]
     if prev and prev[-1].get("ponctualite_pct") is not None and t["ponctualite_pct"] is not None:
         comparison["ponctualite_veille_pct"] = prev[-1]["ponctualite_pct"]
@@ -77,7 +81,7 @@ def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dic
         "zone": agg["zone"],
         "regle": agg["regle_ponctualite"],
         "global": t,
-        "comparaison": comparison,
+        **({"comparaison": comparison} if comparison else {}),
         "par_mode": agg["par_mode"],
         "heures_les_moins_ponctuelles": worst_hours,
         "lignes_moins_ponctuelles": agg["lignes_moins_ponctuelles"][:5],
@@ -145,17 +149,21 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
     text = bulletin_text(bulletin)
     unknown = factcheck.unknown_numbers(text, facts, day)
     user = "DONNÉES:\n" + json.dumps(facts, ensure_ascii=False) + "\n\nBULLETIN:\n" + text
-    res = llm.call(_prompt("checker"), user, fake_responder=_fake_checker, schema=VERDICT_SCHEMA, max_tokens=1500)
+    res = llm.call(_prompt("checker"), user, model=config.MODEL_CHECKER, fake_responder=_fake_checker,
+                   schema=VERDICT_SCHEMA, max_tokens=1500)
     try:
         verdict = llm.parse_json(res.text)
     except Exception:  # noqa: BLE001 - an unreadable verdict is a failed check
         verdict = {"verdict": "fail", "problemes": [{"phrase": "", "raison": "réponse du contrôleur illisible"}]}
-    problems = list(verdict.get("problemes") or [])
+    # The verdict is decided by code from the items flagged as real errors, so a
+    # self-contradicting answer ("fail" with only correct sentences) cannot block.
+    problems = [p for p in (verdict.get("problemes") or []) if p.get("erreur", True)]
+    model_ok = not problems
     for n in unknown:
-        problems.append({"phrase": "", "raison": f"chiffre absent des données : {n:g}"})
-    passed = verdict.get("verdict") == "pass" and not unknown
+        problems.append({"phrase": "", "raison": f"chiffre absent des données : {n:g}", "erreur": True})
+    passed = model_ok and not unknown
     _log("checker", day, res, "pass" if passed else "fail",
-         code_check="pass" if not unknown else "fail", model_check=verdict.get("verdict"),
+         code_check="pass" if not unknown else "fail", model_check="pass" if model_ok else "fail",
          problems=problems[:10])
     return {"passed": passed, "problems": problems, "unknown_numbers": unknown}
 

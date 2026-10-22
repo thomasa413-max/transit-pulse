@@ -9,5 +9,5 @@ Check every sentence of the bulletin against the data. A sentence FAILS if it:
 The figures in the data are authoritative: never recompute a percentage or an average yourself, only check that the bulletin repeats the right figure for the right item. Rounding to one decimal, a decimal comma or point, "7 h" for hour 7, "20 h 50" for 20:50, and "9 passages sur 10" for the 90th percentile (retard_p90_min) are acceptable. Style is not your concern, only accuracy. Only report sentences that fail; do not list correct sentences.
 
 Answer with the "answer" tool, in this format:
-{"verdict": "pass" or "fail", "problemes": [{"phrase": "exact sentence", "raison": "short reason in French"}]}
-Use "pass" with an empty list when every sentence is supported by the data.
+{"verdict": "pass" or "fail", "problemes": [{"phrase": "exact sentence", "raison": "short reason in French", "erreur": true}]}
+List ONLY sentences that are wrong or unsupported, each with "erreur": true. If a sentence turns out to be correct, do not list it. Use "pass" with an empty list when every sentence is supported by the data.

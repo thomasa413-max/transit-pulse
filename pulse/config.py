@@ -38,6 +38,8 @@ SIRI_MAX_CALLS_PER_DAY = 40
 
 # --- AI models and prices (USD per million tokens, Claude API) -----------
 MODEL_DAILY = "claude-haiku-5-5"
+# The checker is a different, stronger model: a small model is not a reliable judge of itself.
+MODEL_CHECKER = "claude-sonnet-5-5"
 PRICES = {
     # model: (input, output) for prompts up to 100k tokens
     "claude-haiku-5-5": (0.10, 0.50),

@@ -109,7 +109,9 @@ def is_active(sit: dict, at: datetime) -> bool:
 
 
 def mentions_area(sit: dict) -> bool:
-    hay = " ".join([sit["titre"], sit["description"], sit["consequence"], *sit["lieux"]]).lower()
+    """Lausanne must be an affected place or in the title, not just in the text
+    (long-distance restrictions often mention Lausanne only as a destination)."""
+    hay = " ".join([sit["titre"], *sit["lieux"]]).lower()
     return config.AREA_NAME.lower() in hay
 
 
