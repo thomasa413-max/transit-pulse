@@ -105,6 +105,14 @@ class TestFactCheck(unittest.TestCase):
         self.assertEqual((missing, extra), ([8.0], [9.0]))
 
 
+class TestTranslationKeys(unittest.TestCase):
+    def test_translated_keys_are_normalised(self):
+        from pulse.agents import _normalise_keys
+        b = _normalise_keys({"titel": "T", "paragraphen": '["a", "b"]'})
+        self.assertEqual(b, {"titre": "T", "paragraphes": ["a", "b"]})
+        self.assertEqual(_normalise_keys({"title": "T", "paragraphs": ["x"]})["paragraphes"], ["x"])
+
+
 class TestDisruptions(unittest.TestCase):
     def test_parse_filters_lausanne_active(self):
         at = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)

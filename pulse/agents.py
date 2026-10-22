@@ -196,6 +196,20 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
 LANG_NAMES = {"de": "German", "it": "Italian", "en": "English"}
 
 
+def _normalise_keys(b: dict) -> dict:
+    """The model sometimes translates the key itself ("paragraphen", "paragraphs")."""
+    out = {}
+    for k, v in b.items():
+        key = "paragraphes" if k.lower().startswith("paragraph") else ("titre" if k.lower().startswith(("tit", "title")) else k)
+        if key == "paragraphes" and isinstance(v, str):
+            try:
+                v = json.loads(v)
+            except json.JSONDecodeError:
+                v = [v]
+        out[key] = v
+    return out
+
+
 def _translate_one(day: date, bulletin: dict, lang: str, rejected: str = "") -> tuple[dict | None, str]:
     fr_text = bulletin_text(bulletin)
     user = f"Target language: {LANG_NAMES[lang]}.\n"
@@ -207,7 +221,7 @@ def _translate_one(day: date, bulletin: dict, lang: str, rejected: str = "") -> 
                 schema=BULLETIN_SCHEMA, max_tokens=2000)
     problem = ""
     try:
-        b = llm.parse_json(res.text)
+        b = _normalise_keys(llm.parse_json(res.text))
         assert b.get("paragraphes")
         ok, missing, extra = factcheck.same_numbers(fr_text, bulletin_text(b))
         if not ok:
