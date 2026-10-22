@@ -68,9 +68,17 @@ def stream_rows(url: str, keep=None) -> Iterator[dict]:
     headers = {"User-Agent": config.USER_AGENT, "Accept-Encoding": "gzip, deflate"}
     with requests.get(url, stream=True, timeout=(30, 300), headers=headers) as r:
         r.raise_for_status()
-        r.raw.decode_content = True
-        text = io.TextIOWrapper(r.raw, encoding="utf-8-sig", newline="")
-        yield from parse_lines(text, keep)
+        yield from parse_lines(decode_lines(r.iter_lines(chunk_size=1 << 20)), keep)
+
+
+def decode_lines(raw_lines: Iterable[bytes]) -> Iterator[str]:
+    """Bytes lines -> text lines (UTF-8, first-line BOM removed, stray CR dropped)."""
+    first = True
+    for raw in raw_lines:
+        line = raw.decode("utf-8", errors="replace").rstrip("\r")
+        if first:
+            line, first = line.lstrip("﻿"), False
+        yield line
 
 
 def parse_lines(lines: Iterable[str], keep=None) -> Iterator[dict]:

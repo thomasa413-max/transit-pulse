@@ -56,6 +56,13 @@ class TestAggregate(unittest.TestCase):
         self.assertNotIn("Renens VD", [s["arret"] for s in agg["arrets_moins_ponctuels"]])
         self.assertTrue(agg["lignes_moins_ponctuelles"])
 
+    def test_streamed_bytes(self):
+        raw = [b"\xef\xbb\xbfHALTESTELLEN_NAME;ABFAHRTSZEIT;AB_PROGNOSE;AB_PROGNOSE_STATUS;PRODUKT_ID\r",
+               "Lausanne, Ch\u00e8vres;21.10.2026 08:00;21.10.2026 08:05:00;REAL;Bus".encode()]
+        agg = istdaten.aggregate(istdaten.parse_lines(istdaten.decode_lines(raw)), DAY)
+        self.assertEqual(agg["total"]["mesures"], 1)
+        self.assertEqual(agg["total"]["ponctualite_pct"], 0.0)
+
     def test_comma_delimiter(self):
         lines = ["HALTESTELLEN_NAME,ABFAHRTSZEIT,AB_PROGNOSE,AB_PROGNOSE_STATUS,PRODUKT_ID",
                  "Lausanne,21.10.2026 08:00,21.10.2026 08:01:00,REAL,Bus"]
