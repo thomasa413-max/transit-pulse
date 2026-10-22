@@ -42,7 +42,7 @@ jobs:
           BASE=$(python -c "from pulse import config; print(config.SITE_URL)")
           SKIP=$(python -c "from pulse import config; print('' if config.INDEXING else '--skip-audits=is-crawlable')")
           mkdir -p lh
-          for path in /fr/ /de/bulletin/ /it/agenti/ /en/about/; do
+          for path in /fr/ /fr/carte/ /de/bulletin/ /it/agenti/ /en/about/; do
             name=$(echo "$path" | tr '/' '_')
             lighthouse "$BASE$path" --quiet --output=json --output-path="lh/$name.json" \
               --chrome-flags="--headless=new --no-sandbox" $SKIP || true
