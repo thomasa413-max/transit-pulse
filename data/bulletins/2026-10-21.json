@@ -1,0 +1,29 @@
+{
+ "date": "2026-10-21",
+ "genere_a": "2026-10-22T17:21:54+00:00",
+ "modele": "claude-haiku-5-5",
+ "prompt_version": "v1",
+ "tentatives": 2,
+ "controle": {
+  "passed": false,
+  "problems": [
+   {
+    "phrase": "",
+    "raison": "chiffre absent des données : 90"
+   }
+  ],
+  "unknown_numbers": [
+   90.0
+  ]
+ },
+ "fr": {
+  "titre": "Lausanne : 75.6 % des passages à l'heure le 21 octobre 2026",
+  "paragraphes": [
+   "Le 21 octobre 2026, 75.6 % des 15'329 passages recensés à Lausanne étaient à l'heure, soit moins de 3 minutes de retard. Le retard moyen s'établit à 2.3 minutes et le 90e percentile à 5.3 minutes. Aucune comparaison avec une autre journée n'est fournie par les données. 96 suppressions ont été relevées, soit 0.6 % des passages.",
+   "Par mode, le métro affiche 97.4 % de passages à l'heure et le train 85.4 %, contre 73.5 % pour le bus. Le bus représente 13'438 passages, soit l'essentiel de la journée. Sur les lignes, la ligne 41 (TL, bus) atteint 99.8 %, tandis que la ligne 7 (TL, bus) n'affiche que 41.4 %, avec un retard moyen de 4.6 minutes.",
+   "La tranche la plus difficile est 18 h, avec 62.2 % de passages à l'heure et un retard moyen de 4.3 minutes. Le plus gros retard relevé est de 38.3 minutes, sur la ligne 16 (TL, bus) à l'arrêt Lausanne, Tunnel, à l'heure prévue de 20:50.",
+   "Pour le train, 22 suppressions ont été relevées, soit 2.4 % de ses passages. Pour le bus, 74 suppressions ont été relevées. L'exploitant a signalé deux perturbations planifiées : l'arrêt Lausanne, Clochatte déplacé et la restriction Palézieux - Romont FR. Ces informations ne permettent pas d'établir leur effet sur les chiffres de la journée."
+  ]
+ },
+ "statut": "bloque"
+}
