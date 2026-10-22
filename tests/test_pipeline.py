@@ -64,6 +64,15 @@ class TestAggregate(unittest.TestCase):
         self.assertEqual(agg["total"]["ponctualite_pct"], 100.0)
 
 
+class TestFindLinks(unittest.TestCase):
+    def test_dataset_page_links(self):
+        html = ('<a href="https://data.opentransportdata.swiss/en/dataset/febff1f3/resource/aa/download/2026-10-21_istdaten.csv">x</a>'
+                '<a href="https://data.opentransportdata.swiss/en/dataset/febff1f3/resource/bb/download/2026-10-20_IstDaten.csv">y</a>')
+        links = istdaten.find_links(html)
+        self.assertEqual(sorted(links), ["2026-10-20", "2026-10-21"])
+        self.assertTrue(links["2026-10-21"].endswith("/aa/download/2026-10-21_istdaten.csv"))
+
+
 class TestFactCheck(unittest.TestCase):
     facts = {"global": {"ponctualite_pct": 92.4, "mesures": 1234}, "lignes": [{"ligne": "9", "heure": 8}]}
 

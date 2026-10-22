@@ -28,8 +28,8 @@ MAX_PLAUSIBLE_DELAY_MIN = 300.0
 MIN_EVENTS_FOR_RANKING = 40
 
 # --- Data sources --------------------------------------------------------
-CKAN_API = "https://data.opentransportdata.swiss/api/3/action/package_show"
-IST_DATEN_PACKAGES = ("ist-daten-v2", "ist-daten-actual-data")
+# The catalogue API answers 403 to automated calls; the dataset page lists the files.
+IST_DATEN_PAGE = "https://data.opentransportdata.swiss/en/dataset/ist-daten-v2"
 SIRI_SX_URL = "https://api.opentransportdata.swiss/la/siri-sx"
 USER_AGENT = "transit-pulse-poc/1.0 (+https://github.com/thomasa413-max/transit-pulse)"
 # Provider guidance: call the full SIRI-SX feed only a few times a day.

@@ -19,6 +19,7 @@ import requests
 from . import config
 
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
+LINK_RE = re.compile(r"(https?://[^\"'\s<>]*/download/(\d{4}-\d{2}-\d{2})_istdaten\.csv)", re.IGNORECASE)
 
 MODE_FR = {
     "zug": "Train", "train": "Train", "bus": "Bus", "metro": "Métro", "tram": "Tram",
@@ -35,29 +36,31 @@ class NotPublishedYet(Exception):
 # ---------------------------------------------------------------------------
 
 def find_daily_url(day: date, session: requests.Session | None = None) -> str:
+    """Read the download link for `day` from the dataset's web page.
+
+    The catalogue API refuses automated calls (HTTP 403), but the public
+    dataset page lists the recent daily files with direct download links.
+    """
     override = os.environ.get("IST_DATEN_URL")
     if override:
         return override
     s = session or requests.Session()
-    wanted = day.isoformat()
-    errors = []
-    for package in config.IST_DATEN_PACKAGES:
-        try:
-            r = s.get(config.CKAN_API, params={"id": package}, timeout=60,
-                      headers={"User-Agent": config.USER_AGENT})
-            r.raise_for_status()
-            resources = r.json()["result"]["resources"]
-        except Exception as exc:  # noqa: BLE001 - try the next package name
-            errors.append(f"{package}: {exc}")
-            continue
-        for res in resources:
-            label = f"{res.get('name') or ''} {res.get('url') or ''}"
-            m = DATE_RE.search(label)
-            if m and m.group(1) == wanted and (res.get("url") or "").lower().endswith(".csv"):
-                return res["url"]
-        # Package found but no file for that day yet.
-        raise NotPublishedYet(f"No actual-data file for {wanted} yet (package {package}).")
-    raise RuntimeError("Could not query the data catalogue: " + "; ".join(errors))
+    r = s.get(config.IST_DATEN_PAGE, timeout=60, headers={"User-Agent": config.USER_AGENT})
+    r.raise_for_status()
+    links = find_links(r.text)
+    if day.isoformat() in links:
+        return links[day.isoformat()]
+    if not links:
+        raise RuntimeError("The dataset page lists no daily file: its layout may have changed.")
+    raise NotPublishedYet(f"No actual-data file for {day} yet (latest listed: {max(links)}).")
+
+
+def find_links(html: str) -> dict[str, str]:
+    """Map 'YYYY-MM-DD' -> download URL for every daily file linked in the page."""
+    links = {}
+    for m in LINK_RE.finditer(html):
+        links.setdefault(m.group(2), m.group(1))
+    return links
 
 
 def stream_rows(url: str, keep=None) -> Iterator[dict]:
