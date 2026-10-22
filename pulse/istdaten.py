@@ -100,6 +100,31 @@ def lausanne_line_filter(line: str) -> bool:
     return any(p in line for p in config.STOP_PREFIXES)
 
 
+def stop_number(bpuic: str | None) -> str:
+    """Ist-Daten stop numbers have 7 digits (station) or 9 (station + platform)."""
+    b = (bpuic or "").strip()
+    return b[:7] if b.isdigit() and len(b) >= 7 else b
+
+
+class AreaFilter:
+    """Keeps the rows of stops in the chosen municipalities (official register),
+    or, without a register, the rows whose stop name starts with the area name."""
+
+    def __init__(self, numbers: set[str] | None = None):
+        self.numbers = numbers or set()
+
+    def line(self, line: str) -> bool:
+        if not self.numbers:
+            return lausanne_line_filter(line)
+        parts = line.split(";", 13)
+        return len(parts) > 12 and stop_number(parts[12].strip('"')) in self.numbers
+
+    def row(self, row: dict) -> bool:
+        if not self.numbers:
+            return (row.get("HALTESTELLEN_NAME") or "").strip().startswith(config.STOP_PREFIXES)
+        return stop_number(row.get("BPUIC")) in self.numbers
+
+
 # ---------------------------------------------------------------------------
 # Aggregation (pure functions, unit-tested)
 # ---------------------------------------------------------------------------
@@ -192,7 +217,8 @@ class _Bucket:
         return out
 
 
-def aggregate(rows: Iterable[dict], day: date) -> dict:
+def aggregate(rows: Iterable[dict], day: date, area: "AreaFilter | None" = None) -> dict:
+    area = area or AreaFilter()
     total = _Bucket()
     by_mode: dict[str, _Bucket] = defaultdict(_Bucket)
     by_line: dict[tuple, _Bucket] = defaultdict(_Bucket)
@@ -205,7 +231,7 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
 
     for row in rows:
         stop = (row.get("HALTESTELLEN_NAME") or "").strip()
-        if not stop.startswith(config.STOP_PREFIXES):
+        if not area.row(row):
             continue
         rows_seen += 1
         kind, delay, hour = measure(row)
@@ -217,7 +243,7 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
         by_mode[mode].add(kind, delay)
         by_line[line_key].add(kind, delay)
         by_stop[stop].add(kind, delay)
-        bpuic = (row.get("BPUIC") or "").strip()
+        bpuic = stop_number(row.get("BPUIC"))
         if bpuic.isdigit():
             stop_ids[stop][bpuic] += 1
         stop_lines[stop][line_key[2]] += 1
@@ -246,6 +272,7 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
     return {
         "date": day.isoformat(),
         "zone": config.AREA_NAME,
+        "perimetre": "communes : " + ", ".join(config.MUNICIPALITIES) if area.numbers else "nom d'arrêt commençant par " + config.AREA_NAME,
         "regle_ponctualite": f"à l'heure = moins de {config.PUNCTUAL_LIMIT_MIN:g} minutes de retard",
         "lignes_source_lues": rows_seen,
         "total": total.summary(),

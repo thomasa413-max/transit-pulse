@@ -16,8 +16,11 @@ TZ = ZoneInfo("Europe/Zurich")
 
 # --- Scope of the proof of concept -------------------------------------
 AREA_NAME = "Lausanne"
-# A stop belongs to the POC when its name starts with one of these prefixes
-# (covers "Lausanne", "Lausanne, Flon", "Lausanne-Ouchy", ...).
+# A stop belongs to the POC when the official stop register places it in one of these
+# municipalities (matched by stop number). For the Vaud version: every municipality of the canton.
+MUNICIPALITIES = ("Lausanne",)
+# Fallback when the register is not available yet (tests, first run): stop name prefix.
+# Not enough on its own: tl names most stops without "Lausanne, " (Bel-Air, Chauderon...).
 STOP_PREFIXES = ("Lausanne",)
 
 # --- Punctuality rules ---------------------------------------------------

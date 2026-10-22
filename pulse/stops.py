@@ -69,6 +69,12 @@ def load() -> dict:
     return (util.read_json(STOPS_FILE, {}) or {}).get("arrets", {})
 
 
+def numbers_in(municipalities) -> set[str]:
+    """Stop numbers located in the given municipalities."""
+    wanted = set(municipalities)
+    return {num for num, (_lon, _lat, _name, muni) in load().items() if muni in wanted}
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--force", action="store_true")

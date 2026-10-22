@@ -731,7 +731,7 @@ def build_map_data(latest: dict | None, disruptions: dict) -> dict:
     for s in (latest or {}).get("arrets", []):
         if s["mesures"] < MIN_STOP_MEASURES or s["ponctualite_pct"] is None:
             continue
-        coord = register.get(s.get("numero") or "")
+        coord = register.get((s.get("numero") or "")[:7])
         pos = (coord[0], coord[1]) if coord else by_name.get(s["arret"])
         if not pos:
             missing += 1

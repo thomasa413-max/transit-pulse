@@ -63,6 +63,17 @@ class TestAggregate(unittest.TestCase):
         self.assertEqual(agg["total"]["mesures"], 1)
         self.assertEqual(agg["total"]["ponctualite_pct"], 0.0)
 
+    def test_area_by_stop_register(self):
+        # tl stops have short names ("Bel-Air") and 9-digit numbers (station + platform).
+        area = istdaten.AreaFilter({"8592082", "8501120"})
+        lines = ["HALTESTELLEN_NAME;BPUIC;ABFAHRTSZEIT;AB_PROGNOSE;AB_PROGNOSE_STATUS;PRODUKT_ID;X;Y;Z;A;B;C;D",
+                 "Bel-Air;859208210;21.10.2026 08:00;21.10.2026 08:01:00;REAL;Bus;;;;;;;",
+                 "Renens VD, gare;859400110;21.10.2026 08:00;21.10.2026 08:01:00;REAL;Bus;;;;;;;"]
+        rows = istdaten.parse_lines(iter(lines))
+        agg = istdaten.aggregate(rows, DAY, area)
+        self.assertEqual([s["arret"] for s in agg["arrets"]], ["Bel-Air"])
+        self.assertEqual(agg["arrets"][0]["numero"], "8592082")
+
     def test_comma_delimiter(self):
         lines = ["HALTESTELLEN_NAME,ABFAHRTSZEIT,AB_PROGNOSE,AB_PROGNOSE_STATUS,PRODUKT_ID",
                  "Lausanne,21.10.2026 08:00,21.10.2026 08:01:00,REAL,Bus"]

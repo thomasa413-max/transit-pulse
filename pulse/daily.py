@@ -13,7 +13,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from . import agents, config, istdaten, util
+from . import agents, config, istdaten, stops, util
 
 # First draft + up to two corrections guided by the checker's remarks.
 MAX_ATTEMPTS = 3
@@ -42,15 +42,22 @@ def run(day: date, final: bool = False, sample: Path | None = None, force: bool 
         return 0
 
     # 1. Collect -----------------------------------------------------------
+    # The stop register decides which stops are in the area (refreshed weekly).
+    if not sample:
+        try:
+            stops.refresh()
+        except Exception as exc:  # noqa: BLE001 - keep the last register
+            util.append_run({"job": "daily", "agent": "stops", "status": "error", "detail": str(exc)[:300]})
+    area = istdaten.AreaFilter(stops.numbers_in(config.MUNICIPALITIES) if not sample else None)
     with util.timed() as t:
         try:
             if sample:
                 source = str(sample)
                 with sample.open(encoding="utf-8-sig") as fh:
-                    agg = istdaten.aggregate(istdaten.parse_lines(fh, istdaten.lausanne_line_filter), day)
+                    agg = istdaten.aggregate(istdaten.parse_lines(fh, area.line), day, area)
             else:
                 source = istdaten.find_daily_url(day)
-                agg = istdaten.aggregate(istdaten.stream_rows(source, istdaten.lausanne_line_filter), day)
+                agg = istdaten.aggregate(istdaten.stream_rows(source, area.line), day, area)
         except istdaten.NotPublishedYet as exc:
             print(exc)
             if final:
