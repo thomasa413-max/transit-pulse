@@ -88,6 +88,10 @@ def _label(item: dict, **extra) -> dict:
     return {LABELS.get(k, k): v for k, v in item.items()} | extra
 
 
+def _ranked(items: list[dict]) -> list[dict]:
+    return [_label(x, rang=i + 1) for i, x in enumerate(items)]
+
+
 def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dict:
     t = agg["total"]
     comparison: dict = {}
@@ -110,10 +114,10 @@ def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dic
         "journee_entiere": _label(t),
         **({"comparaison": comparison} if comparison else {}),
         "par_mode_journee_entiere": [_label(m) for m in agg["par_mode"]],
-        "heures_les_moins_ponctuelles": [_label(h) for h in worst_hours],
-        "lignes_moins_ponctuelles_journee_entiere": [_label(x) for x in agg["lignes_moins_ponctuelles"][:5]],
-        "lignes_plus_ponctuelles_journee_entiere": [_label(x) for x in agg["lignes_plus_ponctuelles"][:3]],
-        "arrets_moins_ponctuels_journee_entiere": [_label(x) for x in agg["arrets_moins_ponctuels"][:5]],
+        "heures_les_moins_ponctuelles": _ranked(worst_hours),
+        "lignes_moins_ponctuelles_journee_entiere": _ranked(agg["lignes_moins_ponctuelles"][:5]),
+        "lignes_plus_ponctuelles_journee_entiere": _ranked(agg["lignes_plus_ponctuelles"][:3]),
+        "arrets_moins_ponctuels_journee_entiere": _ranked(agg["arrets_moins_ponctuels"][:5]),
         "plus_gros_retards": agg["plus_gros_retards"][:3],
         "perturbations_signalees": [
             {"titre": d["titre"], "planifiee": d["planifie"]} for d in disruptions[:5] if d.get("titre")
@@ -160,7 +164,7 @@ def write(day: date, facts: dict, feedback: list[str] | None = None) -> dict:
     if feedback:
         user = ("Ta version précédente a été refusée par le contrôle. Corrige ces points :\n- "
                 + "\n- ".join(feedback) + "\n\n" + user)
-    res = _call("writer", day, _prompt("writer"), user, fake_responder=_fake_writer, schema=BULLETIN_SCHEMA, max_tokens=2000)
+    res = _call("writer", day, _prompt("writer"), user, model=config.MODEL_WRITER, fake_responder=_fake_writer, schema=BULLETIN_SCHEMA, max_tokens=2000)
     try:
         b = llm.parse_json(res.text)
         assert isinstance(b.get("titre"), str) and isinstance(b.get("paragraphes"), list)

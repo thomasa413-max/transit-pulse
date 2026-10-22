@@ -93,7 +93,7 @@ def run(day: date, final: bool = False, sample: Path | None = None, force: bool 
 
     record = {
         "date": day.isoformat(), "genere_a": util.iso(util.now_utc()),
-        "modele": config.MODEL_DAILY, "modele_controle": config.MODEL_CHECKER, "prompt_version": config.PROMPT_VERSION,
+        "modele": config.MODEL_WRITER, "modele_traduction": config.MODEL_DAILY, "modele_controle": config.MODEL_CHECKER, "prompt_version": config.PROMPT_VERSION,
         "tentatives": attempts, "controle": verdict, "fr": bulletin,
     }
     if not verdict["passed"]:
