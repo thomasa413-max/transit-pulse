@@ -23,6 +23,9 @@ with sync_playwright() as p:
             pg.on("pageerror", lambda x, e=errs: e.append(f"pageerror: {x}"))
             try:
                 pg.goto(config.SITE_URL + path, wait_until="load", timeout=60000)
+                # Test browsers render without a graphics chip, so the map waits for a click.
+                if pg.locator(".map-start").count() and pg.is_visible(".map-start"):
+                    pg.click(".map-start")
                 pg.wait_for_timeout(25000)
             except Exception as exc:  # noqa: BLE001
                 errs.append(f"navigation: {exc}")

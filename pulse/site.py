@@ -797,6 +797,9 @@ def build_map(lang: str, data: dict) -> None:
             f'<div id="carte" class="map" role="region" aria-label="{escape(t("map_region", lang))}" '
             f'data-src="/data/carte.json?v={ASSET_V.get("carte", "0")}" data-module="{asset("carte3d.js")}">'
             f'<p class="map-status" id="carte-etat" role="status">{escape(t("map_loading", lang))}</p>'
+            f'<div class="map-facade" id="carte-apercu" hidden>'
+            f'<img src="/assets/carte-apercu.webp?v={ASSET_V.get("carte-apercu.webp", "0")}" width="700" height="612" alt="{escape(t("map_preview_alt", lang))}" decoding="async">'
+            f'<button type="button" class="map-start">{escape(t("map_start", lang))}</button></div>'
             f'<div class="map-credits"></div></div>'
             f'<div class="map-side">{controls}{legend}'
             f'<div class="map-weather" id="meteo" aria-live="polite"><p class="legend-title">{escape(t("map_weather", lang))}</p><p class="muted">–</p></div>'
@@ -805,7 +808,7 @@ def build_map(lang: str, data: dict) -> None:
             f'<script type="application/json" id="carte-i18n">{json.dumps(i18n_js, ensure_ascii=False).replace("<", "\\u003c")}</script>'
             + section(t("map_list", lang),
                       table([t("col_stop", lang), t("col_ontime", lang), t("col_delay", lang), t("col_measured", lang),
-                             t("col_lines", lang), ""], rows, lang, numeric_from=1, numeric_to=3, caption=t("map_list", lang))
+                             t("col_lines", lang), t("map_col_action", lang)], rows, lang, numeric_from=1, numeric_to=3, caption=t("map_list", lang))
                       if rows else f'<p class="empty">{escape(t("map_no_stops", lang))}</p>',
                       escape(t("map_list_lead", lang)), sid="liste-arrets")
             + section(t("disruptions", lang), disruption_list({**DISRUPTIONS_CACHE}, lang))
@@ -932,7 +935,7 @@ def build() -> None:
         shutil.rmtree(config.PUBLIC)
     shutil.copytree(config.STATIC, config.PUBLIC)
     for f in (config.PUBLIC / "assets").glob("*.*"):
-        if f.suffix in (".css", ".js"):
+        if f.suffix in (".css", ".js", ".webp"):
             ASSET_V[f.name] = hashlib.sha256(f.read_bytes()).hexdigest()[:10]
     PAGES.clear()
 

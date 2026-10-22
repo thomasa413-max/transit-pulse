@@ -20,7 +20,7 @@ cpSync('node_modules/cesium/LICENSE.md', join(runtime, 'LICENSE.md'));
 
 await build({
   entryPoints: ['src/carte3d.js'], bundle: true, minify: true, format: 'esm', target: 'es2020',
-  outfile: join(assets, 'carte3d.js'), legalComments: 'external', logLevel: 'warning',
+  outfile: join(assets, 'carte3d.js'), legalComments: 'external', logLevel: 'warning', sourcemap: 'linked', sourcesContent: false,
   define: { __CESIUM_BASE__: JSON.stringify(`/assets/cesium-${version}/`) },
 });
 console.log(`Map bundle built with CesiumJS ${version}.`);
