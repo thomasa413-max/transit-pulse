@@ -285,7 +285,7 @@ tbody tr:last-child td { border-bottom: 0; }
 .map-status[hidden] { display: none; }
 .map-credits { position: absolute; left: 6px; bottom: 4px; right: 120px; z-index: 2; color: #fff; font-size: 0.6875rem; line-height: 1.4; text-shadow: 0 0 3px #000; }
 .map-credits a, .map-credits a:visited { color: #fff; }
-.map-credits .cesium-credit-logoContainer { display: none; }  /* no Cesium ion service is used */
+.map-credits .cesium-credit-logoContainer { display: none !important; }  /* no Cesium ion service is used */
 .map-credits .cesium-credit-lightbox-overlay { position: fixed; z-index: 50; }
 .map-nav { position: absolute; top: 10px; right: 10px; z-index: 2; display: flex; flex-direction: column; gap: 6px; }
 .map-nav-btn { width: 44px; height: 44px; border-radius: 10px; border: 1px solid rgb(255 255 255 / 0.25); background: rgb(15 20 27 / 0.78);
