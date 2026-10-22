@@ -1,0 +1,3 @@
+# Pilot phase: not indexed. Remove when the Vaud version launches on its own domain.
+User-agent: *
+Disallow: /

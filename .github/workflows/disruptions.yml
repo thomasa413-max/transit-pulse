@@ -1,0 +1,51 @@
+name: Disruptions and health check
+
+# Every 3 hours: 8 calls a day on a quota of 48 (provider guidance is to call
+# the full SIRI-SX feed only a few times a day).
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  disruptions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Fetch disruptions
+        id: fetch
+        continue-on-error: true
+        env:
+          OTD_API_KEY: ${{ secrets.OTD_API_KEY }}
+        run: python -m pulse.hourly
+
+      - name: Build site
+        run: python -m pulse.site
+
+      - name: Commit results
+        run: bash scripts/commit.sh "Disruptions $(date -u +%FT%H:%MZ)"
+
+      - name: Health check
+        run: python -m pulse.hourly --health
+
+      - name: Report failure
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::error::Could not fetch the disruption feed. The site keeps the last snapshot."
+          exit 1

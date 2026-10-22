@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Siri xmlns="http://www.siri.org.uk/siri" version="2.0">
+ <ServiceDelivery>
+  <SituationExchangeDelivery>
+   <Situations>
+    <PtSituationElement>
+     <CreationTime>2026-10-20T06:00:00+02:00</CreationTime>
+     <ParticipantRef>ch:1:sboid:100602</ParticipantRef>
+     <SituationNumber>ch:1:sstid:100602:1111</SituationNumber>
+     <Progress>open</Progress>
+     <ValidityPeriod><StartTime>2026-10-20T06:00:00+02:00</StartTime><EndTime>2099-01-01T00:00:00+01:00</EndTime></ValidityPeriod>
+     <AlertCause>constructionWork</AlertCause>
+     <Planned>true</Planned>
+     <PublishingActions>
+      <PublishingAction>
+       <PublishAtScope><Affects><StopPlaces><AffectedStopPlace><PlaceName>Lausanne, Bel-Air</PlaceName></AffectedStopPlace></StopPlaces></Affects></PublishAtScope>
+       <PassengerInformationAction>
+        <TextualContent>
+         <SummaryContent><SummaryText xml:lang="DE">Bauarbeiten Lausanne</SummaryText><SummaryText xml:lang="FR">Travaux à Lausanne, Bel-Air</SummaryText></SummaryContent>
+         <DescriptionContent><DescriptionText xml:lang="FR">L'arrêt est déplacé de 50 mètres.</DescriptionText></DescriptionContent>
+        </TextualContent>
+       </PassengerInformationAction>
+      </PublishingAction>
+     </PublishingActions>
+     <Affects><Networks><AffectedNetwork><AffectedLine><PublishedLineName>9</PublishedLineName></AffectedLine></AffectedNetwork></Networks></Affects>
+    </PtSituationElement>
+    <PtSituationElement>
+     <SituationNumber>ch:1:sstid:100001:2222</SituationNumber>
+     <Progress>open</Progress>
+     <ValidityPeriod><StartTime>2026-10-20T06:00:00+02:00</StartTime></ValidityPeriod>
+     <Planned>false</Planned>
+     <PublishingActions><PublishingAction><PassengerInformationAction><TextualContent>
+      <SummaryContent><SummaryText xml:lang="FR">Dérangement entre Bern et Thun</SummaryText></SummaryContent>
+     </TextualContent></PassengerInformationAction></PublishingAction></PublishingActions>
+    </PtSituationElement>
+    <PtSituationElement>
+     <SituationNumber>ch:1:sstid:100602:3333</SituationNumber>
+     <Progress>closed</Progress>
+     <PublishingActions><PublishingAction><PassengerInformationAction><TextualContent>
+      <SummaryContent><SummaryText xml:lang="FR">Ancienne perturbation à Lausanne</SummaryText></SummaryContent>
+     </TextualContent></PassengerInformationAction></PublishingAction></PublishingActions>
+    </PtSituationElement>
+   </Situations>
+  </SituationExchangeDelivery>
+ </ServiceDelivery>
+</Siri>

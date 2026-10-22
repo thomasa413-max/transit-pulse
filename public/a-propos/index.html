@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Architecture, méthode et garde-fous de Transit Pulse.">
+<title>À propos · Transit Pulse Lausanne</title>
+<link rel="stylesheet" href="/assets/style.css?v=644b4269aa">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Transit Pulse <span class="brand-zone">Lausanne</span></a>
+    <nav aria-label="Navigation principale"><ul><li><a href="/">Tableau de bord</a></li><li><a href="/bulletin/">Bulletin</a></li><li><a href="/agents/">Agents</a></li><li><a href="/qualite/">Qualité</a></li><li><a href="/couts/">Coûts</a></li><li><a href="/a-propos/" aria-current="page">À propos</a></li></ul></nav>
+  </div>
+</header>
+<main id="contenu" class="wrap">
+<h1>À propos</h1>
+<p class="lead">Transit Pulse est une preuve de concept : un pipeline d'agents IA qui fonctionne seul, 24 heures sur 24, sur des données publiques réelles, pour quelques dollars par mois. Lausanne d'abord ; le canton de Vaud ensuite.</p>
+<section class="block"><h2>Architecture</h2><svg class="diagram" viewBox="0 0 720 400" role="img" aria-label="Chaque exécution collecte, rédige, vérifie, puis publie">
+<title>Chaque exécution collecte, rédige, vérifie, puis publie</title>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="arrowhead"/></marker></defs>
+<g class="box"><rect x="16" y="16" width="216" height="56" rx="8"/><text x="28" y="40" class="b">Horaires réels (Ist-Daten)</text><text x="28" y="58">Fichier national, chaque jour</text></g>
+<g class="box"><rect x="252" y="16" width="216" height="56" rx="8"/><text x="264" y="40" class="b">Perturbations SIRI-SX</text><text x="264" y="58">Toutes les 3 heures</text></g>
+<g class="box"><rect x="488" y="16" width="216" height="56" rx="8"/><text x="500" y="40" class="b">GitHub Actions</text><text x="500" y="58">Planification, aucun serveur</text></g>
+<g class="box"><rect x="16" y="112" width="688" height="56" rx="8"/><text x="28" y="136" class="b">Collecteur Python</text><text x="28" y="154">Lit le fichier en flux, garde Lausanne, calcule ponctualité, retards, suppressions</text></g>
+<g class="box group"><rect x="16" y="208" width="688" height="96" rx="8"/><text x="28" y="230" class="b">Agents IA · Claude Haiku 5.5</text>
+<rect x="32" y="244" width="200" height="48" rx="8" class="inner"/><text x="44" y="266" class="b">Rédacteur</text><text x="44" y="282">Bulletin en français</text>
+<rect x="260" y="244" width="200" height="48" rx="8" class="inner"/><text x="272" y="266" class="b">Contrôleur + code</text><text x="272" y="282">Phrases et chiffres</text>
+<rect x="488" y="244" width="200" height="48" rx="8" class="inner"/><text x="500" y="266" class="b">Traducteur</text><text x="500" y="282">Allemand, italien, anglais</text></g>
+<g class="box"><rect x="16" y="336" width="320" height="48" rx="8"/><text x="28" y="358" class="b">Refusé deux fois</text><text x="28" y="374">Rien n'est publié, alerte e-mail</text></g>
+<g class="box accent"><rect x="384" y="336" width="320" height="48" rx="8"/><text x="396" y="358" class="b">Site statique · Cloudflare Pages</text><text x="396" y="374">Publié après chaque exécution réussie</text></g>
+<g class="links"><path d="M124 72V112" marker-end="url(#arr)"/><path d="M360 72V112" marker-end="url(#arr)"/><path d="M360 168V208" marker-end="url(#arr)"/>
+<path d="M232 268H260" marker-end="url(#arr)"/><path d="M460 268H488" marker-end="url(#arr)"/><path d="M176 304V336" marker-end="url(#arr)"/><path d="M544 304V336" marker-end="url(#arr)"/></g>
+</svg><p class="muted small">Le code, les données agrégées et le journal vivent dans un dépôt GitHub public. Chaque exécution réussie ajoute un commit, et Cloudflare Pages republie le site.</p></section>
+<section class="block" id='methode'><h2>Méthode</h2><ul class="plain">
+<li><strong>Périmètre</strong> : tous les arrêts dont le nom commence par « Lausanne » (gare, métro, bus tl, bateaux), tous exploitants confondus.</li>
+<li><strong>À l'heure</strong> : moins de 3 minutes de retard, comme la ponctualité clients en Suisse. Le départ est utilisé s'il a été mesuré, sinon l'arrivée.</li>
+<li><strong>Mesuré seulement</strong> : seuls les horaires de statut « réel » comptent ; les estimations et prévisions sont exclues. Les retards de plus de 5 heures sont traités comme des erreurs de données.</li>
+<li><strong>Suppressions</strong> : passages annoncés comme supprimés dans le fichier officiel.</li>
+<li><strong>Aucune cause inventée</strong> : le bulletin ne cite une perturbation que si elle figure dans le flux officiel, sans affirmer qu'elle explique les chiffres.</li>
+</ul></section>
+<section class="block"><h2>Garde-fous</h2><ul class="plain">
+<li>Deux contrôles indépendants avant publication : un agent relit chaque phrase, du code vérifie chaque chiffre.</li>
+<li>Une seule correction automatique ; au second refus, rien n'est publié et une alerte e-mail part.</li>
+<li>Plafond de dépense de 10 $ par mois sur l'espace de travail de l'API, alerte à 5 $.</li>
+<li>Clés d'API uniquement dans les secrets GitHub, jamais dans le code.</li>
+<li>Quota du flux de perturbations protégé par un compteur (8 appels prévus sur 48 autorisés).</li>
+<li>Site statique sans cookie, sans script, sans ressource externe ; non indexé par les moteurs de recherche pendant la phase pilote.</li>
+</ul></section>
+<section class="block"><h2>Sources</h2><p>Données ouvertes de la <a href="https://opentransportdata.swiss/">plateforme suisse des données de mobilité</a> : fichier quotidien des horaires réels (Ist-Daten) et flux des perturbations (SIRI-SX). Réutilisation autorisée avec mention de la source.</p></section>
+<section class="block"><h2>Auteur</h2><p>Conçu et piloté par Michaël Miguel, chef de projet digital certifié PMP, avec Claude comme partenaire de développement. <a href="https://github.com/thomasa413-max/transit-pulse">Code source sur GitHub</a>.</p></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Données : <a href="https://opentransportdata.swiss/">opentransportdata.swiss</a> (horaires réels et perturbations des transports publics suisses). Calculs et textes générés automatiquement.</p>
+    <p>Preuve de concept personnelle, sans lien avec les CFF, les tl ou les autres exploitants. <a href="https://github.com/thomasa413-max/transit-pulse">Code source</a></p>
+  </div>
+</footer>
+</body>
+</html>

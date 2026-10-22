@@ -1,0 +1,66 @@
+name: Daily bulletin
+
+# Yesterday's national actual-data file is published during the morning.
+# Four attempts (UTC times; 06:23 to 12:23 in Lausanne in summer, one hour
+# earlier in winter). An attempt does nothing if the bulletin is already out;
+# the last one fails, and GitHub emails the owner, if the data never arrived.
+on:
+  schedule:
+    - cron: "23 4 * * *"
+    - cron: "23 6 * * *"
+    - cron: "23 8 * * *"
+    - cron: "23 10 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Day to process (YYYY-MM-DD). Empty = yesterday."
+        required: false
+      force:
+        description: "Rewrite the bulletin even if already published"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Collect, write, check, translate
+        id: run
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ "${{ github.event.schedule }}" = "23 10 * * *" ]; then ARGS="$ARGS --final"; fi
+          python -m pulse.daily $ARGS
+
+      - name: Build site
+        run: python -m pulse.site
+
+      - name: Commit results
+        run: bash scripts/commit.sh "Daily bulletin $(date -u +%F)"
+
+      - name: Report failure
+        if: steps.run.outcome == 'failure'
+        run: |
+          echo "::error::The daily pipeline failed. See the agent log page and this run's output."
+          exit 1
