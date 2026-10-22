@@ -41,11 +41,11 @@ python -m pulse.site && python -m http.server -d public  # preview at http://loc
 
 `PULSE_FAKE_LLM=1` replaces the model with deterministic answers (no API key, no cost). Delete the generated `data/` files before committing.
 
-## Cloudflare Pages settings
+## Cloudflare settings (Workers, static assets)
 
-- Framework preset: None
-- Build command: *(empty)*
-- Build output directory: `public`
+- Connected with "Continue with GitHub" (Workers Builds); config in `wrangler.jsonc`
+- Build command: *(empty)*; deploy command: `npx wrangler deploy`
+- Served directory: `public` (set in `wrangler.jsonc`)
 
 ## Layout
 
