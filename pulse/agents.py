@@ -72,6 +72,22 @@ def bulletin_text(b: dict) -> str:
 # by code so the model never has to calculate.
 # ---------------------------------------------------------------------------
 
+LABELS = {
+    "passages": "passages_prevus",
+    "mesures": "passages_mesures",
+    "suppressions": "passages_supprimes",
+    "ponctualite_pct": "pct_a_l_heure",
+    "retard_moyen_min": "retard_moyen_minutes",
+    "suppressions_pct": "pct_supprimes",
+    "retard_p90_min": "neuf_passages_sur_dix_sous_minutes",
+}
+
+
+def _label(item: dict, **extra) -> dict:
+    """Unambiguous names for the writer: a small model misread 'passages' vs 'mesures'."""
+    return {LABELS.get(k, k): v for k, v in item.items()} | extra
+
+
 def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dict:
     t = agg["total"]
     comparison: dict = {}
@@ -91,13 +107,13 @@ def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dic
         "date": agg["date"],
         "zone": agg["zone"],
         "regle": agg["regle_ponctualite"],
-        "global": t,
+        "journee_entiere": _label(t),
         **({"comparaison": comparison} if comparison else {}),
-        "par_mode": agg["par_mode"],
-        "heures_les_moins_ponctuelles": worst_hours,
-        "lignes_moins_ponctuelles": agg["lignes_moins_ponctuelles"][:5],
-        "lignes_plus_ponctuelles": agg["lignes_plus_ponctuelles"][:3],
-        "arrets_moins_ponctuels": agg["arrets_moins_ponctuels"][:5],
+        "par_mode_journee_entiere": [_label(m) for m in agg["par_mode"]],
+        "heures_les_moins_ponctuelles": [_label(h) for h in worst_hours],
+        "lignes_moins_ponctuelles_journee_entiere": [_label(x) for x in agg["lignes_moins_ponctuelles"][:5]],
+        "lignes_plus_ponctuelles_journee_entiere": [_label(x) for x in agg["lignes_plus_ponctuelles"][:3]],
+        "arrets_moins_ponctuels_journee_entiere": [_label(x) for x in agg["arrets_moins_ponctuels"][:5]],
         "plus_gros_retards": agg["plus_gros_retards"][:3],
         "perturbations_signalees": [
             {"titre": d["titre"], "planifiee": d["planifie"]} for d in disruptions[:5] if d.get("titre")
@@ -111,16 +127,16 @@ def writer_input(agg: dict, history: list[dict], disruptions: list[dict]) -> dic
 
 def _fake_writer(user: str) -> str:
     data = json.loads(user.split("DONNÉES:\n", 1)[1])
-    g = data["global"]
-    p = [f"Le {data['date']}, {g['ponctualite_pct']} % des passages mesurés à Lausanne étaient à l'heure, "
-         f"sur {g['mesures']} passages mesurés."]
-    if data["lignes_moins_ponctuelles"]:
-        l = data["lignes_moins_ponctuelles"][0]
-        p.append(f"La ligne {l['ligne']} ({l['exploitant']}) a été la moins ponctuelle, avec {l['ponctualite_pct']} %.")
+    g = data["journee_entiere"]
+    p = [f"Le {data['date']}, {g['pct_a_l_heure']} % des passages mesurés à Lausanne étaient à l'heure, "
+         f"sur {g['passages_mesures']} passages mesurés."]
+    if data["lignes_moins_ponctuelles_journee_entiere"]:
+        l = data["lignes_moins_ponctuelles_journee_entiere"][0]
+        p.append(f"La ligne {l['ligne']} ({l['exploitant']}) a été la moins ponctuelle, avec {l['pct_a_l_heure']} %.")
     if data["heures_les_moins_ponctuelles"]:
         h = data["heures_les_moins_ponctuelles"][0]
-        p.append(f"Le créneau de {h['heure']} h a été le plus difficile ({h['ponctualite_pct']} % à l'heure).")
-    return json.dumps({"titre": f"{g['ponctualite_pct']} % de passages à l'heure à Lausanne", "paragraphes": p},
+        p.append(f"Le créneau de {h['heure']} h a été le plus difficile ({h['pct_a_l_heure']} % à l'heure).")
+    return json.dumps({"titre": f"{g['pct_a_l_heure']} % de passages à l'heure à Lausanne", "paragraphes": p},
                       ensure_ascii=False)
 
 

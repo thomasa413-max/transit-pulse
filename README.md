@@ -18,7 +18,7 @@ Each run commits `data/` and `public/`; Cloudflare redeploys the site.
 
 1. **Writer** gets a compact JSON of the day's figures, with comparisons precomputed by code so the model never calculates.
 2. **Checker** reviews every sentence against the data. In parallel, **code** checks that every number written exists in the data.
-3. If either refuses, the writer gets the remarks and tries once more. A second refusal blocks publication and the workflow fails, which emails the owner.
+3. If either refuses, the writer gets the remarks and tries again (two corrections at most). A third refusal blocks publication and the workflow fails, which emails the owner.
 4. **Translator** produces German, Italian and English; code checks each translation has exactly the same numbers as the French text.
 
 Every call is logged in `data/runs.jsonl` (model, tokens, cost, duration, outcome) and shown on the site's Agents, Quality and Costs pages.

@@ -282,7 +282,7 @@ def bulletin_html(b: dict) -> str:
     out.append("</article>")
     attempts = b.get("tentatives", 1)
     check = ("Contrôle réussi du premier coup." if attempts == 1
-             else "Première version refusée par le contrôle, version corrigée validée.")
+             else "Version corrigée après les remarques du contrôle, puis validée.")
     out.append(f'<aside class="provenance"><p>{badge("pass")} Rédigé par <strong>{escape(b["modele"])}</strong> à partir '
                f'des données du jour, puis vérifié phrase par phrase par un second agent '
                f'(<strong>{escape(b.get("modele_controle", "un autre modèle"))}</strong>) et chiffre par chiffre par du code. '
@@ -391,7 +391,7 @@ def build_quality(bulletins: dict, runs: list[dict]) -> None:
             fails.append([escape(r.get("date", "")), escape(p.get("raison", "")), escape((p.get("phrase") or "")[:160])])
     body = ('<h1>Qualité</h1><p class="lead">Aucun bulletin n\'est publié sans deux contrôles indépendants : '
             'un agent relit chaque phrase face aux données, et du code vérifie que chaque chiffre écrit existe dans les données. '
-            'Si l\'un des deux refuse, le rédacteur corrige une fois ; en cas de second refus, rien n\'est publié et une alerte part.</p>'
+            'Si l\'un des deux refuse, le rédacteur corrige, deux fois au plus ; en cas de troisième refus, rien n\'est publié et une alerte part.</p>'
             f'<div class="tiles">{tiles}</div>'
             + section("Problèmes relevés par les contrôles", table(["Journée", "Raison", "Phrase concernée"], fails, numeric_from=9,
                                                                 caption="Refus du contrôle")
@@ -479,7 +479,7 @@ def build_about() -> None:
 </ul>''', sid="methode")}
 {section("Garde-fous", '''<ul class="plain">
 <li>Deux contrôles indépendants avant publication : un agent relit chaque phrase, du code vérifie chaque chiffre.</li>
-<li>Une seule correction automatique ; au second refus, rien n'est publié et une alerte e-mail part.</li>
+<li>Jusqu'à deux corrections automatiques ; au troisième refus, rien n'est publié et une alerte e-mail part.</li>
 <li>Plafond de dépense de 10 $ par mois sur l'espace de travail de l'API, alerte à 5 $.</li>
 <li>Clés d'API uniquement dans les secrets GitHub, jamais dans le code.</li>
 <li>Quota du flux de perturbations protégé par un compteur (8 appels prévus sur 48 autorisés).</li>

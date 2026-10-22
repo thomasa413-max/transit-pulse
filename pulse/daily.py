@@ -15,6 +15,9 @@ from pathlib import Path
 
 from . import agents, config, istdaten, util
 
+# First draft + up to two corrections guided by the checker's remarks.
+MAX_ATTEMPTS = 3
+
 
 def update_history(agg: dict) -> list[dict]:
     path = config.DATA / "history.json"
@@ -79,11 +82,11 @@ def run(day: date, final: bool = False, sample: Path | None = None, force: bool 
         bulletin = agents.write(day, facts)
         verdict = agents.check(day, facts, bulletin)
         attempts = 1
-        if not verdict["passed"]:
+        while not verdict["passed"] and attempts < MAX_ATTEMPTS:
             feedback = [f"{p.get('phrase') or ''} → {p.get('raison')}" for p in verdict["problems"]]
             bulletin = agents.write(day, facts, feedback)
             verdict = agents.check(day, facts, bulletin)
-            attempts = 2
+            attempts += 1
     except Exception as exc:  # noqa: BLE001
         print(f"Agent step failed: {exc}", file=sys.stderr)
         return 1
