@@ -1,0 +1,72 @@
+{
+ "at": "2026-10-22T20:16:19+00:00",
+ "pages": [
+  {
+   "path": "/",
+   "scores": {
+    "performance": 0,
+    "accessibility": 0,
+    "best-practices": 0,
+    "seo": 0
+   },
+   "lcp": "–",
+   "cls": "–",
+   "tbt": "–"
+  },
+  {
+   "path": "/",
+   "scores": {
+    "performance": 0,
+    "accessibility": 0,
+    "best-practices": 0,
+    "seo": 0
+   },
+   "lcp": "–",
+   "cls": "–",
+   "tbt": "–"
+  },
+  {
+   "path": "/",
+   "scores": {
+    "performance": 0,
+    "accessibility": 0,
+    "best-practices": 0,
+    "seo": 0
+   },
+   "lcp": "–",
+   "cls": "–",
+   "tbt": "–"
+  },
+  {
+   "path": "/",
+   "scores": {
+    "performance": 0,
+    "accessibility": 0,
+    "best-practices": 0,
+    "seo": 0
+   },
+   "lcp": "–",
+   "cls": "–",
+   "tbt": "–"
+  }
+ ],
+ "failures": [
+  "/ performance 0 < 95 ()",
+  "/ accessibility 0 < 100 ()",
+  "/ best-practices 0 < 95 ()",
+  "/ seo 0 < 100 ()",
+  "/ performance 0 < 95 ()",
+  "/ accessibility 0 < 100 ()",
+  "/ best-practices 0 < 95 ()",
+  "/ seo 0 < 100 ()",
+  "/ performance 0 < 95 ()",
+  "/ accessibility 0 < 100 ()",
+  "/ best-practices 0 < 95 ()",
+  "/ seo 0 < 100 ()",
+  "/ performance 0 < 95 ()",
+  "/ accessibility 0 < 100 ()",
+  "/ best-practices 0 < 95 ()",
+  "/ seo 0 < 100 ()"
+ ],
+ "note": "Objectifs : performance ≥ 95, accessibilité 100, bonnes pratiques ≥ 95, SEO 100 (mobile)."
+}
