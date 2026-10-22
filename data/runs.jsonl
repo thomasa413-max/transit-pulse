@@ -1,0 +1,1 @@
+{"job": "disruptions", "agent": "siri-sx", "status": "ok", "seconds": 4.79, "situations": 481, "lausanne": 2, "bytes": 90388053, "id": "21cbe347cf7a", "at": "2026-10-22T17:14:22+00:00", "trigger": "workflow_dispatch", "github_run": "39820836605"}

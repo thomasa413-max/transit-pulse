@@ -1,0 +1,62 @@
+{
+ "situations_suisse": 1209,
+ "actives_suisse": 481,
+ "lausanne": [
+  {
+   "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "constructionWork",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-07T08:02:12Z",
+   "titre": "Arrêt Lausanne, Clochatte déplacé",
+   "description": "Concerne: ligne 18",
+   "consequence": "Du 30 juin au 24 novembre 2026, l'arrêt Lausanne, Clochatte n'est pas desservi, en raison de travaux. Le terminus de la ligne 18 est déplacé aux arrêts Lausanne, Piècettes.",
+   "periodes": [
+    {
+     "debut": "2026-10-07T08:00:00Z",
+     "fin": "2026-11-24T22:58:00Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, Clochatte"
+   ],
+   "lignes": [
+    "18"
+   ]
+  },
+  {
+   "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-10-02T09:30:21.072+02:00",
+   "titre": "Restriction Palézieux - Romont FR",
+   "description": "Les lignes IR 15, S 40 et S 41",
+   "consequence": "",
+   "periodes": [
+    {
+     "debut": "2026-10-12T04:00:00+02:00",
+     "fin": "2027-06-19T04:00:00+02:00"
+    }
+   ],
+   "lieux": [
+    "Bern",
+    "Fribourg/Freiburg",
+    "Genève-Aéroport",
+    "Lausanne",
+    "Luzern",
+    "Oron",
+    "Palézieux",
+    "Romont FR",
+    "Vauderens"
+   ],
+   "lignes": []
+  }
+ ],
+ "octets": 90388053,
+ "mis_a_jour": "2026-10-22T17:14:22+00:00"
+}
