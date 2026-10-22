@@ -19,6 +19,13 @@ NAV = [("/", "Tableau de bord"), ("/bulletin/", "Bulletin"), ("/agents/", "Agent
        ("/qualite/", "Qualité"), ("/couts/", "Coûts"), ("/a-propos/", "À propos")]
 AGENT_FR = {"collector": "Collecteur", "writer": "Rédacteur", "checker": "Contrôleur",
             "translator": "Traducteur", "siri-sx": "Perturbations"}
+MODEL_NAMES = {"claude-sonnet-5-5": "Claude Sonnet 5.5", "claude-haiku-5-5": "Claude Haiku 5.5"}
+
+
+def model_name(m: str | None) -> str:
+    return MODEL_NAMES.get(m or "", m or "–")
+
+
 STATUS_FR = {"ok": "Réussi", "pass": "Validé", "fail": "Refusé", "error": "Erreur",
              "partial": "Partiel", "skipped": "Ignoré"}
 
@@ -283,9 +290,9 @@ def bulletin_html(b: dict) -> str:
     attempts = b.get("tentatives", 1)
     check = ("Contrôle réussi du premier coup." if attempts == 1
              else "Version corrigée après les remarques du contrôle, puis validée.")
-    out.append(f'<aside class="provenance"><p>{badge("pass")} Rédigé par <strong>{escape(b["modele"])}</strong> à partir '
+    out.append(f'<aside class="provenance"><p>{badge("pass")} Rédigé par <strong>{escape(model_name(b["modele"]))}</strong> à partir '
                f'des données du jour, puis vérifié phrase par phrase par un second agent '
-               f'(<strong>{escape(b.get("modele_controle", "un autre modèle"))}</strong>) et chiffre par chiffre par du code. '
+               f'(<strong>{escape(model_name(b.get("modele_controle")))}</strong>) et chiffre par chiffre par du code. '
                f'{check} Publié le {local_time(b["genere_a"])}.</p></aside>')
     others = [(code, label) for code, label in config.LANGS.items() if code != "fr" and b.get(code)]
     if others:
@@ -354,7 +361,7 @@ def build_agents(runs: list[dict], disruptions: dict) -> None:
         elif r.get("agent") == "translator":
             detail = ", ".join(r.get("languages") or []) or detail
         rows.append([local_time(r["at"]), escape(AGENT_FR.get(r.get("agent"), r.get("agent", ""))),
-                     escape(r.get("model", "–")), n(r.get("seconds"), unit=" s"), tokens, cost,
+                     escape(model_name(r.get("model"))), n(r.get("seconds"), unit=" s"), tokens, cost,
                      badge(r.get("status", "")), escape(detail[:90])])
     body = ('<h1>Journal des agents</h1><p class="lead">Chaque exécution est enregistrée : quand, quel agent, quel modèle, '
             'combien de temps, combien de jetons, combien cela a coûté et le résultat. Rien n\'est filtré.</p>'
