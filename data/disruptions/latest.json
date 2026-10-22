@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1206,
- "actives_suisse": 485,
+ "situations_suisse": 1214,
+ "actives_suisse": 496,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -13,6 +13,28 @@
    "titre": "Arrêt Lausanne, Clochatte déplacé",
    "description": "Concerne: ligne 18",
    "consequence": "Du 30 juin au 24 novembre 2026, l'arrêt Lausanne, Clochatte n'est pas desservi, en raison de travaux. Le terminus de la ligne 18 est déplacé aux arrêts Lausanne, Piècettes.",
+   "textes": {
+    "fr": {
+     "titre": "Arrêt Lausanne, Clochatte déplacé",
+     "description": "Concerne: ligne 18",
+     "consequence": "Du 30 juin au 24 novembre 2026, l'arrêt Lausanne, Clochatte n'est pas desservi, en raison de travaux. Le terminus de la ligne 18 est déplacé aux arrêts Lausanne, Piècettes."
+    },
+    "de": {
+     "titre": "Haltestelle Lausanne, Clochatte verschoben",
+     "description": "Betroffen: Linie 18",
+     "consequence": "Vom 30. Juni bis zum 24. November 2026 wird die Haltestelle „Lausanne, Clochatte“ aufgrund von Bauarbeiten nicht angefahren. Die Endhaltestelle der Linie 18 wird auf die Haltestelle „Lausanne, Piècettes“ verlegt."
+    },
+    "it": {
+     "titre": "Fermata Lausanne, Clochatte spostata",
+     "description": "Interessata: la linea 18",
+     "consequence": "Dal 30 giugno al 24 novembre 2026, la fermata “Lausanne, Clochatte” non sarà servita a causa di lavori. Il capolinea della linea 18 è spostato alla fermata “Lausanne, Piècettes”."
+    },
+    "en": {
+     "titre": "Lausanne, Clochatte stop moved",
+     "description": "Affected: line 18",
+     "consequence": "From 30 June to 24 November 2026, the Lausanne, Clochatte stop will not be served due to engineering works. The terminus of line 18 will be moved to the Lausanne, Piècettes stop."
+    }
+   },
    "periodes": [
     {
      "debut": "2026-10-07T08:00:00Z",
@@ -37,6 +59,28 @@
    "titre": "Restriction Palézieux - Romont FR",
    "description": "Les lignes IR 15, S 40 et S 41",
    "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Palézieux - Romont FR",
+     "description": "Les lignes IR 15, S 40 et S 41",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Palézieux - Romont FR",
+     "description": "Linien IR 15, S 40 und S 41",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Palézieux - Romont FR",
+     "description": "Linee IR 15, S 40 e S 41",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Palézieux - Romont FR",
+     "description": "Lines IR 15, S 40 and S 41",
+     "consequence": ""
+    }
+   },
    "periodes": [
     {
      "debut": "2026-10-12T04:00:00+02:00",
@@ -57,6 +101,6 @@
    "lignes": []
   }
  ],
- "octets": 90378449,
- "mis_a_jour": "2026-10-22T18:49:40+00:00"
+ "octets": 90555138,
+ "mis_a_jour": "2026-10-22T21:41:19+00:00"
 }
