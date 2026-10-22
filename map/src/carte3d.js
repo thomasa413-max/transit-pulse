@@ -3,10 +3,10 @@
 // stop punctuality as 3D columns, disruption pins and weather from our Worker.
 /* global __CESIUM_BASE__ */
 import {
-  Cartesian2, Cartesian3, Cartographic, Math as CMath, Color, Rectangle, JulianDate, defined, NearFarScalar, GeometryInstance, CylinderGeometry, Matrix4, Matrix3, ColorGeometryInstanceAttribute, BoundingSphere, HeadingPitchRange,
+  Cartesian2, Cartesian3, Cartographic, Math as CMath, Color, Rectangle, JulianDate, NearFarScalar, GeometryInstance, CylinderGeometry, Matrix4, Matrix3, ColorGeometryInstanceAttribute, BoundingSphere, HeadingPitchRange,
 } from '@cesium/core';
 import {
-  CesiumWidget, GeographicTilingScheme, UrlTemplateImageryProvider, ImageryLayer, CesiumTerrainProvider, Cesium3DTileset, Cesium3DTileStyle, Credit, ScreenSpaceEventHandler, ScreenSpaceEventType, sampleTerrainMostDetailed, Ion, VerticalOrigin, HeightReference, BillboardCollection, Primitive, Transforms, PerInstanceColorAppearance, ShadowMode,
+  CesiumWidget, GeographicTilingScheme, UrlTemplateImageryProvider, ImageryLayer, CesiumTerrainProvider, Cesium3DTileset, Cesium3DTileStyle, Credit, ScreenSpaceEventHandler, ScreenSpaceEventType, sampleTerrainMostDetailed, Ion, VerticalOrigin, HeightReference, BillboardCollection, Primitive, Transforms, PerInstanceColorAppearance, ShadowMode, SunLight, DirectionalLight,
 } from '@cesium/engine';
 
 window.CESIUM_BASE_URL = __CESIUM_BASE__;
@@ -185,17 +185,27 @@ function sunAltitude(date) {
   const H = rad * (280.16 + 360.9856235 * d) + rad * LAUSANNE.lon - ra, phi = rad * LAUSANNE.lat;
   return Math.asin(Math.sin(phi) * Math.sin(dec) + Math.cos(phi) * Math.cos(dec) * Math.cos(H)) / rad;
 }
+// Day: the real sun lights terrain, photos and buildings, with shadows.
+// Night: a cool "moonlight" from above keeps the city readable; photos are dimmed, columns glow.
+const SUN = new SunLight();
+const MOON = new DirectionalLight({ direction: new Cartesian3(0, 0, -1), color: Color.fromCssColorString('#a9bde6'), intensity: 1.15 });
 function applyLight() {
   const date = lightMode === 'day' ? zurichDate(14) : lightMode === 'night' ? zurichDate(22) : new Date();
   widget.clock.currentTime = JulianDate.fromDate(date);
   const night = sunAltitude(date) < -4;
   box.classList.toggle('is-night', night);
-  scene.shadowMap && (scene.shadowMap.enabled = !small && !night);
-  const base = scene.imageryLayers.get(0);
-  if (base) { base.brightness = night ? 0.55 : 1.0; base.saturation = night ? 0.55 : 1.0; base.gamma = night ? 1.25 : 1.0; }
-  if (buildings) {
-    buildings.style = new Cesium3DTileStyle({ color: night ? "color('#8a8073')" : "color('#efe9df')" });
+  if (night) {
+    // Light straight down from above the camera's area, in Earth-fixed coordinates.
+    const up = Cartesian3.normalize(Cartesian3.fromDegrees(LAUSANNE.lon, LAUSANNE.lat), new Cartesian3());
+    MOON.direction = Cartesian3.negate(up, new Cartesian3());
   }
+  scene.light = night ? MOON : SUN;
+  globe.enableLighting = !night;
+  if (scene.skyAtmosphere) { scene.skyAtmosphere.brightnessShift = night ? -0.75 : 0; scene.skyAtmosphere.saturationShift = night ? -0.4 : 0; }
+  if (scene.shadowMap) scene.shadowMap.enabled = !small && !night;
+  const base = scene.imageryLayers.get(0);
+  if (base) { base.brightness = night ? 0.42 : 1.0; base.saturation = night ? 0.45 : 1.0; base.contrast = night ? 1.15 : 1.0; base.gamma = 1.0; }
+  if (buildings) buildings.style = new Cesium3DTileStyle({ color: night ? "color('#b8b2a8')" : "color('#f3eee6')" });
   if (stopsPrim) stopsPrim.appearance = new PerInstanceColorAppearance({ closed: true, translucent: false, flat: night });
   scene.requestRender();
 }

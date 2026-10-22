@@ -23,11 +23,19 @@ with sync_playwright() as p:
             pg.on("pageerror", lambda x, e=errs: e.append(f"pageerror: {x}"))
             try:
                 pg.goto(config.SITE_URL + path, wait_until="load", timeout=60000)
-                pg.wait_for_timeout(9000)
+                pg.wait_for_timeout(25000)
             except Exception as exc:  # noqa: BLE001
                 errs.append(f"navigation: {exc}")
             name = path.strip("/").replace("/", "_") + "-" + tag
-            pg.screenshot(path=str(out / f"{name}.png"), full_page=(tag == "mobile"))
+            pg.screenshot(path=str(out / f"{name}.png"), full_page=False)
+            # Map pages: also the fixed daylight view, and the map frame alone.
+            if pg.locator('[data-light="day"]').count():
+                try:
+                    pg.click('[data-light="day"]')
+                    pg.wait_for_timeout(15000)
+                    pg.locator("#carte").screenshot(path=str(out / f"{name}-day.png"))
+                except Exception as exc:  # noqa: BLE001
+                    errs.append(f"day view: {exc}")
             (out / f"{name}.txt").write_text("\n".join(errs) or "no console errors")
             pg.close()
     b.close()
