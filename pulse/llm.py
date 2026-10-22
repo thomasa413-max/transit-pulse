@@ -61,13 +61,19 @@ def call(system: str, user: str, *, model: str = config.MODEL_DAILY,
     if schema:
         kwargs["tools"] = [{"name": "answer", "description": "Return the answer.", "input_schema": schema}]
         kwargs["tool_choice"] = {"type": "tool", "name": "answer"}
-    msg = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        system=system,
-        messages=[{"role": "user", "content": user}],
-        **kwargs,
-    )
+    def send(**extra):
+        return client.messages.create(model=model, max_tokens=max_tokens, system=system,
+                                      messages=[{"role": "user", "content": user}], **extra)
+
+    try:
+        msg = send(**kwargs)
+    except anthropic.BadRequestError as exc:
+        # Some models refuse a forced tool choice: offer the tool without forcing it.
+        if schema and "tool_choice" in str(exc):
+            kwargs["tool_choice"] = {"type": "auto"}
+            msg = send(**kwargs)
+        else:
+            raise
     tool_inputs = [b.input for b in msg.content if getattr(b, "type", "") == "tool_use"]
     if tool_inputs:
         text = json.dumps(tool_inputs[0], ensure_ascii=False)
