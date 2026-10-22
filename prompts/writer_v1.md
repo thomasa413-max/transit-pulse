@@ -14,5 +14,5 @@ Contenu attendu (150 à 200 mots au total) :
 1. Un titre court qui donne le fait principal de la journée.
 2. Trois ou quatre paragraphes courts : la ponctualité globale et sa comparaison ; le mode ou les lignes qui se distinguent ; le moment de la journée le plus difficile ; s'il y en a, les suppressions ou un retard exceptionnel.
 
-Réponds UNIQUEMENT avec un objet JSON, sans texte autour :
+Réponds avec l'outil « answer », au format :
 {"titre": "...", "paragraphes": ["...", "...", "..."]}

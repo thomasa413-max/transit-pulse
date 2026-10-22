@@ -8,5 +8,5 @@ Rules:
 - Keep the same number of paragraphs.
 - Natural, neutral news style for each language.
 
-Answer ONLY with a JSON object, no text around it:
+Answer with the "answer" tool, in this format:
 {"de": {"titre": "...", "paragraphes": ["..."]}, "it": {"titre": "...", "paragraphes": ["..."]}, "en": {"titre": "...", "paragraphes": ["..."]}}

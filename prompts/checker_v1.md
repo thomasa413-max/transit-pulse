@@ -8,6 +8,6 @@ Check every sentence of the bulletin against the data. A sentence FAILS if it:
 
 Rounding to one decimal and writing "7 h" for hour 7 are acceptable. Style is not your concern, only accuracy.
 
-Answer ONLY with a JSON object, no text around it:
+Answer with the "answer" tool, in this format:
 {"verdict": "pass" or "fail", "problemes": [{"phrase": "exact sentence", "raison": "short reason in French"}]}
 Use "pass" with an empty list when every sentence is supported by the data.

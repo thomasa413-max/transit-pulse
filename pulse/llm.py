@@ -44,7 +44,9 @@ def fake_mode() -> bool:
 
 
 def call(system: str, user: str, *, model: str = config.MODEL_DAILY,
-         max_tokens: int = 1500, fake_responder=None) -> LLMResult:
+         max_tokens: int = 1500, fake_responder=None, schema: dict | None = None) -> LLMResult:
+    """One model call. With `schema`, the answer is forced into a tool call whose
+    input must match the JSON schema, so the result is always parseable JSON."""
     start = time.monotonic()
     if fake_mode():
         text = fake_responder(user) if fake_responder else "{}"
@@ -55,17 +57,27 @@ def call(system: str, user: str, *, model: str = config.MODEL_DAILY,
     import anthropic  # imported lazily so tests run without the package
 
     client = anthropic.Anthropic(max_retries=3)
+    kwargs = {}
+    if schema:
+        kwargs["tools"] = [{"name": "answer", "description": "Return the answer.", "input_schema": schema}]
+        kwargs["tool_choice"] = {"type": "tool", "name": "answer"}
     msg = client.messages.create(
         model=model,
         max_tokens=max_tokens,
         system=system,
         messages=[{"role": "user", "content": user}],
+        **kwargs,
     )
-    text = "".join(getattr(b, "text", "") for b in msg.content)
+    tool_inputs = [b.input for b in msg.content if getattr(b, "type", "") == "tool_use"]
+    if tool_inputs:
+        text = json.dumps(tool_inputs[0], ensure_ascii=False)
+    else:
+        text = "".join(getattr(b, "text", "") for b in msg.content)
     return LLMResult(
         text=text, model=model,
         input_tokens=msg.usage.input_tokens, output_tokens=msg.usage.output_tokens,
         seconds=round(time.monotonic() - start, 2),
+        extra={"stop_reason": msg.stop_reason},
     )
 
 

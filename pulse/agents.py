@@ -15,6 +15,32 @@ def _prompt(name: str) -> str:
     return (config.PROMPTS / f"{name}_{config.PROMPT_VERSION}.md").read_text(encoding="utf-8")
 
 
+BULLETIN_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "titre": {"type": "string"},
+        "paragraphes": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 5},
+    },
+    "required": ["titre", "paragraphes"],
+}
+VERDICT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "verdict": {"type": "string", "enum": ["pass", "fail"]},
+        "problemes": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"phrase": {"type": "string"}, "raison": {"type": "string"}},
+            "required": ["phrase", "raison"]}},
+    },
+    "required": ["verdict", "problemes"],
+}
+TRANSLATION_SCHEMA = {
+    "type": "object",
+    "properties": {lang: BULLETIN_SCHEMA for lang in ("de", "it", "en")},
+    "required": ["de", "it", "en"],
+}
+
+
 def _log(agent: str, day: date, result: llm.LLMResult, status: str, **extra) -> None:
     util.append_run({
         "job": "daily", "agent": agent, "date": day.isoformat(), "status": status,
@@ -103,12 +129,13 @@ def write(day: date, facts: dict, feedback: list[str] | None = None) -> dict:
     if feedback:
         user = ("Ta version précédente a été refusée par le contrôle. Corrige ces points :\n- "
                 + "\n- ".join(feedback) + "\n\n" + user)
-    res = llm.call(_prompt("writer"), user, fake_responder=_fake_writer)
+    res = llm.call(_prompt("writer"), user, fake_responder=_fake_writer, schema=BULLETIN_SCHEMA, max_tokens=2000)
     try:
         b = llm.parse_json(res.text)
         assert isinstance(b.get("titre"), str) and isinstance(b.get("paragraphes"), list)
     except Exception as exc:  # noqa: BLE001
-        _log("writer", day, res, "error", detail=f"invalid JSON: {exc}")
+        _log("writer", day, res, "error", detail=f"invalid answer ({res.extra.get('stop_reason')}): {exc}; "
+                                                 f"start: {res.text[:200]!r}")
         raise
     _log("writer", day, res, "ok", attempt=2 if feedback else 1, words=len(bulletin_text(b).split()))
     return b
@@ -118,7 +145,7 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
     text = bulletin_text(bulletin)
     unknown = factcheck.unknown_numbers(text, facts, day)
     user = "DONNÉES:\n" + json.dumps(facts, ensure_ascii=False) + "\n\nBULLETIN:\n" + text
-    res = llm.call(_prompt("checker"), user, fake_responder=_fake_checker, max_tokens=800)
+    res = llm.call(_prompt("checker"), user, fake_responder=_fake_checker, schema=VERDICT_SCHEMA, max_tokens=1500)
     try:
         verdict = llm.parse_json(res.text)
     except Exception:  # noqa: BLE001 - an unreadable verdict is a failed check
@@ -135,7 +162,8 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
 
 def translate(day: date, bulletin: dict) -> dict:
     user = "BULLETIN:\n" + json.dumps(bulletin, ensure_ascii=False)
-    res = llm.call(_prompt("translator"), user, fake_responder=_fake_translator, max_tokens=2500)
+    res = llm.call(_prompt("translator"), user, fake_responder=_fake_translator, schema=TRANSLATION_SCHEMA,
+                   max_tokens=4000)
     out, problems = {}, []
     try:
         data = llm.parse_json(res.text)
