@@ -1,0 +1,85 @@
+== operators with 'tl' or Lausanne-ish
+ 117250 TL;Transports Publics de la Région Lausannoise sa
+  21842 MBC Auto;Automobiles MBC
+   3392 SZU;Sihltal-Zürich-Uetliberg-Bahn
+   2338 LEB;Lausanne-Echallens-Bercher
+   1210 MBC;Transports de la région Morges-Bière-Cossonay
+== stop names for operator TL (top 60 by rows)
+   2337 Bel-Air
+   1764 Chauderon
+   1757 Renens VD, gare
+   1508 St-François
+   1432 Riponne-M.Béjart
+   1156 Georgette
+   1073 Lausanne, gare
+    947 Lausanne, Boston
+    914 Lausanne, Tunnel
+    899 Prilly, Galicien
+    820 Pully, gare
+    813 Beaulieu-Jomini
+    791 Lausanne, Cécil
+    752 Bellevaux
+    708 St-Roch
+    689 Montchoisi
+    683 Croisettes
+    682 Recordon
+    682 Lausanne, Prélaz
+    676 Place Centrale
+    661 Lausanne, Motte
+    661 Lausanne, Forêt
+    659 Vieux-Moulin
+    656 Lausanne, Malley
+    631 Halle Sébeillon
+    628 Bourdonnette
+    626 Casernes
+    626 Blécherette
+    602 Glycines
+    577 Censuy
+    555 Lausanne, Sallaz
+    550 Lausanne, Mémise
+    550 Grande-Borde
+    547 Crissier, Vernie
+    547 Crissier, Jura
+    541 Pully, Clergère
+    537 Lausanne, Vigie
+    501 Pully, Val-Vert
+    498 UNIL-Sorge
+    495 Sur-la-Croix
+    494 Renens VD, Biondes
+    494 Baumettes
+    489 Planches
+    486 Eglantine
+    486 Avenue du Léman
+    484 Crissier, bourg
+    484 Crissier Timonet
+    479 Riant-Cour
+    479 Lausanne, Cèdres
+    479 Batelière
+    477 Perraudettaz
+    475 Montillier
+    470 Croix-Péage
+    469 Montelly
+    459 Musée Olympique
+    455 Pully, Métairie
+    455 Pully, Joliette
+    455 Pierraz-Portay
+    455 C. F. Ramuz
+    450 Valentin
+== count distinct TL stop names
+441
+== names containing Bel-Air / Ouchy / François
+   5851 ;Bel-Air;
+   1508 ;St-François;
+    632 ;Petit-Bel-Air;
+    549 ;Yverdon-les-Bains, Bel-Air;
+    335 ;Ouchy-Olympique;
+    204 ;Croix d'Ouchy;
+    150 ;Marly, Bel-Air;
+    138 ;Bel-Air LEB;
+     93 ;La Tour-de-Peilz, Bel-Air;
+     56 ;Estavayer-le-Lac, Bel-Air;
+== status values for TL
+   6756 
+      3 GESCHAETZT
+   1659 PROGNOSE
+ 108832 REAL
