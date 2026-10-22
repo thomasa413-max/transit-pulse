@@ -1,0 +1,14 @@
+{
+  "name": "transit-pulse-map",
+  "private": true,
+  "description": "Builds the 3D map bundle (CesiumJS engine + our code) into site_static/assets.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "cesium": "1.146.0",
+    "@cesium/engine": "26.4.0",
+    "esbuild": "0.25.10",
+    "@cesium/core": "0.1.0"
+  }
+}

@@ -763,7 +763,9 @@ def toggle(id_: str, label: str, on: bool = True) -> str:
 def build_map(lang: str, data: dict) -> None:
     alts = alternates("map")
     i18n_js = {k: t(k, lang) for k in ("map_show", "col_ontime", "col_delay", "col_measured", "col_cancel", "col_lines",
-                                       "map_weather", "map_nowebgl", "disr_planned", "disr_unplanned", "min")}
+                                       "map_weather", "map_nowebgl", "disr_planned", "disr_unplanned", "min",
+                                       "map_zoom_in", "map_zoom_out", "map_rotate_left", "map_rotate_right", "map_reset")}
+    i18n_js["close"] = t("map_close", lang)
     i18n_js["locale"] = LOCALE[lang]
     i18n_js["lang"] = lang
     stops = sorted(data["arrets"], key=lambda x: (x["pct"], -x["mesures"]))
@@ -780,7 +782,7 @@ def build_map(lang: str, data: dict) -> None:
     controls = (f'<div class="map-panel" role="group" aria-label="{escape(t("map_layers", lang))}">'
                 f'<p class="legend-title">{escape(t("map_layers", lang))}</p>'
                 + toggle("t-stops", t("map_punct", lang)) + toggle("t-disr", t("map_disr", lang))
-                + toggle("t-buildings", t("map_buildings", lang)) + toggle("t-terrain", t("map_terrain", lang))
+                + toggle("t-buildings", t("map_buildings", lang)) + toggle("t-photo", t("map_photo", lang))
                 + toggle("t-2d", t("map_view_2d", lang), False)
                 + f'<p class="legend-title" id="lbl-light">{escape(t("map_light", lang))}</p>'
                 f'<span class="seg" role="group" aria-labelledby="lbl-light">'
@@ -793,8 +795,9 @@ def build_map(lang: str, data: dict) -> None:
             f'<a class="skip-map" href="#liste-arrets">{escape(t("map_skip", lang))}</a>'
             f'<div class="map-shell">'
             f'<div id="carte" class="map" role="region" aria-label="{escape(t("map_region", lang))}" '
-            f'data-src="/data/carte.json?v={ASSET_V.get("carte", "0")}">'
-            f'<p class="map-status" id="carte-etat" role="status">{escape(t("map_loading", lang))}</p></div>'
+            f'data-src="/data/carte.json?v={ASSET_V.get("carte", "0")}" data-module="{asset("carte3d.js")}">'
+            f'<p class="map-status" id="carte-etat" role="status">{escape(t("map_loading", lang))}</p>'
+            f'<div class="map-credits"></div></div>'
             f'<div class="map-side">{controls}{legend}'
             f'<div class="map-weather" id="meteo" aria-live="polite"><p class="legend-title">{escape(t("map_weather", lang))}</p><p class="muted">–</p></div>'
             f'<p class="muted small">{escape(asof)}</p></div></div>'
@@ -808,12 +811,15 @@ def build_map(lang: str, data: dict) -> None:
             + section(t("disruptions", lang), disruption_list({**DISRUPTIONS_CACHE}, lang))
             + f'<p class="method">{escape(t("map_credits", lang))}</p>')
     page(lang, "map", t("map_title", lang), body, t("meta_map", lang), alts=alts, active="map",
-         scripts=("maplibre-gl.js", "map.js"), styles=("maplibre-gl.css",), lastmod=data.get("date"),
+         scripts=("map-boot.js",), lastmod=data.get("date"),
          jsonld=[{"@context": "https://schema.org", "@type": "Map", "name": t("map_title", lang), "inLanguage": LOCALE[lang],
                   "description": t("meta_map", lang), "spatialCoverage": {"@type": "Place", "name": "Lausanne"}}])
 
 
 DISRUPTIONS_CACHE: dict = {}
+
+# CesiumJS adds this stylesheet for its data credits; the hash allows exactly that text and nothing else.
+CESIUM_CREDIT_STYLE_HASH = "'sha256-gM2CWYHXIHTu7Ts6ncwv0GMWZ9LXGrz2qqqjyuDojl8='"
 
 
 # ---------------------------------------------------------------------------
@@ -900,14 +906,20 @@ def build_sitemap() -> None:
         robots = "# Pilot phase: not indexed. Set INDEXING = True in pulse/config.py at go-live.\nUser-agent: *\nDisallow: /\n"
     (config.PUBLIC / "robots.txt").write_text(robots, encoding="utf-8")
     headers = (config.STATIC / "_headers").read_text(encoding="utf-8")
-    # The 3D map needs map tiles and terrain from two hosts and Web Workers created from blobs.
-    # Only the map pages get this wider policy ("! header" removes the global one first).
-    map_csp = ("default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; "
-               "style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; "
-               "connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; "
+    # The 3D map loads swisstopo's tiles (geo.admin.ch), runs the engine's own web workers and
+    # WebAssembly decoders, and its credit box adds one known stylesheet (allowed by hash).
+    # Only the map pages and the engine files get this wider policy ("! header" removes the global one).
+    swiss = "https://3d.geo.admin.ch https://wmts.geo.admin.ch"
+    map_csp = ("default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; child-src 'self' blob:; "
+               f"style-src 'self' {CESIUM_CREDIT_STYLE_HASH}; style-src-attr 'unsafe-inline'; img-src 'self' data: blob: {swiss}; font-src 'self'; "
+               f"connect-src 'self' {swiss}; base-uri 'none'; "
                "form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests")
     for lang in LANGS:
         headers += f"\n{url(lang, 'map')}\n  ! Content-Security-Policy\n  Content-Security-Policy: {map_csp}\n"
+    engine_csp = (f"default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self' {swiss}; "
+                  "worker-src 'self' blob:; base-uri 'none'; frame-ancestors 'none'")
+    engine_dir = next((d.name for d in (config.STATIC / "assets").glob("cesium-*")), "cesium")
+    headers += f"\n/assets/{engine_dir}/*\n  ! Content-Security-Policy\n  Content-Security-Policy: {engine_csp}\n"
     if not config.INDEXING:
         headers = headers.replace("/*\n", "/*\n  X-Robots-Tag: noindex, nofollow\n", 1)
     (config.PUBLIC / "_headers").write_text(headers, encoding="utf-8")

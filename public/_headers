@@ -21,16 +21,20 @@
 
 /fr/carte/
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; child-src 'self' blob:; style-src 'self' 'sha256-gM2CWYHXIHTu7Ts6ncwv0GMWZ9LXGrz2qqqjyuDojl8='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob: https://3d.geo.admin.ch https://wmts.geo.admin.ch; font-src 'self'; connect-src 'self' https://3d.geo.admin.ch https://wmts.geo.admin.ch; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
 
 /de/karte/
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; child-src 'self' blob:; style-src 'self' 'sha256-gM2CWYHXIHTu7Ts6ncwv0GMWZ9LXGrz2qqqjyuDojl8='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob: https://3d.geo.admin.ch https://wmts.geo.admin.ch; font-src 'self'; connect-src 'self' https://3d.geo.admin.ch https://wmts.geo.admin.ch; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
 
 /it/mappa/
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; child-src 'self' blob:; style-src 'self' 'sha256-gM2CWYHXIHTu7Ts6ncwv0GMWZ9LXGrz2qqqjyuDojl8='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob: https://3d.geo.admin.ch https://wmts.geo.admin.ch; font-src 'self'; connect-src 'self' https://3d.geo.admin.ch https://wmts.geo.admin.ch; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
 
 /en/map/
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; child-src 'self' blob:; style-src 'self' 'sha256-gM2CWYHXIHTu7Ts6ncwv0GMWZ9LXGrz2qqqjyuDojl8='; style-src-attr 'unsafe-inline'; img-src 'self' data: blob: https://3d.geo.admin.ch https://wmts.geo.admin.ch; font-src 'self'; connect-src 'self' https://3d.geo.admin.ch https://wmts.geo.admin.ch; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+
+/assets/cesium-1.146.0/*
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self' https://3d.geo.admin.ch https://wmts.geo.admin.ch; worker-src 'self' blob:; base-uri 'none'; frame-ancestors 'none'
