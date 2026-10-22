@@ -225,7 +225,7 @@ def _translate_one(day: date, bulletin: dict, lang: str, rejected: str = "") -> 
         assert b.get("paragraphes")
         ok, missing, extra = factcheck.same_numbers(fr_text, bulletin_text(b))
         if not ok:
-            problem = f"numbers differ (missing {missing}, extra {extra})"
+            problem = f"numbers differ (missing {missing}, extra {extra}); text: {bulletin_text(b)[:400]!r}"
     except Exception:  # noqa: BLE001
         b, problem = None, f"empty or unreadable answer ({res.extra.get('stop_reason')}): {res.text[:120]!r}"
     _log("translator", day, res, "error" if problem else "ok", language=lang, languages=[] if problem else [lang],
