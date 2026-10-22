@@ -1,0 +1,608 @@
+{
+ "date": "2026-10-21",
+ "zone": "Lausanne",
+ "regle_ponctualite": "à l'heure = moins de 3 minutes de retard",
+ "lignes_source_lues": 15329,
+ "total": {
+  "passages": 15329,
+  "mesures": 15048,
+  "suppressions": 96,
+  "ponctualite_pct": 75.6,
+  "retard_moyen_min": 2.3,
+  "suppressions_pct": 0.6,
+  "retard_p90_min": 5.3
+ },
+ "par_mode": [
+  {
+   "mode": "Bus",
+   "passages": 13438,
+   "mesures": 13318,
+   "suppressions": 74,
+   "ponctualite_pct": 73.5,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 5.5
+  },
+  {
+   "mode": "Métro",
+   "passages": 957,
+   "mesures": 957,
+   "suppressions": 0,
+   "ponctualite_pct": 97.4,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.0
+  },
+  {
+   "mode": "Train",
+   "passages": 934,
+   "mesures": 773,
+   "suppressions": 22,
+   "ponctualite_pct": 85.4,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 2.4,
+   "retard_p90_min": 3.8
+  }
+ ],
+ "par_heure": [
+  {
+   "heure": 0,
+   "passages": 442,
+   "mesures": 433,
+   "suppressions": 2,
+   "ponctualite_pct": 94.9,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 2.2
+  },
+  {
+   "heure": 1,
+   "passages": 22,
+   "mesures": 21,
+   "suppressions": 1,
+   "ponctualite_pct": 85.7,
+   "retard_moyen_min": 1.2,
+   "suppressions_pct": 4.5,
+   "retard_p90_min": 7.2
+  },
+  {
+   "heure": 3,
+   "passages": 1,
+   "mesures": 1,
+   "suppressions": 0,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 1.4,
+   "suppressions_pct": 0.0
+  },
+  {
+   "heure": 4,
+   "passages": 41,
+   "mesures": 41,
+   "suppressions": 0,
+   "ponctualite_pct": 90.2,
+   "retard_moyen_min": 1.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.0
+  },
+  {
+   "heure": 5,
+   "passages": 441,
+   "mesures": 435,
+   "suppressions": 2,
+   "ponctualite_pct": 88.5,
+   "retard_moyen_min": 1.4,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 3.2
+  },
+  {
+   "heure": 6,
+   "passages": 780,
+   "mesures": 758,
+   "suppressions": 10,
+   "ponctualite_pct": 78.8,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 1.3,
+   "retard_p90_min": 4.5
+  },
+  {
+   "heure": 7,
+   "passages": 885,
+   "mesures": 875,
+   "suppressions": 6,
+   "ponctualite_pct": 76.9,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 4.2
+  },
+  {
+   "heure": 8,
+   "passages": 895,
+   "mesures": 882,
+   "suppressions": 1,
+   "ponctualite_pct": 77.2,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 4.7
+  },
+  {
+   "heure": 9,
+   "passages": 870,
+   "mesures": 860,
+   "suppressions": 0,
+   "ponctualite_pct": 77.1,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.8
+  },
+  {
+   "heure": 10,
+   "passages": 801,
+   "mesures": 788,
+   "suppressions": 1,
+   "ponctualite_pct": 73.7,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 5.3
+  },
+  {
+   "heure": 11,
+   "passages": 800,
+   "mesures": 786,
+   "suppressions": 3,
+   "ponctualite_pct": 71.1,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 6.3
+  },
+  {
+   "heure": 12,
+   "passages": 803,
+   "mesures": 777,
+   "suppressions": 17,
+   "ponctualite_pct": 70.3,
+   "retard_moyen_min": 2.6,
+   "suppressions_pct": 2.1,
+   "retard_p90_min": 6.2
+  },
+  {
+   "heure": 13,
+   "passages": 805,
+   "mesures": 782,
+   "suppressions": 9,
+   "ponctualite_pct": 74.9,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 5.2
+  },
+  {
+   "heure": 14,
+   "passages": 818,
+   "mesures": 803,
+   "suppressions": 2,
+   "ponctualite_pct": 71.6,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 6.0
+  },
+  {
+   "heure": 15,
+   "passages": 856,
+   "mesures": 831,
+   "suppressions": 13,
+   "ponctualite_pct": 71.2,
+   "retard_moyen_min": 2.7,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 6.5
+  },
+  {
+   "heure": 16,
+   "passages": 867,
+   "mesures": 859,
+   "suppressions": 1,
+   "ponctualite_pct": 76.8,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 5.3
+  },
+  {
+   "heure": 17,
+   "passages": 886,
+   "mesures": 881,
+   "suppressions": 1,
+   "ponctualite_pct": 70.0,
+   "retard_moyen_min": 3.2,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 7.1
+  },
+  {
+   "heure": 18,
+   "passages": 888,
+   "mesures": 873,
+   "suppressions": 2,
+   "ponctualite_pct": 62.2,
+   "retard_moyen_min": 4.3,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 12.9
+  },
+  {
+   "heure": 19,
+   "passages": 859,
+   "mesures": 843,
+   "suppressions": 11,
+   "ponctualite_pct": 66.0,
+   "retard_moyen_min": 2.8,
+   "suppressions_pct": 1.3,
+   "retard_p90_min": 6.5
+  },
+  {
+   "heure": 20,
+   "passages": 779,
+   "mesures": 760,
+   "suppressions": 8,
+   "ponctualite_pct": 81.8,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 4.5
+  },
+  {
+   "heure": 21,
+   "passages": 667,
+   "mesures": 657,
+   "suppressions": 5,
+   "ponctualite_pct": 83.0,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 3.8
+  },
+  {
+   "heure": 22,
+   "passages": 562,
+   "mesures": 547,
+   "suppressions": 1,
+   "ponctualite_pct": 83.0,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 4.1
+  },
+  {
+   "heure": 23,
+   "passages": 561,
+   "mesures": 555,
+   "suppressions": 0,
+   "ponctualite_pct": 86.3,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.4
+  }
+ ],
+ "lignes_moins_ponctuelles": [
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "7",
+   "passages": 967,
+   "mesures": 967,
+   "suppressions": 0,
+   "ponctualite_pct": 41.4,
+   "retard_moyen_min": 4.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 9.7
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "8",
+   "passages": 1162,
+   "mesures": 1142,
+   "suppressions": 20,
+   "ponctualite_pct": 48.9,
+   "retard_moyen_min": 4.4,
+   "suppressions_pct": 1.7,
+   "retard_p90_min": 10.1
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "1",
+   "passages": 732,
+   "mesures": 727,
+   "suppressions": 5,
+   "ponctualite_pct": 54.5,
+   "retard_moyen_min": 3.4,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 6.4
+  },
+  {
+   "mode": "Train",
+   "exploitant": "SBB",
+   "ligne": "S41",
+   "passages": 41,
+   "mesures": 40,
+   "suppressions": 1,
+   "ponctualite_pct": 57.5,
+   "retard_moyen_min": 3.2,
+   "suppressions_pct": 2.4,
+   "retard_p90_min": 7.4
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "18",
+   "passages": 1529,
+   "mesures": 1504,
+   "suppressions": 21,
+   "ponctualite_pct": 61.2,
+   "retard_moyen_min": 3.2,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 7.9
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "9",
+   "passages": 301,
+   "mesures": 296,
+   "suppressions": 2,
+   "ponctualite_pct": 62.2,
+   "retard_moyen_min": 2.9,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 6.5
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "PAG",
+   "ligne": "362",
+   "passages": 370,
+   "mesures": 369,
+   "suppressions": 0,
+   "ponctualite_pct": 73.2,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.1
+  },
+  {
+   "mode": "Train",
+   "exploitant": "SBB",
+   "ligne": "R2",
+   "passages": 42,
+   "mesures": 41,
+   "suppressions": 1,
+   "ponctualite_pct": 73.2,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 2.4,
+   "retard_p90_min": 4.4
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "16",
+   "passages": 602,
+   "mesures": 602,
+   "suppressions": 0,
+   "ponctualite_pct": 73.8,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.3
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "PAG",
+   "ligne": "435",
+   "passages": 168,
+   "mesures": 167,
+   "suppressions": 0,
+   "ponctualite_pct": 77.2,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.8
+  }
+ ],
+ "lignes_plus_ponctuelles": [
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "41",
+   "passages": 434,
+   "mesures": 434,
+   "suppressions": 0,
+   "ponctualite_pct": 99.8,
+   "retard_moyen_min": 0.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.5
+  },
+  {
+   "mode": "Train",
+   "exploitant": "LEB",
+   "ligne": "RR20",
+   "passages": 276,
+   "mesures": 139,
+   "suppressions": 0,
+   "ponctualite_pct": 99.3,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.7
+  },
+  {
+   "mode": "Métro",
+   "exploitant": "TL",
+   "ligne": "m1",
+   "passages": 957,
+   "mesures": 957,
+   "suppressions": 0,
+   "ponctualite_pct": 97.4,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.0
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "17",
+   "passages": 545,
+   "mesures": 544,
+   "suppressions": 0,
+   "ponctualite_pct": 96.9,
+   "retard_moyen_min": 0.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.9
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "42",
+   "passages": 438,
+   "mesures": 438,
+   "suppressions": 0,
+   "ponctualite_pct": 96.6,
+   "retard_moyen_min": 0.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.8
+  }
+ ],
+ "arrets_moins_ponctuels": [
+  {
+   "arret": "Lausanne, Cour",
+   "passages": 121,
+   "mesures": 120,
+   "suppressions": 1,
+   "ponctualite_pct": 50.8,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 0.8,
+   "retard_p90_min": 5.9
+  },
+  {
+   "arret": "Lausanne, Prélaz",
+   "passages": 682,
+   "mesures": 675,
+   "suppressions": 6,
+   "ponctualite_pct": 55.6,
+   "retard_moyen_min": 3.5,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 8.5
+  },
+  {
+   "arret": "Lausanne, Boston",
+   "passages": 947,
+   "mesures": 935,
+   "suppressions": 8,
+   "ponctualite_pct": 56.9,
+   "retard_moyen_min": 3.5,
+   "suppressions_pct": 0.8,
+   "retard_p90_min": 8.1
+  },
+  {
+   "arret": "Lausanne, Alpes",
+   "passages": 447,
+   "mesures": 443,
+   "suppressions": 4,
+   "ponctualite_pct": 58.2,
+   "retard_moyen_min": 3.8,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 8.8
+  },
+  {
+   "arret": "Lausanne, Tunnel",
+   "passages": 914,
+   "mesures": 906,
+   "suppressions": 8,
+   "ponctualite_pct": 60.3,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 8.0
+  },
+  {
+   "arret": "Lausanne, Mémise",
+   "passages": 550,
+   "mesures": 542,
+   "suppressions": 8,
+   "ponctualite_pct": 62.7,
+   "retard_moyen_min": 3.2,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 7.8
+  },
+  {
+   "arret": "Lausanne, Cèdres",
+   "passages": 479,
+   "mesures": 478,
+   "suppressions": 1,
+   "ponctualite_pct": 62.8,
+   "retard_moyen_min": 3.0,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 6.0
+  },
+  {
+   "arret": "Lausanne, Ours",
+   "passages": 435,
+   "mesures": 432,
+   "suppressions": 2,
+   "ponctualite_pct": 64.1,
+   "retard_moyen_min": 3.2,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 7.8
+  },
+  {
+   "arret": "Lausanne, Forêt",
+   "passages": 661,
+   "mesures": 650,
+   "suppressions": 10,
+   "ponctualite_pct": 64.5,
+   "retard_moyen_min": 3.1,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 7.1
+  },
+  {
+   "arret": "Lausanne, Motte",
+   "passages": 661,
+   "mesures": 650,
+   "suppressions": 10,
+   "ponctualite_pct": 68.2,
+   "retard_moyen_min": 2.9,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 6.8
+  }
+ ],
+ "plus_gros_retards": [
+  {
+   "retard_min": 38.3,
+   "ligne": "16",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Tunnel",
+   "heure_prevue": "20:50"
+  },
+  {
+   "retard_min": 36.3,
+   "ligne": "18",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Boston",
+   "heure_prevue": "17:09"
+  },
+  {
+   "retard_min": 35.2,
+   "ligne": "21",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Boisy",
+   "heure_prevue": "17:05"
+  },
+  {
+   "retard_min": 35.0,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Forêt",
+   "heure_prevue": "18:16"
+  },
+  {
+   "retard_min": 34.0,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Mémise",
+   "heure_prevue": "18:10"
+  }
+ ],
+ "nb_lignes": 49,
+ "nb_arrets": 40
+}
