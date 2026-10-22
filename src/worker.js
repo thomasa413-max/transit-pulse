@@ -4,6 +4,7 @@
 //   /bulletin/... (old URLs)  permanent redirect to /fr/...
 //   POST /api/visit           anonymous visit totals per day (no IP, no identifier)
 //   GET  /api/visitors        public visitor numbers
+//   GET  /api/weather         current weather in Lausanne (Open-Meteo, cached 15 min)
 //   POST /api/vitals          Core Web Vitals from real visits, stored as daily histograms
 //   POST /api/human           verifies a Turnstile token, sets a short signed "human" cookie (unlocks likes)
 //   GET  /api/comments        approved comments of one bulletin
@@ -305,6 +306,26 @@ async function handleVitals(request, env, url) {
   return json({ ok: true });
 }
 
+// ---------------------------------------------------------------- weather
+// Open-Meteo (MeteoSwiss ICON-CH model, CC BY 4.0), fetched by the server and cached 15 min:
+// visitors' IP addresses never reach Open-Meteo, and the free quota is barely used.
+const WEATHER_URL = "https://api.open-meteo.com/v1/forecast?latitude=46.5197&longitude=6.6323"
+  + "&current=temperature_2m,weather_code,wind_speed_10m,precipitation,cloud_cover,is_day"
+  + "&daily=sunrise,sunset&forecast_days=1&timezone=Europe%2FZurich&models=meteoswiss_icon_ch1";
+
+async function handleWeather(ctx) {
+  const cache = caches.default;
+  const key = new Request("https://cache.transit-pulse/weather-v1");
+  const hit = await cache.match(key);
+  if (hit) return new Response(hit.body, { headers: { ...API_HEADERS, "Cache-Control": "public, max-age=300" } });
+  const r = await fetch(WEATHER_URL, { headers: { "User-Agent": "transit-pulse/1.0" } });
+  if (!r.ok) return json({ error: "upstream" }, 502);
+  const d = await r.json();
+  const body = JSON.stringify({ current: d.current, daily: d.daily, source: "Open-Meteo, MeteoSwiss ICON-CH (CC BY 4.0)" });
+  ctx.waitUntil(cache.put(key, new Response(body, { headers: { "Cache-Control": "public, max-age=900", "Content-Type": "application/json" } })));
+  return new Response(body, { headers: { ...API_HEADERS, "Cache-Control": "public, max-age=300" } });
+}
+
 // ---------------------------------------------------------------- bot check and comments
 async function handleHuman(request, env, url) {
   if (!sameOrigin(request, url)) return json({ error: "origin" }, 403);
@@ -566,6 +587,9 @@ export default {
     }
 
     if (path.startsWith("/api/")) {
+      if (path === "/api/weather" && request.method === "GET") {
+        try { return await handleWeather(ctx); } catch { return json({ error: "upstream" }, 502); }
+      }
       if (!env.DB) return json({ error: "not_configured" }, 503);
       try {
         if (path === "/api/visit" && request.method === "POST") return await handleVisit(request, env, url);

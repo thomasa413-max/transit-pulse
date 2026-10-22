@@ -107,7 +107,7 @@ class TestBuiltSite(unittest.TestCase):
     def test_no_inline_scripts_or_styles(self):
         for p in config.PUBLIC.rglob("*.html"):
             html = p.read_text(encoding="utf-8")
-            for tag in re.findall(r"<script(?![^>]*\bsrc=)(?![^>]*application/ld\+json)[^>]*>", html):
+            for tag in re.findall(r"<script(?![^>]*\bsrc=)(?![^>]*application/(?:ld\+)?json)[^>]*>", html):
                 self.fail(f"inline script in {p}: {tag}")
             self.assertNotRegex(html, r'\sstyle="', p)
             self.assertNotRegex(html, r"\son[a-z]+=", p)

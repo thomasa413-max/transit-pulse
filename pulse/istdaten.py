@@ -10,7 +10,7 @@ import io
 import os
 import re
 import statistics
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date, datetime
 from typing import Iterable, Iterator
 
@@ -199,6 +199,8 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
     by_stop: dict[str, _Bucket] = defaultdict(_Bucket)
     by_hour: dict[int, _Bucket] = defaultdict(_Bucket)
     worst: list[dict] = []
+    stop_ids: dict[str, Counter] = defaultdict(Counter)   # stop name -> stop numbers seen
+    stop_lines: dict[str, Counter] = defaultdict(Counter)  # stop name -> lines serving it
     rows_seen = 0
 
     for row in rows:
@@ -215,6 +217,10 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
         by_mode[mode].add(kind, delay)
         by_line[line_key].add(kind, delay)
         by_stop[stop].add(kind, delay)
+        bpuic = (row.get("BPUIC") or "").strip()
+        if bpuic.isdigit():
+            stop_ids[stop][bpuic] += 1
+        stop_lines[stop][line_key[2]] += 1
         if hour is not None:
             by_hour[hour].add(kind, delay)
         if kind == "measured" and delay >= 10:
@@ -230,6 +236,11 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
 
     lines = [{"mode": k[0], "exploitant": k[1], "ligne": k[2], **b.summary()} for k, b in by_line.items()]
     stops = [{"arret": k, **b.summary()} for k, b in by_stop.items()]
+    # Every stop with its official number (for the map) and the lines that serve it.
+    all_stops = sorted(({
+        "arret": k, "numero": stop_ids[k].most_common(1)[0][0] if stop_ids[k] else None,
+        "lignes": [l for l, _ in stop_lines[k].most_common(8)], **b.summary()} for k, b in by_stop.items()),
+        key=lambda x: x["arret"])
     worst.sort(key=lambda w: -w["retard_min"])
 
     return {
@@ -244,6 +255,7 @@ def aggregate(rows: Iterable[dict], day: date) -> dict:
         "lignes_plus_ponctuelles": ranked(lines, lambda x: (-x["ponctualite_pct"], -x["mesures"]), n=5),
         "arrets_moins_ponctuels": ranked(stops, lambda x: (x["ponctualite_pct"], -x["mesures"])),
         "plus_gros_retards": worst[:5],
+        "arrets": all_stops,
         "nb_lignes": len(lines),
         "nb_arrets": len(stops),
     }

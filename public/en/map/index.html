@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lausanne in 3D · Transit Pulse Lausanne</title>
+<meta name="description" content="3D map of Lausanne: punctuality at every stop, current disruptions and weather, with real-time day and night.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://transit-pulse.thomasa413.workers.dev/en/map/">
+<link rel="alternate" hreflang="fr" href="https://transit-pulse.thomasa413.workers.dev/fr/carte/"><link rel="alternate" hreflang="de" href="https://transit-pulse.thomasa413.workers.dev/de/karte/"><link rel="alternate" hreflang="it" href="https://transit-pulse.thomasa413.workers.dev/it/mappa/"><link rel="alternate" hreflang="en" href="https://transit-pulse.thomasa413.workers.dev/en/map/"><link rel="alternate" hreflang="x-default" href="https://transit-pulse.thomasa413.workers.dev/fr/carte/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Transit Pulse Lausanne">
+<meta property="og:title" content="Lausanne in 3D">
+<meta property="og:description" content="3D map of Lausanne: punctuality at every stop, current disruptions and weather, with real-time day and night.">
+<meta property="og:url" content="https://transit-pulse.thomasa413.workers.dev/en/map/">
+<meta property="og:image" content="https://transit-pulse.thomasa413.workers.dev/assets/og/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB"><meta property="og:locale:alternate" content="fr_CH"><meta property="og:locale:alternate" content="de_CH"><meta property="og:locale:alternate" content="it_CH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e69">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css?v=4a1e9a9044"><link rel="stylesheet" href="/assets/maplibre-gl.css?v=ab1e70d59e">
+<script src="/assets/prefs.js?v=e4b8e8bf6f"></script>
+<script src="/assets/site.js?v=359bd5195a" defer></script><script src="/assets/maplibre-gl.js?v=d8cf3ecbe8" defer></script><script src="/assets/map.js?v=4c735a464f" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Map", "name": "Lausanne in 3D", "inLanguage": "en-GB", "description": "3D map of Lausanne: punctuality at every stop, current disruptions and weather, with real-time day and night.", "spatialCoverage": {"@type": "Place", "name": "Lausanne"}}</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/en/"><span class="brand-mark" aria-hidden="true"></span>Transit Pulse <span class="brand-zone">Lausanne</span></a>
+    <div class="tools">
+      <div class="lang-wrap">
+        <button type="button" class="tool" id="btn-lang" aria-expanded="false" aria-controls="lang-menu"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="sr-only">Language : </span><span>English</span></button>
+        <ul class="lang-menu" id="lang-menu" hidden><li><a href="/fr/carte/" lang="fr" hreflang="fr">Français</a></li><li><a href="/de/karte/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/it/mappa/" lang="it" hreflang="it">Italiano</a></li><li><a href="/en/map/" lang="en" hreflang="en" aria-current="true">English</a></li></ul>
+      </div>
+      <button type="button" class="tool" id="btn-reglages" aria-expanded="false" aria-controls="reglages"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg><span>Display</span></button>
+    </div>
+    <nav aria-label="Main navigation"><ul><li><a href="/en/">Dashboard</a></li><li><a href="/en/map/" aria-current="page">3D map</a></li><li><a href="/en/bulletin/">Bulletin</a></li><li><a href="/en/agents/">Agents</a></li><li><a href="/en/quality/">Quality</a></li><li><a href="/en/costs/">Costs</a></li><li><a href="/en/about/">About</a></li></ul></nav>
+  </div>
+  <div class="wrap"><div class="settings" id="reglages" hidden>
+  <p class="set-row"><span id="lbl-size">Text size</span>
+    <span class="seg" role="group" aria-labelledby="lbl-size">
+      <button type="button" id="moins" aria-label="Smaller text">A−</button>
+      <output id="taille-val" aria-live="polite">100 %</output>
+      <button type="button" id="plus" aria-label="Larger text">A+</button></span></p>
+  <p class="set-row"><span id="lbl-font">Font</span>
+    <span class="seg" role="group" aria-labelledby="lbl-font">
+      <button type="button" id="pol-standard" aria-pressed="true">Standard</button>
+      <button type="button" id="pol-lisible" aria-pressed="false">Easier to read</button></span></p>
+  <p class="set-row"><span id="lbl-theme">Theme</span>
+    <span class="seg" role="group" aria-labelledby="lbl-theme">
+      <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-theme-set="system" aria-pressed="true">System</button></span></p>
+</div></div>
+</header>
+<main id="contenu" class="wrap" tabindex="-1">
+<h1>Lausanne in 3D</h1><p class="lead">Each column is a stop: the taller and redder it is, the more stops ran late there yesterday. Pins mark current disruptions.</p><a class="skip-map" href="#liste-arrets">Skip the map and go to the list of stops</a><div class="map-shell"><div id="carte" class="map" role="region" aria-label="Interactive 3D map of Lausanne" data-src="/data/carte.json?v=3309fe7df8"><p class="map-status" id="carte-etat" role="status">Loading the map…</p></div><div class="map-side"><div class="map-panel" role="group" aria-label="Layers"><p class="legend-title">Layers</p><button type="button" class="map-toggle" id="t-stops" aria-pressed="true"><span class="dot" aria-hidden="true"></span>Stop punctuality</button><button type="button" class="map-toggle" id="t-disr" aria-pressed="true"><span class="dot" aria-hidden="true"></span>Disruptions</button><button type="button" class="map-toggle" id="t-buildings" aria-pressed="true"><span class="dot" aria-hidden="true"></span>3D buildings</button><button type="button" class="map-toggle" id="t-terrain" aria-pressed="true"><span class="dot" aria-hidden="true"></span>Terrain</button><button type="button" class="map-toggle" id="t-2d" aria-pressed="false"><span class="dot" aria-hidden="true"></span>2D view</button><p class="legend-title" id="lbl-light">Light</p><span class="seg" role="group" aria-labelledby="lbl-light"><button type="button" data-light="auto" aria-pressed="true">Real time</button><button type="button" data-light="day" aria-pressed="false">Day</button><button type="button" data-light="night" aria-pressed="false">Night</button></span></div><div class="map-legend"><p class="legend-title">Legend</p><p><span class="sw good" aria-hidden="true"></span>95% or more on time</p><p><span class="sw mid" aria-hidden="true"></span>80 to 95%</p><p><span class="sw bad" aria-hidden="true"></span>under 80%</p><p class="muted small">Height: share of late stops</p></div><div class="map-weather" id="meteo" aria-live="polite"><p class="legend-title">Weather in Lausanne</p><p class="muted">–</p></div><p class="muted small">Punctuality on Wednesday 21 October 2026</p></div></div><p class="muted small">Drag: pan · Right-click or Ctrl + drag: rotate and tilt · Wheel: zoom · Keyboard: arrows, + and −.</p><script type="application/json" id="carte-i18n">{"map_show": "Show on the map", "col_ontime": "On time", "col_delay": "Average delay", "col_measured": "Measured", "col_cancel": "Cancelled", "col_lines": "Lines", "map_weather": "Weather in Lausanne", "map_nowebgl": "Your browser cannot display the 3D map (WebGL). The list of stops below has the same information.", "disr_planned": "Works / planned", "disr_unplanned": "Unplanned", "min": "min", "locale": "en-GB", "lang": "en"}</script><section class="block" id='liste-arrets'><h2>All stops</h2><p class="lead-sm">From least to most punctual. Stops with at least 20 measured stops.</p><p class="empty">Stop coordinates will be available after the next daily collection.</p></section><section class="block"><h2>Current disruptions</h2><p class="lead-sm">Active situations affecting a Lausanne stop, from the official SIRI-SX feed. Updated 22.10.2026 20:49; 485 active situations across Switzerland.</p><ul class="disruptions"><li class="disruption"><p class="d-meta"><span class="badge neutral">Works / planned</span> <span>Lines: 18</span><span>until 24.11.2026 23:58</span></p><p class="d-title">Arrêt Lausanne, Clochatte déplacé</p><p class=d-desc>Concerne: ligne 18</p></li><li class="disruption"><p class="d-meta"><span class="badge neutral">Works / planned</span><span>until 19.06.2027 04:00</span></p><p class="d-title">Restriction Palézieux - Romont FR</p><p class=d-desc>Les lignes IR 15, S 40 et S 41</p></li></ul></section><p class="method">Map © OpenFreeMap, OpenMapTiles, OpenStreetMap contributors; terrain: Mapzen / AWS Terrain Tiles; weather: Open-Meteo, MeteoSwiss ICON-CH model (CC BY 4.0); stops: official service point register.</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Data: <a href="https://opentransportdata.swiss/">opentransportdata.swiss</a> (actual times and disruptions of Swiss public transport). Figures and texts are generated automatically.</p>
+    <p>Personal proof of concept, not affiliated with SBB, tl or any other operator.</p>
+    <ul class="footer-links">
+      <li><a href="/en/visitors/">Visitors</a></li>
+      <li><a href="/en/privacy/">Privacy</a></li>
+      <li><a href="https://github.com/thomasa413-max/transit-pulse">Source code</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -15,11 +15,11 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta
 from html import escape
 
-from . import charts, config, util
+from . import charts, config, stops as stop_register, util
 from .i18n import LANGS, LOCALE, MODES, MONTHS, NATIVE, OG_LOCALE, SLUGS, WEEKDAYS, T, t
 
 MODEL_NAMES = {"claude-sonnet-5-5": "Claude Sonnet 5.5", "claude-haiku-5-5": "Claude Haiku 5.5"}
-NAV = ("dashboard", "bulletin", "agents", "quality", "costs", "about")
+NAV = ("dashboard", "map", "bulletin", "agents", "quality", "costs", "about")
 ASSET_V: dict[str, str] = {}
 
 
@@ -191,7 +191,7 @@ PAGES: list[dict] = []   # for the sitemap
 def page(lang: str, key: str | None, title: str, body: str, description: str, *,
          alts: dict[str, str], active: str | None = None, jsonld: list[dict] | None = None,
          scripts: tuple[str, ...] = (), og_type: str = "website", sitemap: bool = True,
-         lastmod: str | None = None, path: str | None = None) -> None:
+         lastmod: str | None = None, path: str | None = None, styles: tuple[str, ...] = ()) -> None:
     path = path or alts[lang]
     full_title = title if key in (None, "dashboard") else f"{title} · {config.SITE_TITLE}"
     robots = "index, follow, max-image-preview:large" if config.INDEXING else "noindex, nofollow"
@@ -225,7 +225,7 @@ def page(lang: str, key: str | None, title: str, body: str, description: str, *,
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b6e69">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{asset("style.css")}">
+<link rel="stylesheet" href="{asset("style.css")}">{"".join(f'<link rel="stylesheet" href="{asset(x)}">' for x in styles)}
 <script src="{asset("prefs.js")}"></script>
 {js}
 {ld}
@@ -715,6 +715,107 @@ def build_404(lang: str) -> None:
 
 
 # ---------------------------------------------------------------------------
+# 3D map
+# ---------------------------------------------------------------------------
+
+MIN_STOP_MEASURES = 20
+
+
+def build_map_data(latest: dict | None, disruptions: dict) -> dict:
+    """public/data/carte.json: stops with coordinates and punctuality, disruptions placed on a stop."""
+    register = stop_register.load()
+    by_name = {}
+    for number, (lon, lat, name, _muni) in register.items():
+        by_name.setdefault(name, (lon, lat))
+    stops, missing = [], 0
+    for s in (latest or {}).get("arrets", []):
+        if s["mesures"] < MIN_STOP_MEASURES or s["ponctualite_pct"] is None:
+            continue
+        coord = register.get(s.get("numero") or "")
+        pos = (coord[0], coord[1]) if coord else by_name.get(s["arret"])
+        if not pos:
+            missing += 1
+            continue
+        stops.append({"id": s.get("numero") or s["arret"], "nom": s["arret"], "lon": pos[0], "lat": pos[1],
+                      "pct": s["ponctualite_pct"], "retard": s["retard_moyen_min"], "mesures": s["mesures"],
+                      "supprimes": s["suppressions"], "lignes": s.get("lignes", [])})
+    pins = []
+    for d in disruptions.get("lausanne") or []:
+        for place in d.get("lieux") or []:
+            pos = by_name.get(place)
+            if pos:
+                pins.append({"lon": pos[0], "lat": pos[1], "lieu": place, "planifie": d.get("planifie"),
+                             "textes": {l: (d.get("textes") or {}).get(l, {}).get("titre") or d.get("titre") for l in LANGS}})
+                break
+    data = {"date": (latest or {}).get("date"), "arrets": stops, "sans_coordonnees": missing,
+            "perturbations": pins, "maj_perturbations": disruptions.get("mis_a_jour")}
+    out = config.PUBLIC / "data" / "carte.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return data
+
+
+def toggle(id_: str, label: str, on: bool = True) -> str:
+    return (f'<button type="button" class="map-toggle" id="{id_}" aria-pressed="{str(on).lower()}">'
+            f'<span class="dot" aria-hidden="true"></span>{escape(label)}</button>')
+
+
+def build_map(lang: str, data: dict) -> None:
+    alts = alternates("map")
+    i18n_js = {k: t(k, lang) for k in ("map_show", "col_ontime", "col_delay", "col_measured", "col_cancel", "col_lines",
+                                       "map_weather", "map_nowebgl", "disr_planned", "disr_unplanned", "min")}
+    i18n_js["locale"] = LOCALE[lang]
+    i18n_js["lang"] = lang
+    stops = sorted(data["arrets"], key=lambda x: (x["pct"], -x["mesures"]))
+    rows = [[escape(s["nom"]), pct(s["pct"], lang), minutes(s["retard"], lang), n(s["mesures"], lang, 0),
+             escape(", ".join(s["lignes"][:6])),
+             f'<button type="button" class="tool small-btn" data-fly="{escape(str(s["id"]))}">{escape(t("map_show", lang))}</button>']
+            for s in stops]
+    legend = (f'<div class="map-legend"><p class="legend-title">{escape(t("map_legend", lang))}</p>'
+              f'<p><span class="sw good" aria-hidden="true"></span>{escape(t("map_legend_good", lang))}</p>'
+              f'<p><span class="sw mid" aria-hidden="true"></span>{escape(t("map_legend_mid", lang))}</p>'
+              f'<p><span class="sw bad" aria-hidden="true"></span>{escape(t("map_legend_bad", lang))}</p>'
+              f'<p class="muted small">{escape(t("map_legend_height", lang))}</p></div>')
+    controls = (f'<div class="map-panel" role="group" aria-label="{escape(t("map_layers", lang))}">'
+                f'<p class="legend-title">{escape(t("map_layers", lang))}</p>'
+                + toggle("t-stops", t("map_punct", lang)) + toggle("t-disr", t("map_disr", lang))
+                + toggle("t-buildings", t("map_buildings", lang)) + toggle("t-terrain", t("map_terrain", lang))
+                + toggle("t-2d", t("map_view_2d", lang), False)
+                + f'<p class="legend-title" id="lbl-light">{escape(t("map_light", lang))}</p>'
+                f'<span class="seg" role="group" aria-labelledby="lbl-light">'
+                f'<button type="button" data-light="auto" aria-pressed="true">{escape(t("map_auto", lang))}</button>'
+                f'<button type="button" data-light="day" aria-pressed="false">{escape(t("map_day", lang))}</button>'
+                f'<button type="button" data-light="night" aria-pressed="false">{escape(t("map_night", lang))}</button></span>'
+                f'</div>')
+    asof = t("map_data_of", lang, date=long_date(data["date"], lang)) if data.get("date") else ""
+    body = (f'<h1>{escape(t("map_title", lang))}</h1><p class="lead">{escape(t("map_lead", lang))}</p>'
+            f'<a class="skip-map" href="#liste-arrets">{escape(t("map_skip", lang))}</a>'
+            f'<div class="map-shell">'
+            f'<div id="carte" class="map" role="region" aria-label="{escape(t("map_region", lang))}" '
+            f'data-src="/data/carte.json?v={ASSET_V.get("carte", "0")}">'
+            f'<p class="map-status" id="carte-etat" role="status">{escape(t("map_loading", lang))}</p></div>'
+            f'<div class="map-side">{controls}{legend}'
+            f'<div class="map-weather" id="meteo" aria-live="polite"><p class="legend-title">{escape(t("map_weather", lang))}</p><p class="muted">–</p></div>'
+            f'<p class="muted small">{escape(asof)}</p></div></div>'
+            f'<p class="muted small">{escape(t("map_controls_hint", lang))}</p>'
+            f'<script type="application/json" id="carte-i18n">{json.dumps(i18n_js, ensure_ascii=False).replace("<", "\\u003c")}</script>'
+            + section(t("map_list", lang),
+                      table([t("col_stop", lang), t("col_ontime", lang), t("col_delay", lang), t("col_measured", lang),
+                             t("col_lines", lang), ""], rows, lang, numeric_from=1, numeric_to=3, caption=t("map_list", lang))
+                      if rows else f'<p class="empty">{escape(t("map_no_stops", lang))}</p>',
+                      escape(t("map_list_lead", lang)), sid="liste-arrets")
+            + section(t("disruptions", lang), disruption_list({**DISRUPTIONS_CACHE}, lang))
+            + f'<p class="method">{escape(t("map_credits", lang))}</p>')
+    page(lang, "map", t("map_title", lang), body, t("meta_map", lang), alts=alts, active="map",
+         scripts=("maplibre-gl.js", "map.js"), styles=("maplibre-gl.css",), lastmod=data.get("date"),
+         jsonld=[{"@context": "https://schema.org", "@type": "Map", "name": t("map_title", lang), "inLanguage": LOCALE[lang],
+                  "description": t("meta_map", lang), "spatialCoverage": {"@type": "Place", "name": "Lausanne"}}])
+
+
+DISRUPTIONS_CACHE: dict = {}
+
+
+# ---------------------------------------------------------------------------
 # Admin shell (French; data comes from the API after login)
 # ---------------------------------------------------------------------------
 
@@ -798,6 +899,14 @@ def build_sitemap() -> None:
         robots = "# Pilot phase: not indexed. Set INDEXING = True in pulse/config.py at go-live.\nUser-agent: *\nDisallow: /\n"
     (config.PUBLIC / "robots.txt").write_text(robots, encoding="utf-8")
     headers = (config.STATIC / "_headers").read_text(encoding="utf-8")
+    # The 3D map needs map tiles and terrain from two hosts and Web Workers created from blobs.
+    # Only the map pages get this wider policy ("! header" removes the global one first).
+    map_csp = ("default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; "
+               "style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; "
+               "connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; "
+               "form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests")
+    for lang in LANGS:
+        headers += f"\n{url(lang, 'map')}\n  ! Content-Security-Policy\n  Content-Security-Policy: {map_csp}\n"
     if not config.INDEXING:
         headers = headers.replace("/*\n", "/*\n  X-Robots-Tag: noindex, nofollow\n", 1)
     (config.PUBLIC / "_headers").write_text(headers, encoding="utf-8")
@@ -815,7 +924,12 @@ def build() -> None:
     PAGES.clear()
 
     history, latest, bulletins, disruptions, runs = load()
+    DISRUPTIONS_CACHE.clear()
+    DISRUPTIONS_CACHE.update(disruptions)
+    map_data = build_map_data(latest, disruptions)
+    ASSET_V["carte"] = hashlib.sha256(json.dumps(map_data, sort_keys=True).encode()).hexdigest()[:10]
     for lang in LANGS:
+        build_map(lang, map_data)
         build_index(lang, history, latest, bulletins, disruptions)
         build_bulletins(lang, bulletins)
         build_agents(lang, runs)

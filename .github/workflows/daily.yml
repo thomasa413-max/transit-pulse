@@ -53,6 +53,10 @@ jobs:
           if [ "${{ github.event.schedule }}" = "23 10 * * *" ]; then ARGS="$ARGS --final"; fi
           python -m pulse.daily $ARGS
 
+      - name: Refresh the stop register (weekly)
+        continue-on-error: true
+        run: python -m pulse.stops
+
       - name: Build site
         run: python -m pulse.site
 

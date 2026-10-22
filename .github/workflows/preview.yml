@@ -1,0 +1,54 @@
+name: Screenshot live pages (manual)
+
+# Screenshots of the live site in a real browser with WebGL, saved to the "previews" branch.
+on:
+  workflow_dispatch:
+    inputs:
+      paths:
+        description: "Space-separated paths"
+        default: "/fr/carte/ /de/karte/"
+
+permissions:
+  contents: write
+
+jobs:
+  shoot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install playwright && python -m playwright install --with-deps chromium
+      - name: Screenshots
+        env:
+          PATHS: ${{ inputs.paths }}
+        run: |
+          mkdir -p shots
+          python - <<'PY'
+          import os
+          from playwright.sync_api import sync_playwright
+          from pulse import config
+          paths = os.environ["PATHS"].split()
+          with sync_playwright() as p:
+              b = p.chromium.launch(args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"])
+              for w, h, tag in ((1440, 900, "desktop"), (390, 844, "mobile")):
+                  ctx = b.new_context(viewport={"width": w, "height": h}, device_scale_factor=1)
+                  for path in paths:
+                      pg = ctx.new_page(); errs = []
+                      pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
+                      pg.goto(config.SITE_URL + path, wait_until="networkidle", timeout=60000)
+                      pg.wait_for_timeout(6000)
+                      name = path.strip("/").replace("/", "_") + "-" + tag
+                      pg.screenshot(path=f"shots/{name}.png", full_page=(tag == "mobile"))
+                      open(f"shots/{name}.txt", "w").write("\n".join(errs) or "no console errors")
+                      pg.close()
+              b.close()
+          PY
+      - name: Save to the previews branch
+        run: |
+          git config user.name transit-pulse-bot
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp -r shots /tmp/shots
+          git checkout -q --orphan previews && git rm -rfq . >/dev/null
+          cp /tmp/shots/* . && git add -A && git commit -qm "Live screenshots" && git push -qf origin previews

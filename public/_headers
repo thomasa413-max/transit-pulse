@@ -18,3 +18,19 @@
 /admin/*
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-store
+
+/fr/carte/
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+
+/de/karte/
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+
+/it/mappa/
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+
+/en/map/
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'none'; script-src 'self'; worker-src blob:; child-src blob:; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://tiles.openfreemap.org https://s3.amazonaws.com https://elevation-tiles-prod.s3.amazonaws.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests

@@ -14,13 +14,13 @@ OG_LOCALE = {"fr": "fr_CH", "de": "de_CH", "it": "it_CH", "en": "en_GB"}
 # Localised URL segments (search engines read them, people share them).
 SLUGS = {
     "fr": {"bulletin": "bulletin", "agents": "agents", "quality": "qualite", "costs": "couts",
-           "about": "a-propos", "visitors": "visiteurs", "privacy": "confidentialite"},
+           "about": "a-propos", "visitors": "visiteurs", "privacy": "confidentialite", "map": "carte"},
     "de": {"bulletin": "bulletin", "agents": "agenten", "quality": "qualitaet", "costs": "kosten",
-           "about": "ueber-das-projekt", "visitors": "besucher", "privacy": "datenschutz"},
+           "about": "ueber-das-projekt", "visitors": "besucher", "privacy": "datenschutz", "map": "karte"},
     "it": {"bulletin": "bollettino", "agents": "agenti", "quality": "qualita", "costs": "costi",
-           "about": "il-progetto", "visitors": "visitatori", "privacy": "privacy"},
+           "about": "il-progetto", "visitors": "visitatori", "privacy": "privacy", "map": "mappa"},
     "en": {"bulletin": "bulletin", "agents": "agents", "quality": "quality", "costs": "costs",
-           "about": "about", "visitors": "visitors", "privacy": "privacy"},
+           "about": "about", "visitors": "visitors", "privacy": "privacy", "map": "map"},
 }
 
 MONTHS = {
@@ -389,6 +389,7 @@ T = {
             "<strong>Commentaires</strong> : le nom et le message que vous saisissez, la date, le pays déduit par Cloudflare et votre adresse IP, effacée après 90 jours. Les « j'aime » sont liés à une empreinte salée de l'adresse IP, jamais à l'adresse elle-même.",
             "<strong>Contrôle anti-robot</strong> : Cloudflare Turnstile, chargé uniquement quand vous écrivez un commentaire ou aimez un commentaire.",
             "<strong>Mesure de performance</strong> : la vitesse d'affichage (Core Web Vitals) est envoyée de façon anonyme, en totaux par jour.",
+            "<strong>Carte 3D</strong> : les tuiles du fond de carte et du relief sont chargées depuis OpenFreeMap et Amazon Web Services, qui voient votre adresse IP comme tout serveur web. La météo passe par notre serveur : Open-Meteo ne voit pas votre adresse.",
             "<strong>Hébergement</strong> : Cloudflare (site et base de données) et GitHub (code et données publiques).",
         ],
         "de": [
@@ -398,6 +399,7 @@ T = {
             "<strong>Kommentare</strong>: der eingegebene Name und Text, das Datum, das von Cloudflare ermittelte Land und Ihre IP-Adresse, die nach 90 Tagen gelöscht wird. «Gefällt mir» wird mit einem gesalzenen Hash der IP-Adresse verknüpft, nie mit der Adresse selbst.",
             "<strong>Roboterprüfung</strong>: Cloudflare Turnstile, nur geladen, wenn Sie einen Kommentar schreiben oder mit «Gefällt mir» markieren.",
             "<strong>Leistungsmessung</strong>: Die Ladegeschwindigkeit (Core Web Vitals) wird anonym als Tagessumme übermittelt.",
+            "<strong>3D-Karte</strong>: Kartenkacheln und Gelände werden von OpenFreeMap und Amazon Web Services geladen, die Ihre IP-Adresse wie jeder Webserver sehen. Das Wetter läuft über unseren Server: Open-Meteo sieht Ihre Adresse nicht.",
             "<strong>Hosting</strong>: Cloudflare (Website und Datenbank) und GitHub (Code und öffentliche Daten).",
         ],
         "it": [
@@ -407,6 +409,7 @@ T = {
             "<strong>Commenti</strong>: il nome e il messaggio inseriti, la data, il paese dedotto da Cloudflare e il vostro indirizzo IP, cancellato dopo 90 giorni. I «mi piace» sono legati a un'impronta salata dell'indirizzo IP, mai all'indirizzo stesso.",
             "<strong>Controllo anti-robot</strong>: Cloudflare Turnstile, caricato solo quando scrivete un commento o mettete «mi piace».",
             "<strong>Misura delle prestazioni</strong>: la velocità di visualizzazione (Core Web Vitals) è inviata in forma anonima, in totali giornalieri.",
+            "<strong>Mappa 3D</strong>: le tessere della mappa e del rilievo sono caricate da OpenFreeMap e Amazon Web Services, che vedono il vostro indirizzo IP come qualsiasi server web. Il meteo passa dal nostro server: Open-Meteo non vede il vostro indirizzo.",
             "<strong>Hosting</strong>: Cloudflare (sito e banca dati) e GitHub (codice e dati pubblici).",
         ],
         "en": [
@@ -416,6 +419,7 @@ T = {
             "<strong>Comments</strong>: the name and message you enter, the date, the country inferred by Cloudflare and your IP address, deleted after 90 days. Likes are tied to a salted hash of the IP address, never the address itself.",
             "<strong>Bot check</strong>: Cloudflare Turnstile, loaded only when you write a comment or like one.",
             "<strong>Performance measurement</strong>: loading speed (Core Web Vitals) is sent anonymously, as daily totals.",
+            "<strong>3D map</strong>: map and terrain tiles are loaded from OpenFreeMap and Amazon Web Services, which see your IP address like any web server. Weather goes through our server: Open-Meteo does not see your address.",
             "<strong>Hosting</strong>: Cloudflare (site and database) and GitHub (code and public data).",
         ],
     },
@@ -542,6 +546,60 @@ T = {
     "nf_title": {"fr": "Page introuvable", "de": "Seite nicht gefunden", "it": "Pagina non trovata", "en": "Page not found"},
     "nf_text": {"fr": "Cette adresse n'existe pas ou plus.", "de": "Diese Adresse existiert nicht oder nicht mehr.", "it": "Questo indirizzo non esiste o non esiste più.", "en": "This address does not exist, or no longer does."},
     "nf_home": {"fr": "Retour au tableau de bord", "de": "Zurück zur Übersicht", "it": "Torna alla panoramica", "en": "Back to the dashboard"},
+
+    # ------------------------------------------------------------------ 3D map
+    "nav_map": {"fr": "Carte 3D", "de": "3D-Karte", "it": "Mappa 3D", "en": "3D map"},
+    "meta_map": {
+        "fr": "Carte 3D de Lausanne : ponctualité de chaque arrêt, perturbations en cours et météo, avec jour et nuit en temps réel.",
+        "de": "3D-Karte von Lausanne: Pünktlichkeit jeder Haltestelle, aktuelle Störungen und Wetter, mit Tag und Nacht in Echtzeit.",
+        "it": "Mappa 3D di Losanna: puntualità di ogni fermata, perturbazioni in corso e meteo, con giorno e notte in tempo reale.",
+        "en": "3D map of Lausanne: punctuality at every stop, current disruptions and weather, with real-time day and night.",
+    },
+    "map_title": {"fr": "Lausanne en 3D", "de": "Lausanne in 3D", "it": "Losanna in 3D", "en": "Lausanne in 3D"},
+    "map_lead": {
+        "fr": "Chaque colonne est un arrêt : plus elle est haute et rouge, plus les passages y ont été en retard hier. Les épingles signalent les perturbations en cours.",
+        "de": "Jede Säule ist eine Haltestelle: Je höher und röter, desto mehr Halte waren gestern verspätet. Die Nadeln zeigen aktuelle Störungen.",
+        "it": "Ogni colonna è una fermata: più è alta e rossa, più i passaggi erano in ritardo ieri. Gli spilli segnalano le perturbazioni in corso.",
+        "en": "Each column is a stop: the taller and redder it is, the more stops ran late there yesterday. Pins mark current disruptions.",
+    },
+    "map_skip": {"fr": "Passer la carte et aller à la liste des arrêts", "de": "Karte überspringen und zur Haltestellenliste", "it": "Salta la mappa e vai all'elenco delle fermate", "en": "Skip the map and go to the list of stops"},
+    "map_region": {"fr": "Carte 3D interactive de Lausanne", "de": "Interaktive 3D-Karte von Lausanne", "it": "Mappa 3D interattiva di Losanna", "en": "Interactive 3D map of Lausanne"},
+    "map_loading": {"fr": "Chargement de la carte…", "de": "Karte wird geladen…", "it": "Caricamento della mappa…", "en": "Loading the map…"},
+    "map_nowebgl": {"fr": "Votre navigateur ne peut pas afficher la carte 3D (WebGL). La liste des arrêts ci-dessous contient les mêmes informations.", "de": "Ihr Browser kann die 3D-Karte nicht anzeigen (WebGL). Die Haltestellenliste unten enthält dieselben Angaben.", "it": "Il vostro browser non può mostrare la mappa 3D (WebGL). L'elenco delle fermate qui sotto contiene le stesse informazioni.", "en": "Your browser cannot display the 3D map (WebGL). The list of stops below has the same information."},
+    "map_layers": {"fr": "Couches", "de": "Ebenen", "it": "Livelli", "en": "Layers"},
+    "map_buildings": {"fr": "Bâtiments 3D", "de": "3D-Gebäude", "it": "Edifici 3D", "en": "3D buildings"},
+    "map_terrain": {"fr": "Relief", "de": "Gelände", "it": "Rilievo", "en": "Terrain"},
+    "map_punct": {"fr": "Ponctualité des arrêts", "de": "Pünktlichkeit der Haltestellen", "it": "Puntualità delle fermate", "en": "Stop punctuality"},
+    "map_disr": {"fr": "Perturbations", "de": "Störungen", "it": "Perturbazioni", "en": "Disruptions"},
+    "map_light": {"fr": "Lumière", "de": "Licht", "it": "Luce", "en": "Light"},
+    "map_auto": {"fr": "Heure réelle", "de": "Echtzeit", "it": "Ora reale", "en": "Real time"},
+    "map_day": {"fr": "Jour", "de": "Tag", "it": "Giorno", "en": "Day"},
+    "map_night": {"fr": "Nuit", "de": "Nacht", "it": "Notte", "en": "Night"},
+    "map_view_2d": {"fr": "Vue 2D", "de": "2D-Ansicht", "it": "Vista 2D", "en": "2D view"},
+    "map_legend": {"fr": "Légende", "de": "Legende", "it": "Legenda", "en": "Legend"},
+    "map_legend_good": {"fr": "95 % et plus à l'heure", "de": "95 % und mehr pünktlich", "it": "95% e più in orario", "en": "95% or more on time"},
+    "map_legend_mid": {"fr": "80 à 95 %", "de": "80 bis 95 %", "it": "dall'80 al 95%", "en": "80 to 95%"},
+    "map_legend_bad": {"fr": "moins de 80 %", "de": "unter 80 %", "it": "meno dell'80%", "en": "under 80%"},
+    "map_legend_height": {"fr": "Hauteur : part des passages en retard", "de": "Höhe: Anteil verspäteter Halte", "it": "Altezza: quota di passaggi in ritardo", "en": "Height: share of late stops"},
+    "map_data_of": {"fr": "Ponctualité du {date}", "de": "Pünktlichkeit vom {date}", "it": "Puntualità del {date}", "en": "Punctuality on {date}"},
+    "map_weather": {"fr": "Météo à Lausanne", "de": "Wetter in Lausanne", "it": "Meteo a Losanna", "en": "Weather in Lausanne"},
+    "map_list": {"fr": "Tous les arrêts", "de": "Alle Haltestellen", "it": "Tutte le fermate", "en": "All stops"},
+    "map_list_lead": {"fr": "Du moins ponctuel au plus ponctuel. Arrêts avec au moins 20 passages mesurés.", "de": "Von der unpünktlichsten zur pünktlichsten. Haltestellen mit mindestens 20 gemessenen Halten.", "it": "Dalla meno puntuale alla più puntuale. Fermate con almeno 20 passaggi misurati.", "en": "From least to most punctual. Stops with at least 20 measured stops."},
+    "map_show": {"fr": "Voir sur la carte", "de": "Auf der Karte zeigen", "it": "Mostra sulla mappa", "en": "Show on the map"},
+    "col_lines": {"fr": "Lignes", "de": "Linien", "it": "Linee", "en": "Lines"},
+    "map_no_stops": {"fr": "Les coordonnées des arrêts seront disponibles après la prochaine collecte quotidienne.", "de": "Die Koordinaten der Haltestellen sind nach der nächsten täglichen Datensammlung verfügbar.", "it": "Le coordinate delle fermate saranno disponibili dopo la prossima raccolta quotidiana.", "en": "Stop coordinates will be available after the next daily collection."},
+    "map_credits": {
+        "fr": "Fond de carte © OpenFreeMap, OpenMapTiles, contributeurs OpenStreetMap ; relief : Mapzen / AWS Terrain Tiles ; météo : Open-Meteo, modèle MeteoSwiss ICON-CH (CC BY 4.0) ; arrêts : registre officiel des points de service.",
+        "de": "Karte © OpenFreeMap, OpenMapTiles, OpenStreetMap-Mitwirkende; Gelände: Mapzen / AWS Terrain Tiles; Wetter: Open-Meteo, Modell MeteoSwiss ICON-CH (CC BY 4.0); Haltestellen: offizielles Dienststellenverzeichnis.",
+        "it": "Mappa © OpenFreeMap, OpenMapTiles, contributori OpenStreetMap; rilievo: Mapzen / AWS Terrain Tiles; meteo: Open-Meteo, modello MeteoSwiss ICON-CH (CC BY 4.0); fermate: registro ufficiale dei punti di servizio.",
+        "en": "Map © OpenFreeMap, OpenMapTiles, OpenStreetMap contributors; terrain: Mapzen / AWS Terrain Tiles; weather: Open-Meteo, MeteoSwiss ICON-CH model (CC BY 4.0); stops: official service point register.",
+    },
+    "map_controls_hint": {
+        "fr": "Glisser : déplacer · Clic droit ou Ctrl + glisser : pivoter et incliner · Molette : zoom · Clavier : flèches, + et −.",
+        "de": "Ziehen: verschieben · Rechtsklick oder Strg + Ziehen: drehen und neigen · Mausrad: Zoom · Tastatur: Pfeile, + und −.",
+        "it": "Trascinare: spostare · Clic destro o Ctrl + trascinare: ruotare e inclinare · Rotella: zoom · Tastiera: frecce, + e −.",
+        "en": "Drag: pan · Right-click or Ctrl + drag: rotate and tilt · Wheel: zoom · Keyboard: arrows, + and −.",
+    },
 }
 
 
