@@ -15,16 +15,14 @@ jobs:
         run: |
           exec > >(tee /tmp/report.txt) 2>&1
           UA="transit-pulse-poc/1.0 (+https://github.com/thomasa413-max/transit-pulse)"
-          probe() { echo "== $1"; curl -sS -L -o /tmp/out -w "HTTP %{http_code} | %{size_download} bytes | %{content_type} | final %{url_effective}\n" -A "$UA" --max-time 40 "$1" -r 0-2000 || true; head -c 600 /tmp/out; echo; }
-          probe "https://data.opentransportdata.swiss/api/3/action/package_show?id=ist-daten-v2"
-          probe "https://data.opentransportdata.swiss/en/dataset/ist-daten-v2"
-          probe "https://ckan.opendata.swiss/api/3/action/package_show?id=ist-daten-actual-data"
-          probe "https://opendata.swiss/api/3/action/package_show?id=ist-daten-actual-data"
-          probe "https://data.opentransportdata.swiss/dataset/0edc74a3-ad4d-486e-8657-f8f3b34a0979/resource/6c98d7d2-3e62-4927-94a7-81b5b124b042/download/2026-03-01_istdaten.csv"
-          probe "https://archive.opentransportdata.swiss/"
-          echo "== latest resources listed on ckan.opendata.swiss"
-          curl -sS -A "$UA" --max-time 60 "https://ckan.opendata.swiss/api/3/action/package_show?id=ist-daten-actual-data" \
-            | python3 -c "import sys,json; r=json.load(sys.stdin)['result']['resources']; [print(x.get('identifier') or x.get('name'), x.get('download_url') or x.get('url')) for x in sorted(r, key=lambda x: str(x.get('identifier') or x.get('name')))[-4:]]" || true
+          curl -sS -A "$UA" --max-time 60 "https://data.opentransportdata.swiss/en/dataset/ist-daten-v2" -o /tmp/page.html
+          echo "== links containing istdaten"; grep -oiE 'href="[^"]*istdaten[^"]*"' /tmp/page.html | sort -u | tail -15
+          echo "== resource links"; grep -oE 'href="[^"]*/resource/[^"]*"' /tmp/page.html | sort -u | head -8
+          echo "== resource names"; grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}_[Ii]st[Dd]aten[^<" ]*' /tmp/page.html | sort -u | tail -8
+          URL=$(grep -oiE 'https?://[^"]*2026-10-2[01]_istdaten\.csv' /tmp/page.html | head -1)
+          echo "== try download: $URL"
+          [ -n "$URL" ] && curl -sS -L -A "$UA" --max-time 40 -r 0-600 -o /tmp/head.csv -w "HTTP %{http_code} %{content_type}\n" "$URL" && head -c 600 /tmp/head.csv
+          echo
       - name: Save report to the probe-results branch
         if: always()
         run: |
