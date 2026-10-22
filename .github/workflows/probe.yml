@@ -4,14 +4,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Check catalogue and download routes
         run: |
+          exec > >(tee /tmp/report.txt) 2>&1
           UA="transit-pulse-poc/1.0 (+https://github.com/thomasa413-max/transit-pulse)"
           probe() { echo "== $1"; curl -sS -L -o /tmp/out -w "HTTP %{http_code} | %{size_download} bytes | %{content_type} | final %{url_effective}\n" -A "$UA" --max-time 40 "$1" -r 0-2000 || true; head -c 600 /tmp/out; echo; }
           probe "https://data.opentransportdata.swiss/api/3/action/package_show?id=ist-daten-v2"
@@ -23,3 +25,15 @@ jobs:
           echo "== latest resources listed on ckan.opendata.swiss"
           curl -sS -A "$UA" --max-time 60 "https://ckan.opendata.swiss/api/3/action/package_show?id=ist-daten-actual-data" \
             | python3 -c "import sys,json; r=json.load(sys.stdin)['result']['resources']; [print(x.get('identifier') or x.get('name'), x.get('download_url') or x.get('url')) for x in sorted(r, key=lambda x: str(x.get('identifier') or x.get('name')))[-4:]]" || true
+      - name: Save report to the probe-results branch
+        if: always()
+        run: |
+          sleep 2
+          git config user.name transit-pulse-bot
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q --orphan probe-results
+          git rm -rfq . >/dev/null
+          cp /tmp/report.txt report.txt
+          git add report.txt
+          git commit -qm "Probe report"
+          git push -qf origin probe-results
