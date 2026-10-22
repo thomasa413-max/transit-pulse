@@ -100,7 +100,7 @@ Cesium3DTileset.fromUrl('https://3d.geo.admin.ch/ch.swisstopo.swissbuildings3d.3
 function lookAtLausanne(duration) {
   const target = Cartesian3.fromDegrees(LAUSANNE.lon, LAUSANNE.lat - 0.004, 470);
   camera.flyToBoundingSphere(new BoundingSphere(target, 50), {
-    offset: new HeadingPitchRange(CMath.toRadians(-8), CMath.toRadians(-28), small ? 4200 : 3300),
+    offset: new HeadingPitchRange(CMath.toRadians(-8), CMath.toRadians(-30), small ? 3400 : 2400),
     duration: reduceMotion ? 0 : duration,
   });
 }
@@ -204,7 +204,7 @@ function applyLight() {
   if (scene.skyAtmosphere) { scene.skyAtmosphere.brightnessShift = night ? -0.75 : 0; scene.skyAtmosphere.saturationShift = night ? -0.4 : 0; }
   if (scene.shadowMap) scene.shadowMap.enabled = !small && !night;
   const base = scene.imageryLayers.get(0);
-  if (base) { base.brightness = night ? 0.42 : 1.0; base.saturation = night ? 0.45 : 1.0; base.contrast = night ? 1.15 : 1.0; base.gamma = 1.0; }
+  if (base) { base.brightness = night ? 0.62 : 1.0; base.saturation = night ? 0.5 : 1.0; base.contrast = night ? 1.15 : 1.0; base.gamma = 1.0; }
   if (buildings) buildings.style = new Cesium3DTileStyle({ color: night ? "color('#b8b2a8')" : "color('#f3eee6')" });
   if (stopsPrim) stopsPrim.appearance = new PerInstanceColorAppearance({ closed: true, translucent: false, flat: night });
   scene.requestRender();
@@ -252,7 +252,7 @@ async function placeColumns() {
     const ground = cartos[i].height || 0;
     const frame = Transforms.eastNorthUpToFixedFrame(Cartesian3.fromDegrees(s.lon, s.lat, ground));
     return new GeometryInstance({
-      geometry: new CylinderGeometry({ length: h, topRadius: 11, bottomRadius: 11, slices: 28 }),
+      geometry: new CylinderGeometry({ length: h, topRadius: 13, bottomRadius: 13, slices: 28 }),
       modelMatrix: Matrix4.multiplyByTranslation(frame, new Cartesian3(0, 0, h / 2 - 1), new Matrix4()),
       id: { kind: 'stop', id: String(s.id) },
       attributes: { color: ColorGeometryInstanceAttribute.fromColor(Color.fromCssColorString(colour(s.pct))) },
