@@ -1,0 +1,27 @@
+name: Probe map data (temporary)
+on: { workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe
+        run: |
+          exec > >(tee /tmp/report.txt) 2>&1
+          UA="transit-pulse-poc/1.0"
+          SP="https://data.opentransportdata.swiss/de/dataset/39e5f264-257a-4f3f-bccc-5322c37058c5/resource/d79268f3-60e3-47bf-9085-447360b3a7d1/download/actual-date-swiss-service-point.csv"
+          echo "== service points"; curl -sSL -A "$UA" "$SP" -o /tmp/sp.csv -w "HTTP %{http_code} %{size_download}\n"
+          head -1 /tmp/sp.csv; echo; grep -m3 "Lausanne, Bel-Air\|;Lausanne;" /tmp/sp.csv | cut -c1-900
+          echo "== dataset page links"; curl -sSL -A "$UA" "https://data.opentransportdata.swiss/en/dataset/service-point-v2" | grep -oE 'https?://[^"]*service-point[^"]*\.csv' | sort -u | head
+          echo "== istdaten Lausanne rows (BPUIC/SLOID)"; curl -sSL -A "$UA" "https://data.opentransportdata.swiss/en/dataset/ist-daten-v2" | grep -oiE 'https?://[^"]*_istdaten\.csv' | sort | tail -1 > /tmp/u; curl -sSL -A "$UA" "$(cat /tmp/u)" | grep -m5 ";Lausanne, Bel-Air;" | cut -d';' -f13,14,22
+          echo "== openfreemap"; curl -sS -A "$UA" https://tiles.openfreemap.org/planet | head -c 600; echo
+          curl -sS -A "$UA" https://tiles.openfreemap.org/styles/liberty | python3 -c "import sys,json; s=json.load(sys.stdin); print([ (l['id'],l.get('source-layer'),l['type']) for l in s['layers'] if 'build' in l['id']]); print(s['sources']); print(s.get('glyphs'))"
+          echo "== open-meteo"; curl -sS "https://api.open-meteo.com/v1/forecast?latitude=46.52&longitude=6.63&current=temperature_2m,weather_code,wind_speed_10m,is_day,precipitation&daily=sunrise,sunset&timezone=Europe%2FZurich&models=meteoswiss_icon_ch1" | head -c 700; echo
+          echo "== terrain tiles"; curl -sS -o /dev/null -w "terrarium HTTP %{http_code} %{content_type}\n" https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/2122/1448.png
+      - name: Save report
+        if: always()
+        run: |
+          git config user.name transit-pulse-bot; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q --orphan probe-results; git rm -rfq . >/dev/null; cp /tmp/report.txt report.txt
+          git add report.txt; git commit -qm "Probe report"; git push -qf origin probe-results
