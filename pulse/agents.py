@@ -52,6 +52,17 @@ def _log(agent: str, day: date, result: llm.LLMResult, status: str, **extra) -> 
     })
 
 
+def _call(agent: str, day: date, system: str, user: str, **kw) -> llm.LLMResult:
+    """llm.call, with API errors written to the run log before re-raising."""
+    try:
+        return llm.call(system, user, **kw)
+    except Exception as exc:  # noqa: BLE001
+        util.append_run({"job": "daily", "agent": agent, "date": day.isoformat(), "status": "error",
+                         "model": kw.get("model", config.MODEL_DAILY), "prompt_version": config.PROMPT_VERSION,
+                         "detail": f"{type(exc).__name__}: {exc}"[:400]})
+        raise
+
+
 def bulletin_text(b: dict) -> str:
     return "\n\n".join([b.get("titre", ""), *b.get("paragraphes", [])])
 
@@ -133,7 +144,7 @@ def write(day: date, facts: dict, feedback: list[str] | None = None) -> dict:
     if feedback:
         user = ("Ta version précédente a été refusée par le contrôle. Corrige ces points :\n- "
                 + "\n- ".join(feedback) + "\n\n" + user)
-    res = llm.call(_prompt("writer"), user, fake_responder=_fake_writer, schema=BULLETIN_SCHEMA, max_tokens=2000)
+    res = _call("writer", day, _prompt("writer"), user, fake_responder=_fake_writer, schema=BULLETIN_SCHEMA, max_tokens=2000)
     try:
         b = llm.parse_json(res.text)
         assert isinstance(b.get("titre"), str) and isinstance(b.get("paragraphes"), list)
@@ -149,7 +160,7 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
     text = bulletin_text(bulletin)
     unknown = factcheck.unknown_numbers(text, facts, day)
     user = "DONNÉES:\n" + json.dumps(facts, ensure_ascii=False) + "\n\nBULLETIN:\n" + text
-    res = llm.call(_prompt("checker"), user, model=config.MODEL_CHECKER, fake_responder=_fake_checker,
+    res = _call("checker", day, _prompt("checker"), user, model=config.MODEL_CHECKER, fake_responder=_fake_checker,
                    schema=VERDICT_SCHEMA, max_tokens=1500)
     try:
         verdict = llm.parse_json(res.text)
@@ -170,7 +181,7 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
 
 def translate(day: date, bulletin: dict) -> dict:
     user = "BULLETIN:\n" + json.dumps(bulletin, ensure_ascii=False)
-    res = llm.call(_prompt("translator"), user, fake_responder=_fake_translator, schema=TRANSLATION_SCHEMA,
+    res = _call("translator", day, _prompt("translator"), user, fake_responder=_fake_translator, schema=TRANSLATION_SCHEMA,
                    max_tokens=4000)
     out, problems = {}, []
     try:
