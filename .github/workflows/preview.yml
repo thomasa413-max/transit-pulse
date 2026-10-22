@@ -19,36 +19,17 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install playwright && python -m playwright install --with-deps chromium
       - name: Screenshots
-        env:
-          PATHS: ${{ inputs.paths }}
+        continue-on-error: true
         run: |
-          mkdir -p shots
-          python - <<'PY'
-          import os
-          from playwright.sync_api import sync_playwright
-          from pulse import config
-          paths = os.environ["PATHS"].split()
-          with sync_playwright() as p:
-              b = p.chromium.launch(args=["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"])
-              for w, h, tag in ((1440, 900, "desktop"), (390, 844, "mobile")):
-                  ctx = b.new_context(viewport={"width": w, "height": h}, device_scale_factor=1)
-                  for path in paths:
-                      pg = ctx.new_page(); errs = []
-                      pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
-                      pg.goto(config.SITE_URL + path, wait_until="networkidle", timeout=60000)
-                      pg.wait_for_timeout(6000)
-                      name = path.strip("/").replace("/", "_") + "-" + tag
-                      pg.screenshot(path=f"shots/{name}.png", full_page=(tag == "mobile"))
-                      open(f"shots/{name}.txt", "w").write("\n".join(errs) or "no console errors")
-                      pg.close()
-              b.close()
-          PY
+          set -o pipefail
+          ( pip install -q playwright tzdata && python -m playwright install --with-deps chromium >/dev/null \
+            && python scripts/screenshots.py /tmp/shots ${{ inputs.paths }} ) 2>&1 | tail -40 | tee /tmp/log.txt
       - name: Save to the previews branch
+        if: always()
         run: |
-          git config user.name transit-pulse-bot
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          cp -r shots /tmp/shots
-          git checkout -q --orphan previews && git rm -rfq . >/dev/null
-          cp /tmp/shots/* . && git add -A && git commit -qm "Live screenshots" && git push -qf origin previews
+          mkdir -p /tmp/shots && cp /tmp/log.txt /tmp/shots/ 2>/dev/null || true
+          git config --global user.name transit-pulse-bot
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git init -q /tmp/r && cd /tmp/r && cp /tmp/shots/* . && git checkout -q -b previews && git add -A && git commit -qm "Live screenshots"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" previews
