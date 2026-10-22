@@ -774,6 +774,7 @@ def build_map(lang: str, data: dict) -> None:
     legend = (f'<div class="map-legend"><p class="legend-title">{escape(t("map_legend", lang))}</p>'
               f'<p><span class="sw good" aria-hidden="true"></span>{escape(t("map_legend_good", lang))}</p>'
               f'<p><span class="sw mid" aria-hidden="true"></span>{escape(t("map_legend_mid", lang))}</p>'
+              f'<p><span class="sw low" aria-hidden="true"></span>{escape(t("map_legend_low", lang))}</p>'
               f'<p><span class="sw bad" aria-hidden="true"></span>{escape(t("map_legend_bad", lang))}</p>'
               f'<p class="muted small">{escape(t("map_legend_height", lang))}</p></div>')
     controls = (f'<div class="map-panel" role="group" aria-label="{escape(t("map_layers", lang))}">'

@@ -30,7 +30,7 @@
     roadMajor: '#f6d58e', rail: '#9a9a9a', building: '#d9d4c7', building3d: '#e2ddd0', label: '#3a3f45', halo: '#ffffff',
     sky: '#8ec5ef', horizon: '#dcecf7', fog: '#eef3f6', hill: '#6b7280' };
   var NIGHT = { bg: '#0f141b', water: '#0b2234', park: '#13241a', wood: '#112117', residential: '#151a22', road: '#3b4250',
-    roadMajor: '#7a6431', rail: '#4b5563', building: '#1d222b', building3d: '#272d38', label: '#cfd6df', halo: '#0b0f14',
+    roadMajor: '#7a6431', rail: '#4b5563', building: '#2c323d', building3d: '#4a4a4f', label: '#cfd6df', halo: '#0b0f14',
     sky: '#05070d', horizon: '#1b2740', fog: '#101622', hill: '#000000' };
   function hex(c) { return [parseInt(c.slice(1, 3), 16), parseInt(c.slice(3, 5), 16), parseInt(c.slice(5, 7), 16)]; }
   function mix(a, b, t) {
@@ -49,6 +49,9 @@
       omt: { type: 'vector', url: 'https://tiles.openfreemap.org/planet', attribution: '© OpenFreeMap © OpenMapTiles © OpenStreetMap' },
       dem: { type: 'raster-dem', tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
         encoding: 'terrarium', tileSize: 256, maxzoom: 14, attribution: 'Terrain: Mapzen / AWS' },
+      // A second source for the shading, as MapLibre recommends (better quality than sharing it with the 3D terrain).
+      hs: { type: 'raster-dem', tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+        encoding: 'terrarium', tileSize: 256, maxzoom: 14 },
       stops: { type: 'geojson', data: { type: 'FeatureCollection', features: [] } },
       pins: { type: 'geojson', data: { type: 'FeatureCollection', features: [] } }
     },
@@ -58,7 +61,7 @@
       { id: 'wood', type: 'fill', source: 'omt', 'source-layer': 'landcover', filter: ['in', ['get', 'class'], ['literal', ['wood', 'forest']]], paint: { 'fill-color': P.wood } },
       { id: 'park', type: 'fill', source: 'omt', 'source-layer': 'park', paint: { 'fill-color': P.park } },
       { id: 'grass', type: 'fill', source: 'omt', 'source-layer': 'landcover', filter: ['==', ['get', 'class'], 'grass'], paint: { 'fill-color': P.park, 'fill-opacity': 0.7 } },
-      { id: 'hillshade', type: 'hillshade', source: 'dem', paint: { 'hillshade-shadow-color': P.hill, 'hillshade-exaggeration': 0.35 } },
+      { id: 'hillshade', type: 'hillshade', source: 'hs', paint: { 'hillshade-shadow-color': P.hill, 'hillshade-exaggeration': 0.35 } },
       { id: 'water', type: 'fill', source: 'omt', 'source-layer': 'water', paint: { 'fill-color': P.water } },
       { id: 'waterway', type: 'line', source: 'omt', 'source-layer': 'waterway', paint: { 'line-color': P.water, 'line-width': 1.5 } },
       { id: 'road-minor', type: 'line', source: 'omt', 'source-layer': 'transportation', minzoom: 12,
@@ -75,7 +78,7 @@
           'fill-extrusion-height': ['coalesce', ['get', 'render_height'], 8],
           'fill-extrusion-base': ['coalesce', ['get', 'render_min_height'], 0], 'fill-extrusion-vertical-gradient': true } },
       { id: 'stops-3d', type: 'fill-extrusion', source: 'stops',
-        paint: { 'fill-extrusion-color': ['step', ['get', 'pct'], '#d7301f', 80, '#f28e2b', 95, '#2ca25f'],
+        paint: { 'fill-extrusion-color': ['step', ['get', 'pct'], '#d7301f', 60, '#f28e2b', 75, '#f2cf2b', 90, '#2ca25f'],
           'fill-extrusion-height': ['get', 'h'], 'fill-extrusion-base': 0, 'fill-extrusion-opacity': 0.95 } },
       { id: 'pins', type: 'circle', source: 'pins',
         paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, 6, 17, 11], 'circle-color': ['case', ['get', 'planned'], '#f2b134', '#e4572e'],
@@ -100,6 +103,8 @@
   });
   map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
   map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+  // Keep the canvas matched to its box (layout changes, text size setting, orientation).
+  if (window.ResizeObserver) new ResizeObserver(function () { map.resize(); }).observe(box);
 
   // ---------------------------------------------------------------- light, sky and colours
   var lightMode = 'auto';
@@ -133,7 +138,7 @@
     return fetch(box.getAttribute('data-src'), { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (d) {
       var features = d.arrets.map(function (s) {
         stopsById[String(s.id)] = s;
-        return { type: 'Feature', id: s.id, properties: { id: String(s.id), pct: s.pct, h: Math.min(260, 25 + (100 - s.pct) * 7) },
+        return { type: 'Feature', id: s.id, properties: { id: String(s.id), pct: s.pct, h: Math.min(120, 12 + (100 - s.pct) * 2.6) },
           geometry: { type: 'Polygon', coordinates: circle(s.lon, s.lat, 14, 14) } };
       });
       map.getSource('stops').setData({ type: 'FeatureCollection', features: features });
