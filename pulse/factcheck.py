@@ -51,7 +51,7 @@ def allowed_numbers(facts, day: date | None = None) -> set[float]:
     walk(facts)
     if day:
         allowed.update({float(day.day), float(day.month), float(day.year)})
-    allowed.update({3.0, 24.0})  # punctuality rule and "24 heures"
+    allowed.update({3.0, 24.0, 9.0, 10.0, 90.0})  # 3-min rule, "24 heures", "9 sur 10", 90e centile
     return allowed
 
 

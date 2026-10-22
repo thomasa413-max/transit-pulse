@@ -45,7 +45,7 @@ PRICES = {
 }
 MONTHLY_BUDGET_USD = 10.0
 
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v2"
 LANGS = {"fr": "Français", "de": "Deutsch", "it": "Italiano", "en": "English"}
 
 # --- Operations ----------------------------------------------------------
