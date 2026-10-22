@@ -1,0 +1,65 @@
+name: Lighthouse (performance, accessibility, SEO)
+
+# Lab measurement of the live site, mobile profile. Fails (and GitHub emails the owner)
+# when a score drops below target. Real-visitor Core Web Vitals are in /admin/performance/.
+on:
+  schedule:
+    - cron: "47 5 * * 1"          # every Monday
+  push:
+    branches: [main]
+    paths: ["site_static/**", "pulse/site.py", "pulse/i18n.py", "pulse/charts.py", "src/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install -r requirements.txt
+
+      - name: Wait for Cloudflare to deploy this commit
+        if: github.event_name == 'push'
+        run: sleep 150
+
+      - name: Measure key pages
+        run: |
+          npm i -g lighthouse@12 >/dev/null
+          BASE=$(python -c "from pulse import config; print(config.SITE_URL)")
+          SKIP=$(python -c "from pulse import config; print('' if config.INDEXING else '--skip-audits=is-crawlable')")
+          mkdir -p lh
+          for path in /fr/ /de/bulletin/ /it/agenti/ /en/about/; do
+            name=$(echo "$path" | tr '/' '_')
+            lighthouse "$BASE$path" --quiet --output=json --output-path="lh/$name.json" \
+              --chrome-flags="--headless=new --no-sandbox" $SKIP || true
+          done
+
+      - name: Summarise and check thresholds
+        id: check
+        continue-on-error: true
+        run: python scripts/lighthouse_summary.py lh data/lighthouse.json
+
+      - name: Build site and commit the report
+        run: |
+          python -m pulse.site
+          bash scripts/commit.sh "Lighthouse report $(date -u +%F)"
+
+      - name: Fail if below target
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "::error::A Lighthouse score is below target. See /admin/performance/."
+          exit 1

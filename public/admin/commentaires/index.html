@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Commentaires · Administration · Transit Pulse Lausanne</title>
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css?v=7b314c4ee9">
+<link rel="stylesheet" href="/assets/admin.css?v=13d540a4f6">
+<script src="/assets/prefs.js?v=e4b8e8bf6f"></script>
+<script src="/assets/admin-core.js?v=602a204d73" defer></script>
+<script src="/assets/admin-comments.js?v=6917e0babb" defer></script>
+</head>
+<body class="admin">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header"><div class="wrap header-inner">
+  <a class="brand" href="/admin/"><span class="brand-mark" aria-hidden="true"></span>Transit Pulse <span class="brand-zone">Administration</span></a>
+  <nav aria-label="Administration" id="menu-admin" hidden><ul><li><a href="/admin/">Accueil</a></li><li><a href="/admin/commentaires/" aria-current="page">Commentaires <span class=badge-count id=nb-attente hidden></span></a></li><li><a href="/admin/statistiques/">Statistiques</a></li><li><a href="/admin/performance/">Performance</a></li></ul></nav>
+  <button type="button" class="tool" id="deconnexion" hidden>Se déconnecter</button>
+</div></header>
+<main id="contenu" class="wrap" tabindex="-1">
+<section class="block login" id="connexion" hidden>
+  <h1>Connexion</h1>
+  <form id="form-connexion">
+    <p><label for="mdp">Mot de passe</label><input id="mdp" type="password" autocomplete="current-password" required></p>
+    <p><button class="btn" type="submit">Se connecter</button></p>
+    <p class="form-message" id="erreur-connexion" role="alert"></p>
+  </form>
+</section>
+<div id="app" hidden>
+<h1>Commentaires</h1>
+<div id="contenu-admin"><p class="muted" role="status">Chargement…</p></div>
+</div>
+</main>
+</body>
+</html>

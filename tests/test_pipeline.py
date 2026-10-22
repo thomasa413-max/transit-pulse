@@ -156,12 +156,16 @@ class TestEndToEnd(unittest.TestCase):
         # Running again is a no-op.
         self.assertEqual(daily.run(DAY, sample=FIX / "sample_istdaten.csv"), 0)
         site.build()
-        for p in ("index.html", "bulletin/index.html", "bulletin/2026-10-21/index.html",
-                  "agents/index.html", "qualite/index.html", "couts/index.html", "a-propos/index.html", "_headers"):
+        for p in ("fr/index.html", "fr/bulletin/2026-10-21/index.html", "de/bulletin/2026-10-21/index.html",
+                  "it/bollettino/2026-10-21/index.html", "en/bulletin/2026-10-21/index.html", "de/agenten/index.html",
+                  "it/qualita/index.html", "en/costs/index.html", "fr/a-propos/index.html", "admin/index.html",
+                  "sitemap.xml", "robots.txt", "_headers"):
             self.assertTrue((config.PUBLIC / p).exists(), p)
-        html = (config.PUBLIC / "index.html").read_text(encoding="utf-8")
+        html = (config.PUBLIC / "fr" / "index.html").read_text(encoding="utf-8")
         self.assertIn('lang="fr"', html)
         self.assertIn("noindex", html)
+        de = (config.PUBLIC / "de" / "bulletin" / "2026-10-21" / "index.html").read_text(encoding="utf-8")
+        self.assertIn('<article class="bulletin" lang="de">', de)
 
 
 if __name__ == "__main__":

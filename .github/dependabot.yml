@@ -1,0 +1,9 @@
+# Weekly update proposals for GitHub Actions and Python packages (security fixes included).
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly }
+  - package-ecosystem: pip
+    directory: /
+    schedule: { interval: weekly }

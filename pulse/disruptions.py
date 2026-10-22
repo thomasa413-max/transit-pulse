@@ -50,6 +50,10 @@ def _pick(texts: dict[str, list[str]], lang_order=("fr", "en", "de", "it", "")) 
     return ""
 
 
+def _order(lang: str) -> tuple:
+    return (lang, "fr", "en", "de", "it", "")
+
+
 def situation_to_dict(el) -> dict:
     """Flatten one PtSituationElement into the fields the site needs."""
     fields: dict[str, dict[str, list[str]]] = {}
@@ -90,6 +94,12 @@ def situation_to_dict(el) -> dict:
         "titre": _pick(fields.get("Summary", {})),
         "description": _pick(fields.get("Description", {})),
         "consequence": _pick(fields.get("Consequence", {})),
+        # Same texts in each site language (the feed is multilingual; fall back to French).
+        "textes": {lang: {
+            "titre": _pick(fields.get("Summary", {}), _order(lang)),
+            "description": _pick(fields.get("Description", {}), _order(lang)),
+            "consequence": _pick(fields.get("Consequence", {}), _order(lang)),
+        } for lang in ("fr", "de", "it", "en")},
         "periodes": [{"debut": s, "fin": e} for s, e in periods],
         "lieux": sorted(places)[:12],
         "lignes": sorted(lines)[:12],

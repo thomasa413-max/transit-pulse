@@ -1,12 +1,20 @@
-// Cloudflare Workers static assets: serves the generated site in public/.
-// No Worker script: every request is a static file. _headers in public/ applies.
+// Cloudflare Worker + static assets.
+// Static pages (public/) are served directly; the Worker handles "/", /api/* and unknown paths (404, old URLs).
 {
   "name": "transit-pulse",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-01",
   "preview_urls": false,
+  "observability": { "enabled": true },
+  "triggers": { "crons": ["41 2 * * *"] },
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "none"
-  }
+    "not_found_handling": "none",
+    "run_worker_first": ["/", "/api/*"]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "transit-pulse", "database_id": "c171e1c2-1ac9-487d-8d0e-54cdb6020337" }
+  ]
 }

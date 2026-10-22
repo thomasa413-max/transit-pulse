@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Costs · Transit Pulse Lausanne</title>
+<meta name="description" content="Running cost of the Transit Pulse AI agent pipeline, to the token.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://transit-pulse.thomasa413.workers.dev/en/costs/">
+<link rel="alternate" hreflang="fr" href="https://transit-pulse.thomasa413.workers.dev/fr/couts/"><link rel="alternate" hreflang="de" href="https://transit-pulse.thomasa413.workers.dev/de/kosten/"><link rel="alternate" hreflang="it" href="https://transit-pulse.thomasa413.workers.dev/it/costi/"><link rel="alternate" hreflang="en" href="https://transit-pulse.thomasa413.workers.dev/en/costs/"><link rel="alternate" hreflang="x-default" href="https://transit-pulse.thomasa413.workers.dev/fr/couts/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Transit Pulse Lausanne">
+<meta property="og:title" content="Costs">
+<meta property="og:description" content="Running cost of the Transit Pulse AI agent pipeline, to the token.">
+<meta property="og:url" content="https://transit-pulse.thomasa413.workers.dev/en/costs/">
+<meta property="og:image" content="https://transit-pulse.thomasa413.workers.dev/assets/og/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB"><meta property="og:locale:alternate" content="fr_CH"><meta property="og:locale:alternate" content="de_CH"><meta property="og:locale:alternate" content="it_CH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e69">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css?v=7b314c4ee9">
+<script src="/assets/prefs.js?v=e4b8e8bf6f"></script>
+<script src="/assets/site.js?v=359bd5195a" defer></script>
+
+</head>
+<body>
+<a class="skip" href="#contenu">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/en/"><span class="brand-mark" aria-hidden="true"></span>Transit Pulse <span class="brand-zone">Lausanne</span></a>
+    <div class="tools">
+      <div class="lang-wrap">
+        <button type="button" class="tool" id="btn-lang" aria-expanded="false" aria-controls="lang-menu"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="sr-only">Language : </span><span>English</span></button>
+        <ul class="lang-menu" id="lang-menu" hidden><li><a href="/fr/couts/" lang="fr" hreflang="fr">Français</a></li><li><a href="/de/kosten/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/it/costi/" lang="it" hreflang="it">Italiano</a></li><li><a href="/en/costs/" lang="en" hreflang="en" aria-current="true">English</a></li></ul>
+      </div>
+      <button type="button" class="tool" id="btn-reglages" aria-expanded="false" aria-controls="reglages"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg><span>Display</span></button>
+    </div>
+    <nav aria-label="Main navigation"><ul><li><a href="/en/">Dashboard</a></li><li><a href="/en/bulletin/">Bulletin</a></li><li><a href="/en/agents/">Agents</a></li><li><a href="/en/quality/">Quality</a></li><li><a href="/en/costs/" aria-current="page">Costs</a></li><li><a href="/en/about/">About</a></li></ul></nav>
+  </div>
+  <div class="wrap"><div class="settings" id="reglages" hidden>
+  <p class="set-row"><span id="lbl-size">Text size</span>
+    <span class="seg" role="group" aria-labelledby="lbl-size">
+      <button type="button" id="moins" aria-label="Smaller text">A−</button>
+      <output id="taille-val" aria-live="polite">100 %</output>
+      <button type="button" id="plus" aria-label="Larger text">A+</button></span></p>
+  <p class="set-row"><span id="lbl-font">Font</span>
+    <span class="seg" role="group" aria-labelledby="lbl-font">
+      <button type="button" id="pol-standard" aria-pressed="true">Standard</button>
+      <button type="button" id="pol-lisible" aria-pressed="false">Easier to read</button></span></p>
+  <p class="set-row"><span id="lbl-theme">Theme</span>
+    <span class="seg" role="group" aria-labelledby="lbl-theme">
+      <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-theme-set="system" aria-pressed="true">System</button></span></p>
+</div></div>
+</header>
+<main id="contenu" class="wrap" tabindex="-1">
+<h1>Costs</h1><p class="lead">Every model call is counted to the token and priced at the public API rate. Writing and checking use Claude Sonnet 5.5, translation (checked by code) Claude Haiku 5.5; a monthly cap stops any overrun.</p><div class="tiles"><div class="tile accent"><p class="tile-label">This month</p><p class="tile-value">$0.26</p><p class=tile-note>Budget capped at $10</p></div><div class="tile "><p class="tile-label">30-day projection</p><p class="tile-value">$0.35</p><p class=tile-note>At the current pace</p></div><div class="tile "><p class="tile-label">Average cost per bulletin</p><p class="tile-value">$0.06</p><p class=tile-note>Writing, checking and translation</p></div><div class="tile "><p class="tile-label">Hosting and scheduling</p><p class="tile-value">$0.00</p><p class=tile-note>Cloudflare and GitHub Actions, free tiers</p></div></div><section class="block"><h2>Cost per day</h2><p class="lead-sm">In US cents, last 30 days.</p><svg class="chart" viewBox="0 0 720 240" role="img" aria-label="AI cost per day, in US cents"><title>AI cost per day, in US cents</title><line class="grid" x1="52" x2="708" y1="204.0" y2="204.0"/><text class="tick" x="44" y="208.0" text-anchor="end">0</text><line class="grid" x1="52" x2="708" y1="141.4" y2="141.4"/><text class="tick" x="44" y="145.4" text-anchor="end">10</text><line class="grid" x1="52" x2="708" y1="78.9" y2="78.9"/><text class="tick" x="44" y="82.9" text-anchor="end">20</text><rect class="bar" x="55.3" y="204.0" width="15.3" height="1.0" rx="2"><title>23.09 : 0 ¢</title></rect><text class="tick" x="62.9" y="228" text-anchor="middle">23.09</text><rect class="bar" x="77.1" y="204.0" width="15.3" height="1.0" rx="2"><title>24.09 : 0 ¢</title></rect><rect class="bar" x="99.0" y="204.0" width="15.3" height="1.0" rx="2"><title>25.09 : 0 ¢</title></rect><text class="tick" x="106.7" y="228" text-anchor="middle">25.09</text><rect class="bar" x="120.9" y="204.0" width="15.3" height="1.0" rx="2"><title>26.09 : 0 ¢</title></rect><rect class="bar" x="142.7" y="204.0" width="15.3" height="1.0" rx="2"><title>27.09 : 0 ¢</title></rect><text class="tick" x="150.4" y="228" text-anchor="middle">27.09</text><rect class="bar" x="164.6" y="204.0" width="15.3" height="1.0" rx="2"><title>28.09 : 0 ¢</title></rect><rect class="bar" x="186.5" y="204.0" width="15.3" height="1.0" rx="2"><title>29.09 : 0 ¢</title></rect><text class="tick" x="194.1" y="228" text-anchor="middle">29.09</text><rect class="bar" x="208.3" y="204.0" width="15.3" height="1.0" rx="2"><title>30.09 : 0 ¢</title></rect><rect class="bar" x="230.2" y="204.0" width="15.3" height="1.0" rx="2"><title>01.10 : 0 ¢</title></rect><text class="tick" x="237.9" y="228" text-anchor="middle">01.10</text><rect class="bar" x="252.1" y="204.0" width="15.3" height="1.0" rx="2"><title>02.10 : 0 ¢</title></rect><rect class="bar" x="273.9" y="204.0" width="15.3" height="1.0" rx="2"><title>03.10 : 0 ¢</title></rect><text class="tick" x="281.6" y="228" text-anchor="middle">03.10</text><rect class="bar" x="295.8" y="204.0" width="15.3" height="1.0" rx="2"><title>04.10 : 0 ¢</title></rect><rect class="bar" x="317.7" y="204.0" width="15.3" height="1.0" rx="2"><title>05.10 : 0 ¢</title></rect><text class="tick" x="325.3" y="228" text-anchor="middle">05.10</text><rect class="bar" x="339.5" y="204.0" width="15.3" height="1.0" rx="2"><title>06.10 : 0 ¢</title></rect><rect class="bar" x="361.4" y="204.0" width="15.3" height="1.0" rx="2"><title>07.10 : 0 ¢</title></rect><text class="tick" x="369.1" y="228" text-anchor="middle">07.10</text><rect class="bar" x="383.3" y="204.0" width="15.3" height="1.0" rx="2"><title>08.10 : 0 ¢</title></rect><rect class="bar" x="405.1" y="204.0" width="15.3" height="1.0" rx="2"><title>09.10 : 0 ¢</title></rect><text class="tick" x="412.8" y="228" text-anchor="middle">09.10</text><rect class="bar" x="427.0" y="204.0" width="15.3" height="1.0" rx="2"><title>10.10 : 0 ¢</title></rect><rect class="bar" x="448.9" y="204.0" width="15.3" height="1.0" rx="2"><title>11.10 : 0 ¢</title></rect><text class="tick" x="456.5" y="228" text-anchor="middle">11.10</text><rect class="bar" x="470.7" y="204.0" width="15.3" height="1.0" rx="2"><title>12.10 : 0 ¢</title></rect><rect class="bar" x="492.6" y="204.0" width="15.3" height="1.0" rx="2"><title>13.10 : 0 ¢</title></rect><text class="tick" x="500.3" y="228" text-anchor="middle">13.10</text><rect class="bar" x="514.5" y="204.0" width="15.3" height="1.0" rx="2"><title>14.10 : 0 ¢</title></rect><rect class="bar" x="536.3" y="204.0" width="15.3" height="1.0" rx="2"><title>15.10 : 0 ¢</title></rect><text class="tick" x="544.0" y="228" text-anchor="middle">15.10</text><rect class="bar" x="558.2" y="204.0" width="15.3" height="1.0" rx="2"><title>16.10 : 0 ¢</title></rect><rect class="bar" x="580.1" y="204.0" width="15.3" height="1.0" rx="2"><title>17.10 : 0 ¢</title></rect><text class="tick" x="587.7" y="228" text-anchor="middle">17.10</text><rect class="bar" x="601.9" y="204.0" width="15.3" height="1.0" rx="2"><title>18.10 : 0 ¢</title></rect><rect class="bar" x="623.8" y="204.0" width="15.3" height="1.0" rx="2"><title>19.10 : 0 ¢</title></rect><text class="tick" x="631.5" y="228" text-anchor="middle">19.10</text><rect class="bar" x="645.7" y="204.0" width="15.3" height="1.0" rx="2"><title>20.10 : 0 ¢</title></rect><rect class="bar" x="667.5" y="204.0" width="15.3" height="1.0" rx="2"><title>21.10 : 0 ¢</title></rect><text class="tick" x="675.2" y="228" text-anchor="middle">21.10</text><rect class="bar" x="689.4" y="44.0" width="15.3" height="160.0" rx="2"><title>22.10 : 25.6 ¢</title></rect></svg><details class="chart-data"><summary>Show the data</summary><table><caption class="sr-only">Cost per day</caption><thead><tr><th scope="col">Day</th><th scope="col">Cost</th></tr></thead><tbody><tr><td>2026-10-22</td><td>$0.26</td></tr></tbody></table></details></section><section class="block"><h2>By agent, since the start</h2><div class="table-wrap" tabindex="0" role="region" aria-label="By agent, since the start"><table><caption class="sr-only">By agent, since the start</caption><thead><tr><th scope="col">Agent</th><th scope="col" class=num>Calls</th><th scope="col" class=num>Input tokens</th><th scope="col" class=num>Output tokens</th><th scope="col" class=num>Cost</th></tr></thead><tbody><tr><td>Checker</td><td class=num>13</td><td class=num>58'036</td><td class=num>7'924</td><td class=num>$0.15</td></tr><tr><td>Writer</td><td class=num>16</td><td class=num>67'657</td><td class=num>14'910</td><td class=num>$0.10</td></tr><tr><td>Translator</td><td class=num>14</td><td class=num>21'254</td><td class=num>7'855</td><td class=num>$0.0061</td></tr></tbody></table></div></section><p class="method">Prices used: Claude Haiku 5.5, $0.10 per million input tokens and $0.50 output; Claude Sonnet 5.5, $2 and $10 (<a href="https://platform.claude.com/docs/en/about-claude/pricing">official price list</a>).</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Data: <a href="https://opentransportdata.swiss/">opentransportdata.swiss</a> (actual times and disruptions of Swiss public transport). Figures and texts are generated automatically.</p>
+    <p>Personal proof of concept, not affiliated with SBB, tl or any other operator.</p>
+    <ul class="footer-links">
+      <li><a href="/en/visitors/">Visitors</a></li>
+      <li><a href="/en/privacy/">Privacy</a></li>
+      <li><a href="https://github.com/thomasa413-max/transit-pulse">Source code</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

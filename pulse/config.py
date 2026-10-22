@@ -57,4 +57,12 @@ LANGS = {"fr": "Français", "de": "Deutsch", "it": "Italiano", "en": "English"}
 # Alert if no successful daily run for this long.
 DAILY_STALE_HOURS = 30
 SITE_TITLE = "Transit Pulse Lausanne"
+# Public address. Change to the Vaud domain at go-live (canonical URLs, sitemap, social cards).
+SITE_URL = "https://transit-pulse.thomasa413.workers.dev"
+# Search-engine indexing. False during the pilot: noindex everywhere, robots.txt blocks all.
+# Set to True at go-live: pages become indexable, robots.txt lists the sitemap.
+INDEXING = False
+# Cloudflare Turnstile site key (public). Empty = comment form shown but disabled.
+TURNSTILE_SITE_KEY = "0x4AAAAAAFhUufp2B4qgZJXA"
+AUTHOR = "Michaël Miguel"
 REPO_URL = "https://github.com/thomasa413-max/transit-pulse"

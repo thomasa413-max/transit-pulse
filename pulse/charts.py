@@ -36,8 +36,20 @@ def _ticks(lo: float, hi: float, n: int = 4) -> list[float]:
     return ticks
 
 
+_LANG = {"value": "fr"}
+
+
+def set_lang(lang: str) -> None:
+    """Decimal separator for chart labels: point in English, comma otherwise."""
+    _LANG["value"] = lang
+
+
 def _num(v: float, unit: str = "") -> str:
-    s = f"{v:.1f}".rstrip("0").rstrip(".").replace(".", ",")
+    s = f"{v:.1f}".rstrip("0").rstrip(".")
+    if _LANG["value"] != "en":
+        s = s.replace(".", ",")
+    if unit.strip() == "%" and _LANG["value"] in ("en", "it"):
+        unit = "%"
     return f"{s}{unit}"
 
 
@@ -115,10 +127,10 @@ def bar_chart(bars: list[tuple[str, float]], *, title: str, unit: str = " %",
     return "".join(parts)
 
 
-def data_table(headers: list[str], rows: list[list[str]], caption: str) -> str:
+def data_table(headers: list[str], rows: list[list[str]], caption: str, summary: str = "Voir les données") -> str:
     """Text alternative shown under each chart in a <details> element."""
     th = "".join(f"<th scope=\"col\">{escape(h)}</th>" for h in headers)
     body = "".join("<tr>" + "".join(f"<td>{escape(c)}</td>" for c in r) + "</tr>" for r in rows)
-    return (f'<details class="chart-data"><summary>Voir les données</summary>'
+    return (f'<details class="chart-data"><summary>{escape(summary)}</summary>'
             f'<table><caption class="sr-only">{escape(caption)}</caption><thead><tr>{th}</tr></thead>'
             f"<tbody>{body}</tbody></table></details>")
