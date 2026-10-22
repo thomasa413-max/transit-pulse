@@ -1,34 +1,28 @@
 {
  "date": "2026-10-21",
- "genere_a": "2026-10-22T17:23:28+00:00",
+ "genere_a": "2026-10-22T17:28:43+00:00",
  "modele": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
  "prompt_version": "v2",
  "tentatives": 2,
  "controle": {
   "passed": false,
   "problems": [
    {
-    "phrase": "La S41 (SBB) enregistre 1 suppression sur 41 passages et une ponctualité de 57,5 %.",
-    "raison": "Les données indiquent bien 1 suppression sur 41 passages et 57,5 %, mais la S41 n'est pas une ligne parmi les moins ponctuelles au sens strict du texte ; cependant ce point est exact. Ce n'est donc pas une erreur de chiffre."
-   },
-   {
-    "phrase": "Les plus gros retards relevés concernent un bus de la ligne 16 à 20 h 50 (38,3 minutes) et un bus de la ligne 18 à 17 h 09 (36,3 minutes), tous deux de TL.",
-    "raison": "Les données donnent bien ces deux retards, mais la ligne 16 n'est pas à l'arrêt Tunnel ni la 18 à Boston comme mentionné ; le texte ne cite pas les arrêts, donc la phrase est correcte. Aucun écart relevé."
-   },
-   {
-    "phrase": "Ces informations générales ne sont pas associées aux lignes ci-dessus dans les données et ne permettent pas d'en expliquer les résultats.",
-    "raison": "Phrase conforme : elle indique que les perturbations ne sont pas reliées aux résultats, sans attribuer de cause."
+    "phrase": "Le 21 octobre 2026, 75,6 % des 15'329 passages mesurés à Lausanne sont arrivés à l'heure, soit moins de 3 minutes de retard.",
+    "raison": "15 329 est le nombre total de passages, pas de passages mesurés. Les passages mesurés sont au nombre de 15 048.",
+    "erreur": true
    }
   ],
   "unknown_numbers": []
  },
  "fr": {
-  "titre": "Ponctualité de 75,6 % à Lausanne le 21 octobre, bus à la traîne en soirée",
+  "titre": "Ponctualité de 75,6 % à Lausanne le 21 octobre, avec des retards marqués en soirée",
   "paragraphes": [
-   "Le 21 octobre 2026, 75,6 % des passages mesurés à Lausanne étaient à l'heure, c'est-à-dire avec moins de 3 minutes de retard. Le retard moyen s'établit à 2,3 minutes et 9 passages sur 10 ont moins de 5,3 minutes de retard. Sur 15'329 passages, 96 suppressions ont été enregistrées, soit 0,6 %. Aucune comparaison avec les jours précédents n'est disponible pour cette journée.",
-   "Les bus, avec 13'438 passages, affichent une ponctualité de 73,5 %, contre 97,4 % pour le métro et 85,4 % pour le train. Parmi les lignes les moins ponctuelles, la ligne 7 (TL) n'atteint que 41,4 % de passages à l'heure, la ligne 8 (TL) 48,9 %, et la ligne 18 (TL) 61,2 %. La S41 (SBB) enregistre 1 suppression sur 41 passages et une ponctualité de 57,5 %.",
-   "La fin d'après-midi est la période la plus difficile : à 18 h, la ponctualité tombe à 62,2 % et le retard moyen atteint 4,3 minutes, suivi de 19 h (66,0 %) et de 17 h (70,0 %). Les plus gros retards relevés concernent un bus de la ligne 16 à 20 h 50 (38,3 minutes) et un bus de la ligne 18 à 17 h 09 (36,3 minutes), tous deux de TL.",
-   "L'exploitant a signalé deux perturbations planifiées le même jour : le déplacement de l'arrêt Lausanne, Clochatte et une restriction Palézieux - Romont FR. Ces informations générales ne sont pas associées aux lignes ci-dessus dans les données et ne permettent pas d'en expliquer les résultats."
+   "Le 21 octobre 2026, 75,6 % des 15'329 passages mesurés à Lausanne sont arrivés à l'heure, soit moins de 3 minutes de retard. Le retard moyen s'établit à 2,3 minutes et 9 passages sur 10 ont moins de 5,3 minutes de retard. Sur la journée, 96 passages ont été supprimés, soit 0,6 %. Les données de la journée ne permettent pas de comparaison avec les jours précédents.",
+   "Par mode, le métro affiche 97,4 % de ponctualité et le train 85,4 %, contre 73,5 % pour le bus. Chez les bus TL, la ligne 41 atteint 99,8 %, tandis que les lignes 7 et 8 affichent respectivement 41,4 % et 48,9 %. La ligne S41 (SBB) enregistre 57,5 % sur 40 passages mesurés.",
+   "Entre 18 h et 19 h, la ponctualité tombe à 62,2 % puis 66,0 %, avec un retard moyen de 4,3 minutes à 18 h. Entre 17 h et 18 h, elle atteint 70,0 %. Les taux des arrêts Lausanne, Cour (50,8 %), Prélaz (55,6 %) et Boston (56,9 %) portent sur l'ensemble de la journée. Le plus gros retard relevé est de 38,3 minutes, sur la ligne 16 à Lausanne, Tunnel, pour un passage prévu à 20 h 50.",
+   "L'exploitant a signalé l'arrêt Lausanne, Clochatte déplacé, planifié. Les données listent aussi une restriction planifiée Palézieux - Romont FR, sans indication qu'elle concerne Lausanne ni qu'elle explique les chiffres ci-dessus."
   ]
  },
  "statut": "bloque"
