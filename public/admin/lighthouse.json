@@ -1,5 +1,5 @@
 {
- "at": "2026-10-22T22:25:15+00:00",
+ "at": "2026-10-22T22:30:50+00:00",
  "pages": [
   {
    "path": "/de/bulletin/",
@@ -16,14 +16,14 @@
   {
    "path": "/en/about/",
    "scores": {
-    "performance": 1,
+    "performance": 0.99,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
    },
-   "lcp": "1.3 s",
+   "lcp": "1.4 s",
    "cls": "0",
-   "tbt": "0 ms"
+   "tbt": "10 ms"
   },
   {
    "path": "/fr/",
@@ -33,9 +33,21 @@
     "best-practices": 1,
     "seo": 1
    },
-   "lcp": "1.7 s",
+   "lcp": "1.6 s",
    "cls": "0",
-   "tbt": "10 ms"
+   "tbt": "0 ms"
+  },
+  {
+   "path": "/fr/carte/",
+   "scores": {
+    "performance": 0.6,
+    "accessibility": 1,
+    "best-practices": 1,
+    "seo": 1
+   },
+   "lcp": "1.8 s",
+   "cls": "0",
+   "tbt": "160,730 ms"
   },
   {
    "path": "/it/agenti/",
@@ -50,6 +62,8 @@
    "tbt": "0 ms"
   }
  ],
- "failures": [],
+ "failures": [
+  "/fr/carte/ performance 60 < 95 (Missing source maps for large first-party JavaScript; `<td>` elements in a large `<table>` do not have table headers.)"
+ ],
  "note": "Objectifs : performance ≥ 95, accessibilité 100, bonnes pratiques ≥ 95, SEO 100 (mobile)."
 }
