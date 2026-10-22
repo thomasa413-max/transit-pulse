@@ -213,7 +213,7 @@ def _translate_one(day: date, bulletin: dict, lang: str, rejected: str = "") -> 
         if not ok:
             problem = f"numbers differ (missing {missing}, extra {extra})"
     except Exception:  # noqa: BLE001
-        b, problem = None, "empty or unreadable answer"
+        b, problem = None, f"empty or unreadable answer ({res.extra.get('stop_reason')}): {res.text[:120]!r}"
     _log("translator", day, res, "error" if problem else "ok", language=lang, languages=[] if problem else [lang],
          problems=[f"{lang}: {problem}"] if problem else [], retry=bool(rejected))
     return (None if problem else b), problem
