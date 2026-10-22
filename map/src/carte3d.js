@@ -49,7 +49,7 @@ try {
     terrainProvider: undefined,
     creditContainer: box.querySelector('.map-credits'),
     requestRenderMode: true, maximumRenderTimeChange: Infinity,
-    shadows: !small, msaaSamples: small ? 1 : 4,
+    shadows: false, msaaSamples: small ? 1 : 2,
     useBrowserRecommendedResolution: small,
     showRenderLoopErrors: false,
   });
@@ -86,7 +86,7 @@ CesiumTerrainProvider.fromUrl('https://3d.geo.admin.ch/ch.swisstopo.terrain.3d/v
 
 let buildings;
 Cesium3DTileset.fromUrl('https://3d.geo.admin.ch/ch.swisstopo.swissbuildings3d.3d/v1/tileset.json', {
-  maximumScreenSpaceError: small ? 16 : 6, shadows: ShadowMode.ENABLED, cacheBytes: 384 * 1024 * 1024,
+  maximumScreenSpaceError: small ? 16 : 10, shadows: ShadowMode.ENABLED, cacheBytes: 384 * 1024 * 1024,
   dynamicScreenSpaceError: true, foveatedScreenSpaceError: true,
 }).then((ts) => {
   buildings = ts;
@@ -202,10 +202,10 @@ function applyLight() {
   scene.light = night ? MOON : SUN;
   globe.enableLighting = !night;
   if (scene.skyAtmosphere) { scene.skyAtmosphere.brightnessShift = night ? -0.75 : 0; scene.skyAtmosphere.saturationShift = night ? -0.4 : 0; }
-  if (scene.shadowMap) scene.shadowMap.enabled = !small && !night;
   const base = scene.imageryLayers.get(0);
   if (base) { base.brightness = night ? 0.62 : 1.0; base.saturation = night ? 0.5 : 1.0; base.contrast = night ? 1.15 : 1.0; base.gamma = 1.0; }
-  if (buildings) buildings.style = new Cesium3DTileStyle({ color: night ? "color('#b8b2a8')" : "color('#f3eee6')" });
+  // Daytime keeps swisstopo's own roof and wall colours; at night they are tinted by the moonlight.
+  if (buildings) buildings.style = night ? new Cesium3DTileStyle({ color: "color('#c9d2e6')" }) : undefined;
   if (stopsPrim) stopsPrim.appearance = new PerInstanceColorAppearance({ closed: true, translucent: false, flat: night });
   scene.requestRender();
 }

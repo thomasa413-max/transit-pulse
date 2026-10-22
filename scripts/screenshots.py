@@ -33,7 +33,9 @@ with sync_playwright() as p:
                 try:
                     pg.click('[data-light="day"]')
                     pg.wait_for_timeout(30000)
-                    pg.screenshot(path=str(out / f"{name}-day.png"), clip=pg.locator("#carte").bounding_box())
+                    pg.locator("#carte").scroll_into_view_if_needed()
+                    bb = pg.locator("#carte").bounding_box()
+                    pg.screenshot(path=str(out / f"{name}-day.png"), clip=bb, timeout=90000)
                 except Exception as exc:  # noqa: BLE001
                     errs.append(f"day view: {exc}")
             (out / f"{name}.txt").write_text("\n".join(errs) or "no console errors")
