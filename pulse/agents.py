@@ -38,11 +38,6 @@ VERDICT_SCHEMA = {
     },
     "required": ["verdict", "problemes"],
 }
-TRANSLATION_SCHEMA = {
-    "type": "object",
-    "properties": {lang: BULLETIN_SCHEMA for lang in ("de", "it", "en")},
-    "required": ["de", "it", "en"],
-}
 
 
 def _log(agent: str, day: date, result: llm.LLMResult, status: str, **extra) -> None:
@@ -148,11 +143,10 @@ def _fake_checker(_user: str) -> str:
     return json.dumps({"verdict": "pass", "problemes": []})
 
 
-def _fake_translator(user: str) -> str:
+def _fake_translate_one(user: str, lang: str) -> str:
     b = json.loads(user.split("BULLETIN:\n", 1)[1])
-    return json.dumps({lang: {"titre": f"[{lang}] {b['titre']}",
-                              "paragraphes": [f"[{lang}] {x}" for x in b["paragraphes"]]}
-                       for lang in ("de", "it", "en")}, ensure_ascii=False)
+    return json.dumps({"titre": f"[{lang}] {b['titre']}", "paragraphes": [f"[{lang}] {x}" for x in b["paragraphes"]]},
+                      ensure_ascii=False)
 
 
 # ---------------------------------------------------------------------------
@@ -202,47 +196,37 @@ def check(day: date, facts: dict, bulletin: dict) -> dict:
 LANG_NAMES = {"de": "German", "it": "Italian", "en": "English"}
 
 
-def _check_translations(fr_text: str, data: dict, langs) -> tuple[dict, list[str]]:
-    ok_langs, problems = {}, []
-    for lang in langs:
-        b = data.get(lang)
-        if not isinstance(b, dict) or not b.get("paragraphes"):
-            problems.append(f"{lang}: manquant")
-            continue
+def _translate_one(day: date, bulletin: dict, lang: str, rejected: str = "") -> tuple[dict | None, str]:
+    fr_text = bulletin_text(bulletin)
+    user = f"Target language: {LANG_NAMES[lang]}.\n"
+    if rejected:
+        user += (f"Your previous translation was rejected: {rejected}. Every number of the French text must "
+                 f"appear exactly as many times as in the French text.\n")
+    user += "\nBULLETIN:\n" + json.dumps(bulletin, ensure_ascii=False)
+    res = _call("translator", day, _prompt("translator"), user, fake_responder=lambda u: _fake_translate_one(u, lang),
+                schema=BULLETIN_SCHEMA, max_tokens=2000)
+    problem = ""
+    try:
+        b = llm.parse_json(res.text)
+        assert b.get("paragraphes")
         ok, missing, extra = factcheck.same_numbers(fr_text, bulletin_text(b))
-        if ok:
-            ok_langs[lang] = b
-        else:
-            problems.append(f"{lang}: chiffres différents (manquants {missing}, en trop {extra})")
-    return ok_langs, problems
+        if not ok:
+            problem = f"numbers differ (missing {missing}, extra {extra})"
+    except Exception:  # noqa: BLE001
+        b, problem = None, "empty or unreadable answer"
+    _log("translator", day, res, "error" if problem else "ok", language=lang, languages=[] if problem else [lang],
+         problems=[f"{lang}: {problem}"] if problem else [], retry=bool(rejected))
+    return (None if problem else b), problem
 
 
 def translate(day: date, bulletin: dict) -> dict:
-    """All three languages in one call; any language that fails the number
-    check is retried alone, with the problem stated."""
-    fr_text = bulletin_text(bulletin)
-    user = "BULLETIN:\n" + json.dumps(bulletin, ensure_ascii=False)
-    res = _call("translator", day, _prompt("translator"), user, fake_responder=_fake_translator,
-                schema=TRANSLATION_SCHEMA, max_tokens=4000)
-    try:
-        data = llm.parse_json(res.text)
-    except Exception:  # noqa: BLE001
-        data = {}
-    out, problems = _check_translations(fr_text, data, ("de", "it", "en"))
-    _log("translator", day, res, "ok" if not problems else "partial", languages=sorted(out), problems=problems)
-
-    for lang in [l for l in ("de", "it", "en") if l not in out]:
-        reason = next((p for p in problems if p.startswith(lang)), "")
-        single = {"type": "object", "properties": {lang: BULLETIN_SCHEMA}, "required": [lang]}
-        retry_user = (f"Translate ONLY into {LANG_NAMES[lang]} (key \"{lang}\"). Previous attempt rejected: {reason}. "
-                      f"Every number of the French text must appear exactly once per occurrence.\n\n" + user)
-        res2 = _call("translator", day, _prompt("translator"), retry_user, fake_responder=_fake_translator,
-                     schema=single, max_tokens=2000)
-        try:
-            data2 = llm.parse_json(res2.text)
-        except Exception:  # noqa: BLE001
-            data2 = {}
-        got, prob2 = _check_translations(fr_text, data2, (lang,))
-        out.update(got)
-        _log("translator", day, res2, "ok" if got else "error", languages=sorted(got), problems=prob2, retry=lang)
+    """One call per language; a language that fails the number check is retried
+    once with the reason. Only checked translations are published."""
+    out = {}
+    for lang in ("de", "it", "en"):
+        b, problem = _translate_one(day, bulletin, lang)
+        if problem:
+            b, _ = _translate_one(day, bulletin, lang, rejected=problem)
+        if b:
+            out[lang] = b
     return out

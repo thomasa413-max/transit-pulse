@@ -374,14 +374,14 @@ def build_quality(bulletins: dict, runs: list[dict]) -> None:
     first_try = [b for b in published if b.get("tentatives", 1) == 1]
     rate = round(100 * len(first_try) / len(recent), 1) if recent else None
     checks = [r for r in runs if r.get("agent") == "checker"][-200:]
-    translations = [r for r in runs if r.get("agent") == "translator"][-30:]
+    translations = [r for r in runs if r.get("agent") == "translator" and r.get("language")][-90:]
     tr_ok = sum(1 for r in translations if r.get("status") == "ok")
     tiles = "".join([
         tile("Validés du premier coup", n(rate, unit=" %") if rate is not None else "–",
              f"{len(first_try)} bulletin(s) sur {len(recent)}, 30 derniers jours", "accent"),
         tile("Corrigés au 2e essai", n(len(corrected), 0), "Le rédacteur reçoit les remarques du contrôleur"),
         tile("Bloqués", n(len(blocked), 0), "Jamais publiés"),
-        tile("Traductions complètes", f"{tr_ok} / {len(translations)}" if translations else "–", "Chiffres identiques au français"),
+        tile("Traductions acceptées", f"{tr_ok} / {len(translations)}" if translations else "–", "Essais dont les chiffres sont identiques au français"),
     ])
     fails = []
     for r in reversed(checks):
