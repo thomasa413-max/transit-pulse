@@ -2,7 +2,7 @@
 
 An autonomous AI pipeline that measures public transport punctuality in Lausanne every day and publishes a fact-checked bulletin in four languages, for a few dollars a month. Proof of concept before a canton of Vaud version.
 
-**Live site:** `https://<project>.pages.dev` (Cloudflare Pages, not indexed during the pilot)
+**Live site:** https://transit-pulse.thomasa413.workers.dev (Cloudflare Workers static assets, not indexed during the pilot)
 
 ## What it does
 
@@ -12,7 +12,7 @@ An autonomous AI pipeline that measures public transport punctuality in Lausanne
 | 3 hours | `pulse.hourly` | Reads the SIRI-SX disruption feed (8 calls/day on a 48 quota), keeps Lausanne situations, runs a health check |
 | Push | tests | 15 offline tests, no network or API key needed |
 
-Each run commits `data/` and `public/`; Cloudflare Pages republishes the site.
+Each run commits `data/` and `public/`; Cloudflare redeploys the site.
 
 ## Agents (Claude Haiku 5.5)
 
@@ -53,7 +53,7 @@ python -m pulse.site && python -m http.server -d public  # preview at http://loc
 pulse/        collector, disruption parser, agents, fact check, site builder
 prompts/      versioned prompts (a prompt change is a commit)
 data/         daily aggregates, bulletins, run log (written by the jobs)
-public/       generated site (served by Cloudflare Pages)
+public/       generated site (served by Cloudflare)
 site_static/  stylesheet, headers, robots.txt
 tests/        offline tests and fixtures
 ```
