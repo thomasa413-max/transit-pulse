@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1211,
- "actives_suisse": 493,
+ "situations_suisse": 1200,
+ "actives_suisse": 483,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -46,6 +46,52 @@
    ],
    "lignes": [
     "18"
+   ]
+  },
+  {
+   "id": "ch:1:sstid:1:d59c03c4-16ab-5bb3-b182-bb68d03152bc",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "poorWeather",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-22T12:30:37Z",
+   "titre": "Interruption entre Lausanne-Ouchy (lac) et Thonon-les-Bains (F) (lac) [bateau]",
+   "description": "Concerne: ligne N2",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Interruption entre Lausanne-Ouchy (lac) et Thonon-les-Bains (F) (lac) [bateau]",
+     "description": "Concerne: ligne N2",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Unterbruch zwischen Lausanne-Ouchy (lac) und Thonon-les-Bains (F) (lac) [Schiff]",
+     "description": "Betroffen: Linie N2",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Interruzione tra Lausanne-Ouchy (lac) e Thonon-les-Bains (F) (lac) [battello]",
+     "description": "Interessata: la linea N2",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Interrupted service between Lausanne-Ouchy (lac) and Thonon-les-Bains (F) (lac) [boat]",
+     "description": "Affected: line N2",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-23T02:35:00Z",
+     "fin": "2026-10-23T19:42:00Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne-Ouchy (lac)"
+   ],
+   "lignes": [
+    "N2"
    ]
   },
   {
@@ -101,6 +147,6 @@
    "lignes": []
   }
  ],
- "octets": 90529679,
- "mis_a_jour": "2026-10-23T00:57:09+00:00"
+ "octets": 90319422,
+ "mis_a_jour": "2026-10-23T03:43:41+00:00"
 }
