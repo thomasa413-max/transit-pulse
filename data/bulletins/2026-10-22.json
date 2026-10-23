@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-22",
+ "genere_a": "2026-10-23T04:52:24+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité à 75,1 % à Lausanne, creux à 18 h",
+  "paragraphes": [
+   "Le 22 octobre 2026, 75,1 % des passages sont arrivés à l'heure (moins de 3 minutes de retard), avec un retard moyen de 2,1 minutes. La veille, la ponctualité était de 75,3 %. Sur 63'890 passages prévus, 62'783 ont été mesurés et 497 ont été supprimés (0,8 %). 9 passages sur 10 ont moins de 5,2 minutes de retard.",
+   "Par mode, sur la journée entière, le train affiche 91,0 % à l'heure, le métro 87,9 % et le bus 74,4 %. Parmi les lignes TL, la 18 est la moins ponctuelle (56,8 %), suivie des lignes 1 (58,1 %) et 8 (62,5 %). La ligne 13 est la plus ponctuelle (99,1 %), devant la 41 (98,0 %).",
+   "L'heure de 18 h est la plus difficile : 57,8 % des passages à l'heure, un retard moyen de 3,4 minutes et 93 passages supprimés. Elle est suivie de 17 h (60,4 %) et de 16 h (67,2 %).",
+   "Les plus gros retards concernent la ligne 1 : 66,2 minutes à Stade Olympique (passage prévu à 5 h 45) et 65,9 minutes à Casernes (prévu à 5 h 47). Parmi les arrêts, Lausanne, Cour est le moins ponctuel, avec 48,7 % de passages à l'heure."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit bei 75,1 % in Lausanne, Tiefstwert um 18 Uhr",
+  "paragraphes": [
+   "Am 22. Oktober 2026 kamen 75,1 % der Fahrten pünktlich an (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 2,1 Minuten. Am Vortag lag die Pünktlichkeit bei 75,3 %. Von 63'890 geplanten Fahrten wurden 62'783 gemessen und 497 gestrichen (0,8 %). 9 von 10 Fahrten hatten weniger als 5,2 Minuten Verspätung.",
+   "Nach Verkehrsmittel betrachtet, waren über den ganzen Tag hinweg 91,0 % der Züge pünktlich, 87,9 % der Metros und 74,4 % der Busse. Unter den TL-Linien ist die 18 am wenigsten pünktlich (56,8 %), gefolgt von den Linien 1 (58,1 %) und 8 (62,5 %). Die Linie 13 ist am pünktlichsten (99,1 %), vor der 41 (98,0 %).",
+   "Die Stunde um 18 Uhr ist am schwierigsten: 57,8 % der Fahrten waren pünktlich, die durchschnittliche Verspätung betrug 3,4 Minuten und 93 Fahrten wurden gestrichen. Es folgen 17 Uhr (60,4 %) und 16 Uhr (67,2 %).",
+   "Die grössten Verspätungen betreffen die Linie 1: 66,2 Minuten an der Haltestelle Stade Olympique (geplante Abfahrt um 05:45 Uhr) und 65,9 Minuten an der Haltestelle Casernes (geplant um 05:47 Uhr). Unter den Haltestellen ist Lausanne, Cour est am wenigsten pünktlich, mit 48,7 % pünktlichen Fahrten."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità al 75,1 % a Losanna, calo alle ore 18",
+  "paragraphes": [
+   "Il 22 ottobre 2026, il 75,1 % dei passaggi è arrivato in orario (con meno di 3 minuti di ritardo), con un ritardo medio di 2,1 minuti. Il giorno prima, la puntualità era del 75,3 %. Su 63'890 passaggi previsti, 62'783 sono stati misurati e 497 sono stati soppressi (0,8 %). 9 passaggi su 10 hanno meno di 5,2 minuti di ritardo.",
+   "Per modo di trasporto, nell'arco dell'intera giornata, il treno registra il 91,0 % in orario, il metro l'87,9 % e il bus il 74,4 %. Tra le linee TL, la 18 è la meno puntuale (56,8 %), seguita dalle linee 1 (58,1 %) e 8 (62,5 %). La linea 13 è la più puntuale (99,1 %), davanti alla 41 (98,0 %).",
+   "L'ora delle 18 è la più difficile: il 57,8 % dei passaggi è in orario, con un ritardo medio di 3,4 minuti e 93 passaggi soppressi. Seguono le ore 17 (60,4 %) e le ore 16 (67,2 %).",
+   "I ritardi maggiori riguardano la linea 1: 66,2 minuti a Stade Olympique (passaggio previsto alle ore 5:45) e 65,9 minuti a Casernes (previsto alle ore 5:47). Tra le fermate, Lausanne, Cour est la meno puntuale, con il 48,7 % dei passaggi in orario."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality at 75.1% in Lausanne, low point at 18:00",
+  "paragraphes": [
+   "On 22 October 2026, 75.1% of services arrived on time (less than 3 minutes late), with an average delay of 2.1 minutes. The day before, punctuality was 75.3%. Out of 63'890 scheduled services, 62'783 were measured and 497 were cancelled (0.8%). 9 out of 10 services were less than 5.2 minutes late.",
+   "By mode, over the whole day, trains were on time 91.0% of the time, the metro 87.9% and buses 74.4%. Among TL lines, line 18 was the least punctual (56.8%), followed by lines 1 (58.1%) and 8 (62.5%). Line 13 was the most punctual (99.1%), ahead of line 41 (98.0%).",
+   "The 18:00 hour was the most difficult: 57.8% of services were on time, with an average delay of 3.4 minutes and 93 cancelled services. It was followed by 17:00 (60.4%) and 16:00 (67.2%).",
+   "The largest delays concerned line 1: 66.2 minutes at Stade Olympique (scheduled at 05:45) and 65.9 minutes at Casernes (scheduled at 05:47). Among stops, Lausanne, Cour est was the least punctual, with 48.7% of services on time."
+  ]
+ },
+ "statut": "publie"
+}
