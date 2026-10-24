@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1135,
- "actives_suisse": 461,
+ "situations_suisse": 1133,
+ "actives_suisse": 465,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,6 +47,61 @@
    "lignes": [
     "18"
    ]
+  },
+  {
+   "id": "ch:1:sstid:100001:b80e1af2-9e10-48ce-b30f-8b64ffa96d86",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-07-24T13:32:40.475+02:00",
+   "titre": "Interruption Yverdon-les-Bains - Lausanne",
+   "description": "",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Interruption Yverdon-les-Bains - Lausanne",
+     "description": "",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Unterbruch Yverdon-les-Bains - Lausanne",
+     "description": "",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Interruzione Yverdon-les-Bains - Lausanne",
+     "description": "",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Interrupted service: Yverdon-les-Bains - Lausanne",
+     "description": "",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-24T21:45:00+02:00",
+     "fin": "2026-10-25T05:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Bavois",
+    "Bussigny",
+    "Chavornay",
+    "Cossonay-Penthalaz",
+    "Eclépens",
+    "Ependes VD",
+    "Essert-Pittet",
+    "Lausanne",
+    "Prilly-Malley",
+    "Renens VD",
+    "Vufflens-la-Ville",
+    "Yverdon-les-Bains"
+   ],
+   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -211,6 +266,6 @@
    "lignes": []
   }
  ],
- "octets": 89779962,
- "mis_a_jour": "2026-10-24T18:42:51+00:00"
+ "octets": 89755937,
+ "mis_a_jour": "2026-10-24T21:39:57+00:00"
 }
