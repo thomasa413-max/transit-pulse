@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-23",
+ "genere_a": "2026-10-24T04:49:49+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité à 71,0 % à Lausanne, en recul par rapport à la veille",
+  "paragraphes": [
+   "Le 23 octobre 2026, 71,0 % des passages sont arrivés à l'heure (moins de 3 minutes de retard), sur 62'970 passages mesurés pour 64'697 prévus. Le retard moyen est de 2,5 minutes, et 9 passages sur 10 ont moins de 6,0 minutes de retard. La veille, la ponctualité atteignait 75,1 %, soit un écart de -4,1 points.",
+   "Le métro se distingue avec 93,7 % de passages à l'heure et 1,3 minute de retard moyen. Le bus affiche 70,3 % et le train 75,6 %. Sur la journée entière, la ligne TL 41 est à 100,0 % à l'heure, alors que la S41 des SBB est à 35,0 % et la ligne TL 8 à 39,8 %. Au total, 639 passages ont été supprimés (1,0 %), dont 119 pour le train (9,5 %). La ligne RE33 compte 16 suppressions (17,6 %).",
+   "Les heures les plus difficiles sont 19 h (59,1 % à l'heure), 18 h (59,7 %) et 20 h (60,1 %).",
+   "Le plus gros retard mesuré est de 73,0 minutes, pour l'IR90 prévu à 23 h 48 à Lausanne. Un bus de la ligne 60 à Bellevaux, prévu à 18 h 02, a accusé 72,6 minutes de retard."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit bei 71,0 % in Lausanne, Rückgang gegenüber dem Vortag",
+  "paragraphes": [
+   "[\"Am 23. Oktober 2026 kamen 71,0 % der Fahrten pünktlich an (weniger als 3 Minuten Verspätung), bei 62'970 gemessenen Fahrten von 64'697 geplanten. Die durchschnittliche Verspätung beträgt 2,5 Minuten, und 9 von 10 Fahrten hatten weniger als 6,0 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 75,1 %, was einer Differenz von -4,1 Prozentpunkten entspricht.\", \"Die Metro sticht mit 93,7 % pünktlichen Fahrten und einer durchschnittlichen Verspätung von 1,3 Minuten hervor. Der Bus erreicht 70,3 %, der Zug 75,6 %. Über den ganzen Tag ist die Linie TL 41 zu 100,0 % pünktlich, während die S41 der SBB bei 35,0 % und die Linie TL 8 bei 39,8 % liegt. Insgesamt wurden 639 Fahrten gestrichen (1,0 %), davon 119 im Zugverkehr (9,5 %). Die Linie RE33 verzeichnet 16 Streichungen (17,6 %).\", \"Die schwierigsten Stunden sind 19 Uhr (59,1 % pünktlich), 18 Uhr (59,7 %) und 20 Uhr (60,1 %).\", \"Die grösste gemessene Verspätung beträgt 73,0 Minuten, und zwar beim IR90, der in Lausanne für 23:48 Uhr geplant war. Ein Bus der Linie 60 in Bellevaux, planmässig um 18 Uhr 02, hatte eine Verspätung von 72,6 Minuten.\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità al 71,0 % a Losanna, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 23 ottobre 2026, il 71,0 % dei passaggi è arrivato in orario (meno di 3 minuti di ritardo), su 62'970 passaggi misurati su 64'697 previsti. Il ritardo medio è di 2,5 minuti e 9 passaggi su 10 hanno meno di 6,0 minuti di ritardo. Il giorno precedente la puntualità raggiungeva il 75,1 %, pari a uno scarto di -4,1 punti.",
+   "La metropolitana si distingue con il 93,7 % di passaggi in orario e un ritardo medio di 1,3 minuti. Il bus registra il 70,3 % e il treno il 75,6 %. Nell'arco dell'intera giornata, la linea TL 41 è al 100,0 % in orario, mentre la S41 delle FFS è al 35,0 % e la linea TL 8 al 39,8 %. In totale, 639 passaggi sono stati soppressi (1,0 %), di cui 119 per il treno (9,5 %). La linea RE33 conta 16 soppressioni (17,6 %).",
+   "Le ore più difficili sono ore 19 (59,1 % in orario), ore 18 (59,7 %) e ore 20 (60,1 %).",
+   "Il ritardo maggiore misurato è di 73,0 minuti, per l'IR90 previsto alle ore 23:48 a Losanna. Un bus della linea 60 a Bellevaux, previsto alle ore 18:02, ha accumulato un ritardo di 72,6 minuti."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality at 71.0% in Lausanne, down from the previous day",
+  "paragraphes": [
+   "On 23 October 2026, 71.0% of services arrived on time (less than 3 minutes late), out of 62'970 services measured for 64'697 planned. The average delay is 2.5 minutes, and 9 services out of 10 were less than 6.0 minutes late. The day before, punctuality reached 75.1%, a difference of -4.1 points.",
+   "The metro stands out with 93.7% of services on time and an average delay of 1.3 minutes. The bus shows 70.3% and the train 75.6%. Over the full day, line TL 41 is at 100.0% on time, while the SBB S41 is at 35.0% and line TL 8 at 39.8%. In total, 639 services were cancelled (1.0%), including 119 for the train (9.5%). Line RE33 recorded 16 cancellations (17.6%).",
+   "The most difficult hours are 19:00 (59.1% on time), 18:00 (59.7%) and 20:00 (60.1%).",
+   "The largest measured delay is 73.0 minutes, for IR90 scheduled at 23:48 in Lausanne. A bus on line 60 at Bellevaux, scheduled at 18:02, was 72.6 minutes late."
+  ]
+ },
+ "statut": "publie"
+}
