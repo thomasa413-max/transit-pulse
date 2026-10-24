@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1149,
- "actives_suisse": 469,
+ "situations_suisse": 1135,
+ "actives_suisse": 461,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -101,6 +101,61 @@
    "lignes": []
   },
   {
+   "id": "ch:1:sstid:100001:1f3f45e5-704d-46d8-b12b-07020cac075d",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-07-14T14:32:35.988+02:00",
+   "titre": "Restriction Romont FR - Fribourg/Freiburg",
+   "description": "Les lignes S 40, S 41 et SN",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Romont FR - Fribourg/Freiburg",
+     "description": "Les lignes S 40, S 41 et SN",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Romont FR - Fribourg/Freiburg",
+     "description": "Linien S 40, S 41 und SN",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Romont FR - Fribourg/Freiburg",
+     "description": "Linee S 40, S 41 e SN",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Romont FR - Fribourg/Freiburg",
+     "description": "Lines S 40, S 41 and SN",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-24T20:00:00+02:00",
+     "fin": "2026-10-26T05:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Belfaux CFF",
+    "Châtillens",
+    "Corcelles-Sud",
+    "Cousset",
+    "Ecublens-Rue",
+    "Fribourg/Freiburg",
+    "Givisiez",
+    "Granges-Marnand",
+    "Grolley",
+    "Henniez",
+    "Lausanne",
+    "Lucens"
+   ],
+   "lignes": []
+  },
+  {
    "id": "ch:1:sstid:100001:ed597b95-6fb3-49a4-a80b-347a050e7b93",
    "progres": "published",
    "planifie": true,
@@ -156,6 +211,6 @@
    "lignes": []
   }
  ],
- "octets": 89900621,
- "mis_a_jour": "2026-10-24T15:41:00+00:00"
+ "octets": 89779962,
+ "mis_a_jour": "2026-10-24T18:42:51+00:00"
 }
