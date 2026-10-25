@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-24",
+ "genere_a": "2026-10-25T04:52:04+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 82,7 % à Lausanne, en hausse sur la veille",
+  "paragraphes": [
+   "Le 24 octobre 2026, 82,7 % des passages mesurés à Lausanne étaient à l'heure, c'est-à-dire avec moins de 3 minutes de retard. Le retard moyen s'établit à 1,7 minute et 9 passages sur 10 ont moins de 4,0 minutes de retard. La veille, la ponctualité était de 71,0 %, et la moyenne des 7 jours précédents de 73,8 %.",
+   "Le métro affiche 99,4 % de passages à l'heure, le train 88,1 % et le bus 82,1 %. Les lignes les plus ponctuelles sont le bus 13 (99,6 %), le métro m1 (99,4 %) et le bus 41 (99,4 %). Parmi les moins ponctuelles figurent les bus de nuit N1 (12,5 %), N4 (25,0 %) et N6 (36,0 %).",
+   "Les heures les plus difficiles sont 1 h (43,0 % à l'heure, retard moyen de 4,3 minutes), 4 h (57,6 %) et 3 h (62,9 %).",
+   "Sur la journée, 322 passages ont été supprimés sur 60'144 prévus, soit 0,5 %. Le taux atteint 1,9 % pour le train. Le plus gros retard mesuré est de 61,2 minutes, sur la ligne RR20 du LEB, à l'arrêt Bel-Air LEB, pour un passage prévu à 0 h 49."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 82,7 % in Lausanne, gegenüber dem Vortag gestiegen",
+  "paragraphes": [
+   "Am 24. Oktober 2026 waren 82,7 % der gemessenen Fahrten in Lausanne pünktlich, das heisst mit weniger als 3 Minuten Verspätung. Die durchschnittliche Verspätung beträgt 1,7 Minuten, und 9 von 10 Fahrten haben weniger als 4,0 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 71,0 %, und der Durchschnitt der vorangegangenen 7 Tage bei 73,8 %.",
+   "Die Metro erreicht 99,4 % pünktliche Fahrten, der Zug 88,1 % und der Bus 82,1 %. Die pünktlichsten Linien sind der Bus 13 (99,6 %), die Metro m1 (99,4 %) und der Bus 41 (99,4 %). Zu den unpünktlichsten gehören die Nachtbusse N1 (12,5 %), N4 (25,0 %) und N6 (36,0 %).",
+   "Die schwierigsten Stunden sind 1 Uhr (43,0 % pünktlich, durchschnittliche Verspätung von 4,3 Minuten), 4 Uhr (57,6 %) und 3 Uhr (62,9 %).",
+   "Im Tagesverlauf wurden 322 Fahrten von 60'144 geplanten gestrichen, das entspricht 0,5 %. Beim Zug beträgt der Anteil 1,9 %. Die grösste gemessene Verspätung beträgt 61,2 Minuten auf der Linie RR20 der LEB an der Haltestelle Bel-Air LEB, für eine Fahrt, die um 0 Uhr 49 geplant war."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità dell'82,7 % a Losanna, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 24 ottobre 2026, l'82,7 % dei passaggi misurati a Losanna era puntuale, ossia con meno di 3 minuti di ritardo. Il ritardo medio si attesta a 1,7 minuti e 9 passaggi su 10 hanno meno di 4,0 minuti di ritardo. Il giorno precedente la puntualità era del 71,0 %, mentre la media dei 7 giorni precedenti era del 73,8 %.",
+   "Il metro registra il 99,4 % di passaggi puntuali, il treno l'88,1 % e il bus l'82,1 %. Le linee più puntuali sono il bus 13 (99,6 %), il metro m1 (99,4 %) e il bus 41 (99,4 %). Tra le meno puntuali figurano i bus notturni N1 (12,5 %), N4 (25,0 %) e N6 (36,0 %).",
+   "Le ore più difficili sono le ore 1 (43,0 % puntuali, ritardo medio di 4,3 minuti), le ore 4 (57,6 %) e le ore 3 (62,9 %).",
+   "Nell'arco della giornata sono stati soppressi 322 passaggi su 60'144 previsti, pari allo 0,5 %. Per il treno il tasso raggiunge l'1,9 %. Il ritardo più grave misurato è di 61,2 minuti, sulla linea RR20 del LEB, alla fermata Bel-Air LEB, per un passaggio previsto alle ore 0:49."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 82.7% in Lausanne, up on the previous day",
+  "paragraphes": [
+   "[\"On 24 October 2026, 82.7% of the measured journeys in Lausanne were on time, meaning with less than 3 minutes of delay. The average delay is 1.7 minutes, and 9 out of 10 journeys have less than 4.0 minutes of delay. The day before, punctuality was 71.0%, and the average over the previous 7 days was 73.8%.\", \"The metro records 99.4% of journeys on time, the train 88.1% and the bus 82.1%. The most punctual lines are bus 13 (99.6%), metro m1 (99.4%) and bus 41 (99.4%). Among the least punctual are the night buses N1 (12.5%), N4 (25.0%) and N6 (36.0%).\", \"The most difficult hours are 01:00 (43.0% on time, average delay of 4.3 minutes), 04:00 (57.6%) and 03:00 (62.9%).\", \"Over the day, 322 journeys were cancelled out of 60'144 planned, or 0.5%. The rate reaches 1.9% for the train. The largest measured delay is 61.2 minutes, on line RR20 of the LEB, at the Bel-Air LEB stop, for a journey scheduled at 00:49.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
