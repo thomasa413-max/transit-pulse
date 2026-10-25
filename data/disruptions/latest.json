@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1133,
- "actives_suisse": 465,
+ "situations_suisse": 1125,
+ "actives_suisse": 482,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,6 +47,220 @@
    "lignes": [
     "18"
    ]
+  },
+  {
+   "id": "ch:1:sstid:100001:0c44b7cf-9a35-452f-b5d7-da6cde9ecda3",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "undefinedAlertCause",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-03-30T07:03:50.767+02:00",
+   "titre": "Attention: passage de l'heure d'été à l'heure d'hiver dans la nuit du 24 au 25.10.2026",
+   "description": "Dans la nuit du 24 au 25 octobre 2026, nous passons de l'heure d'été à l'heure d'hiver. Des suppressions de trains ainsi que des modifications d'horaires sont à prévoir.",
+   "consequence": "Modifications d'horaire à prévoir",
+   "textes": {
+    "fr": {
+     "titre": "Attention: passage de l'heure d'été à l'heure d'hiver dans la nuit du 24 au 25.10.2026",
+     "description": "Dans la nuit du 24 au 25 octobre 2026, nous passons de l'heure d'été à l'heure d'hiver. Des suppressions de trains ainsi que des modifications d'horaires sont à prévoir.",
+     "consequence": "Modifications d'horaire à prévoir"
+    },
+    "de": {
+     "titre": "Achtung: Umstellung von Sommerzeit auf Winterzeit in der Nacht vom 24. auf den 25.10.2026",
+     "description": "In der Nacht vom 24. auf den 25. Oktober 2026 erfolgt die Umstellung von Sommerzeit auf Winterzeit. Es ist mit Zugausfällen und Fahrplanänderungen zu rechnen.",
+     "consequence": "Geänderter Fahrplan zu erwarten"
+    },
+    "it": {
+     "titre": "Attenzione: passaggio dall'ora legale all'ora solare nella notte tra il 24 e il 25.10.2026",
+     "description": "Nella notte tra il 24 e il 25 ottobre 2026 avverrà il passaggio dall'ora legale all'ora solare. Sono previste soppressioni di treni e modifiche d'orario.",
+     "consequence": "Previsto orario modificato"
+    },
+    "en": {
+     "titre": "Attention: change from daylight saving time to standard time during the night of 24/25.10.2026",
+     "description": "During the night from 24 to 25 October 2026, the time will change from daylight saving time to standard time. Train cancellations and timetable changes are to be expected.",
+     "consequence": "Expect changed timetables"
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T01:00:00+02:00",
+     "fin": "2026-10-25T05:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Chambésy",
+    "Coppet",
+    "Cossonay-Penthalaz",
+    "Creux-de-Genthod",
+    "Etoy",
+    "Genthod-Bellevue",
+    "Genève",
+    "Genève-Aéroport",
+    "Genève-Sécheron",
+    "Gland",
+    "Lausanne"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:1f269837-cda7-4147-af71-45d3cfa42f4e",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "undefinedAlertCause",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-10-23T15:40:32.113+02:00",
+   "titre": "Changement d'heure",
+   "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
+   "consequence": "Modifications d'horaire à prévoir",
+   "textes": {
+    "fr": {
+     "titre": "Changement d'heure",
+     "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
+     "consequence": "Modifications d'horaire à prévoir"
+    },
+    "de": {
+     "titre": "Zeitumstellung",
+     "description": "Dieser Zug fährt ausschliesslich in der Winterzeit (nach der Zeitumstellung).",
+     "consequence": "Geänderter Fahrplan zu erwarten"
+    },
+    "it": {
+     "titre": "Cambio dell`ora",
+     "description": "Questo treno circola esclusivamente nell`orario invernale (dopo il cambio all`ora solare).",
+     "consequence": "Previsto orario modificato"
+    },
+    "en": {
+     "titre": "Time change",
+     "description": "This train runs exclusively during winter time (after the time change).",
+     "consequence": "Expect changed timetables"
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T01:00:00+02:00",
+     "fin": "2026-10-25T05:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Bussigny",
+    "Cossonay-Penthalaz",
+    "Lausanne",
+    "Prilly-Malley",
+    "Renens VD",
+    "Vufflens-la-Ville"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:97f43da3-4429-4623-b2ef-bd4845c6cd89",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "undefinedAlertCause",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-10-23T12:46:06.421+02:00",
+   "titre": "Changement d'heure",
+   "description": "Le train circule uniquement pendant la période estivale (avant le changement d'heure).",
+   "consequence": "Modifications d'horaire à prévoir",
+   "textes": {
+    "fr": {
+     "titre": "Changement d'heure",
+     "description": "Le train circule uniquement pendant la période estivale (avant le changement d'heure).",
+     "consequence": "Modifications d'horaire à prévoir"
+    },
+    "de": {
+     "titre": "Zeitumstellung",
+     "description": "Dieser Zug fährt ausschliesslich in der Sommerzeit (vor der Zeitumstellung)",
+     "consequence": "Geänderter Fahrplan zu erwarten"
+    },
+    "it": {
+     "titre": "Cambio dell`ora",
+     "description": "Questo treno circola esclusivamente nel periodo estivo (prima del cambio dell`ora solare).",
+     "consequence": "Previsto orario modificato"
+    },
+    "en": {
+     "titre": "Time change",
+     "description": "This train runs exclusively during summer time (before the time change).",
+     "consequence": "Expect changed timetables"
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T01:00:00+02:00",
+     "fin": "2026-10-25T05:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Cheyres",
+    "Cossonay-Penthalaz",
+    "Cugy FR",
+    "Estavayer-le-Lac",
+    "Genève-Aéroport",
+    "Lausanne",
+    "Murten/Morat",
+    "Payerne",
+    "Romont FR",
+    "St-Maurice",
+    "Vevey",
+    "Yverdon-les-Bains"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:f5a5a049-a941-4446-a6f8-67f09cf1efb9",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "undefinedAlertCause",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-10-23T15:37:13.05+02:00",
+   "titre": "Changement d'heure",
+   "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
+   "consequence": "Modifications d'horaire à prévoir",
+   "textes": {
+    "fr": {
+     "titre": "Changement d'heure",
+     "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
+     "consequence": "Modifications d'horaire à prévoir"
+    },
+    "de": {
+     "titre": "Zeitumstellung",
+     "description": "Dieser Zug fährt ausschliesslich in der Winterzeit (nach der Zeitumstellung).",
+     "consequence": "Geänderter Fahrplan zu erwarten"
+    },
+    "it": {
+     "titre": "Cambio dell`ora",
+     "description": "Questo treno circola esclusivamente nell`orario invernale (dopo il cambio all`ora solare).",
+     "consequence": "Previsto orario modificato"
+    },
+    "en": {
+     "titre": "Time change",
+     "description": "This train runs exclusively during winter time (after the time change).",
+     "consequence": "Expect changed timetables"
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T01:00:00+02:00",
+     "fin": "2026-10-25T05:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Annemasse",
+    "Bossière",
+    "Coppet",
+    "Genève",
+    "Genève-Aéroport",
+    "Grandvaux",
+    "La Conversion",
+    "La Sarraz",
+    "Lancy-Bachet",
+    "Lausanne",
+    "Moreillon",
+    "Oron"
+   ],
+   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:b80e1af2-9e10-48ce-b30f-8b64ffa96d86",
@@ -266,6 +480,6 @@
    "lignes": []
   }
  ],
- "octets": 89755937,
- "mis_a_jour": "2026-10-24T21:39:57+00:00"
+ "octets": 89692636,
+ "mis_a_jour": "2026-10-25T00:50:34+00:00"
 }
