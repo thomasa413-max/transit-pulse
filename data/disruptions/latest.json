@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1103,
- "actives_suisse": 464,
+ "situations_suisse": 1090,
+ "actives_suisse": 465,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,275 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:100001:0c44b7cf-9a35-452f-b5d7-da6cde9ecda3",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "undefinedAlertCause",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-03-30T07:03:50.767+02:00",
-   "titre": "Attention: passage de l'heure d'été à l'heure d'hiver dans la nuit du 24 au 25.10.2026",
-   "description": "Dans la nuit du 24 au 25 octobre 2026, nous passons de l'heure d'été à l'heure d'hiver. Des suppressions de trains ainsi que des modifications d'horaires sont à prévoir.",
-   "consequence": "Modifications d'horaire à prévoir",
-   "textes": {
-    "fr": {
-     "titre": "Attention: passage de l'heure d'été à l'heure d'hiver dans la nuit du 24 au 25.10.2026",
-     "description": "Dans la nuit du 24 au 25 octobre 2026, nous passons de l'heure d'été à l'heure d'hiver. Des suppressions de trains ainsi que des modifications d'horaires sont à prévoir.",
-     "consequence": "Modifications d'horaire à prévoir"
-    },
-    "de": {
-     "titre": "Achtung: Umstellung von Sommerzeit auf Winterzeit in der Nacht vom 24. auf den 25.10.2026",
-     "description": "In der Nacht vom 24. auf den 25. Oktober 2026 erfolgt die Umstellung von Sommerzeit auf Winterzeit. Es ist mit Zugausfällen und Fahrplanänderungen zu rechnen.",
-     "consequence": "Geänderter Fahrplan zu erwarten"
-    },
-    "it": {
-     "titre": "Attenzione: passaggio dall'ora legale all'ora solare nella notte tra il 24 e il 25.10.2026",
-     "description": "Nella notte tra il 24 e il 25 ottobre 2026 avverrà il passaggio dall'ora legale all'ora solare. Sono previste soppressioni di treni e modifiche d'orario.",
-     "consequence": "Previsto orario modificato"
-    },
-    "en": {
-     "titre": "Attention: change from daylight saving time to standard time during the night of 24/25.10.2026",
-     "description": "During the night from 24 to 25 October 2026, the time will change from daylight saving time to standard time. Train cancellations and timetable changes are to be expected.",
-     "consequence": "Expect changed timetables"
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-10-25T01:00:00+02:00",
-     "fin": "2026-10-25T05:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Allaman",
-    "Chambésy",
-    "Coppet",
-    "Cossonay-Penthalaz",
-    "Creux-de-Genthod",
-    "Etoy",
-    "Genthod-Bellevue",
-    "Genève",
-    "Genève-Aéroport",
-    "Genève-Sécheron",
-    "Gland",
-    "Lausanne"
-   ],
-   "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:100001:1f269837-cda7-4147-af71-45d3cfa42f4e",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "undefinedAlertCause",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-10-23T15:40:32.113+02:00",
-   "titre": "Changement d'heure",
-   "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
-   "consequence": "Modifications d'horaire à prévoir",
-   "textes": {
-    "fr": {
-     "titre": "Changement d'heure",
-     "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
-     "consequence": "Modifications d'horaire à prévoir"
-    },
-    "de": {
-     "titre": "Zeitumstellung",
-     "description": "Dieser Zug fährt ausschliesslich in der Winterzeit (nach der Zeitumstellung).",
-     "consequence": "Geänderter Fahrplan zu erwarten"
-    },
-    "it": {
-     "titre": "Cambio dell`ora",
-     "description": "Questo treno circola esclusivamente nell`orario invernale (dopo il cambio all`ora solare).",
-     "consequence": "Previsto orario modificato"
-    },
-    "en": {
-     "titre": "Time change",
-     "description": "This train runs exclusively during winter time (after the time change).",
-     "consequence": "Expect changed timetables"
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-10-25T01:00:00+02:00",
-     "fin": "2026-10-25T05:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Bussigny",
-    "Cossonay-Penthalaz",
-    "Lausanne",
-    "Prilly-Malley",
-    "Renens VD",
-    "Vufflens-la-Ville"
-   ],
-   "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:100001:97f43da3-4429-4623-b2ef-bd4845c6cd89",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "undefinedAlertCause",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-10-23T12:46:06.421+02:00",
-   "titre": "Changement d'heure",
-   "description": "Le train circule uniquement pendant la période estivale (avant le changement d'heure).",
-   "consequence": "Modifications d'horaire à prévoir",
-   "textes": {
-    "fr": {
-     "titre": "Changement d'heure",
-     "description": "Le train circule uniquement pendant la période estivale (avant le changement d'heure).",
-     "consequence": "Modifications d'horaire à prévoir"
-    },
-    "de": {
-     "titre": "Zeitumstellung",
-     "description": "Dieser Zug fährt ausschliesslich in der Sommerzeit (vor der Zeitumstellung)",
-     "consequence": "Geänderter Fahrplan zu erwarten"
-    },
-    "it": {
-     "titre": "Cambio dell`ora",
-     "description": "Questo treno circola esclusivamente nel periodo estivo (prima del cambio dell`ora solare).",
-     "consequence": "Previsto orario modificato"
-    },
-    "en": {
-     "titre": "Time change",
-     "description": "This train runs exclusively during summer time (before the time change).",
-     "consequence": "Expect changed timetables"
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-10-25T01:00:00+02:00",
-     "fin": "2026-10-25T05:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Cheyres",
-    "Cossonay-Penthalaz",
-    "Cugy FR",
-    "Estavayer-le-Lac",
-    "Genève-Aéroport",
-    "Lausanne",
-    "Murten/Morat",
-    "Payerne",
-    "Romont FR",
-    "St-Maurice",
-    "Vevey",
-    "Yverdon-les-Bains"
-   ],
-   "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:100001:f5a5a049-a941-4446-a6f8-67f09cf1efb9",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "undefinedAlertCause",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-10-23T15:37:13.05+02:00",
-   "titre": "Changement d'heure",
-   "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
-   "consequence": "Modifications d'horaire à prévoir",
-   "textes": {
-    "fr": {
-     "titre": "Changement d'heure",
-     "description": "Ce train circule uniquement pendant la période hivernale (après le changement d'heure).",
-     "consequence": "Modifications d'horaire à prévoir"
-    },
-    "de": {
-     "titre": "Zeitumstellung",
-     "description": "Dieser Zug fährt ausschliesslich in der Winterzeit (nach der Zeitumstellung).",
-     "consequence": "Geänderter Fahrplan zu erwarten"
-    },
-    "it": {
-     "titre": "Cambio dell`ora",
-     "description": "Questo treno circola esclusivamente nell`orario invernale (dopo il cambio all`ora solare).",
-     "consequence": "Previsto orario modificato"
-    },
-    "en": {
-     "titre": "Time change",
-     "description": "This train runs exclusively during winter time (after the time change).",
-     "consequence": "Expect changed timetables"
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-10-25T01:00:00+02:00",
-     "fin": "2026-10-25T05:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Annemasse",
-    "Bossière",
-    "Coppet",
-    "Genève",
-    "Genève-Aéroport",
-    "Grandvaux",
-    "La Conversion",
-    "La Sarraz",
-    "Lancy-Bachet",
-    "Lausanne",
-    "Moreillon",
-    "Oron"
-   ],
-   "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:100001:b80e1af2-9e10-48ce-b30f-8b64ffa96d86",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-07-24T13:32:40.475+02:00",
-   "titre": "Interruption Yverdon-les-Bains - Lausanne",
-   "description": "",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Interruption Yverdon-les-Bains - Lausanne",
-     "description": "",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Unterbruch Yverdon-les-Bains - Lausanne",
-     "description": "",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Interruzione Yverdon-les-Bains - Lausanne",
-     "description": "",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Interrupted service: Yverdon-les-Bains - Lausanne",
-     "description": "",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-10-24T21:45:00+02:00",
-     "fin": "2026-10-25T05:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Bavois",
-    "Bussigny",
-    "Chavornay",
-    "Cossonay-Penthalaz",
-    "Eclépens",
-    "Ependes VD",
-    "Essert-Pittet",
-    "Lausanne",
-    "Prilly-Malley",
-    "Renens VD",
-    "Vufflens-la-Ville",
-    "Yverdon-les-Bains"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -480,6 +211,98 @@
    "lignes": []
   },
   {
+   "id": "ch:1:sstid:1:722c5d67-b0ec-563e-b2da-f92f8ea78c76",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "specialEvent",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-18T13:57:20Z",
+   "titre": "Service restreint entre Lausanne, Batelière et Pully, gare [bus]",
+   "description": "Concerne: ligne 25",
+   "consequence": "Dimanche 25 octobre de 7:00 à 15:30, circule entre Glycines et Figuiers, en raison d'une manifestation. Le tronçon entre Batelière et Pully, gare n'est pas desservi.",
+   "textes": {
+    "fr": {
+     "titre": "Service restreint entre Lausanne, Batelière et Pully, gare [bus]",
+     "description": "Concerne: ligne 25",
+     "consequence": "Dimanche 25 octobre de 7:00 à 15:30, circule entre Glycines et Figuiers, en raison d'une manifestation. Le tronçon entre Batelière et Pully, gare n'est pas desservi."
+    },
+    "de": {
+     "titre": "Einschränkung zwischen Lausanne, Batelière und Pully, gare [Bus]",
+     "description": "Betroffen: Linie 25",
+     "consequence": "Am Sonntag, dem 25. Oktober, von 7:00 bis 15:30 Uhr verkehrt der Zug aufgrund einer Demonstration zwischen Glycines und Figuiers. Der Abschnitt zwischen Batelière und dem Bahnhof Pully wird nicht bedient."
+    },
+    "it": {
+     "titre": "Limitazioni tra Lausanne, Batelière e Pully, gare [autobus]",
+     "description": "Interessata: la linea 25",
+     "consequence": "Domenica 25 ottobre, dalle 7:00 alle 15:30, il servizio circola tra Glycines e Figuiers a causa di una manifestazione. Il tratto tra Batelière e la stazione di Pully non è servito."
+    },
+    "en": {
+     "titre": "Limited service between Lausanne, Batelière and Pully, gare [bus]",
+     "description": "Affected: line 25",
+     "consequence": "On Sunday 25 October, from 7.00 am to 3.30 pm, services will run between Glycines and Figuiers due to a demonstration. The section between Batelière and Pully station will not be served."
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T06:00:00Z",
+     "fin": "2026-10-25T14:30:40Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, Batelière"
+   ],
+   "lignes": [
+    "25"
+   ]
+  },
+  {
+   "id": "ch:1:sstid:1:cdc2ce43-03dc-5b05-a734-f8ee0f9ead75",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "specialEvent",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-18T13:52:35Z",
+   "titre": "Service restreint entre Lausanne, Musée Olympique et Paudex, Verrière [bus]",
+   "description": "Concerne: ligne 21",
+   "consequence": "Dimanche 25 octobre de 7:30 à 17:00 environ, circule entre Blécherette et Montchoisi, puis déviée et effectue son terminus à Pully, gare, en raison d'une manifestation. Arrêts Musée Olympique, Denantou, Tour Haldimand, Bourdonnière, Pully, Verney, Châtaignier, Pully, Somais, Pully, port, Pully, Vignes, Verrière non desservis.",
+   "textes": {
+    "fr": {
+     "titre": "Service restreint entre Lausanne, Musée Olympique et Paudex, Verrière [bus]",
+     "description": "Concerne: ligne 21",
+     "consequence": "Dimanche 25 octobre de 7:30 à 17:00 environ, circule entre Blécherette et Montchoisi, puis déviée et effectue son terminus à Pully, gare, en raison d'une manifestation. Arrêts Musée Olympique, Denantou, Tour Haldimand, Bourdonnière, Pully, Verney, Châtaignier, Pully, Somais, Pully, port, Pully, Vignes, Verrière non desservis."
+    },
+    "de": {
+     "titre": "Einschränkung zwischen Lausanne, Musée Olympique und Paudex, Verrière [Bus]",
+     "description": "Betroffen: Linie 21",
+     "consequence": "Am Sonntag, dem 25. Oktober, von ca. 7:30 bis 17:00 Uhr verkehrt die Linie zwischen Blécherette und Montchoisi, wird dann umgeleitet und endet am Bahnhof Pully aufgrund einer Demonstration. Die Haltestellen „Musée Olympique“, „Denantou“, „Tour Haldimand“, „Bourdonnière“, „Pully“, „Verney“, „Châtaignier“, „Pully“, „Somais“, „Pully, Hafen“, „Pully, Vignes“ und „Verrière“ werden nicht angefahren."
+    },
+    "it": {
+     "titre": "Limitazioni tra Lausanne, Musée Olympique e Paudex, Verrière [autobus]",
+     "description": "Interessata: la linea 21",
+     "consequence": "Domenica 25 ottobre dalle 7:30 alle 17:00 circa, il servizio circola tra Blécherette e Montchoisi, per poi essere deviato e terminare il percorso alla stazione di Pully, a causa di una manifestazione. Le fermate Musée Olympique, Denantou, Tour Haldimand, Bourdonnière, Pully, Verney, Châtaignier, Pully, Somais, Pully, port, Pully, Vignes e Verrière non saranno servite."
+    },
+    "en": {
+     "titre": "Limited service between Lausanne, Musée Olympique and Paudex, Verrière [bus]",
+     "description": "Affected: line 21",
+     "consequence": "On Sunday 25 October, from approximately 7.30 am to 5.00 pm, the service will run between Blécherette and Montchoisi, then be diverted to terminate at Pully station, due to a demonstration. The following stops will not be served: Olympic Museum, Denantou, Tour Haldimand, Bourdonnière, Pully, Verney, Châtaignier, Pully, Somais, Pully (port), Pully, Vignes and Verrière."
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T06:30:00Z",
+     "fin": "2026-10-25T16:00:50Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, Musée Olympique"
+   ],
+   "lignes": [
+    "21"
+   ]
+  },
+  {
    "id": "ch:1:sstid:1:bebdc747-14cc-5684-aeb2-6f2759648f8d",
    "progres": "published",
    "planifie": true,
@@ -524,8 +347,54 @@
    "lignes": [
     "24"
    ]
+  },
+  {
+   "id": "ch:1:sstid:1:abbbc04f-90c4-52e8-98aa-2f6bdf398cdc",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "specialEvent",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-18T13:42:36Z",
+   "titre": "Service restreint entre Lausanne, jardin botanique et Lausanne, Dapples [bus]",
+   "description": "Concerne: ligne 1",
+   "consequence": "Dimanche 25 octobre de 7:00 à 15:30 environ, déviée entre Cèdres et Epinettes dans les deux sens, en raison d'une manifestation. Arrêts Jardin botanique, Lausanne, Cour, Dapples non desservis. Les arrêts Epinettes sont déplacés sur l'avenue William-Fraisse.",
+   "textes": {
+    "fr": {
+     "titre": "Service restreint entre Lausanne, jardin botanique et Lausanne, Dapples [bus]",
+     "description": "Concerne: ligne 1",
+     "consequence": "Dimanche 25 octobre de 7:00 à 15:30 environ, déviée entre Cèdres et Epinettes dans les deux sens, en raison d'une manifestation. Arrêts Jardin botanique, Lausanne, Cour, Dapples non desservis. Les arrêts Epinettes sont déplacés sur l'avenue William-Fraisse."
+    },
+    "de": {
+     "titre": "Einschränkung zwischen Lausanne, jardin botanique und Lausanne, Dapples [Bus]",
+     "description": "Betroffen: Linie 1",
+     "consequence": "Sonntag, 25. Oktober, von ca. 7:00 bis 15:30 Uhr, Umleitung zwischen Cèdres und Epinettes in beide Richtungen aufgrund einer Demonstration. Die Haltestellen „Jardin botanique“, „Lausanne“, „Cour“ und „Dapples“ werden nicht angefahren. Die Haltestellen „Epinettes“ werden auf die Avenue William-Fraisse verlegt."
+    },
+    "it": {
+     "titre": "Limitazioni tra Lausanne, jardin botanique e Lausanne, Dapples [autobus]",
+     "description": "Interessata: la linea 1",
+     "consequence": "Domenica 25 ottobre dalle 7:00 alle 15:30 circa, deviazione tra Cèdres ed Epinettes in entrambe le direzioni, a causa di una manifestazione. Le fermate Jardin botanique, Lausanne, Cour e Dapples non saranno servite. Le fermate Epinettes sono state spostate su avenue William-Fraisse."
+    },
+    "en": {
+     "titre": "Limited service between Lausanne, jardin botanique and Lausanne, Dapples [bus]",
+     "description": "Affected: line 1",
+     "consequence": "On Sunday 25 October, from 7.00 am to approximately 3.30 pm, the route will be diverted between Cèdres and Epinettes in both directions due to a demonstration. The Jardin botanique, Lausanne, Cour and Dapples stops will not be served. The Epinettes stops have been moved to Avenue William-Fraisse."
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T06:00:00Z",
+     "fin": "2026-10-25T14:30:58Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, jardin botanique"
+   ],
+   "lignes": [
+    "1"
+   ]
   }
  ],
- "octets": 89469506,
- "mis_a_jour": "2026-10-25T03:43:09+00:00"
+ "octets": 89305686,
+ "mis_a_jour": "2026-10-25T06:51:02+00:00"
 }
