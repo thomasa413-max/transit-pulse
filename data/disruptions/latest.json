@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1090,
- "actives_suisse": 465,
+ "situations_suisse": 1087,
+ "actives_suisse": 480,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -257,6 +257,52 @@
    ]
   },
   {
+   "id": "ch:1:sstid:1:826d5595-d716-5031-bc0c-2582a9a50868",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "specialEvent",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-18T13:48:02Z",
+   "titre": "Service restreint entre Lausanne, Closelet et Lausanne, Maladière-Lac [bus]",
+   "description": "Concerne: ligne 2",
+   "consequence": "Dimanche 25 octobre de 8:30 à 15:00 environ, circule entre Lausanne, Désert et Georgette, puis déviée et effectue son terminus à Epinettes, en raison d'une manifestation. Arrêts Closelet, Mont-Fleuri, Croix d'Ouchy, Jordils, Beau-Rivage, Ouchy-Olympique, Pêcheurs, Bellerive, Théâtre de Vidy, Maladière-Lac non desservis.",
+   "textes": {
+    "fr": {
+     "titre": "Service restreint entre Lausanne, Closelet et Lausanne, Maladière-Lac [bus]",
+     "description": "Concerne: ligne 2",
+     "consequence": "Dimanche 25 octobre de 8:30 à 15:00 environ, circule entre Lausanne, Désert et Georgette, puis déviée et effectue son terminus à Epinettes, en raison d'une manifestation. Arrêts Closelet, Mont-Fleuri, Croix d'Ouchy, Jordils, Beau-Rivage, Ouchy-Olympique, Pêcheurs, Bellerive, Théâtre de Vidy, Maladière-Lac non desservis."
+    },
+    "de": {
+     "titre": "Einschränkung zwischen Lausanne, Closelet und Lausanne, Maladière-Lac [Bus]",
+     "description": "Betroffen: Linie 2",
+     "consequence": "Am Sonntag, dem 25. Oktober, von ca. 8:30 bis 15:00 Uhr verkehrt die Linie zwischen Lausanne, Désert und Georgette, wird dann aufgrund einer Demonstration umgeleitet und endet in Epinettes. Die Haltestellen Closelet, Mont-Fleuri, Croix d'Ouchy, Jordils, Beau-Rivage, Ouchy-Olympique, Pêcheurs, Bellerive, Théâtre de Vidy und Maladière-Lac werden nicht angefahren."
+    },
+    "it": {
+     "titre": "Limitazioni tra Lausanne, Closelet e Lausanne, Maladière-Lac [autobus]",
+     "description": "Interessata: la linea 2",
+     "consequence": "Domenica 25 ottobre dalle 8:30 alle 15:00 circa, la linea circola tra Losanna, Désert e Georgette, per poi essere deviata e terminare il percorso a Epinettes, a causa di una manifestazione. Le fermate Closelet, Mont-Fleuri, Croix d'Ouchy, Jordils, Beau-Rivage, Ouchy-Olympique, Pêcheurs, Bellerive, Théâtre de Vidy e Maladière-Lac non saranno servite."
+    },
+    "en": {
+     "titre": "Limited service between Lausanne, Closelet and Lausanne, Maladière-Lac [bus]",
+     "description": "Affected: line 2",
+     "consequence": "On Sunday 25 October, from approximately 8.30 am to 3.00 pm, the service will run between Lausanne, Désert and Georgette, then be diverted and terminate at Epinettes, due to a demonstration. The following stops will not be served: Closelet, Mont-Fleuri, Croix d’Ouchy, Jordils, Beau-Rivage, Ouchy-Olympique, Pêcheurs, Bellerive, Théâtre de Vidy and Maladière-Lac."
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T07:30:00Z",
+     "fin": "2026-10-25T14:00:39Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, Closelet"
+   ],
+   "lignes": [
+    "2"
+   ]
+  },
+  {
    "id": "ch:1:sstid:1:cdc2ce43-03dc-5b05-a734-f8ee0f9ead75",
    "progres": "published",
    "planifie": true,
@@ -395,6 +441,6 @@
    ]
   }
  ],
- "octets": 89305686,
- "mis_a_jour": "2026-10-25T06:51:02+00:00"
+ "octets": 89280611,
+ "mis_a_jour": "2026-10-25T09:41:37+00:00"
 }
