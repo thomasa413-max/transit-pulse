@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1125,
- "actives_suisse": 482,
+ "situations_suisse": 1103,
+ "actives_suisse": 464,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -478,8 +478,54 @@
     "Winterthur"
    ],
    "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:1:bebdc747-14cc-5684-aeb2-6f2759648f8d",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "specialEvent",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-18T13:55:00Z",
+   "titre": "Service restreint entre Lausanne, Tour Haldimand-Lac et Lausanne, Parc Musée Olympique [bus]",
+   "description": "Concerne: ligne 24",
+   "consequence": "Dimanche 25 octobre du début du service à 17:00 environ, circule entre Bourdonnette et Ouchy-Olympique, en raison d'une manifestation. Le tronçon entre Parc Musée Oly. et T. Haldimand-Lac n'est pas desservi.",
+   "textes": {
+    "fr": {
+     "titre": "Service restreint entre Lausanne, Tour Haldimand-Lac et Lausanne, Parc Musée Olympique [bus]",
+     "description": "Concerne: ligne 24",
+     "consequence": "Dimanche 25 octobre du début du service à 17:00 environ, circule entre Bourdonnette et Ouchy-Olympique, en raison d'une manifestation. Le tronçon entre Parc Musée Oly. et T. Haldimand-Lac n'est pas desservi."
+    },
+    "de": {
+     "titre": "Einschränkung zwischen Lausanne, Tour Haldimand-Lac und Lausanne, Parc Musée Olympique [Bus]",
+     "description": "Betroffen: Linie 24",
+     "consequence": "Am Sonntag, dem 25. Oktober, verkehrt die Linie ab Betriebsbeginn bis etwa 17:00 Uhr aufgrund einer Demonstration zwischen Bourdonnette und Ouchy-Olympique. Der Abschnitt zwischen Parc Musée Oly. und T. Haldimand-Lac wird nicht bedient."
+    },
+    "it": {
+     "titre": "Limitazioni tra Lausanne, Tour Haldimand-Lac e Lausanne, Parc Musée Olympique [autobus]",
+     "description": "Interessata: la linea 24",
+     "consequence": "Domenica 25 ottobre, dall'inizio del servizio fino alle 17:00 circa, il servizio circola tra Bourdonnette e Ouchy-Olympique a causa di una manifestazione. Il tratto tra Parc Musée Oly. e T. Haldimand-Lac non è servito."
+    },
+    "en": {
+     "titre": "Limited service between Lausanne, Tour Haldimand-Lac and Lausanne, Parc Musée Olympique [bus]",
+     "description": "Affected: line 24",
+     "consequence": "On Sunday 25 October, from the start of service until around 5.00 pm, services will run between Bourdonnette and Ouchy-Olympique due to a demonstration. The section between Parc Musée Oly. and T. Haldimand-Lac will not be served."
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-10-25T03:00:00Z",
+     "fin": "2026-10-25T16:00:19Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, Tour Haldimand-Lac"
+   ],
+   "lignes": [
+    "24"
+   ]
   }
  ],
- "octets": 89692636,
- "mis_a_jour": "2026-10-25T00:50:34+00:00"
+ "octets": 89469506,
+ "mis_a_jour": "2026-10-25T03:43:09+00:00"
 }
