@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-25",
+ "genere_a": "2026-10-26T04:55:24+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 85,5 % à Lausanne, au-dessus des jours précédents",
+  "paragraphes": [
+   "Le 25 octobre 2026, 85,5 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard). Le retard moyen est de 1,5 minutes et 9 passages sur 10 ont moins de 3,6 minutes de retard. La veille, la ponctualité était de 82,7 % (+2,8 points). La moyenne des 4 jours précédents est de 76,0 % (+9,5 points).",
+   "Par mode, le métro atteint 98,8 % à l'heure, le train 87,3 % et le bus 85,2 %. Sur la journée entière, la ligne 8 des TL est la moins ponctuelle : 67,8 % à l'heure, avec 105 passages supprimés (3,7 %). Viennent ensuite les lignes 7 (73,6 %) et 18 (75,7 %). Au total, 393 passages ont été supprimés (0,7 %), dont 30 pour le train (3,0 %).",
+   "Le moment le plus difficile se situe en fin d'après-midi : 74,7 % à l'heure à 16 h (retard moyen de 2,3 minutes), 75,0 % à 17 h et 79,5 % à 18 h.",
+   "Le plus gros retard mesuré est de 51,5 minutes, sur la ligne 3 des TL à l'arrêt Lausanne, gare, pour un passage prévu à 7 h 25. L'arrêt le moins ponctuel de la journée est Recordon, avec 66,2 % à l'heure."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 85,5 % in Lausanne, über den Vortagen",
+  "paragraphes": [
+   "Am 25. Oktober 2026 waren 85,5 % der gemessenen Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 1,5 Minuten, und 9 von 10 Fahrten haben weniger als 3,6 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 82,7 % (+2,8 Prozentpunkte). Der Durchschnitt der 4 vorangegangenen Tage beträgt 76,0 % (+9,5 Prozentpunkte).",
+   "Nach Verkehrsmittel erreicht die Métro 98,8 % Pünktlichkeit, der Zug 87,3 % und der Bus 85,2 %. Über den gesamten Tag ist die Linie 8 der TL am wenigsten pünktlich: 67,8 % pünktlich, wobei 105 Fahrten gestrichen wurden (3,7 %). Danach folgen die Linien 7 (73,6 %) und 18 (75,7 %). Insgesamt wurden 393 Fahrten gestrichen (0,7 %), davon 30 im Zugverkehr (3,0 %).",
+   "Der schwierigste Zeitraum liegt am späten Nachmittag: 74,7 % pünktlich um 16 Uhr (durchschnittliche Verspätung von 2,3 Minuten), 75,0 % um 17 Uhr und 79,5 % um 18 Uhr.",
+   "Die größte gemessene Verspätung beträgt 51,5 Minuten auf der Linie 3 der TL an der Haltestelle Lausanne, gare, für eine Fahrt, die planmäßig um 7:25 Uhr vorgesehen war. Die am wenigsten pünktliche Haltestelle des Tages ist Recordon mit 66,2 % Pünktlichkeit."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità dell'85,5 % a Losanna, al di sopra dei giorni precedenti",
+  "paragraphes": [
+   "Il 25 ottobre 2026, l'85,5 % dei passaggi misurati a Losanna era in orario (meno di 3 minuti di ritardo). Il ritardo medio è di 1,5 minuti e 9 passaggi su 10 hanno meno di 3,6 minuti di ritardo. Il giorno prima la puntualità era dell'82,7 % (+2,8 punti). La media dei 4 giorni precedenti è del 76,0 % (+9,5 punti).",
+   "Per modalità di trasporto, la metropolitana raggiunge il 98,8 % in orario, il treno l'87,3 % e il bus l'85,2 %. Nell'arco dell'intera giornata, la linea 8 dei TL è la meno puntuale: il 67,8 % in orario, con 105 passaggi soppressi (3,7 %). Seguono le linee 7 (73,6 %) e 18 (75,7 %). In totale, 393 passaggi sono stati soppressi (0,7 %), di cui 30 per il treno (3,0 %).",
+   "Il momento più difficile si colloca nel tardo pomeriggio: il 74,7 % in orario alle ore 16 (ritardo medio di 2,3 minuti), il 75,0 % alle ore 17 e il 79,5 % alle ore 18.",
+   "Il ritardo massimo misurato è di 51,5 minuti, sulla linea 3 dei TL alla fermata Lausanne, gare, per un passaggio previsto alle ore 7:25. La fermata meno puntuale della giornata è Recordon, con il 66,2 % in orario."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 85.5% in Lausanne, above previous days",
+  "paragraphes": [
+   "On 25 October 2026, 85.5% of measured trips in Lausanne were on time (less than 3 minutes late). The average delay is 1.5 minutes, and 9 trips out of 10 are less than 3.6 minutes late. The day before, punctuality was 82.7% (+2.8 points). The average for the previous 4 days is 76.0% (+9.5 points).",
+   "By mode, the metro reaches 98.8% on time, the train 87.3% and the bus 85.2%. Over the whole day, TL line 8 is the least punctual: 67.8% on time, with 105 trips cancelled (3.7%). Next come lines 7 (73.6%) and 18 (75.7%). In total, 393 trips were cancelled (0.7%), including 30 for the train (3.0%).",
+   "The most difficult time is late afternoon: 74.7% on time at 16:00 (average delay of 2.3 minutes), 75.0% at 17:00 and 79.5% at 18:00.",
+   "The largest measured delay is 51.5 minutes, on TL line 3 at the stop Lausanne, gare, for a trip scheduled at 07:25. The least punctual stop of the day is Recordon, with 66.2% on time."
+  ]
+ },
+ "statut": "publie"
+}
