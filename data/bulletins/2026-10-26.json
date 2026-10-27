@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-26",
+ "genere_a": "2026-10-27T04:53:12+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 77,8 % à Lausanne, creux à 17 h",
+  "paragraphes": [
+   "Le 26 octobre 2026, 77,8 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard), sur 64'946 passages mesurés pour 67'889 prévus. Le retard moyen est de 2,1 minutes, et 9 passages sur 10 ont moins de 5,0 minutes de retard. La veille, la ponctualité était de 85,5 %, contre 77,9 % en moyenne sur les jours précédents (5 jours).",
+   "Le métro affiche 96,7 % de passages à l'heure et le train 93,1 %, contre 77,1 % pour le bus. Parmi les lignes, la 7 des TL est la moins ponctuelle avec 59,4 %, devant la 64 (66,0 %) et la 8 (68,0 %). La ligne RR20 du LEB est la plus ponctuelle, à 98,4 %.",
+   "Le moment le plus difficile est 17 h : 48,4 % de passages à l'heure et 5,1 minutes de retard moyen. Suivent 16 h (60,8 %) et 18 h (61,5 %).",
+   "On compte 1'647 passages supprimés, soit 2,4 % des passages prévus. Le plus gros retard atteint 110,6 minutes, sur la ligne 9 des TL à l'arrêt Lausanne, Boston, pour un passage prévu à 16 h 13."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 77,8 % in Lausanne, Tiefstwert um 17 Uhr",
+  "paragraphes": [
+   "[\"Am 26. Oktober 2026 waren 77,8 % der gemessenen Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung), bei 64'946 gemessenen Fahrten von 67'889 geplanten. Die durchschnittliche Verspätung beträgt 2,1 Minuten, und 9 von 10 Fahrten haben weniger als 5,0 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 85,5 %, gegenüber 77,9 % im Durchschnitt der vorangegangenen Tage (5 Tage).\", \"Die Metro erreicht 96,7 % pünktliche Fahrten und die Bahn 93,1 %, gegenüber 77,1 % beim Bus. Unter den Linien ist die 7 der TL mit 59,4 % am wenigsten pünktlich, vor der 64 (66,0 %) und der 8 (68,0 %). Die Linie RR20 der LEB ist mit 98,4 % am pünktlichsten.\", \"Der schwierigste Zeitpunkt ist 17 Uhr: 48,4 % der Fahrten sind pünktlich, und die durchschnittliche Verspätung beträgt 5,1 Minuten. Es folgen 16 Uhr (60,8 %) und 18 Uhr (61,5 %).\", \"Es wurden 1'647 Fahrten gestrichen, das entspricht 2,4 % der geplanten Fahrten. Die grösste Verspätung beträgt 110,6 Minuten auf der Linie 9 der TL an der Haltestelle Lausanne, Boston, für eine Fahrt, die für 16:13 Uhr geplant war.\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità del 77,8% a Losanna, calo alle ore 17",
+  "paragraphes": [
+   "Il 26 ottobre 2026, il 77,8% dei passaggi misurati a Losanna era in orario (con meno di 3 minuti di ritardo), su 64'946 passaggi misurati a fronte di 67'889 previsti. Il ritardo medio è di 2,1 minuti e 9 passaggi su 10 hanno meno di 5,0 minuti di ritardo. Il giorno precedente la puntualità era dell'85,5%, contro il 77,9% in media nei giorni precedenti (5 giorni).",
+   "La metropolitana registra il 96,7% di passaggi in orario e il treno il 93,1%, contro il 77,1% per il bus. Tra le linee, la 7 dei TL è la meno puntuale con il 59,4%, davanti alla 64 (66,0%) e alla 8 (68,0%). La linea RR20 del LEB è la più puntuale, con il 98,4%.",
+   "Il momento più difficile è alle ore 17: il 48,4% dei passaggi è in orario e il ritardo medio è di 5,1 minuti. Seguono le ore 16 (60,8%) e le ore 18 (61,5%).",
+   "Sono stati registrati 1'647 passaggi soppressi, pari al 2,4% dei passaggi previsti. Il ritardo più grande raggiunge 110,6 minuti, sulla linea 9 dei TL alla fermata Lausanne, Boston, per un passaggio previsto alle ore 16:13."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 77.8% in Lausanne, low point at 17:00",
+  "paragraphes": [
+   "On 26 October 2026, 77.8% of the measured departures in Lausanne were on time (less than 3 minutes late), out of 64'946 measured departures for 67'889 scheduled. The average delay is 2.1 minutes, and 9 departures out of 10 were less than 5.0 minutes late. The day before, punctuality was 85.5%, compared with an average of 77.9% over the previous days (5 days).",
+   "The metro recorded 96.7% of departures on time and the train 93.1%, compared with 77.1% for the bus. Among the lines, TL line 7 was the least punctual with 59.4%, ahead of line 64 (66.0%) and line 8 (68.0%). LEB line RR20 was the most punctual, at 98.4%.",
+   "The most difficult time was 17:00: 48.4% of departures were on time and the average delay was 5.1 minutes. They were followed by 16:00 (60.8%) and 18:00 (61.5%).",
+   "There were 1'647 cancelled departures, or 2.4% of scheduled departures. The longest delay reached 110.6 minutes, on TL line 9 at the stop Lausanne, Boston, for a departure scheduled at 16:13."
+  ]
+ },
+ "statut": "publie"
+}
