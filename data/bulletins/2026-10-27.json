@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-27",
+ "genere_a": "2026-10-28T05:01:26+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité en baisse à Lausanne : 70,7 % des passages à l'heure",
+  "paragraphes": [
+   "Le 27 octobre 2026, 70,7 % des passages étaient à l'heure (moins de 3 minutes de retard), avec un retard moyen de 2,7 minutes. 9 passages sur 10 ont moins de 6,6 minutes de retard. La veille, 77,8 % des passages étaient à l'heure ; la moyenne des 7 jours précédents est de 77,9 %. Sur 67'965 passages prévus, 64'312 ont été mesurés et 2'479 supprimés (3,6 %).",
+   "Le métro affiche 94,2 % de passages à l'heure et le train 85,6 %, contre 69,8 % pour le bus. Parmi les lignes les moins ponctuelles, toutes des bus TL, la ligne 18 compte 51,1 % de passages à l'heure, la ligne 1 52,0 % et la ligne 7 55,7 %. La ligne 41 est la plus ponctuelle, avec 98,3 %.",
+   "Le moment le plus difficile se situe à 18 h : 38,5 % des passages à l'heure et un retard moyen de 7,3 minutes. À 17 h, la part de passages à l'heure est de 43,1 %.",
+   "Le plus gros retard mesuré est de 55,4 minutes, pour un bus TL de la ligne 2 prévu à 6 h 20 à l'arrêt Beau-Rivage."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit in Lausanne rückläufig: 70.7 % der Fahrten pünktlich",
+  "paragraphes": [
+   "Am 27. Oktober 2026 waren 70.7 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 2.7 Minuten. 9 von 10 Fahrten hatten weniger als 6.6 Minuten Verspätung. Am Vortag waren 77.8 % der Fahrten pünktlich; der Durchschnitt der 7 vorangehenden Tage beträgt 77.9 %. Von 67'965 geplanten Fahrten wurden 64'312 gemessen und 2'479 gestrichen (3.6 %).",
+   "Die Metro erreicht 94.2 % pünktliche Fahrten und der Zug 85.6 %, gegenüber 69.8 % beim Bus. Unter den unpünktlichsten Linien, allesamt Bus-TL-Linien, weist die Linie 18 51.1 % pünktliche Fahrten auf, die Linie 1 52.0 % und die Linie 7 55.7 %. Die Linie 41 ist am pünktlichsten, mit 98.3 %.",
+   "Der schwierigste Zeitpunkt liegt um 18 Uhr: 38.5 % der Fahrten sind pünktlich, und die durchschnittliche Verspätung beträgt 7.3 Minuten. Um 17 Uhr beträgt der Anteil pünktlicher Fahrten 43.1 %.",
+   "Die grösste gemessene Verspätung beträgt 55.4 Minuten, bei einem Bus TL der Linie 2, der um 6:20 Uhr an der Haltestelle Beau-Rivage geplant war."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità in calo a Losanna: il 70,7 % delle corse è in orario",
+  "paragraphes": [
+   "Il 27 ottobre 2026, il 70,7 % delle corse era in orario (con meno di 3 minuti di ritardo), con un ritardo medio di 2,7 minuti. 9 corse su 10 hanno meno di 6,6 minuti di ritardo. Il giorno precedente, il 77,8 % delle corse era in orario; la media dei 7 giorni precedenti è del 77,9 %. Su 67'965 corse previste, 64'312 sono state misurate e 2'479 soppresse (3,6 %).",
+   "La metropolitana registra il 94,2 % di corse in orario e il treno l'85,6 %, contro il 69,8 % per il bus. Tra le linee meno puntuali, tutte bus TL, la linea 18 conta il 51,1 % di corse in orario, la linea 1 il 52,0 % e la linea 7 il 55,7 %. La linea 41 è la più puntuale, con il 98,3 %.",
+   "Il momento più difficile si colloca alle ore 18: il 38,5 % delle corse è in orario e il ritardo medio è di 7,3 minuti. Alle ore 17, la quota di corse in orario è del 43,1 %.",
+   "Il ritardo maggiore misurato è di 55,4 minuti, per un bus TL della linea 2 previsto alle ore 6:20 alla fermata Beau-Rivage."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality declining in Lausanne: 70.7% of departures on time",
+  "paragraphes": [
+   "[\"On 27 October 2026, 70.7% of departures were on time (less than 3 minutes late), with an average delay of 2.7 minutes. 9 departures out of 10 are less than 6.6 minutes late. The day before, 77.8% of departures were on time; the average for the previous 7 days is 77.9%. Out of 67'965 scheduled departures, 64'312 were measured and 2'479 were cancelled (3.6%).\", \"The metro shows 94.2% of departures on time and the train 85.6%, compared with 69.8% for the bus. Among the least punctual lines, all of them TL buses, line 18 has 51.1% of departures on time, line 1 52.0% and line 7 55.7%. Line 41 is the most punctual, with 98.3%.\", \"The most difficult time is 18:00: 38.5% of departures are on time and the average delay is 7.3 minutes. At 17:00, the share of departures on time is 43.1%.\", \"The largest measured delay is 55.4 minutes, for a TL bus on line 2 scheduled at 06:20 at the Beau-Rivage stop.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
