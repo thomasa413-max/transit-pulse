@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-28",
+ "genere_a": "2026-10-29T05:04:07+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 72,7 % des passages à l'heure, en hausse sur la veille",
+  "paragraphes": [
+   "Le 28 octobre 2026, 72,7 % des passages mesurés à Lausanne sont à l'heure (moins de 3 minutes de retard). Le retard moyen est de 2,4 minutes et 9 passages sur 10 ont moins de 5,8 minutes de retard. La veille, la part à l'heure était de 70,7 %, et la moyenne des 7 jours précédents de 76,9 %. Sur 68'138 passages prévus, 66'305 ont été mesurés et 1'019 supprimés (1,5 %).",
+   "Le train (94,3 % à l'heure) et le métro (90,1 %) devancent le bus (71,8 %). Parmi les lignes, la ligne 7 des TL affiche 52,4 % à l'heure, suivie des lignes 1 (53,1 %, 313 passages supprimés) et 18 (55,5 %). Le R1 des SBB (100,0 %), le RR20 du LEB (98,8 %) et la ligne 41 des TL (98,4 %) sont les plus ponctuelles.",
+   "Les heures les plus difficiles sont 16 h (52,1 % à l'heure), 17 h (52,5 %) et 18 h (55,6 %). Côté arrêts, Oiseaux (46,6 %), Dapples (47,5 %) et Lausanne, Druey (49,6 %) sont les moins ponctuels sur la journée.",
+   "Le plus gros retard relevé est de 76,2 minutes, sur la ligne 16 des TL à l'arrêt Grande-Borde, pour un passage prévu à 11 h 47."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 72,7 % der Fahrten pünktlich, Anstieg gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 28. Oktober 2026 sind 72,7 % der erfassten Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,4 Minuten, und 9 von 10 Fahrten haben weniger als 5,8 Minuten Verspätung. Am Vortag lag der Anteil pünktlicher Fahrten bei 70,7 %, und der Durchschnitt der 7 vorangehenden Tage betrug 76,9 %. Von 68'138 geplanten Fahrten wurden 66'305 erfasst und 1'019 gestrichen (1,5 %).",
+   "Der Zug (94,3 % pünktlich) und die Metro (90,1 %) liegen vor dem Bus (71,8 %). Unter den Linien weist die Linie 7 der TL 52,4 % Pünktlichkeit auf, gefolgt von den Linien 1 (53,1 %, 313 gestrichene Fahrten) und 18 (55,5 %). Die S-Bahn R1 der SBB (100,0 %), die RR20 des LEB (98,8 %) und die Linie 41 der TL (98,4 %) sind am pünktlichsten.",
+   "Die schwierigsten Stunden sind 16 Uhr (52,1 % pünktlich), 17 Uhr (52,5 %) und 18 Uhr (55,6 %). Bei den Haltestellen sind Oiseaux (46,6 %), Dapples (47,5 %) und Lausanne, Druey (49,6 %) im Tagesverlauf am wenigsten pünktlich.",
+   "Die größte erfasste Verspätung beträgt 76,2 Minuten auf der Linie 16 der TL an der Haltestelle Grande-Borde, für eine Fahrt, die für 11 Uhr 47 geplant war."
+  ]
+ },
+ "it": {
+  "titre": "Lausanne: 72,7% delle corse in orario, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 28 ottobre 2026, il 72,7% dei passaggi misurati a Losanna è in orario (meno di 3 minuti di ritardo). Il ritardo medio è di 2,4 minuti e 9 passaggi su 10 hanno meno di 5,8 minuti di ritardo. Il giorno precedente la quota in orario era del 70,7%, e la media dei 7 giorni precedenti del 76,9%. Su 68'138 passaggi previsti, 66'305 sono stati misurati e 1'019 soppressi (1,5%).",
+   "Il treno (94,3% in orario) e il metro (90,1%) precedono il bus (71,8%). Tra le linee, la linea 7 dei TL registra il 52,4% in orario, seguita dalle linee 1 (53,1%, 313 passaggi soppressi) e 18 (55,5%). L'R1 delle SBB (100,0%), la RR20 del LEB (98,8%) e la linea 41 dei TL (98,4%) sono le più puntuali.",
+   "Le ore più difficili sono le 16 (52,1% in orario), le 17 (52,5%) e le 18 (55,6%). Tra le fermate, Oiseaux (46,6%), Dapples (47,5%) e Lausanne, Druey (49,6%) sono le meno puntuali nell'arco della giornata.",
+   "Il ritardo più grande rilevato è di 76,2 minuti, sulla linea 16 dei TL alla fermata Grande-Borde, per un passaggio previsto alle ore 11:47."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 72.7% of departures on time, up from the previous day",
+  "paragraphes": [
+   "On 28 October 2026, 72.7% of the departures measured in Lausanne are on time (less than 3 minutes late). The average delay is 2.4 minutes, and 9 departures out of 10 are less than 5.8 minutes late. The day before, the on-time share was 70.7%, and the average of the previous 7 days was 76.9%. Out of 68'138 scheduled departures, 66'305 were measured and 1'019 were cancelled (1.5%).",
+   "The train (94.3% on time) and the metro (90.1%) are ahead of the bus (71.8%). Among the lines, TL line 7 shows 52.4% on time, followed by lines 1 (53.1%, 313 cancelled departures) and 18 (55.5%). SBB's R1 (100.0%), LEB's RR20 (98.8%) and TL line 41 (98.4%) are the most punctual.",
+   "The most difficult hours are 16:00 (52.1% on time), 17:00 (52.5%) and 18:00 (55.6%). Among stops, Oiseaux (46.6%), Dapples (47.5%) and Lausanne, Druey (49.6%) are the least punctual over the day.",
+   "The largest delay recorded is 76.2 minutes, on TL line 16 at the Grande-Borde stop, for a departure scheduled at 11:47."
+  ]
+ },
+ "statut": "publie"
+}
