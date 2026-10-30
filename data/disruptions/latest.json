@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1122,
- "actives_suisse": 457,
+ "situations_suisse": 1116,
+ "actives_suisse": 445,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,77 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:100001:0bbfbf41-2ac1-4909-8b5e-eda30ea7e76c",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-06-23T07:54:13.04+02:00",
-   "titre": "Restriction Basel SBB - Laufen",
-   "description": "Les lignes IC 51, IR 56 et S 3",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Restriction Basel SBB - Laufen",
-     "description": "Les lignes IC 51, IR 56 et S 3",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Einschränkung Basel SBB - Laufen",
-     "description": "Linien IC 51, IR 56 und S 3",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Limitazioni Basel SBB - Laufen",
-     "description": "Linee IC 51, IR 56 e S 3",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Limited service: Basel SBB - Laufen",
-     "description": "Lines IC 51, IR 56 and S 3",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-10-25T21:50:00+01:00",
-     "fin": "2026-10-26T04:00:00+01:00"
-    },
-    {
-     "debut": "2026-10-26T21:50:00+01:00",
-     "fin": "2026-10-27T04:00:00+01:00"
-    },
-    {
-     "debut": "2026-10-27T21:50:00+01:00",
-     "fin": "2026-10-28T04:00:00+01:00"
-    },
-    {
-     "debut": "2026-10-28T21:50:00+01:00",
-     "fin": "2026-10-29T04:00:00+01:00"
-    },
-    {
-     "debut": "2026-10-29T21:50:00+01:00",
-     "fin": "2026-10-30T04:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Aesch BL",
-    "Basel Dreispitz",
-    "Basel SBB",
-    "Biel/Bienne",
-    "Delémont",
-    "Dornach-Arlesheim",
-    "Duggingen",
-    "Grellingen",
-    "Laufen",
-    "Lausanne",
-    "Münchenstein",
-    "Olten"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -172,6 +101,6 @@
    "lignes": []
   }
  ],
- "octets": 131937433,
- "mis_a_jour": "2026-10-30T01:08:21+00:00"
+ "octets": 131767605,
+ "mis_a_jour": "2026-10-30T03:56:16+00:00"
 }
