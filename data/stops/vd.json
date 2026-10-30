@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-22T20:48:21+00:00",
+ "maj": "2026-10-30T05:03:34+00:00",
  "source": "actual-date-swiss-service-point.csv",
  "canton": "VD",
  "arrets": {
@@ -16582,8 +16582,8 @@
    "Yvorne"
   ],
   "8510720": [
-   6.161202,
-   46.448291,
+   6.159729,
+   46.44851,
    "St-Cergue, gare",
    "Saint-Cergue"
   ],

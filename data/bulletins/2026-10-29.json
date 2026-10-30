@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-29",
+ "genere_a": "2026-10-30T05:04:00+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 73,0 % des passages à l'heure, la ligne 7 en queue de classement",
+  "paragraphes": [
+   "Le 29 octobre 2026, 73,0 % des passages ont été à l'heure (moins de 3 minutes de retard). Le retard moyen est de 2,4 minutes ; 9 passages sur 10 ont moins de 5,6 minutes de retard. La veille, la ponctualité était de 72,7 %, et la moyenne des 7 jours précédents de 76,5 %. Sur 68'172 passages prévus, 731 ont été supprimés (1,1 %).",
+   "Le métro affiche 97,3 % de passages à l'heure et le train 94,3 %, contre 71,9 % pour le bus. Parmi les lignes, la 7 des TL est la moins ponctuelle : 50,2 % à l'heure, 5,2 minutes de retard moyen et 150 passages supprimés. Elle précède la ligne 21 (58,8 %) et la ligne 18 (62,3 %). La ligne RR20 du LEB atteint 99,8 %.",
+   "Le moment le plus difficile se situe à 18 h : 44,0 % de passages à l'heure et 5,5 minutes de retard moyen. Suivent 17 h (50,5 %) et 8 h (66,9 %).",
+   "Le plus gros retard mesuré est de 72,3 minutes, sur la ligne 3 des TL à l'arrêt Rouvraie, pour un passage prévu à 9 h 22."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 73.0 % der Abfahrten pünktlich, Linie 7 auf dem letzten Platz",
+  "paragraphes": [
+   "Am 29. Oktober 2026 kamen 73,0 % der Abfahrten pünktlich an (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,4 Minuten; 9 von 10 Abfahrten hatten weniger als 5,6 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 72,7 %, und der Durchschnitt der 7 vorangehenden Tage bei 76,5 %. Von 68'172 planmässigen Abfahrten wurden 731 gestrichen (1,1 %).",
+   "Die Metro erreicht 97,3 % pünktliche Abfahrten, der Zug 94,3 % und der Bus 71,9 %. Unter den Linien ist die Linie 7 der TL am wenigsten pünktlich: 50,2 % pünktlich, 5,2 Minuten durchschnittliche Verspätung und 150 gestrichene Abfahrten. Vor ihr liegen die Linie 21 (58,8 %) und die Linie 18 (62,3 %). Die Linie RR20 des LEB erreicht 99,8 %.",
+   "Der schwierigste Zeitpunkt ist 18 Uhr: 44,0 % der Abfahrten waren pünktlich, mit einer durchschnittlichen Verspätung von 5,5 Minuten. Es folgen 17 Uhr (50,5 %) und 8 Uhr (66,9 %).",
+   "Die grösste gemessene Verspätung beträgt 72,3 Minuten auf der Linie 3 der TL an der Haltestelle Rouvraie, bei einer planmässigen Abfahrt um 9 Uhr 22."
+  ]
+ },
+ "it": {
+  "titre": "Losanna: 73.0% dei passaggi in orario, la linea 7 in fondo alla classifica",
+  "paragraphes": [
+   "Il 29 ottobre 2026, il 73.0% dei passaggi è stato in orario (con meno di 3 minuti di ritardo). Il ritardo medio è di 2.4 minuti; 9 passaggi su 10 hanno un ritardo inferiore a 5.6 minuti. Il giorno prima, la puntualità era del 72.7%, e la media dei 7 giorni precedenti del 76.5%. Su 68'172 passaggi previsti, 731 sono stati soppressi (1.1%).",
+   "Il metro registra il 97.3% di passaggi in orario e il treno il 94.3%, contro il 71.9% del bus. Tra le linee, la 7 delle TL è la meno puntuale: 50.2% in orario, 5.2 minuti di ritardo medio e 150 passaggi soppressi. Precede la linea 21 (58.8%) e la linea 18 (62.3%). La linea RR20 del LEB raggiunge il 99.8%.",
+   "Il momento più difficile si colloca alle ore 18: 44.0% di passaggi in orario e 5.5 minuti di ritardo medio. Seguono le ore 17 (50.5%) e le ore 8 (66.9%).",
+   "Il ritardo maggiore misurato è di 72.3 minuti, sulla linea 3 delle TL alla fermata Rouvraie, per un passaggio previsto alle ore 9:22."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 73.0% of departures on time, line 7 at the bottom of the ranking",
+  "paragraphes": [
+   "On 29 October 2026, 73.0% of departures were on time (less than 3 minutes late). The average delay was 2.4 minutes; 9 out of 10 departures were less than 5.6 minutes late. The day before, punctuality was 72.7%, and the average over the previous 7 days was 76.5%. Out of 68'172 scheduled departures, 731 were cancelled (1.1%).",
+   "The metro recorded 97.3% of departures on time and the train 94.3%, compared with 71.9% for the bus. Among the lines, the TL line 7 was the least punctual: 50.2% on time, an average delay of 5.2 minutes and 150 cancelled departures. It was followed by line 21 (58.8%) and line 18 (62.3%). The LEB line RR20 reached 99.8%.",
+   "The most difficult time was 18:00, with 44.0% of departures on time and an average delay of 5.5 minutes. It was followed by 17:00 (50.5%) and 08:00 (66.9%).",
+   "The largest measured delay was 72.3 minutes, on TL line 3 at the Rouvraie stop, for a departure scheduled at 09:22."
+  ]
+ },
+ "statut": "publie"
+}
