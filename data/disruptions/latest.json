@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1051,
- "actives_suisse": 405,
+ "situations_suisse": 1047,
+ "actives_suisse": 401,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,94 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:1:2df888d2-d4ea-55ca-ab22-5f0856e59a85",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "normal",
-   "cause": "poorWeather",
-   "source": "ski-ems-out-sx_prod",
-   "cree": "2026-10-30T14:48:54Z",
-   "titre": "Interruption entre Bouveret (lac) et Lausanne-Ouchy (lac) [bateau]",
-   "description": "Concerne: ligne 3100",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Interruption entre Bouveret (lac) et Lausanne-Ouchy (lac) [bateau]",
-     "description": "Concerne: ligne 3100",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Unterbruch zwischen Bouveret (lac) und Lausanne-Ouchy (lac) [Schiff]",
-     "description": "Betroffen: Linie 3100",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Interruzione tra Bouveret (lac) e Lausanne-Ouchy (lac) [battello]",
-     "description": "Interessata: la linea 3100",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Interrupted service between Bouveret (lac) and Lausanne-Ouchy (lac) [boat]",
-     "description": "Affected: line 3100",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-01T09:35:00Z",
-     "fin": "2026-11-01T16:53:00Z"
-    }
-   ],
-   "lieux": [
-    "Bouveret (lac)"
-   ],
-   "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:1:d4fe3eb2-1cb4-590d-a503-c4826ca29dd4",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "normal",
-   "cause": "serviceDisruption",
-   "source": "ski-ems-out-sx_prod",
-   "cree": "2026-11-01T10:35:49Z",
-   "titre": "Interruption entre Lausanne-Ouchy (lac) et Bouveret (lac) [bateau]",
-   "description": "Concerne: ligne 3100",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Interruption entre Lausanne-Ouchy (lac) et Bouveret (lac) [bateau]",
-     "description": "Concerne: ligne 3100",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Unterbruch zwischen Lausanne-Ouchy (lac) und Bouveret (lac) [Schiff]",
-     "description": "Betroffen: Linie 3100",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Interruzione tra Lausanne-Ouchy (lac) e Bouveret (lac) [battello]",
-     "description": "Interessata: la linea 3100",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Interrupted service between Lausanne-Ouchy (lac) and Bouveret (lac) [boat]",
-     "description": "Affected: line 3100",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-01T09:30:00Z",
-     "fin": "2026-11-01T16:54:00Z"
-    }
-   ],
-   "lieux": [
-    "Lausanne-Ouchy (lac)"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -235,6 +147,6 @@
    ]
   }
  ],
- "octets": 129624638,
- "mis_a_jour": "2026-11-01T15:43:17+00:00"
+ "octets": 129584001,
+ "mis_a_jour": "2026-11-01T18:52:52+00:00"
 }
