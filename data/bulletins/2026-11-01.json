@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-01",
+ "genere_a": "2026-11-02T05:20:16+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 80,4 % des passages à l'heure, en hausse sur la veille",
+  "paragraphes": [
+   "Le 1er novembre 2026, 80,4 % des passages mesurés à Lausanne sont arrivés à l'heure (moins de 3 minutes de retard). Le retard moyen est de 2,1 minutes, et 9 passages sur 10 ont moins de 4,4 minutes de retard. La veille, la ponctualité était de 73,0 % (écart de 7,4 points). La moyenne des 7 jours précédents est de 76,2 % (écart de 4,2 points).",
+   "Sur 54'185 passages prévus, 53'377 ont été mesurés et 582 ont été supprimés (1,1 %). Le métro affiche 98,7 % à l'heure et aucune suppression. Le train atteint 87,6 %, avec 7,3 % de passages supprimés. Le bus est à 79,8 %.",
+   "Côté lignes, la N5 (TL) est la moins ponctuelle sur la journée entière : 26,0 % à l'heure, 7,6 minutes de retard moyen. Elle précède la N1 (41,4 %) et la ligne 18 (62,7 %). Les lignes 435 (PAG) et N6 (TL) sont à 100,0 % à l'heure. La ligne 1 (TL) compte 177 passages supprimés (4,2 %).",
+   "L'heure la moins ponctuelle est 3 h, avec 49,1 % à l'heure sur 173 passages. Vient ensuite 1 h (63,9 %), puis 17 h (69,5 %). Le plus gros retard de la journée est de 84,0 minutes, sur la ligne 1 (TL) à l'arrêt Casernes, pour un passage prévu à 11 h 54."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 80,4 % der Fahrten pünktlich, Anstieg gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 1. November 2026 sind 80,4 % der gemessenen Fahrten in Lausanne pünktlich eingetroffen (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,1 Minuten, und 9 von 10 Fahrten haben weniger als 4,4 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 73,0 % (Abweichung von 7,4 Punkten). Der Durchschnitt der 7 vorangegangenen Tage beträgt 76,2 % (Abweichung von 4,2 Punkten).",
+   "Von 54'185 geplanten Fahrten wurden 53'377 gemessen und 582 gestrichen (1,1 %). Die Metro erreicht 98,7 % Pünktlichkeit, und es gab keine Streichungen. Der Zug erreicht 87,6 %, mit 7,3 % gestrichenen Fahrten. Der Bus liegt bei 79,8 %.",
+   "Bei den Linien ist die N5 (TL) über den gesamten Tag am wenigsten pünktlich: 26,0 % pünktlich, durchschnittliche Verspätung 7,6 Minuten. Es folgen die N1 (41,4 %) und die Linie 18 (62,7 %). Die Linien 435 (PAG) und N6 (TL) sind zu 100,0 % pünktlich. Die Linie 1 (TL) verzeichnet 177 gestrichene Fahrten (4,2 %).",
+   "Die am wenigsten pünktliche Stunde ist 3 Uhr, mit 49,1 % pünktlich bei 173 Fahrten. Danach folgt 1 Uhr (63,9 %), dann 17 Uhr (69,5 %). Die größte Verspätung des Tages beträgt 84,0 Minuten, auf der Linie 1 (TL) an der Haltestelle Casernes, bei einer geplanten Abfahrt um 11 Uhr 54."
+  ]
+ },
+ "it": {
+  "titre": "Lausanne: 80,4% delle corse in orario, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 1º novembre 2026, l'80,4% delle corse rilevate a Losanna è arrivato in orario (con meno di 3 minuti di ritardo). Il ritardo medio è di 2,1 minuti e 9 corse su 10 hanno un ritardo inferiore a 4,4 minuti. Il giorno precedente la puntualità era del 73,0% (differenza di 7,4 punti). La media dei 7 giorni precedenti è del 76,2% (differenza di 4,2 punti).",
+   "Su 54'185 corse previste, 53'377 sono state rilevate e 582 sono state soppresse (1,1%). Il metro registra il 98,7% in orario e nessuna soppressione. Il treno raggiunge l'87,6%, con il 7,3% delle corse soppresse. Il bus si attesta al 79,8%.",
+   "Per linea, la N5 (TL) è la meno puntuale nell'arco dell'intera giornata: il 26,0% in orario, con un ritardo medio di 7,6 minuti. Seguono la N1 (41,4%) e la linea 18 (62,7%). Le linee 435 (PAG) e N6 (TL) sono al 100,0% in orario. La linea 1 (TL) conta 177 corse soppresse (4,2%).",
+   "L'ora meno puntuale è quella delle ore 3, con il 49,1% in orario su 173 corse. Seguono le ore 1 (63,9%), poi le ore 17 (69,5%). Il ritardo maggiore della giornata è di 84,0 minuti, sulla linea 1 (TL) alla fermata Casernes, per una corsa prevista alle ore 11:54."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 80.4% of departures on time, up from the previous day",
+  "paragraphes": [
+   "On 1 November 2026, 80.4% of the measured departures in Lausanne arrived on time (less than 3 minutes late). The average delay was 2.1 minutes, and 9 departures out of 10 were less than 4.4 minutes late. The day before, punctuality was 73.0% (a difference of 7.4 points). The average for the previous 7 days was 76.2% (a difference of 4.2 points).",
+   "Out of 54'185 scheduled departures, 53'377 were measured and 582 were cancelled (1.1%). The metro shows 98.7% on time and no cancellations. The train reaches 87.6%, with 7.3% of departures cancelled. The bus is at 79.8%.",
+   "By line, the N5 (TL) is the least punctual over the whole day: 26.0% on time, with an average delay of 7.6 minutes. It is followed by the N1 (41.4%) and line 18 (62.7%). Lines 435 (PAG) and N6 (TL) are at 100.0% on time. Line 1 (TL) recorded 177 cancelled departures (4.2%).",
+   "The least punctual hour is 03:00, with 49.1% on time out of 173 departures. Next comes 01:00 (63.9%), then 17:00 (69.5%). The largest delay of the day was 84.0 minutes, on line 1 (TL) at the Casernes stop, for a departure scheduled at 11:54."
+  ]
+ },
+ "statut": "publie"
+}
