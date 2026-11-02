@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1043,
- "actives_suisse": 408,
+ "situations_suisse": 1027,
+ "actives_suisse": 395,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -99,54 +99,8 @@
     "Vauderens"
    ],
    "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:1:63697f63-97cb-566f-87b3-3c4036522037",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "normal",
-   "cause": "constructionWork",
-   "source": "ski-ems-out-sx_prod",
-   "cree": "2026-10-19T03:07:16Z",
-   "titre": "Service irrégulier entre Lausanne-Flon et Echallens [train]",
-   "description": "Concerne: ligne R20",
-   "consequence": "Le trafic ferroviaire est interrompu entre Lausanne-Flon et Echallens et est remplacé par bus entre Lausanne, gare et Echallens, gare. Informations complémentaires sur notre site internet www.t-l.ch",
-   "textes": {
-    "fr": {
-     "titre": "Service irrégulier entre Lausanne-Flon et Echallens [train]",
-     "description": "Concerne: ligne R20",
-     "consequence": "Le trafic ferroviaire est interrompu entre Lausanne-Flon et Echallens et est remplacé par bus entre Lausanne, gare et Echallens, gare. Informations complémentaires sur notre site internet www.t-l.ch"
-    },
-    "de": {
-     "titre": "Unregelmässiger Betrieb zwischen Lausanne-Flon und Echallens [Bahn]",
-     "description": "Betroffen: Linie R20",
-     "consequence": "Der Eisenbahnverkehr zwischen Lausanne-Flon und Echallens wird unterbrochen und zwischen Lausanne, gare und Echallens, gare durch einen Bus ersetzt. Weitere Informationen auf unserer Website www.t-l.ch"
-    },
-    "it": {
-     "titre": "Esercizio irregolare tra Lausanne-Flon e Echallens [treno]",
-     "description": "Interessata: la linea R20",
-     "consequence": "Il traffico ferroviario è interrotto tra Losanna-Flon e Echallens ed è sostituito da autobus tra Losanna, gare e Echallens, gare. Ulteriori informazioni sul nostro sito www.t-l.ch"
-    },
-    "en": {
-     "titre": "Irregular service between Lausanne-Flon and Echallens [train]",
-     "description": "Affected: line R20",
-     "consequence": "Rail traffic is interrupted between Lausanne-Flon and Echallens and replaced by buses between Lausanne, gare and Echallens, gare. Additional information on our website www.t-l.ch"
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-01T03:00:00Z",
-     "fin": "2026-11-02T01:00:12Z"
-    }
-   ],
-   "lieux": [
-    "Lausanne-Flon"
-   ],
-   "lignes": [
-    "R20"
-   ]
   }
  ],
- "octets": 129552275,
- "mis_a_jour": "2026-11-01T21:43:52+00:00"
+ "octets": 129098885,
+ "mis_a_jour": "2026-11-02T01:15:06+00:00"
 }
