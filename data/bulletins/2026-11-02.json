@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-02",
+ "genere_a": "2026-11-03T05:13:41+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 3,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 77,2 % à Lausanne, en baisse par rapport à la veille",
+  "paragraphes": [
+   "Le 2 novembre 2026, 77,2 % des passages ont été à l'heure (moins de 3 minutes de retard), contre 80,4 % la veille (-3,2 points). La moyenne des 7 jours précédents est de 77,5 %. Le retard moyen est de 2,2 minutes et 9 passages sur 10 ont moins de 5,3 minutes de retard. Sur 67'952 passages prévus, 1'026 ont été supprimés (1,5 %).",
+   "Le métro atteint 96,7 % de passages à l'heure et le train 93,7 %, contre 76,3 % pour le bus. Sur la journée entière, la ligne TL 18 est la moins ponctuelle (55,2 % à l'heure, retard moyen de 3,9 minutes), suivie de la ligne TL 7 (65,3 %). La ligne R9 de SBB affiche 100,0 % à l'heure et la ligne RR20 de LEB 98,7 %.",
+   "Le moment le plus difficile se situe à 18 h : 46,8 % des passages à l'heure et un retard moyen de 5,6 minutes. Viennent ensuite 17 h (48,9 %) et 8 h (64,0 %).",
+   "Le plus gros retard mesuré concerne un TGV de SBB à Lausanne, prévu à 21 h 39, avec 62,5 minutes. Une course de la ligne TL 54, prévue à 13 h 24 à Lausanne, En Marin, a accusé 56,3 minutes de retard."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 77,2 % in Lausanne, im Vergleich zum Vortag gesunken",
+  "paragraphes": [
+   "Am 2. November 2026 sind 77,2 % der Fahrten pünktlich gewesen (weniger als 3 Minuten Verspätung), gegenüber 80,4 % am Vortag (-3,2 Punkte). Der Durchschnitt der vorangegangenen 7 Tage liegt bei 77,5 %. Die durchschnittliche Verspätung beträgt 2,2 Minuten, und 9 von 10 Fahrten hatten weniger als 5,3 Minuten Verspätung. Von 67'952 geplanten Fahrten wurden 1'026 gestrichen (1,5 %).",
+   "Die Metro erreicht 96,7 % pünktliche Fahrten, der Zug 93,7 %, gegenüber 76,3 % beim Bus. Über den gesamten Tag betrachtet ist die Linie TL 18 am wenigsten pünktlich (55,2 % pünktlich, durchschnittliche Verspätung von 3,9 Minuten), gefolgt von der Linie TL 7 (65,3 %). Die Linie R9 der SBB weist 100,0 % Pünktlichkeit auf, und die Linie RR20 der LEB 98,7 %.",
+   "Der schwierigste Zeitraum liegt um 18 Uhr: 46,8 % der Fahrten sind pünktlich, und die durchschnittliche Verspätung beträgt 5,6 Minuten. Danach folgen 17 Uhr (48,9 %) und 8 Uhr (64,0 %).",
+   "Die grösste gemessene Verspätung betrifft einen TGV der SBB in Lausanne, planmässig um 21:39 Uhr, mit 62,5 Minuten. Eine Fahrt der Linie TL 54, planmässig um 13:24 Uhr in Lausanne, En Marin, hatte 56,3 Minuten Verspätung."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità del 77,2% a Losanna, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 2 novembre 2026, il 77,2% dei passaggi è stato puntuale (meno di 3 minuti di ritardo), contro l'80,4% del giorno precedente (-3,2 punti). La media dei 7 giorni precedenti è del 77,5%. Il ritardo medio è di 2,2 minuti e 9 passaggi su 10 hanno meno di 5,3 minuti di ritardo. Su 67'952 passaggi previsti, 1'026 sono stati soppressi (1,5%).",
+   "Il metro raggiunge il 96,7% di passaggi puntuali e il treno il 93,7%, contro il 76,3% del bus. Nell'arco dell'intera giornata, la linea TL 18 è la meno puntuale (55,2% puntuale, ritardo medio di 3,9 minuti), seguita dalla linea TL 7 (65,3%). La linea R9 di SBB registra il 100,0% di puntualità e la linea RR20 di LEB il 98,7%.",
+   "Il momento più difficile si colloca alle ore 18: il 46,8% dei passaggi è puntuale e il ritardo medio è di 5,6 minuti. Seguono le ore 17 (48,9%) e le ore 8 (64,0%).",
+   "Il ritardo maggiore misurato riguarda un TGV di SBB a Losanna, previsto alle ore 21:39, con 62,5 minuti. Una corsa della linea TL 54, prevista alle ore 13:24 a Losanna, En Marin, ha accusato 56,3 minuti di ritardo."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 77.2% in Lausanne, down from the previous day",
+  "paragraphes": [
+   "[\"On 2 November 2026, 77.2% of trips were on time (less than 3 minutes late), compared with 80.4% the day before (-3.2 points). The average for the previous 7 days is 77.5%. The average delay is 2.2 minutes, and 9 trips out of 10 were less than 5.3 minutes late. Out of 67'952 scheduled trips, 1'026 were cancelled (1.5%).\", \"The metro reached 96.7% of trips on time and the train 93.7%, compared with 76.3% for the bus. Over the whole day, line TL 18 is the least punctual (55.2% on time, average delay of 3.9 minutes), followed by line TL 7 (65.3%). SBB line R9 shows 100.0% on time and LEB line RR20 98.7%.\", \"The most difficult time is 18:00: 46.8% of trips were on time and the average delay was 5.6 minutes. They are followed by 17:00 (48.9%) and 08:00 (64.0%).\", \"The largest delay recorded concerns an SBB TGV in Lausanne, scheduled for 21:39, with 62.5 minutes. One trip on line TL 54, scheduled for 13:24 in Lausanne, En Marin, was 56.3 minutes late.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
