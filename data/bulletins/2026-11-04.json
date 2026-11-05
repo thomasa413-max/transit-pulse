@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-04",
+ "genere_a": "2026-11-05T05:17:34+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 72,6 % à Lausanne, en retrait sur la veille",
+  "paragraphes": [
+   "Le 4 novembre 2026, 72,6 % des passages sont arrivés à l'heure (moins de 3 minutes de retard), sur 66'691 passages mesurés. Le retard moyen est de 2,5 minutes ; 9 passages sur 10 ont moins de 6,0 minutes de retard. La veille, la ponctualité était de 73,7 %, et la moyenne des 7 jours précédents de 75,1 %.",
+   "Le métro m1 atteint 98,6 % de passages à l'heure, le train 88,4 % et le bus 71,5 %. La ligne de bus 41 des TL (98,8 %) est la plus ponctuelle. À l'inverse, la ligne 18 des TL n'est à l'heure que dans 32,9 % des cas, avec 7,1 minutes de retard moyen, devant la ligne 8 (56,2 %) et la ligne 7 (56,9 %). Les arrêts Pavement (32,2 %) et Piécettes (37,4 %) sont les moins ponctuels.",
+   "L'heure de 17 h est la plus difficile, avec 56,4 % de passages à l'heure, suivie de 18 h (57,3 %) et de 16 h (60,8 %).",
+   "Sur la journée, 895 passages ont été supprimés, soit 1,3 % des passages prévus. Le plus gros retard concerne la ligne 8 des TL : 53,0 minutes à l'arrêt Grangette, pour un passage prévu à 12 h 40."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 72,6 % in Lausanne, Rückgang gegenüber dem Vortag",
+  "paragraphes": [
+   "[\"Am 4. November 2026 kamen 72,6 % der Fahrten pünktlich an (weniger als 3 Minuten Verspätung), bei 66'691 gemessenen Fahrten. Die durchschnittliche Verspätung beträgt 2,5 Minuten; 9 von 10 Fahrten haben weniger als 6,0 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 73,7 %, und der Durchschnitt der 7 vorangegangenen Tage bei 75,1 %.\", \"Die M1-Metro erreicht 98,6 % pünktliche Fahrten, der Zug 88,4 % und der Bus 71,5 %. Die Buslinie 41 der TL (98,8 %) ist am pünktlichsten. Umgekehrt ist die Linie 18 der TL nur in 32,9 % der Fälle pünktlich, mit durchschnittlich 7,1 Minuten Verspätung, vor der Linie 8 (56,2 %) und der Linie 7 (56,9 %). Die Haltestellen Pavement (32,2 %) und Piécettes (37,4 %) sind am wenigsten pünktlich.\", \"Die Stunde um 17 Uhr ist am schwierigsten, mit 56,4 % pünktlichen Fahrten, gefolgt von 18 Uhr (57,3 %) und 16 Uhr (60,8 %).\", \"Im Tagesverlauf wurden 895 Fahrten gestrichen, das entspricht 1,3 % der geplanten Fahrten. Die grösste Verspätung betrifft die Linie 8 der TL: 53,0 Minuten an der Haltestelle Grangette, bei einer geplanten Abfahrt um 12:40 Uhr.\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità del 72,6 % a Losanna, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 4 novembre 2026, il 72,6 % dei passaggi è arrivato in orario (meno di 3 minuti di ritardo), su 66'691 passaggi misurati. Il ritardo medio è di 2,5 minuti; 9 passaggi su 10 hanno meno di 6,0 minuti di ritardo. Il giorno precedente la puntualità era del 73,7 %, e la media dei 7 giorni precedenti del 75,1 %.",
+   "La metropolitana m1 raggiunge il 98,6 % di passaggi in orario, il treno l'88,4 % e l'autobus il 71,5 %. La linea di autobus 41 dei TL (98,8 %) è la più puntuale. Al contrario, la linea 18 dei TL è in orario solo nel 32,9 % dei casi, con un ritardo medio di 7,1 minuti, davanti alla linea 8 (56,2 %) e alla linea 7 (56,9 %). Le fermate Pavement (32,2 %) e Piécettes (37,4 %) sono le meno puntuali.",
+   "L'ora delle 17 è la più difficile, con il 56,4 % di passaggi in orario, seguita dalle 18 (57,3 %) e dalle 16 (60,8 %).",
+   "Nell'arco della giornata, 895 passaggi sono stati soppressi, pari all'1,3 % dei passaggi previsti. Il ritardo maggiore riguarda la linea 8 dei TL: 53,0 minuti alla fermata Grangette, per un passaggio previsto alle ore 12:40."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 72.6% in Lausanne, down on the previous day",
+  "paragraphes": [
+   "On 4 November 2026, 72.6% of services arrived on time (less than 3 minutes late), out of 66'691 services measured. The average delay is 2.5 minutes; 9 out of 10 services were less than 6.0 minutes late. The day before, punctuality was 73.7%, and the average of the previous 7 days was 75.1%.",
+   "The m1 metro reached 98.6% of services on time, the train 88.4% and the bus 71.5%. TL bus line 41 (98.8%) is the most punctual. Conversely, TL line 18 is on time in only 32.9% of cases, with an average delay of 7.1 minutes, ahead of line 8 (56.2%) and line 7 (56.9%). The stops Pavement (32.2%) and Piécettes (37.4%) are the least punctual.",
+   "The 17:00 hour is the most difficult, with 56.4% of services on time, followed by 18:00 (57.3%) and 16:00 (60.8%).",
+   "Over the day, 895 services were cancelled, or 1.3% of planned services. The largest delay concerns TL line 8: 53.0 minutes at the Grangette stop, for a service planned at 12:40."
+  ]
+ },
+ "statut": "publie"
+}
