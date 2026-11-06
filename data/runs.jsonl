@@ -292,3 +292,4 @@
 {"job": "disruptions", "agent": "siri-sx", "status": "ok", "seconds": 8.94, "situations": 426, "lausanne": 2, "bytes": 142501155, "id": "1338f7f77545", "at": "2026-11-06T13:14:47+00:00", "trigger": "schedule", "github_run": "42223883313"}
 {"job": "disruptions", "agent": "siri-sx", "status": "ok", "seconds": 5.75, "situations": 429, "lausanne": 2, "bytes": 142489490, "id": "925b70ba6aec", "at": "2026-11-06T15:57:14+00:00", "trigger": "schedule", "github_run": "42247761825"}
 {"job": "disruptions", "agent": "siri-sx", "status": "ok", "seconds": 7.94, "situations": 411, "lausanne": 2, "bytes": 142157988, "id": "d137f28a512c", "at": "2026-11-06T19:00:49+00:00", "trigger": "schedule", "github_run": "42275783087"}
+{"job": "disruptions", "agent": "siri-sx", "status": "ok", "seconds": 8.64, "situations": 415, "lausanne": 3, "bytes": 142151814, "id": "528b9a30440e", "at": "2026-11-06T21:49:33+00:00", "trigger": "schedule", "github_run": "42299814250"}
