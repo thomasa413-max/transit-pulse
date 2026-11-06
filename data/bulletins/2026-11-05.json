@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-05",
+ "genere_a": "2026-11-06T05:17:26+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité à 69,3 % à Lausanne, en repli sur la veille",
+  "paragraphes": [
+   "Le 5 novembre 2026, 69,3 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard), contre 72,6 % la veille et 74,3 % en moyenne sur les 7 jours précédents. Le retard moyen est de 2,9 minutes ; 9 passages sur 10 ont moins de 7,0 minutes de retard. Sur 67'849 passages prévus, 65'718 ont été mesurés et 1'588 ont été supprimés (2,3 %).",
+   "Le métro atteint 95,0 % de passages à l'heure et le train 90,7 %, contre 68,2 % pour le bus. La ligne 18 des TL affiche la ponctualité la plus basse (43,5 % à l'heure, 7,2 % de passages supprimés), devant la ligne 7 (45,2 %) et la ligne 21 (50,5 %). La ligne 41 des TL est la plus ponctuelle, avec 98,0 %.",
+   "L'heure de 19 h est la plus difficile : 50,3 % à l'heure et un retard moyen de 6,7 minutes. Elle précède 18 h (52,2 %) et 20 h (54,5 %).",
+   "Le plus gros retard mesuré atteint 92,4 minutes, sur la ligne 2 des TL à l'arrêt Théâtre de Vidy (passage prévu à 19 h 18)."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit bei 69,3 % in Lausanne, Rückgang gegenüber dem Vortag",
+  "paragraphes": [
+   "[\"Am 5. November 2026 waren 69,3 % der gemessenen Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung), gegenüber 72,6 % am Vortag und 74,3 % im Durchschnitt der vorangegangenen 7 Tage. Die durchschnittliche Verspätung beträgt 2,9 Minuten; 9 von 10 Fahrten haben weniger als 7,0 Minuten Verspätung. Von 67'849 geplanten Fahrten wurden 65'718 gemessen und 1'588 gestrichen (2,3 %).\", \"Die Metro erreicht 95,0 % pünktliche Fahrten, der Zug 90,7 %, gegenüber 68,2 % beim Bus. Die Linie 18 der TL weist die tiefste Pünktlichkeit auf (43,5 % pünktlich, 7,2 % der Fahrten gestrichen), vor der Linie 7 (45,2 %) und der Linie 21 (50,5 %). Die Linie 41 der TL ist am pünktlichsten mit 98,0 %.\", \"Die Stunde um 19 Uhr ist am schwierigsten: 50,3 % pünktlich und eine durchschnittliche Verspätung von 6,7 Minuten. Sie folgt auf 18 Uhr (52,2 %) und geht 20 Uhr (54,5 %) voraus.\", \"Die grösste gemessene Verspätung beträgt 92,4 Minuten, auf der Linie 2 der TL an der Haltestelle Théâtre de Vidy (geplante Abfahrt um 19:18 Uhr).\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità al 69,3% a Losanna, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 5 novembre 2026, il 69,3% dei passaggi misurati a Losanna era puntuale (meno di 3 minuti di ritardo), contro il 72,6% del giorno precedente e il 74,3% in media sui 7 giorni precedenti. Il ritardo medio è di 2,9 minuti; 9 passaggi su 10 hanno meno di 7,0 minuti di ritardo. Su 67'849 passaggi previsti, 65'718 sono stati misurati e 1'588 sono stati soppressi (2,3%).",
+   "La metropolitana raggiunge il 95,0% di passaggi puntuali e il treno il 90,7%, contro il 68,2% dell'autobus. La linea 18 dei TL presenta la puntualità più bassa (43,5% puntuali, 7,2% di passaggi soppressi), seguita dalla linea 7 (45,2%) e dalla linea 21 (50,5%). La linea 41 dei TL è la più puntuale, con il 98,0%.",
+   "L'ora delle ore 19 è la più difficile: 50,3% puntuali e un ritardo medio di 6,7 minuti. Precede le ore 18 (52,2%) e le ore 20 (54,5%).",
+   "Il ritardo maggiore misurato raggiunge 92,4 minuti, sulla linea 2 dei TL alla fermata Théâtre de Vidy (passaggio previsto alle ore 19:18)."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality at 69.3% in Lausanne, down from the previous day",
+  "paragraphes": [
+   "On 5 November 2026, 69.3% of the measured departures in Lausanne were on time (less than 3 minutes late), compared with 72.6% the day before and 74.3% on average over the previous 7 days. The average delay is 2.9 minutes; 9 departures out of 10 are less than 7.0 minutes late. Of 67'849 scheduled departures, 65'718 were measured and 1'588 were cancelled (2.3%).",
+   "The metro reaches 95.0% of departures on time and the train 90.7%, compared with 68.2% for the bus. TL line 18 has the lowest punctuality (43.5% on time, 7.2% of departures cancelled), ahead of line 7 (45.2%) and line 21 (50.5%). TL line 41 is the most punctual, with 98.0%.",
+   "The 19:00 hour is the most difficult: 50.3% on time and an average delay of 6.7 minutes. It comes after 18:00 (52.2%) and before 20:00 (54.5%).",
+   "The largest measured delay reached 92.4 minutes, on TL line 2 at the Théâtre de Vidy stop (scheduled departure at 19:18)."
+  ]
+ },
+ "statut": "publie"
+}
