@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1110,
- "actives_suisse": 415,
+ "situations_suisse": 1094,
+ "actives_suisse": 403,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,6 +47,61 @@
    "lignes": [
     "18"
    ]
+  },
+  {
+   "id": "ch:1:sstid:100001:fce281d0-f0d2-4503-a457-0ec41c43fac5",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2025-10-29T12:49:48.398+01:00",
+   "titre": "Interruption Luzern - Ebikon",
+   "description": "Les lignes IR, IR 70, IR 75, IR VAE, RE N7, S 1 et S 3",
+   "consequence": "La ligne S3 ne s'arrête pas à Meggen",
+   "textes": {
+    "fr": {
+     "titre": "Interruption Luzern - Ebikon",
+     "description": "Les lignes IR, IR 70, IR 75, IR VAE, RE N7, S 1 et S 3",
+     "consequence": "La ligne S3 ne s'arrête pas à Meggen"
+    },
+    "de": {
+     "titre": "Unterbruch Luzern - Ebikon",
+     "description": "Linien IR, IR 70, IR 75, IR VAE, RE N7, S 1 und S 3",
+     "consequence": "Die Linie S3 hält nicht in Meggen"
+    },
+    "it": {
+     "titre": "Interruzione Luzern - Ebikon",
+     "description": "Linee IR, IR 70, IR 75, IR VAE, RE N7, S 1 e S 3",
+     "consequence": "La linea S3 non ferma a Meggen"
+    },
+    "en": {
+     "titre": "Interrupted service: Luzern - Ebikon",
+     "description": "Lines IR, IR 70, IR 75, IR VAE, RE N7, S 1 and S 3",
+     "consequence": "Line S3 does not stop in Meggen"
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-07T01:15:00+01:00",
+     "fin": "2026-11-09T04:30:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Arth-Goldau",
+    "Baar",
+    "Basel SBB",
+    "Brunnen",
+    "Ebikon",
+    "Erstfeld",
+    "Fribourg/Freiburg",
+    "Küssnacht am Rigi",
+    "Lausanne",
+    "Luzern",
+    "Olten",
+    "Sargans"
+   ],
+   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:26d9d878-74c0-473c-9e2a-366c480002ba",
@@ -156,6 +211,6 @@
    "lignes": []
   }
  ],
- "octets": 142151814,
- "mis_a_jour": "2026-11-06T21:49:33+00:00"
+ "octets": 141209131,
+ "mis_a_jour": "2026-11-07T01:08:25+00:00"
 }
