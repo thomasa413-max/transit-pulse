@@ -1,6 +1,6 @@
 {
  "situations_suisse": 1092,
- "actives_suisse": 400,
+ "actives_suisse": 405,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -46,6 +46,52 @@
    ],
    "lignes": [
     "18"
+   ]
+  },
+  {
+   "id": "ch:1:sstid:1:d290514c-9f4e-5322-84eb-7b41679ab370",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "normal",
+   "cause": "specialEvent",
+   "source": "ski-ems-out-sx_prod",
+   "cree": "2026-10-09T10:25:22Z",
+   "titre": "Arrêt Lausanne, En Marin non desservi",
+   "description": "Concerne: ligne 45",
+   "consequence": "Déviée entre En Marin et Chalet-à-Gobet dans les deux sens, via Rte de Berne, en raison d'une manifestation. Arrêts Vulliette, Cojonnex/EHL, Mauvernay non desservis.",
+   "textes": {
+    "fr": {
+     "titre": "Arrêt Lausanne, En Marin non desservi",
+     "description": "Concerne: ligne 45",
+     "consequence": "Déviée entre En Marin et Chalet-à-Gobet dans les deux sens, via Rte de Berne, en raison d'une manifestation. Arrêts Vulliette, Cojonnex/EHL, Mauvernay non desservis."
+    },
+    "de": {
+     "titre": "Haltestelle Lausanne, En Marin nicht bedient",
+     "description": "Betroffen: Linie 45",
+     "consequence": "Aufgrund einer Demonstration wird der Verkehr in beide Richtungen zwischen En Marin und Chalet-à-Gobet über die Route de Berne umgeleitet. Die Haltestellen Vulliette, Cojonnex/EHL und Mauvernay werden nicht angefahren."
+    },
+    "it": {
+     "titre": "Fermata Lausanne, En Marin non servita",
+     "description": "Interessata: la linea 45",
+     "consequence": "Deviazione in entrambe le direzioni tra En Marin e Chalet-à-Gobet, attraverso la Rte de Berne, a causa di una manifestazione. Le fermate Vulliette, Cojonnex/EHL e Mauvernay non saranno servite."
+    },
+    "en": {
+     "titre": "Lausanne, En Marin stop is closed",
+     "description": "Affected: line 45",
+     "consequence": "Services are being diverted between En Marin and Chalet-à-Gobet in both directions, via Route de Berne, due to a demonstration. The Vulliette, Cojonnex/EHL and Mauvernay stops are not being served."
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-07T06:00:00Z",
+     "fin": "2026-11-07T13:00:00Z"
+    }
+   ],
+   "lieux": [
+    "Lausanne, En Marin"
+   ],
+   "lignes": [
+    "45"
    ]
   },
   {
@@ -211,6 +257,6 @@
    "lignes": []
   }
  ],
- "octets": 141196846,
- "mis_a_jour": "2026-11-07T03:57:16+00:00"
+ "octets": 141192431,
+ "mis_a_jour": "2026-11-07T07:08:14+00:00"
 }
