@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-06",
+ "genere_a": "2026-11-07T05:08:17+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 73,1 % à Lausanne, en hausse sur la veille",
+  "paragraphes": [
+   "Le 6 novembre 2026, 73,1 % des passages mesurés étaient à l'heure (moins de 3 minutes de retard). Le retard moyen est de 2,3 minutes ; 9 passages sur 10 ont moins de 5,5 minutes de retard. La veille, la ponctualité était de 69,3 % (+3,8 points). La moyenne des 7 jours précédents s'établit à 74,1 % (-1,0 point).",
+   "Le métro m1 affiche 98,2 % de passages à l'heure et le train 90,1 %, contre 72,1 % pour le bus. Sur 68'744 passages prévus, 392 ont été supprimés (0,6 %), dont 388 en bus. La ligne de bus 18 des TL est la moins ponctuelle, avec 50,3 % à l'heure et 4,3 minutes de retard moyen, devant la ligne 8 (56,0 %) et la ligne 9 (56,8 %). Le RR20 du LEB est la plus ponctuelle (99,8 %).",
+   "Les heures les plus difficiles sont 16 h (61,4 % à l'heure), 17 h (62,1 %) et 18 h (63,8 %).",
+   "Les plus gros retards mesurés atteignent 36,4 minutes : ligne 1 à Bourdonnette (prévu à 8 h 54) et ligne 21 à Lausanne, Cécil (prévu à 12 h 30)."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 73,1 % in Lausanne, Anstieg gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 6. November 2026 waren 73,1 % der gemessenen Fahrten pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,3 Minuten; 9 von 10 Fahrten haben weniger als 5,5 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 69,3 % (+3,8 Prozentpunkte). Der Durchschnitt der 7 vorangegangenen Tage liegt bei 74,1 % (-1,0 Prozentpunkte).",
+   "Die Metro m1 verzeichnet 98,2 % pünktliche Fahrten, der Zug 90,1 % und der Bus 72,1 %. Von 68'744 geplanten Fahrten wurden 392 gestrichen (0,6 %), davon 388 im Bus. Die Buslinie 18 der TL ist am wenigsten pünktlich, mit 50,3 % pünktlichen Fahrten und einer durchschnittlichen Verspätung von 4,3 Minuten, vor der Linie 8 (56,0 %) und der Linie 9 (56,8 %). Der RR20 der LEB ist am pünktlichsten (99,8 %).",
+   "Die schwierigsten Zeiten sind 16 Uhr (61,4 % pünktlich), 17 Uhr (62,1 %) und 18 Uhr (63,8 %).",
+   "Die größten gemessenen Verspätungen erreichen 36,4 Minuten: Linie 1 in Bourdonnette (geplant um 8:54 Uhr) und Linie 21 in Lausanne, Cécil (geplant um 12:30 Uhr)."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità del 73,1 % a Losanna, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 6 novembre 2026, il 73,1 % dei passaggi misurati era puntuale (ritardo inferiore a 3 minuti). Il ritardo medio è di 2,3 minuti; 9 passaggi su 10 hanno un ritardo inferiore a 5,5 minuti. Il giorno precedente la puntualità era del 69,3 % (+3,8 punti). La media dei 7 giorni precedenti si attesta al 74,1 % (-1,0 punti).",
+   "La metropolitana m1 registra il 98,2 % di passaggi puntuali e il treno il 90,1 %, contro il 72,1 % del bus. Su 68'744 passaggi previsti, 392 sono stati soppressi (0,6 %), di cui 388 in bus. La linea di bus 18 dei TL è la meno puntuale, con il 50,3 % di passaggi puntuali e un ritardo medio di 4,3 minuti, davanti alla linea 8 (56,0 %) e alla linea 9 (56,8 %). Il RR20 del LEB è la linea più puntuale (99,8 %).",
+   "Le ore più difficili sono le 16 (61,4 % puntuali), le 17 (62,1 %) e le 18 (63,8 %).",
+   "I ritardi maggiori misurati raggiungono 36,4 minuti: linea 1 a Bourdonnette (previsto alle ore 8:54) e linea 21 a Losanna, Cécil (previsto alle ore 12:30)."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 73.1% in Lausanne, up on the previous day",
+  "paragraphes": [
+   "On 6 November 2026, 73.1% of measured trips were on time (less than 3 minutes late). The average delay is 2.3 minutes; 9 trips out of 10 are less than 5.5 minutes late. The day before, punctuality was 69.3% (+3.8 points). The average of the previous 7 days stands at 74.1% (-1.0 point).",
+   "The m1 metro shows 98.2% of trips on time and the train 90.1%, compared with 72.1% for the bus. Out of 68'744 scheduled trips, 392 were cancelled (0.6%), including 388 by bus. TL bus line 18 is the least punctual, with 50.3% on time and an average delay of 4.3 minutes, ahead of line 8 (56.0%) and line 9 (56.8%). The LEB RR20 is the most punctual (99.8%).",
+   "The most difficult hours are 16:00 (61.4% on time), 17:00 (62.1%) and 18:00 (63.8%).",
+   "The largest measured delays reach 36.4 minutes: line 1 at Bourdonnette (scheduled for 08:54) and line 21 in Lausanne, Cécil (scheduled for 12:30)."
+  ]
+ },
+ "statut": "publie"
+}
