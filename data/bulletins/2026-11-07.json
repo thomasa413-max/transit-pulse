@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-07",
+ "genere_a": "2026-11-08T05:10:10+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 72,1 % des passages à l'heure, en recul sur la veille",
+  "paragraphes": [
+   "Le 7 novembre 2026, 72,1 % des passages ont été à l'heure (moins de 3 minutes de retard), sur 58'474 passages mesurés pour 59'759 prévus. Le retard moyen est de 2,8 minutes ; 9 passages sur 10 ont moins de 6,9 minutes de retard. La veille, la ponctualité atteignait 73,1 %, et la moyenne des 7 jours précédents est de 74,2 %.",
+   "Le métro m1 affiche 99,8 % de passages à l'heure et le train 93,8 %. Le bus est à 70,9 %, avec un retard moyen de 2,9 minutes. Parmi les lignes TL les moins ponctuelles figurent la 7 (38,1 % à l'heure, 3,3 % de passages supprimés), la 18 (38,7 %) et la 4 (43,3 %, retard moyen de 8,2 minutes).",
+   "Les heures les plus difficiles sont 17 h (55,2 % à l'heure, retard moyen de 5,1 minutes), 18 h (56,7 %) puis 16 h (60,7 %).",
+   "Au total, 474 passages ont été supprimés, soit 0,8 % des passages prévus. Le plus gros retard concerne un bus TL de la ligne 8, prévu à 18 h 30 à Lausanne, Mémise : 57,7 minutes."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 72,1 % der Fahrten pünktlich, Rückgang gegenüber Vortag",
+  "paragraphes": [
+   "Am 7. November 2026 waren 72,1 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung), bei 58'474 gemessenen Fahrten von 59'759 geplanten. Die durchschnittliche Verspätung beträgt 2,8 Minuten; 9 von 10 Fahrten haben weniger als 6,9 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 73,1 %, und der Durchschnitt der 7 vorangegangenen Tage beträgt 74,2 %.",
+   "Die Metro m1 verzeichnet 99,8 % pünktliche Fahrten, der Zug 93,8 %. Der Bus liegt bei 70,9 %, mit einer durchschnittlichen Verspätung von 2,9 Minuten. Zu den unpünktlichsten TL-Linien gehören die 7 (38,1 % pünktlich, 3,3 % der Fahrten gestrichen), die 18 (38,7 %) und die 4 (43,3 %, durchschnittliche Verspätung von 8,2 Minuten).",
+   "Die schwierigsten Stunden sind 17 Uhr (55,2 % pünktlich, durchschnittliche Verspätung von 5,1 Minuten), 18 Uhr (56,7 %) und danach 16 Uhr (60,7 %).",
+   "Insgesamt wurden 474 Fahrten gestrichen, das entspricht 0,8 % der geplanten Fahrten. Die grösste Verspätung betrifft einen TL-Bus der Linie 8, der um 18:30 Uhr in Lausanne, Mémise geplant war: 57,7 Minuten."
+  ]
+ },
+ "it": {
+  "titre": "Losanna: il 72.1% delle corse è puntuale, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 7 novembre 2026, il 72.1% delle corse è stato puntuale (con meno di 3 minuti di ritardo), su 58'474 corse misurate a fronte di 59'759 previste. Il ritardo medio è di 2.8 minuti; 9 corse su 10 hanno meno di 6.9 minuti di ritardo. Il giorno precedente la puntualità era del 73.1%, mentre la media dei 7 giorni precedenti è del 74.2%.",
+   "Il metro m1 registra il 99.8% di corse puntuali e il treno il 93.8%. Il bus si attesta al 70.9%, con un ritardo medio di 2.9 minuti. Tra le linee TL meno puntuali figurano la 7 (38.1% di corse puntuali, 3.3% di corse soppresse), la 18 (38.7%) e la 4 (43.3%, con un ritardo medio di 8.2 minuti).",
+   "Le ore più difficili sono le 17 (55.2% di corse puntuali, ritardo medio di 5.1 minuti), le 18 (56.7%) e infine le 16 (60.7%).",
+   "In totale, 474 corse sono state soppresse, pari allo 0.8% delle corse previste. Il ritardo più grave riguarda un bus TL della linea 8, previsto alle ore 18:30 a Losanna, Mémise: 57.7 minuti."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 72.1% of departures on time, down from the previous day",
+  "paragraphes": [
+   "[\"On 7 November 2026, 72.1% of departures were on time (less than 3 minutes late), out of 58'474 departures measured for 59'759 scheduled. The average delay is 2.8 minutes; 9 departures out of 10 are less than 6.9 minutes late. The day before, punctuality reached 73.1%, and the average over the previous 7 days is 74.2%.\", \"The m1 metro shows 99.8% of departures on time and the train 93.8%. The bus is at 70.9%, with an average delay of 2.9 minutes. Among the least punctual TL lines are the 7 (38.1% on time, 3.3% of departures cancelled), the 18 (38.7%) and the 4 (43.3%, average delay of 8.2 minutes).\", \"The most difficult hours are 17:00 (55.2% on time, average delay of 5.1 minutes), 18:00 (56.7%) and then 16:00 (60.7%).\", \"In total, 474 departures were cancelled, or 0.8% of scheduled departures. The largest delay concerns a TL bus on line 8, scheduled at 18:30 in Lausanne, Mémise: 57.7 minutes.\"]}"
+  ]
+ },
+ "statut": "publie"
+}

@@ -1,0 +1,3736 @@
+{
+ "date": "2026-11-07",
+ "zone": "Lausanne",
+ "perimetre": "communes : Lausanne",
+ "regle_ponctualite": "à l'heure = moins de 3 minutes de retard",
+ "lignes_source_lues": 59759,
+ "total": {
+  "passages": 59759,
+  "mesures": 58474,
+  "suppressions": 474,
+  "ponctualite_pct": 72.1,
+  "retard_moyen_min": 2.8,
+  "suppressions_pct": 0.8,
+  "retard_p90_min": 6.9
+ },
+ "par_mode": [
+  {
+   "mode": "Bus",
+   "passages": 56929,
+   "mesures": 55791,
+   "suppressions": 467,
+   "ponctualite_pct": 70.9,
+   "retard_moyen_min": 2.9,
+   "suppressions_pct": 0.8,
+   "retard_p90_min": 7.2
+  },
+  {
+   "mode": "Métro",
+   "passages": 1614,
+   "mesures": 1614,
+   "suppressions": 0,
+   "ponctualite_pct": 99.8,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.7
+  },
+  {
+   "mode": "Train",
+   "passages": 1216,
+   "mesures": 1069,
+   "suppressions": 7,
+   "ponctualite_pct": 93.8,
+   "retard_moyen_min": 1.2,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 2.2
+  }
+ ],
+ "par_heure": [
+  {
+   "heure": 0,
+   "passages": 1783,
+   "mesures": 1776,
+   "suppressions": 1,
+   "ponctualite_pct": 77.5,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 5.0
+  },
+  {
+   "heure": 1,
+   "passages": 245,
+   "mesures": 244,
+   "suppressions": 1,
+   "ponctualite_pct": 79.5,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 3.6
+  },
+  {
+   "heure": 2,
+   "passages": 191,
+   "mesures": 48,
+   "suppressions": 0,
+   "ponctualite_pct": 79.2,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.4
+  },
+  {
+   "heure": 3,
+   "passages": 357,
+   "mesures": 175,
+   "suppressions": 0,
+   "ponctualite_pct": 81.1,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.1
+  },
+  {
+   "heure": 4,
+   "passages": 354,
+   "mesures": 217,
+   "suppressions": 0,
+   "ponctualite_pct": 83.9,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.2
+  },
+  {
+   "heure": 5,
+   "passages": 1621,
+   "mesures": 1522,
+   "suppressions": 55,
+   "ponctualite_pct": 85.0,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 3.4,
+   "retard_p90_min": 3.6
+  },
+  {
+   "heure": 6,
+   "passages": 2204,
+   "mesures": 2162,
+   "suppressions": 25,
+   "ponctualite_pct": 88.2,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 3.2
+  },
+  {
+   "heure": 7,
+   "passages": 2680,
+   "mesures": 2634,
+   "suppressions": 34,
+   "ponctualite_pct": 89.0,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 1.3,
+   "retard_p90_min": 3.1
+  },
+  {
+   "heure": 8,
+   "passages": 3160,
+   "mesures": 3116,
+   "suppressions": 25,
+   "ponctualite_pct": 88.1,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.8,
+   "retard_p90_min": 3.2
+  },
+  {
+   "heure": 9,
+   "passages": 3196,
+   "mesures": 3161,
+   "suppressions": 19,
+   "ponctualite_pct": 82.7,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 3.7
+  },
+  {
+   "heure": 10,
+   "passages": 3324,
+   "mesures": 3303,
+   "suppressions": 12,
+   "ponctualite_pct": 81.1,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 3.8
+  },
+  {
+   "heure": 11,
+   "passages": 3373,
+   "mesures": 3358,
+   "suppressions": 0,
+   "ponctualite_pct": 72.8,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.8
+  },
+  {
+   "heure": 12,
+   "passages": 3365,
+   "mesures": 3353,
+   "suppressions": 2,
+   "ponctualite_pct": 63.5,
+   "retard_moyen_min": 3.1,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 7.5
+  },
+  {
+   "heure": 13,
+   "passages": 3350,
+   "mesures": 3344,
+   "suppressions": 0,
+   "ponctualite_pct": 63.2,
+   "retard_moyen_min": 3.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 11.1
+  },
+  {
+   "heure": 14,
+   "passages": 3327,
+   "mesures": 3304,
+   "suppressions": 5,
+   "ponctualite_pct": 68.4,
+   "retard_moyen_min": 3.8,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 10.0
+  },
+  {
+   "heure": 15,
+   "passages": 3371,
+   "mesures": 3317,
+   "suppressions": 40,
+   "ponctualite_pct": 64.5,
+   "retard_moyen_min": 3.8,
+   "suppressions_pct": 1.2,
+   "retard_p90_min": 10.9
+  },
+  {
+   "heure": 16,
+   "passages": 3372,
+   "mesures": 3332,
+   "suppressions": 30,
+   "ponctualite_pct": 60.7,
+   "retard_moyen_min": 4.1,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 11.6
+  },
+  {
+   "heure": 17,
+   "passages": 3384,
+   "mesures": 3358,
+   "suppressions": 18,
+   "ponctualite_pct": 55.2,
+   "retard_moyen_min": 5.1,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 14.9
+  },
+  {
+   "heure": 18,
+   "passages": 3339,
+   "mesures": 3269,
+   "suppressions": 47,
+   "ponctualite_pct": 56.7,
+   "retard_moyen_min": 4.8,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 13.5
+  },
+  {
+   "heure": 19,
+   "passages": 3246,
+   "mesures": 3155,
+   "suppressions": 69,
+   "ponctualite_pct": 68.0,
+   "retard_moyen_min": 3.4,
+   "suppressions_pct": 2.1,
+   "retard_p90_min": 11.4
+  },
+  {
+   "heure": 20,
+   "passages": 3194,
+   "mesures": 3116,
+   "suppressions": 39,
+   "ponctualite_pct": 73.2,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 1.2,
+   "retard_p90_min": 5.7
+  },
+  {
+   "heure": 21,
+   "passages": 2727,
+   "mesures": 2681,
+   "suppressions": 23,
+   "ponctualite_pct": 74.7,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.8,
+   "retard_p90_min": 5.4
+  },
+  {
+   "heure": 22,
+   "passages": 2326,
+   "mesures": 2264,
+   "suppressions": 29,
+   "ponctualite_pct": 75.9,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 1.2,
+   "retard_p90_min": 5.1
+  },
+  {
+   "heure": 23,
+   "passages": 2270,
+   "mesures": 2265,
+   "suppressions": 0,
+   "ponctualite_pct": 75.1,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.4
+  }
+ ],
+ "lignes_moins_ponctuelles": [
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "7",
+   "passages": 3612,
+   "mesures": 3429,
+   "suppressions": 120,
+   "ponctualite_pct": 38.1,
+   "retard_moyen_min": 6.6,
+   "suppressions_pct": 3.3,
+   "retard_p90_min": 14.9
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "18",
+   "passages": 3644,
+   "mesures": 3624,
+   "suppressions": 18,
+   "ponctualite_pct": 38.7,
+   "retard_moyen_min": 6.3,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 14.6
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "4",
+   "passages": 2527,
+   "mesures": 2520,
+   "suppressions": 0,
+   "ponctualite_pct": 43.3,
+   "retard_moyen_min": 8.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.3
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "N2",
+   "passages": 192,
+   "mesures": 98,
+   "suppressions": 0,
+   "ponctualite_pct": 45.9,
+   "retard_moyen_min": 3.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 7.0
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "6",
+   "passages": 4693,
+   "mesures": 4637,
+   "suppressions": 50,
+   "ponctualite_pct": 51.8,
+   "retard_moyen_min": 4.1,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 9.4
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "8",
+   "passages": 2970,
+   "mesures": 2836,
+   "suppressions": 126,
+   "ponctualite_pct": 60.7,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 4.2,
+   "retard_p90_min": 7.0
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "16",
+   "passages": 3315,
+   "mesures": 3315,
+   "suppressions": 0,
+   "ponctualite_pct": 70.1,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.0
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "21",
+   "passages": 4289,
+   "mesures": 4289,
+   "suppressions": 0,
+   "ponctualite_pct": 71.6,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.7
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "N1",
+   "passages": 261,
+   "mesures": 140,
+   "suppressions": 0,
+   "ponctualite_pct": 72.1,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.9
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "9",
+   "passages": 3044,
+   "mesures": 3009,
+   "suppressions": 18,
+   "ponctualite_pct": 73.1,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 4.9
+  }
+ ],
+ "lignes_plus_ponctuelles": [
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "41",
+   "passages": 1266,
+   "mesures": 1259,
+   "suppressions": 6,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 0.5,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 1.4
+  },
+  {
+   "mode": "Métro",
+   "exploitant": "TL",
+   "ligne": "m1",
+   "passages": 1614,
+   "mesures": 1614,
+   "suppressions": 0,
+   "ponctualite_pct": 99.8,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.7
+  },
+  {
+   "mode": "Train",
+   "exploitant": "LEB",
+   "ligne": "RR20",
+   "passages": 536,
+   "mesures": 416,
+   "suppressions": 0,
+   "ponctualite_pct": 99.3,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.5
+  },
+  {
+   "mode": "Bus",
+   "exploitant": "TL",
+   "ligne": "N6",
+   "passages": 138,
+   "mesures": 87,
+   "suppressions": 0,
+   "ponctualite_pct": 98.9,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.3
+  },
+  {
+   "mode": "Train",
+   "exploitant": "SBB",
+   "ligne": "R4",
+   "passages": 40,
+   "mesures": 40,
+   "suppressions": 0,
+   "ponctualite_pct": 97.5,
+   "retard_moyen_min": 1.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.0
+  }
+ ],
+ "arrets_moins_ponctuels": [
+  {
+   "arret": "Hôp. ophtalmique",
+   "passages": 86,
+   "mesures": 86,
+   "suppressions": 0,
+   "ponctualite_pct": 30.2,
+   "retard_moyen_min": 10.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 22.6
+  },
+  {
+   "arret": "Aubépines",
+   "passages": 86,
+   "mesures": 86,
+   "suppressions": 0,
+   "ponctualite_pct": 32.6,
+   "retard_moyen_min": 9.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 22.3
+  },
+  {
+   "arret": "Recordon",
+   "passages": 515,
+   "mesures": 496,
+   "suppressions": 10,
+   "ponctualite_pct": 35.5,
+   "retard_moyen_min": 6.4,
+   "suppressions_pct": 1.9,
+   "retard_p90_min": 14.8
+  },
+  {
+   "arret": "Lausanne, Prélaz",
+   "passages": 515,
+   "mesures": 496,
+   "suppressions": 10,
+   "ponctualite_pct": 36.3,
+   "retard_moyen_min": 6.4,
+   "suppressions_pct": 1.9,
+   "retard_p90_min": 14.8
+  },
+  {
+   "arret": "Pavement",
+   "passages": 206,
+   "mesures": 205,
+   "suppressions": 1,
+   "ponctualite_pct": 38.0,
+   "retard_moyen_min": 6.3,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 14.7
+  },
+  {
+   "arret": "Rapille",
+   "passages": 172,
+   "mesures": 172,
+   "suppressions": 0,
+   "ponctualite_pct": 38.4,
+   "retard_moyen_min": 8.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 21.2
+  },
+  {
+   "arret": "Béthanie",
+   "passages": 172,
+   "mesures": 172,
+   "suppressions": 0,
+   "ponctualite_pct": 41.9,
+   "retard_moyen_min": 8.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.9
+  },
+  {
+   "arret": "César-Roux",
+   "passages": 261,
+   "mesures": 241,
+   "suppressions": 8,
+   "ponctualite_pct": 42.7,
+   "retard_moyen_min": 6.2,
+   "suppressions_pct": 3.1,
+   "retard_p90_min": 15.1
+  },
+  {
+   "arret": "Piécettes",
+   "passages": 206,
+   "mesures": 205,
+   "suppressions": 1,
+   "ponctualite_pct": 42.9,
+   "retard_moyen_min": 5.9,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 14.4
+  },
+  {
+   "arret": "Fauconnières",
+   "passages": 250,
+   "mesures": 235,
+   "suppressions": 8,
+   "ponctualite_pct": 43.8,
+   "retard_moyen_min": 6.0,
+   "suppressions_pct": 3.2,
+   "retard_p90_min": 14.7
+  }
+ ],
+ "plus_gros_retards": [
+  {
+   "retard_min": 57.7,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Mémise",
+   "heure_prevue": "18:30"
+  },
+  {
+   "retard_min": 57.6,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Grande-Borde",
+   "heure_prevue": "18:29"
+  },
+  {
+   "retard_min": 57.3,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Lausanne, Tunnel",
+   "heure_prevue": "18:31"
+  },
+  {
+   "retard_min": 57.3,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Riponne-M.Béjart",
+   "heure_prevue": "18:33"
+  },
+  {
+   "retard_min": 57.3,
+   "ligne": "8",
+   "mode": "Bus",
+   "exploitant": "TL",
+   "arret": "Bel-Air",
+   "heure_prevue": "18:36"
+  }
+ ],
+ "arrets": [
+  {
+   "arret": "Abeilles",
+   "numero": "8591977",
+   "lignes": [
+    "41",
+    "N3"
+   ],
+   "passages": 219,
+   "mesures": 214,
+   "suppressions": 1,
+   "ponctualite_pct": 99.5,
+   "retard_moyen_min": 0.5,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 1.4
+  },
+  {
+   "arret": "Allières/CHUV",
+   "numero": "8591978",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 49.2,
+   "retard_moyen_min": 4.2,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 10.1
+  },
+  {
+   "arret": "Aubépines",
+   "numero": "8591980",
+   "lignes": [
+    "4"
+   ],
+   "passages": 86,
+   "mesures": 86,
+   "suppressions": 0,
+   "ponctualite_pct": 32.6,
+   "retard_moyen_min": 9.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 22.3
+  },
+  {
+   "arret": "Avenue du Léman",
+   "numero": "8591981",
+   "lignes": [
+    "9",
+    "4",
+    "N6"
+   ],
+   "passages": 427,
+   "mesures": 422,
+   "suppressions": 2,
+   "ponctualite_pct": 56.6,
+   "retard_moyen_min": 4.9,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 15.3
+  },
+  {
+   "arret": "Batelière",
+   "numero": "8591983",
+   "lignes": [
+    "1",
+    "25"
+   ],
+   "passages": 457,
+   "mesures": 457,
+   "suppressions": 0,
+   "ponctualite_pct": 83.6,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Beau-Rivage",
+   "numero": "8591986",
+   "lignes": [
+    "2"
+   ],
+   "passages": 211,
+   "mesures": 207,
+   "suppressions": 3,
+   "ponctualite_pct": 75.8,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 4.7
+  },
+  {
+   "arret": "Beau-Site",
+   "numero": "8591987",
+   "lignes": [
+    "21",
+    "N1"
+   ],
+   "passages": 221,
+   "mesures": 217,
+   "suppressions": 0,
+   "ponctualite_pct": 74.2,
+   "retard_moyen_min": 2.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.7
+  },
+  {
+   "arret": "Beaulieu",
+   "numero": "8591984",
+   "lignes": [
+    "21",
+    "2",
+    "N1"
+   ],
+   "passages": 430,
+   "mesures": 423,
+   "suppressions": 3,
+   "ponctualite_pct": 78.7,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 4.7
+  },
+  {
+   "arret": "Beaulieu-Jomini",
+   "numero": "8592060",
+   "lignes": [
+    "21",
+    "3",
+    "2",
+    "20",
+    "N1"
+   ],
+   "passages": 778,
+   "mesures": 770,
+   "suppressions": 4,
+   "ponctualite_pct": 85.7,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Bel-Air",
+   "numero": "8591988",
+   "lignes": [
+    "9",
+    "6",
+    "4",
+    "1",
+    "7",
+    "2",
+    "18",
+    "8"
+   ],
+   "passages": 2272,
+   "mesures": 2214,
+   "suppressions": 26,
+   "ponctualite_pct": 54.6,
+   "retard_moyen_min": 4.4,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 11.8
+  },
+  {
+   "arret": "Bel-Air LEB",
+   "numero": "8501170",
+   "lignes": [
+    "RR20"
+   ],
+   "passages": 134,
+   "mesures": 111,
+   "suppressions": 0,
+   "ponctualite_pct": 99.1,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.4
+  },
+  {
+   "arret": "Bellerive",
+   "numero": "8591989",
+   "lignes": [
+    "2",
+    "24"
+   ],
+   "passages": 336,
+   "mesures": 333,
+   "suppressions": 3,
+   "ponctualite_pct": 90.4,
+   "retard_moyen_min": 1.0,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 2.9
+  },
+  {
+   "arret": "Bellevaux",
+   "numero": "8587357",
+   "lignes": [
+    "18",
+    "3",
+    "8",
+    "60",
+    "N1"
+   ],
+   "passages": 682,
+   "mesures": 665,
+   "suppressions": 9,
+   "ponctualite_pct": 72.8,
+   "retard_moyen_min": 3.0,
+   "suppressions_pct": 1.3,
+   "retard_p90_min": 8.5
+  },
+  {
+   "arret": "Belvédère",
+   "numero": "8591990",
+   "lignes": [
+    "16",
+    "N5"
+   ],
+   "passages": 159,
+   "mesures": 154,
+   "suppressions": 0,
+   "ponctualite_pct": 72.1,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.7
+  },
+  {
+   "arret": "Benj.  Constant",
+   "numero": "8591991",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 86.8,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 3.1
+  },
+  {
+   "arret": "Bergières",
+   "numero": "8591992",
+   "lignes": [
+    "21",
+    "2",
+    "N1"
+   ],
+   "passages": 430,
+   "mesures": 423,
+   "suppressions": 3,
+   "ponctualite_pct": 81.1,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 4.6
+  },
+  {
+   "arret": "Bessières",
+   "numero": "8589523",
+   "lignes": [
+    "6",
+    "N6"
+   ],
+   "passages": 194,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 53.4,
+   "retard_moyen_min": 4.0,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 8.9
+  },
+  {
+   "arret": "Blécherette",
+   "numero": "8591994",
+   "lignes": [
+    "1",
+    "21",
+    "20",
+    "N1"
+   ],
+   "passages": 602,
+   "mesures": 597,
+   "suppressions": 1,
+   "ponctualite_pct": 83.4,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 4.2
+  },
+  {
+   "arret": "Bois de Vaux",
+   "numero": "8591995",
+   "lignes": [
+    "25",
+    "N5"
+   ],
+   "passages": 220,
+   "mesures": 215,
+   "suppressions": 0,
+   "ponctualite_pct": 77.2,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.8
+  },
+  {
+   "arret": "Bois-Gentil",
+   "numero": "8591996",
+   "lignes": [
+    "1",
+    "20",
+    "N1"
+   ],
+   "passages": 390,
+   "mesures": 385,
+   "suppressions": 1,
+   "ponctualite_pct": 78.4,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.3,
+   "retard_p90_min": 4.3
+  },
+  {
+   "arret": "Boissonnet",
+   "numero": "8591997",
+   "lignes": [
+    "41",
+    "N3"
+   ],
+   "passages": 219,
+   "mesures": 214,
+   "suppressions": 1,
+   "ponctualite_pct": 99.1,
+   "retard_moyen_min": 0.6,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 1.5
+  },
+  {
+   "arret": "Bonne-Espérance",
+   "numero": "8591999",
+   "lignes": [
+    "9",
+    "4",
+    "N6"
+   ],
+   "passages": 343,
+   "mesures": 338,
+   "suppressions": 2,
+   "ponctualite_pct": 64.2,
+   "retard_moyen_min": 4.2,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 12.4
+  },
+  {
+   "arret": "Bossons",
+   "numero": "8592000",
+   "lignes": [
+    "21",
+    "N1"
+   ],
+   "passages": 221,
+   "mesures": 217,
+   "suppressions": 0,
+   "ponctualite_pct": 78.8,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.1
+  },
+  {
+   "arret": "Bourdonnette",
+   "numero": "8501210",
+   "lignes": [
+    "m1",
+    "24",
+    "N5"
+   ],
+   "passages": 398,
+   "mesures": 396,
+   "suppressions": 0,
+   "ponctualite_pct": 99.2,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.6
+  },
+  {
+   "arret": "Bourdonnette N.",
+   "numero": "8595521",
+   "lignes": [
+    "25",
+    "N5"
+   ],
+   "passages": 221,
+   "mesures": 219,
+   "suppressions": 0,
+   "ponctualite_pct": 73.1,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.0
+  },
+  {
+   "arret": "Boveresses",
+   "numero": "8592002",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 58.2,
+   "retard_moyen_min": 3.7,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 9.1
+  },
+  {
+   "arret": "Béthanie",
+   "numero": "8591993",
+   "lignes": [
+    "4"
+   ],
+   "passages": 172,
+   "mesures": 172,
+   "suppressions": 0,
+   "ponctualite_pct": 41.9,
+   "retard_moyen_min": 8.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.9
+  },
+  {
+   "arret": "Béthusy",
+   "numero": "8588431",
+   "lignes": [
+    "7",
+    "6",
+    "N3",
+    "N6"
+   ],
+   "passages": 445,
+   "mesures": 424,
+   "suppressions": 10,
+   "ponctualite_pct": 50.5,
+   "retard_moyen_min": 5.0,
+   "suppressions_pct": 2.2,
+   "retard_p90_min": 12.9
+  },
+  {
+   "arret": "Cascades",
+   "numero": "8592137",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 74.8,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.8
+  },
+  {
+   "arret": "Casernes",
+   "numero": "8592003",
+   "lignes": [
+    "1",
+    "3",
+    "20",
+    "N1"
+   ],
+   "passages": 600,
+   "mesures": 595,
+   "suppressions": 1,
+   "ponctualite_pct": 86.9,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Chailly-Village",
+   "numero": "8588432",
+   "lignes": [
+    "7",
+    "N6"
+   ],
+   "passages": 242,
+   "mesures": 227,
+   "suppressions": 8,
+   "ponctualite_pct": 45.4,
+   "retard_moyen_min": 5.9,
+   "suppressions_pct": 3.3,
+   "retard_p90_min": 14.3
+  },
+  {
+   "arret": "Chalet à Matthey",
+   "numero": "8587547",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 159,
+   "mesures": 157,
+   "suppressions": 0,
+   "ponctualite_pct": 79.6,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Chalet-Enfants",
+   "numero": "8511583",
+   "lignes": [
+    "54"
+   ],
+   "passages": 64,
+   "mesures": 64,
+   "suppressions": 0,
+   "ponctualite_pct": 92.2,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.4
+  },
+  {
+   "arret": "Chalet-à-Go/Jora",
+   "numero": "8509491",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 158,
+   "mesures": 156,
+   "suppressions": 0,
+   "ponctualite_pct": 84.0,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Chalet-à-Gobet",
+   "numero": "8587929",
+   "lignes": [
+    "45",
+    "64"
+   ],
+   "passages": 310,
+   "mesures": 300,
+   "suppressions": 0,
+   "ponctualite_pct": 91.7,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.6
+  },
+  {
+   "arret": "Champ-Rond",
+   "numero": "8592008",
+   "lignes": [
+    "42"
+   ],
+   "passages": 146,
+   "mesures": 146,
+   "suppressions": 0,
+   "ponctualite_pct": 94.5,
+   "retard_moyen_min": 1.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.7
+  },
+  {
+   "arret": "Chandolin",
+   "numero": "8592009",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 95.6,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 2.4
+  },
+  {
+   "arret": "Chauderon",
+   "numero": "8592010",
+   "lignes": [
+    "9",
+    "7",
+    "18",
+    "6",
+    "16",
+    "21",
+    "3",
+    "4"
+   ],
+   "passages": 1519,
+   "mesures": 1473,
+   "suppressions": 13,
+   "ponctualite_pct": 58.1,
+   "retard_moyen_min": 4.1,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 11.6
+  },
+  {
+   "arret": "Chauderon-Ale",
+   "numero": "8592011",
+   "lignes": [
+    "4"
+   ],
+   "passages": 87,
+   "mesures": 87,
+   "suppressions": 0,
+   "ponctualite_pct": 49.4,
+   "retard_moyen_min": 7.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 18.1
+  },
+  {
+   "arret": "Chemin du Cap",
+   "numero": "8592012",
+   "lignes": [
+    "4"
+   ],
+   "passages": 84,
+   "mesures": 84,
+   "suppressions": 0,
+   "ponctualite_pct": 48.8,
+   "retard_moyen_min": 8.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.2
+  },
+  {
+   "arret": "Chevreuils",
+   "numero": "8592015",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 158,
+   "mesures": 156,
+   "suppressions": 0,
+   "ponctualite_pct": 81.4,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.8
+  },
+  {
+   "arret": "Chocolatière",
+   "numero": "8592016",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 77.5,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.9
+  },
+  {
+   "arret": "Clochatte",
+   "numero": "8592019",
+   "lignes": [
+    "18"
+   ],
+   "passages": 3,
+   "mesures": 3,
+   "suppressions": 0,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.0
+  },
+  {
+   "arret": "Closelet",
+   "numero": "8592020",
+   "lignes": [
+    "2"
+   ],
+   "passages": 211,
+   "mesures": 207,
+   "suppressions": 3,
+   "ponctualite_pct": 86.0,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Cojonnex/EHL",
+   "numero": "8592037",
+   "lignes": [
+    "45",
+    "N2"
+   ],
+   "passages": 96,
+   "mesures": 92,
+   "suppressions": 0,
+   "ponctualite_pct": 87.0,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Cottages",
+   "numero": "8592021",
+   "lignes": [
+    "16"
+   ],
+   "passages": 150,
+   "mesures": 150,
+   "suppressions": 0,
+   "ponctualite_pct": 68.0,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.2
+  },
+  {
+   "arret": "Couchirard",
+   "numero": "8592022",
+   "lignes": [
+    "17"
+   ],
+   "passages": 241,
+   "mesures": 240,
+   "suppressions": 1,
+   "ponctualite_pct": 83.3,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 3.9
+  },
+  {
+   "arret": "Coudrette",
+   "numero": "8592023",
+   "lignes": [
+    "7",
+    "N6"
+   ],
+   "passages": 242,
+   "mesures": 227,
+   "suppressions": 8,
+   "ponctualite_pct": 44.5,
+   "retard_moyen_min": 5.9,
+   "suppressions_pct": 3.3,
+   "retard_p90_min": 14.5
+  },
+  {
+   "arret": "Craivavers",
+   "numero": "8592025",
+   "lignes": [
+    "42"
+   ],
+   "passages": 146,
+   "mesures": 146,
+   "suppressions": 0,
+   "ponctualite_pct": 89.7,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.1
+  },
+  {
+   "arret": "Croix d'Ouchy",
+   "numero": "8592026",
+   "lignes": [
+    "2"
+   ],
+   "passages": 211,
+   "mesures": 207,
+   "suppressions": 3,
+   "ponctualite_pct": 84.1,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "César-Roux",
+   "numero": "8510575",
+   "lignes": [
+    "7",
+    "N2",
+    "N3"
+   ],
+   "passages": 261,
+   "mesures": 241,
+   "suppressions": 8,
+   "ponctualite_pct": 42.7,
+   "retard_moyen_min": 6.2,
+   "suppressions_pct": 3.1,
+   "retard_p90_min": 15.1
+  },
+  {
+   "arret": "Dapples",
+   "numero": "8592027",
+   "lignes": [
+    "1"
+   ],
+   "passages": 246,
+   "mesures": 246,
+   "suppressions": 0,
+   "ponctualite_pct": 72.8,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.8
+  },
+  {
+   "arret": "Denantou",
+   "numero": "8592029",
+   "lignes": [
+    "21"
+   ],
+   "passages": 214,
+   "mesures": 214,
+   "suppressions": 0,
+   "ponctualite_pct": 71.5,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.9
+  },
+  {
+   "arret": "Druey-Collège",
+   "numero": "8592034",
+   "lignes": [
+    "1"
+   ],
+   "passages": 245,
+   "mesures": 245,
+   "suppressions": 0,
+   "ponctualite_pct": 80.4,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.3
+  },
+  {
+   "arret": "Délices",
+   "numero": "8592028",
+   "lignes": [
+    "25"
+   ],
+   "passages": 211,
+   "mesures": 211,
+   "suppressions": 0,
+   "ponctualite_pct": 84.4,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Ecole Métiers",
+   "numero": "8592036",
+   "lignes": [
+    "17"
+   ],
+   "passages": 241,
+   "mesures": 240,
+   "suppressions": 1,
+   "ponctualite_pct": 89.6,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 3.1
+  },
+  {
+   "arret": "Eglantine",
+   "numero": "8592038",
+   "lignes": [
+    "9",
+    "4",
+    "N6"
+   ],
+   "passages": 427,
+   "mesures": 422,
+   "suppressions": 2,
+   "ponctualite_pct": 59.0,
+   "retard_moyen_min": 4.8,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 15.6
+  },
+  {
+   "arret": "Entre-Bois",
+   "numero": "8595004",
+   "lignes": [
+    "3"
+   ],
+   "passages": 205,
+   "mesures": 205,
+   "suppressions": 0,
+   "ponctualite_pct": 98.5,
+   "retard_moyen_min": 0.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.9
+  },
+  {
+   "arret": "Epinettes",
+   "numero": "8592040",
+   "lignes": [
+    "1"
+   ],
+   "passages": 246,
+   "mesures": 246,
+   "suppressions": 0,
+   "ponctualite_pct": 78.5,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.6
+  },
+  {
+   "arret": "Eugène-Rambert",
+   "numero": "8510574",
+   "lignes": [
+    "4"
+   ],
+   "passages": 84,
+   "mesures": 84,
+   "suppressions": 0,
+   "ponctualite_pct": 46.4,
+   "retard_moyen_min": 7.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.1
+  },
+  {
+   "arret": "Fauconnières",
+   "numero": "8592042",
+   "lignes": [
+    "7",
+    "N6"
+   ],
+   "passages": 250,
+   "mesures": 235,
+   "suppressions": 8,
+   "ponctualite_pct": 43.8,
+   "retard_moyen_min": 6.0,
+   "suppressions_pct": 3.2,
+   "retard_p90_min": 14.7
+  },
+  {
+   "arret": "Faverges",
+   "numero": "8592043",
+   "lignes": [
+    "4"
+   ],
+   "passages": 168,
+   "mesures": 164,
+   "suppressions": 0,
+   "ponctualite_pct": 50.0,
+   "retard_moyen_min": 7.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.0
+  },
+  {
+   "arret": "Figuiers",
+   "numero": "8592044",
+   "lignes": [
+    "25",
+    "6",
+    "N5"
+   ],
+   "passages": 404,
+   "mesures": 397,
+   "suppressions": 2,
+   "ponctualite_pct": 58.9,
+   "retard_moyen_min": 3.4,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 7.2
+  },
+  {
+   "arret": "Floreyres",
+   "numero": "8592045",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 97.8,
+   "retard_moyen_min": 0.7,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 1.6
+  },
+  {
+   "arret": "Fontenay",
+   "numero": "8592046",
+   "lignes": [
+    "6"
+   ],
+   "passages": 184,
+   "mesures": 181,
+   "suppressions": 2,
+   "ponctualite_pct": 53.6,
+   "retard_moyen_min": 4.0,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 9.1
+  },
+  {
+   "arret": "Georgette",
+   "numero": "8592051",
+   "lignes": [
+    "9",
+    "1",
+    "2",
+    "8",
+    "4",
+    "N6",
+    "N1",
+    "N2"
+   ],
+   "passages": 1118,
+   "mesures": 1080,
+   "suppressions": 12,
+   "ponctualite_pct": 69.4,
+   "retard_moyen_min": 3.1,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 7.2
+  },
+  {
+   "arret": "Grand Vennes",
+   "numero": "8592054",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 80.1,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.2
+  },
+  {
+   "arret": "Grande-Borde",
+   "numero": "8592053",
+   "lignes": [
+    "18",
+    "8",
+    "16",
+    "9",
+    "4",
+    "1"
+   ],
+   "passages": 497,
+   "mesures": 487,
+   "suppressions": 9,
+   "ponctualite_pct": 56.9,
+   "retard_moyen_min": 4.3,
+   "suppressions_pct": 1.8,
+   "retard_p90_min": 11.3
+  },
+  {
+   "arret": "Grangette",
+   "numero": "8592055",
+   "lignes": [
+    "8",
+    "N1"
+   ],
+   "passages": 196,
+   "mesures": 184,
+   "suppressions": 8,
+   "ponctualite_pct": 63.0,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 4.1,
+   "retard_p90_min": 6.9
+  },
+  {
+   "arret": "Grattapaille",
+   "numero": "8592056",
+   "lignes": [
+    "21",
+    "N1"
+   ],
+   "passages": 221,
+   "mesures": 217,
+   "suppressions": 0,
+   "ponctualite_pct": 71.9,
+   "retard_moyen_min": 2.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.0
+  },
+  {
+   "arret": "Gymnase Beaulieu",
+   "numero": "8592035",
+   "lignes": [
+    "4"
+   ],
+   "passages": 86,
+   "mesures": 86,
+   "suppressions": 0,
+   "ponctualite_pct": 46.5,
+   "retard_moyen_min": 7.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 18.0
+  },
+  {
+   "arret": "Halle Sébeillon",
+   "numero": "8592103",
+   "lignes": [
+    "17",
+    "7",
+    "18",
+    "2",
+    "8",
+    "6",
+    "9",
+    "N4"
+   ],
+   "passages": 756,
+   "mesures": 736,
+   "suppressions": 11,
+   "ponctualite_pct": 52.0,
+   "retard_moyen_min": 4.6,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 13.0
+  },
+  {
+   "arret": "Haute Combe",
+   "numero": "8592058",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 159,
+   "mesures": 157,
+   "suppressions": 0,
+   "ponctualite_pct": 82.8,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Hermitage",
+   "numero": "8592059",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 78.8,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.5
+  },
+  {
+   "arret": "Hôp. ophtalmique",
+   "numero": "8511845",
+   "lignes": [
+    "4"
+   ],
+   "passages": 86,
+   "mesures": 86,
+   "suppressions": 0,
+   "ponctualite_pct": 30.2,
+   "retard_moyen_min": 10.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 22.6
+  },
+  {
+   "arret": "Jardin botanique",
+   "numero": "8591985",
+   "lignes": [
+    "1",
+    "25"
+   ],
+   "passages": 230,
+   "mesures": 230,
+   "suppressions": 0,
+   "ponctualite_pct": 83.9,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Jordils",
+   "numero": "8592061",
+   "lignes": [
+    "2"
+   ],
+   "passages": 211,
+   "mesures": 207,
+   "suppressions": 3,
+   "ponctualite_pct": 83.1,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.9
+  },
+  {
+   "arret": "Jurigoz",
+   "numero": "8592062",
+   "lignes": [
+    "21",
+    "8",
+    "25"
+   ],
+   "passages": 400,
+   "mesures": 392,
+   "suppressions": 7,
+   "ponctualite_pct": 59.4,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 1.8,
+   "retard_p90_min": 6.8
+  },
+  {
+   "arret": "Lac Sauvabelin",
+   "numero": "8592063",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 72.8,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.0
+  },
+  {
+   "arret": "Languedoc",
+   "numero": "8592064",
+   "lignes": [
+    "6"
+   ],
+   "passages": 184,
+   "mesures": 181,
+   "suppressions": 2,
+   "ponctualite_pct": 45.9,
+   "retard_moyen_min": 4.6,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 9.6
+  },
+  {
+   "arret": "Lausanne",
+   "numero": "8501120",
+   "lignes": [
+    "RE33",
+    "R1",
+    "R9",
+    "R2",
+    "R3",
+    "S41",
+    "R4",
+    "R8"
+   ],
+   "passages": 680,
+   "mesures": 653,
+   "suppressions": 7,
+   "ponctualite_pct": 90.4,
+   "retard_moyen_min": 1.4,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 3.0
+  },
+  {
+   "arret": "Lausanne, Alpes",
+   "numero": "8591979",
+   "lignes": [
+    "21",
+    "8",
+    "25"
+   ],
+   "passages": 400,
+   "mesures": 392,
+   "suppressions": 7,
+   "ponctualite_pct": 61.7,
+   "retard_moyen_min": 3.1,
+   "suppressions_pct": 1.8,
+   "retard_p90_min": 6.8
+  },
+  {
+   "arret": "Lausanne, Barre",
+   "numero": "8591982",
+   "lignes": [
+    "16"
+   ],
+   "passages": 75,
+   "mesures": 75,
+   "suppressions": 0,
+   "ponctualite_pct": 48.0,
+   "retard_moyen_min": 3.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 7.9
+  },
+  {
+   "arret": "Lausanne, Boisy",
+   "numero": "8591998",
+   "lignes": [
+    "21",
+    "2",
+    "N1"
+   ],
+   "passages": 326,
+   "mesures": 320,
+   "suppressions": 2,
+   "ponctualite_pct": 76.9,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 5.3
+  },
+  {
+   "arret": "Lausanne, Boston",
+   "numero": "8592001",
+   "lignes": [
+    "9",
+    "7",
+    "18",
+    "2",
+    "8",
+    "6",
+    "N4",
+    "21"
+   ],
+   "passages": 767,
+   "mesures": 747,
+   "suppressions": 11,
+   "ponctualite_pct": 47.0,
+   "retard_moyen_min": 5.0,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 13.3
+  },
+  {
+   "arret": "Lausanne, Bourdonnette",
+   "numero": "8501210",
+   "lignes": [
+    "701"
+   ],
+   "passages": 140,
+   "mesures": 137,
+   "suppressions": 2,
+   "ponctualite_pct": 86.1,
+   "retard_moyen_min": 1.4,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Lausanne, CHUV",
+   "numero": "8592017",
+   "lignes": [
+    "N2"
+   ],
+   "passages": 9,
+   "mesures": 5,
+   "suppressions": 0,
+   "ponctualite_pct": 40.0,
+   "retard_moyen_min": 4.8,
+   "suppressions_pct": 0.0
+  },
+  {
+   "arret": "Lausanne, Chalet-Fontaine",
+   "numero": "8592006",
+   "lignes": [
+    "362",
+    "435"
+   ],
+   "passages": 91,
+   "mesures": 89,
+   "suppressions": 0,
+   "ponctualite_pct": 86.5,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Lausanne, Chalet-à-Gobet",
+   "numero": "8587929",
+   "lignes": [
+    "362",
+    "435"
+   ],
+   "passages": 91,
+   "mesures": 89,
+   "suppressions": 0,
+   "ponctualite_pct": 86.5,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.2
+  },
+  {
+   "arret": "Lausanne, Cigale",
+   "numero": "8592018",
+   "lignes": [
+    "41",
+    "N3"
+   ],
+   "passages": 219,
+   "mesures": 214,
+   "suppressions": 1,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 1.8
+  },
+  {
+   "arret": "Lausanne, Cour",
+   "numero": "8592024",
+   "lignes": [
+    "1"
+   ],
+   "passages": 123,
+   "mesures": 123,
+   "suppressions": 0,
+   "ponctualite_pct": 81.3,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.8
+  },
+  {
+   "arret": "Lausanne, Cèdres",
+   "numero": "8592005",
+   "lignes": [
+    "1",
+    "25"
+   ],
+   "passages": 457,
+   "mesures": 457,
+   "suppressions": 0,
+   "ponctualite_pct": 74.4,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.1
+  },
+  {
+   "arret": "Lausanne, Cécil",
+   "numero": "8592004",
+   "lignes": [
+    "21",
+    "3",
+    "6",
+    "20",
+    "N1",
+    "N2",
+    "N3",
+    "N4"
+   ],
+   "passages": 783,
+   "mesures": 760,
+   "suppressions": 3,
+   "ponctualite_pct": 61.8,
+   "retard_moyen_min": 3.2,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 6.4
+  },
+  {
+   "arret": "Lausanne, Devin",
+   "numero": "8592031",
+   "lignes": [
+    "42"
+   ],
+   "passages": 146,
+   "mesures": 146,
+   "suppressions": 0,
+   "ponctualite_pct": 91.1,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.8
+  },
+  {
+   "arret": "Lausanne, Dranse",
+   "numero": "8592032",
+   "lignes": [
+    "4"
+   ],
+   "passages": 172,
+   "mesures": 172,
+   "suppressions": 0,
+   "ponctualite_pct": 44.2,
+   "retard_moyen_min": 8.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.2
+  },
+  {
+   "arret": "Lausanne, Druey",
+   "numero": "8592033",
+   "lignes": [
+    "1"
+   ],
+   "passages": 123,
+   "mesures": 123,
+   "suppressions": 0,
+   "ponctualite_pct": 84.6,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Lausanne, Désert",
+   "numero": "8592030",
+   "lignes": [
+    "2"
+   ],
+   "passages": 209,
+   "mesures": 206,
+   "suppressions": 3,
+   "ponctualite_pct": 87.9,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Lausanne, EPSIC",
+   "numero": "8592041",
+   "lignes": [
+    "17"
+   ],
+   "passages": 241,
+   "mesures": 240,
+   "suppressions": 1,
+   "ponctualite_pct": 89.2,
+   "retard_moyen_min": 1.2,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 3.2
+  },
+  {
+   "arret": "Lausanne, Elysée",
+   "numero": "8592039",
+   "lignes": [
+    "25"
+   ],
+   "passages": 211,
+   "mesures": 211,
+   "suppressions": 0,
+   "ponctualite_pct": 81.5,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.8
+  },
+  {
+   "arret": "Lausanne, En Marin",
+   "numero": "8504171",
+   "lignes": [
+    "45",
+    "362",
+    "54",
+    "435",
+    "N2"
+   ],
+   "passages": 315,
+   "mesures": 302,
+   "suppressions": 0,
+   "ponctualite_pct": 93.0,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.7
+  },
+  {
+   "arret": "Lausanne, Flon",
+   "numero": "8591818",
+   "lignes": [
+    "m1"
+   ],
+   "passages": 269,
+   "mesures": 269,
+   "suppressions": 0,
+   "ponctualite_pct": 99.6,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.5
+  },
+  {
+   "arret": "Lausanne, Forêt",
+   "numero": "8592047",
+   "lignes": [
+    "18",
+    "3",
+    "8",
+    "N1"
+   ],
+   "passages": 609,
+   "mesures": 596,
+   "suppressions": 9,
+   "ponctualite_pct": 64.6,
+   "retard_moyen_min": 3.7,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 10.2
+  },
+  {
+   "arret": "Lausanne, Fourmi",
+   "numero": "8592048",
+   "lignes": [
+    "N2"
+   ],
+   "passages": 9,
+   "mesures": 5,
+   "suppressions": 0,
+   "ponctualite_pct": 60.0,
+   "retard_moyen_min": 2.7,
+   "suppressions_pct": 0.0
+  },
+  {
+   "arret": "Lausanne, Foyer",
+   "numero": "8579245",
+   "lignes": [
+    "6",
+    "42",
+    "360",
+    "365",
+    "N3"
+   ],
+   "passages": 409,
+   "mesures": 398,
+   "suppressions": 2,
+   "ponctualite_pct": 78.4,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 6.0
+  },
+  {
+   "arret": "Lausanne, Grey",
+   "numero": "8592057",
+   "lignes": [
+    "2"
+   ],
+   "passages": 209,
+   "mesures": 206,
+   "suppressions": 3,
+   "ponctualite_pct": 78.2,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 4.3
+  },
+  {
+   "arret": "Lausanne, Malley",
+   "numero": "8501209",
+   "lignes": [
+    "m1",
+    "33",
+    "32",
+    "N5"
+   ],
+   "passages": 577,
+   "mesures": 571,
+   "suppressions": 3,
+   "ponctualite_pct": 93.9,
+   "retard_moyen_min": 1.2,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 2.4
+  },
+  {
+   "arret": "Lausanne, Motte",
+   "numero": "8592082",
+   "lignes": [
+    "18",
+    "3",
+    "8",
+    "N1"
+   ],
+   "passages": 609,
+   "mesures": 596,
+   "suppressions": 9,
+   "ponctualite_pct": 66.9,
+   "retard_moyen_min": 3.5,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 10.0
+  },
+  {
+   "arret": "Lausanne, Mémise",
+   "numero": "8592071",
+   "lignes": [
+    "18",
+    "8",
+    "16",
+    "9",
+    "4",
+    "1"
+   ],
+   "passages": 497,
+   "mesures": 487,
+   "suppressions": 9,
+   "ponctualite_pct": 58.1,
+   "retard_moyen_min": 4.3,
+   "suppressions_pct": 1.8,
+   "retard_p90_min": 11.1
+  },
+  {
+   "arret": "Lausanne, Ours",
+   "numero": "8579237",
+   "lignes": [
+    "7",
+    "6",
+    "N3",
+    "N6"
+   ],
+   "passages": 445,
+   "mesures": 424,
+   "suppressions": 10,
+   "ponctualite_pct": 46.9,
+   "retard_moyen_min": 5.3,
+   "suppressions_pct": 2.2,
+   "retard_p90_min": 13.4
+  },
+  {
+   "arret": "Lausanne, Prélaz",
+   "numero": "8592102",
+   "lignes": [
+    "7",
+    "18",
+    "2",
+    "8",
+    "6",
+    "9",
+    "N4",
+    "21"
+   ],
+   "passages": 515,
+   "mesures": 496,
+   "suppressions": 10,
+   "ponctualite_pct": 36.3,
+   "retard_moyen_min": 6.4,
+   "suppressions_pct": 1.9,
+   "retard_p90_min": 14.8
+  },
+  {
+   "arret": "Lausanne, Rovéréaz",
+   "numero": "8579246",
+   "lignes": [
+    "360",
+    "365"
+   ],
+   "passages": 68,
+   "mesures": 63,
+   "suppressions": 0,
+   "ponctualite_pct": 88.9,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Lausanne, Sallaz",
+   "numero": "8579238",
+   "lignes": [
+    "41",
+    "6",
+    "42",
+    "360",
+    "365",
+    "N2",
+    "N3"
+   ],
+   "passages": 629,
+   "mesures": 612,
+   "suppressions": 3,
+   "ponctualite_pct": 84.6,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 4.5
+  },
+  {
+   "arret": "Lausanne, Signal",
+   "numero": "8592115",
+   "lignes": [
+    "18",
+    "16"
+   ],
+   "passages": 354,
+   "mesures": 353,
+   "suppressions": 1,
+   "ponctualite_pct": 60.6,
+   "retard_moyen_min": 4.0,
+   "suppressions_pct": 0.3,
+   "retard_p90_min": 10.8
+  },
+  {
+   "arret": "Lausanne, Ste-Catherine",
+   "numero": "8592117",
+   "lignes": [
+    "362"
+   ],
+   "passages": 69,
+   "mesures": 67,
+   "suppressions": 0,
+   "ponctualite_pct": 89.6,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.2
+  },
+  {
+   "arret": "Lausanne, Tivoli",
+   "numero": "8592122",
+   "lignes": [
+    "16",
+    "17",
+    "N5"
+   ],
+   "passages": 279,
+   "mesures": 274,
+   "suppressions": 0,
+   "ponctualite_pct": 74.1,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.5
+  },
+  {
+   "arret": "Lausanne, Tunnel",
+   "numero": "8504176",
+   "lignes": [
+    "7",
+    "18",
+    "8",
+    "16",
+    "60",
+    "9",
+    "N2",
+    "N3"
+   ],
+   "passages": 874,
+   "mesures": 840,
+   "suppressions": 17,
+   "ponctualite_pct": 53.7,
+   "retard_moyen_min": 4.6,
+   "suppressions_pct": 1.9,
+   "retard_p90_min": 12.5
+  },
+  {
+   "arret": "Lausanne, Vennes",
+   "numero": "8592128",
+   "lignes": [
+    "N2"
+   ],
+   "passages": 9,
+   "mesures": 5,
+   "suppressions": 0,
+   "ponctualite_pct": 80.0,
+   "retard_moyen_min": 2.8,
+   "suppressions_pct": 0.0
+  },
+  {
+   "arret": "Lausanne, Vert-Bois/EHL",
+   "numero": "8592130",
+   "lignes": [
+    "362",
+    "435"
+   ],
+   "passages": 91,
+   "mesures": 89,
+   "suppressions": 0,
+   "ponctualite_pct": 89.9,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.0
+  },
+  {
+   "arret": "Lausanne, Vigie",
+   "numero": "8592133",
+   "lignes": [
+    "m1",
+    "17"
+   ],
+   "passages": 510,
+   "mesures": 508,
+   "suppressions": 1,
+   "ponctualite_pct": 95.7,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 1.8
+  },
+  {
+   "arret": "Lausanne, Vinet",
+   "numero": "8592135",
+   "lignes": [
+    "2",
+    "N1",
+    "21"
+   ],
+   "passages": 220,
+   "mesures": 213,
+   "suppressions": 3,
+   "ponctualite_pct": 85.0,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Lausanne, gare",
+   "numero": "8592050",
+   "lignes": [
+    "21",
+    "1",
+    "3",
+    "20",
+    "N1",
+    "N2",
+    "N3",
+    "N4"
+   ],
+   "passages": 1109,
+   "mesures": 1063,
+   "suppressions": 1,
+   "ponctualite_pct": 80.7,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.1,
+   "retard_p90_min": 4.5
+  },
+  {
+   "arret": "Lausanne-Chauderon",
+   "numero": "8501160",
+   "lignes": [
+    "RR20"
+   ],
+   "passages": 134,
+   "mesures": 111,
+   "suppressions": 0,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 1.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.6
+  },
+  {
+   "arret": "Lausanne-Flon",
+   "numero": "8501181",
+   "lignes": [
+    "RR20"
+   ],
+   "passages": 134,
+   "mesures": 83,
+   "suppressions": 0,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 0.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 0.9
+  },
+  {
+   "arret": "Les Chavannes",
+   "numero": "8592065",
+   "lignes": [
+    "42"
+   ],
+   "passages": 146,
+   "mesures": 146,
+   "suppressions": 0,
+   "ponctualite_pct": 88.4,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.2
+  },
+  {
+   "arret": "Libellules",
+   "numero": "8592066",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 76.2,
+   "retard_moyen_min": 2.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.9
+  },
+  {
+   "arret": "Lisière",
+   "numero": "8592067",
+   "lignes": [
+    "16"
+   ],
+   "passages": 151,
+   "mesures": 151,
+   "suppressions": 0,
+   "ponctualite_pct": 70.9,
+   "retard_moyen_min": 2.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.7
+  },
+  {
+   "arret": "Maladière",
+   "numero": "8592068",
+   "lignes": [
+    "1",
+    "6"
+   ],
+   "passages": 430,
+   "mesures": 427,
+   "suppressions": 2,
+   "ponctualite_pct": 74.7,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 6.7
+  },
+  {
+   "arret": "Maladière-Figuiers",
+   "numero": "8593837",
+   "lignes": [
+    "25",
+    "N5"
+   ],
+   "passages": 220,
+   "mesures": 215,
+   "suppressions": 0,
+   "ponctualite_pct": 83.3,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Maladière-Lac",
+   "numero": "8593838",
+   "lignes": [
+    "2"
+   ],
+   "passages": 211,
+   "mesures": 208,
+   "suppressions": 3,
+   "ponctualite_pct": 89.4,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 3.0
+  },
+  {
+   "arret": "Mauvernay",
+   "numero": "8592070",
+   "lignes": [
+    "45",
+    "N2"
+   ],
+   "passages": 96,
+   "mesures": 92,
+   "suppressions": 0,
+   "ponctualite_pct": 88.0,
+   "retard_moyen_min": 1.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.3
+  },
+  {
+   "arret": "Mirabeau",
+   "numero": "8592072",
+   "lignes": [
+    "1",
+    "21",
+    "2",
+    "N1",
+    "N2",
+    "N3",
+    "N4"
+   ],
+   "passages": 354,
+   "mesures": 342,
+   "suppressions": 1,
+   "ponctualite_pct": 78.7,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 0.3,
+   "retard_p90_min": 4.1
+  },
+  {
+   "arret": "Molliettes",
+   "numero": "8592073",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 159,
+   "mesures": 157,
+   "suppressions": 0,
+   "ponctualite_pct": 77.7,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.8
+  },
+  {
+   "arret": "Mon Repos",
+   "numero": "8592074",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 96.3,
+   "retard_moyen_min": 0.9,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 2.0
+  },
+  {
+   "arret": "Mont d'Or",
+   "numero": "8592075",
+   "lignes": [
+    "6"
+   ],
+   "passages": 184,
+   "mesures": 182,
+   "suppressions": 2,
+   "ponctualite_pct": 46.7,
+   "retard_moyen_min": 4.7,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 10.2
+  },
+  {
+   "arret": "Mont-Blanc",
+   "numero": "8592076",
+   "lignes": [
+    "3",
+    "20"
+   ],
+   "passages": 346,
+   "mesures": 345,
+   "suppressions": 1,
+   "ponctualite_pct": 84.3,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.3,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Mont-Fleuri",
+   "numero": "8592079",
+   "lignes": [
+    "2"
+   ],
+   "passages": 211,
+   "mesures": 207,
+   "suppressions": 3,
+   "ponctualite_pct": 76.3,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 4.6
+  },
+  {
+   "arret": "Montbenon",
+   "numero": "8579253",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 89.0,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 3.1
+  },
+  {
+   "arret": "Montblesson, Centenaire",
+   "numero": "8579247",
+   "lignes": [
+    "360",
+    "365"
+   ],
+   "passages": 68,
+   "mesures": 63,
+   "suppressions": 0,
+   "ponctualite_pct": 85.7,
+   "retard_moyen_min": 1.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.2
+  },
+  {
+   "arret": "Montchoisi",
+   "numero": "8592077",
+   "lignes": [
+    "25",
+    "21",
+    "8"
+   ],
+   "passages": 614,
+   "mesures": 606,
+   "suppressions": 7,
+   "ponctualite_pct": 75.9,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 5.0
+  },
+  {
+   "arret": "Montelly",
+   "numero": "8501207",
+   "lignes": [
+    "m1",
+    "16",
+    "N5"
+   ],
+   "passages": 423,
+   "mesures": 421,
+   "suppressions": 0,
+   "ponctualite_pct": 86.7,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.0
+  },
+  {
+   "arret": "Montoie",
+   "numero": "8592080",
+   "lignes": [
+    "1",
+    "6",
+    "N5"
+   ],
+   "passages": 439,
+   "mesures": 432,
+   "suppressions": 2,
+   "ponctualite_pct": 68.1,
+   "retard_moyen_min": 2.7,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 7.3
+  },
+  {
+   "arret": "Montolieu",
+   "numero": "8592081",
+   "lignes": [
+    "41",
+    "N3"
+   ],
+   "passages": 215,
+   "mesures": 212,
+   "suppressions": 1,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 0.2,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 0.5
+  },
+  {
+   "arret": "Montétan",
+   "numero": "8592078",
+   "lignes": [
+    "9"
+   ],
+   "passages": 252,
+   "mesures": 250,
+   "suppressions": 1,
+   "ponctualite_pct": 74.8,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 5.0
+  },
+  {
+   "arret": "Mousquines",
+   "numero": "8592083",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 98.5,
+   "retard_moyen_min": 0.7,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 1.8
+  },
+  {
+   "arret": "Musée Olympique",
+   "numero": "8592084",
+   "lignes": [
+    "21",
+    "25"
+   ],
+   "passages": 425,
+   "mesures": 425,
+   "suppressions": 0,
+   "ponctualite_pct": 75.1,
+   "retard_moyen_min": 2.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.7
+  },
+  {
+   "arret": "Oiseaux",
+   "numero": "8592085",
+   "lignes": [
+    "1"
+   ],
+   "passages": 122,
+   "mesures": 122,
+   "suppressions": 0,
+   "ponctualite_pct": 63.9,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.0
+  },
+  {
+   "arret": "Ouchy-Olympique",
+   "numero": "8592086",
+   "lignes": [
+    "2",
+    "24"
+   ],
+   "passages": 336,
+   "mesures": 333,
+   "suppressions": 3,
+   "ponctualite_pct": 88.3,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 3.4
+  },
+  {
+   "arret": "Parc Bourget",
+   "numero": "8595939",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 95.2,
+   "retard_moyen_min": 1.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.7
+  },
+  {
+   "arret": "Parc Musée Olymp.",
+   "numero": "8595933",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 97.6,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.0
+  },
+  {
+   "arret": "Parc Rivier",
+   "numero": "8592087",
+   "lignes": [
+    "2"
+   ],
+   "passages": 209,
+   "mesures": 206,
+   "suppressions": 3,
+   "ponctualite_pct": 74.8,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 4.8
+  },
+  {
+   "arret": "Parc Vélodrome",
+   "numero": "8592088",
+   "lignes": [
+    "1",
+    "20",
+    "N1"
+   ],
+   "passages": 390,
+   "mesures": 385,
+   "suppressions": 1,
+   "ponctualite_pct": 80.0,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.3,
+   "retard_p90_min": 4.4
+  },
+  {
+   "arret": "Pavement",
+   "numero": "8592089",
+   "lignes": [
+    "18"
+   ],
+   "passages": 206,
+   "mesures": 205,
+   "suppressions": 1,
+   "ponctualite_pct": 38.0,
+   "retard_moyen_min": 6.3,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 14.7
+  },
+  {
+   "arret": "Perronnaz",
+   "numero": "8587550",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 159,
+   "mesures": 157,
+   "suppressions": 0,
+   "ponctualite_pct": 81.5,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.5
+  },
+  {
+   "arret": "Petit Château",
+   "numero": "8592091",
+   "lignes": [
+    "16"
+   ],
+   "passages": 75,
+   "mesures": 75,
+   "suppressions": 0,
+   "ponctualite_pct": 60.0,
+   "retard_moyen_min": 2.9,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 7.0
+  },
+  {
+   "arret": "Pierrefleur",
+   "numero": "8592094",
+   "lignes": [
+    "2"
+   ],
+   "passages": 209,
+   "mesures": 206,
+   "suppressions": 3,
+   "ponctualite_pct": 78.6,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 1.4,
+   "retard_p90_min": 4.5
+  },
+  {
+   "arret": "Piécettes",
+   "numero": "8592092",
+   "lignes": [
+    "18"
+   ],
+   "passages": 206,
+   "mesures": 205,
+   "suppressions": 1,
+   "ponctualite_pct": 42.9,
+   "retard_moyen_min": 5.9,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 14.4
+  },
+  {
+   "arret": "Pont Chauderon",
+   "numero": "8592096",
+   "lignes": [
+    "21",
+    "3",
+    "6",
+    "20"
+   ],
+   "passages": 380,
+   "mesures": 378,
+   "suppressions": 2,
+   "ponctualite_pct": 68.8,
+   "retard_moyen_min": 2.8,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 6.1
+  },
+  {
+   "arret": "Pont Marc Dufour",
+   "numero": "8592097",
+   "lignes": [
+    "6"
+   ],
+   "passages": 184,
+   "mesures": 181,
+   "suppressions": 2,
+   "ponctualite_pct": 44.8,
+   "retard_moyen_min": 4.8,
+   "suppressions_pct": 1.1,
+   "retard_p90_min": 10.8
+  },
+  {
+   "arret": "Pont-de-Chailly",
+   "numero": "8579255",
+   "lignes": [
+    "7",
+    "42",
+    "N6"
+   ],
+   "passages": 388,
+   "mesures": 373,
+   "suppressions": 8,
+   "ponctualite_pct": 63.3,
+   "retard_moyen_min": 4.1,
+   "suppressions_pct": 2.1,
+   "retard_p90_min": 12.2
+  },
+  {
+   "arret": "Port-Franc",
+   "numero": "8592098",
+   "lignes": [
+    "17"
+   ],
+   "passages": 121,
+   "mesures": 120,
+   "suppressions": 1,
+   "ponctualite_pct": 85.0,
+   "retard_moyen_min": 1.1,
+   "suppressions_pct": 0.8,
+   "retard_p90_min": 4.0
+  },
+  {
+   "arret": "Praz-Berthoud",
+   "numero": "8592099",
+   "lignes": [
+    "41",
+    "N3"
+   ],
+   "passages": 219,
+   "mesures": 214,
+   "suppressions": 1,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 0.4,
+   "suppressions_pct": 0.5,
+   "retard_p90_min": 1.3
+  },
+  {
+   "arret": "Praz-Collet",
+   "numero": "8592100",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 158,
+   "mesures": 156,
+   "suppressions": 0,
+   "ponctualite_pct": 73.1,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.6
+  },
+  {
+   "arret": "Praz-Séchaud",
+   "numero": "8592101",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 61.9,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 8.8
+  },
+  {
+   "arret": "Presbytère",
+   "numero": "8592104",
+   "lignes": [
+    "21",
+    "2",
+    "N1"
+   ],
+   "passages": 430,
+   "mesures": 423,
+   "suppressions": 3,
+   "ponctualite_pct": 77.5,
+   "retard_moyen_min": 2.1,
+   "suppressions_pct": 0.7,
+   "retard_p90_min": 4.5
+  },
+  {
+   "arret": "Provence",
+   "numero": "8501208",
+   "lignes": [
+    "m1"
+   ],
+   "passages": 269,
+   "mesures": 269,
+   "suppressions": 0,
+   "ponctualite_pct": 100.0,
+   "retard_moyen_min": 1.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.9
+  },
+  {
+   "arret": "Provence nord",
+   "numero": "8592105",
+   "lignes": [
+    "16"
+   ],
+   "passages": 150,
+   "mesures": 150,
+   "suppressions": 0,
+   "ponctualite_pct": 76.0,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 5.5
+  },
+  {
+   "arret": "Provence sud",
+   "numero": "8592106",
+   "lignes": [
+    "16"
+   ],
+   "passages": 150,
+   "mesures": 150,
+   "suppressions": 0,
+   "ponctualite_pct": 66.7,
+   "retard_moyen_min": 2.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.6
+  },
+  {
+   "arret": "Pêcheurs",
+   "numero": "8592090",
+   "lignes": [
+    "2",
+    "24"
+   ],
+   "passages": 336,
+   "mesures": 333,
+   "suppressions": 3,
+   "ponctualite_pct": 85.0,
+   "retard_moyen_min": 1.6,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 3.7
+  },
+  {
+   "arret": "Rapille",
+   "numero": "8592107",
+   "lignes": [
+    "4"
+   ],
+   "passages": 172,
+   "mesures": 172,
+   "suppressions": 0,
+   "ponctualite_pct": 38.4,
+   "retard_moyen_min": 8.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 21.2
+  },
+  {
+   "arret": "Recordon",
+   "numero": "8592109",
+   "lignes": [
+    "7",
+    "18",
+    "2",
+    "8",
+    "6",
+    "9",
+    "N4",
+    "21"
+   ],
+   "passages": 515,
+   "mesures": 496,
+   "suppressions": 10,
+   "ponctualite_pct": 35.5,
+   "retard_moyen_min": 6.4,
+   "suppressions_pct": 1.9,
+   "retard_p90_min": 14.8
+  },
+  {
+   "arret": "Riant-Cour",
+   "numero": "8592110",
+   "lignes": [
+    "1",
+    "25"
+   ],
+   "passages": 457,
+   "mesures": 457,
+   "suppressions": 0,
+   "ponctualite_pct": 74.8,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 4.1
+  },
+  {
+   "arret": "Riponne-M.Béjart",
+   "numero": "8590442",
+   "lignes": [
+    "1",
+    "7",
+    "2",
+    "18",
+    "8",
+    "16",
+    "60",
+    "9"
+   ],
+   "passages": 1388,
+   "mesures": 1346,
+   "suppressions": 21,
+   "ponctualite_pct": 62.9,
+   "retard_moyen_min": 3.5,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 9.5
+  },
+  {
+   "arret": "Rouvraie",
+   "numero": "8592111",
+   "lignes": [
+    "18",
+    "3",
+    "8",
+    "N1"
+   ],
+   "passages": 304,
+   "mesures": 296,
+   "suppressions": 6,
+   "ponctualite_pct": 70.6,
+   "retard_moyen_min": 3.0,
+   "suppressions_pct": 2.0,
+   "retard_p90_min": 8.9
+  },
+  {
+   "arret": "Rozavère",
+   "numero": "8592112",
+   "lignes": [
+    "42"
+   ],
+   "passages": 146,
+   "mesures": 146,
+   "suppressions": 0,
+   "ponctualite_pct": 92.5,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.9
+  },
+  {
+   "arret": "Sablons",
+   "numero": "8592114",
+   "lignes": [
+    "25",
+    "N5"
+   ],
+   "passages": 220,
+   "mesures": 216,
+   "suppressions": 0,
+   "ponctualite_pct": 81.9,
+   "retard_moyen_min": 1.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Siège du CIO",
+   "numero": "8595934",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 99.2,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.3
+  },
+  {
+   "arret": "Sports UNIL-EPFL",
+   "numero": "8595937",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 98.4,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.9
+  },
+  {
+   "arret": "St-Etienne",
+   "numero": "8592118",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 191,
+   "mesures": 187,
+   "suppressions": 2,
+   "ponctualite_pct": 61.5,
+   "retard_moyen_min": 3.4,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 8.8
+  },
+  {
+   "arret": "St-François",
+   "numero": "8579254",
+   "lignes": [
+    "9",
+    "1",
+    "2",
+    "6",
+    "8",
+    "4",
+    "13",
+    "N6"
+   ],
+   "passages": 1470,
+   "mesures": 1422,
+   "suppressions": 18,
+   "ponctualite_pct": 67.6,
+   "retard_moyen_min": 3.1,
+   "suppressions_pct": 1.2,
+   "retard_p90_min": 7.0
+  },
+  {
+   "arret": "St-Paul",
+   "numero": "8592119",
+   "lignes": [
+    "9"
+   ],
+   "passages": 252,
+   "mesures": 250,
+   "suppressions": 1,
+   "ponctualite_pct": 73.2,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 5.1
+  },
+  {
+   "arret": "St-Roch",
+   "numero": "8592120",
+   "lignes": [
+    "21",
+    "3",
+    "20",
+    "4"
+   ],
+   "passages": 641,
+   "mesures": 640,
+   "suppressions": 1,
+   "ponctualite_pct": 77.8,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.2,
+   "retard_p90_min": 5.4
+  },
+  {
+   "arret": "Stade Coubertin",
+   "numero": "8595935",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 92.0,
+   "retard_moyen_min": 1.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 2.8
+  },
+  {
+   "arret": "Stade Olympique",
+   "numero": "8592116",
+   "lignes": [
+    "1",
+    "20",
+    "N1"
+   ],
+   "passages": 390,
+   "mesures": 385,
+   "suppressions": 1,
+   "ponctualite_pct": 74.5,
+   "retard_moyen_min": 2.2,
+   "suppressions_pct": 0.3,
+   "retard_p90_min": 4.7
+  },
+  {
+   "arret": "T. Haldimand-Lac",
+   "numero": "8595936",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 99.2,
+   "retard_moyen_min": 0.4,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.3
+  },
+  {
+   "arret": "Théâtre de Vidy",
+   "numero": "8592121",
+   "lignes": [
+    "2",
+    "24"
+   ],
+   "passages": 336,
+   "mesures": 333,
+   "suppressions": 3,
+   "ponctualite_pct": 87.1,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.9,
+   "retard_p90_min": 3.3
+  },
+  {
+   "arret": "Trabandan",
+   "numero": "8592123",
+   "lignes": [
+    "4"
+   ],
+   "passages": 84,
+   "mesures": 81,
+   "suppressions": 0,
+   "ponctualite_pct": 50.6,
+   "retard_moyen_min": 7.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 20.3
+  },
+  {
+   "arret": "Valency",
+   "numero": "8592124",
+   "lignes": [
+    "9"
+   ],
+   "passages": 252,
+   "mesures": 250,
+   "suppressions": 1,
+   "ponctualite_pct": 69.2,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.4,
+   "retard_p90_min": 6.0
+  },
+  {
+   "arret": "Valentin",
+   "numero": "8592125",
+   "lignes": [
+    "1",
+    "2",
+    "N1",
+    "21"
+   ],
+   "passages": 465,
+   "mesures": 458,
+   "suppressions": 3,
+   "ponctualite_pct": 78.4,
+   "retard_moyen_min": 2.0,
+   "suppressions_pct": 0.6,
+   "retard_p90_min": 4.5
+  },
+  {
+   "arret": "Vallonnette",
+   "numero": "8592126",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 46.6,
+   "retard_moyen_min": 4.3,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 10.2
+  },
+  {
+   "arret": "Vallée Jeunesse",
+   "numero": "8593844",
+   "lignes": [
+    "16"
+   ],
+   "passages": 150,
+   "mesures": 150,
+   "suppressions": 0,
+   "ponctualite_pct": 68.7,
+   "retard_moyen_min": 2.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.2
+  },
+  {
+   "arret": "Valmont",
+   "numero": "8592127",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 59.3,
+   "retard_moyen_min": 3.8,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 8.8
+  },
+  {
+   "arret": "Verdeil",
+   "numero": "8592129",
+   "lignes": [
+    "13"
+   ],
+   "passages": 140,
+   "mesures": 136,
+   "suppressions": 4,
+   "ponctualite_pct": 99.3,
+   "retard_moyen_min": 0.3,
+   "suppressions_pct": 2.9,
+   "retard_p90_min": 1.1
+  },
+  {
+   "arret": "Vernand-Camarès",
+   "numero": "8501168",
+   "lignes": [
+    "RR20"
+   ],
+   "passages": 134,
+   "mesures": 111,
+   "suppressions": 0,
+   "ponctualite_pct": 98.2,
+   "retard_moyen_min": 1.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.7
+  },
+  {
+   "arret": "Vers-chez-Blanc",
+   "numero": "8587548",
+   "lignes": [
+    "64",
+    "N2"
+   ],
+   "passages": 163,
+   "mesures": 159,
+   "suppressions": 0,
+   "ponctualite_pct": 83.0,
+   "retard_moyen_min": 1.7,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Vert-Bois/EHL",
+   "numero": "8592130",
+   "lignes": [
+    "45"
+   ],
+   "passages": 63,
+   "mesures": 56,
+   "suppressions": 0,
+   "ponctualite_pct": 98.2,
+   "retard_moyen_min": 0.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.9
+  },
+  {
+   "arret": "Victor-Ruffy",
+   "numero": "8592131",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 56.1,
+   "retard_moyen_min": 3.7,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 9.4
+  },
+  {
+   "arret": "Vidy-Port",
+   "numero": "8595938",
+   "lignes": [
+    "24"
+   ],
+   "passages": 125,
+   "mesures": 125,
+   "suppressions": 0,
+   "ponctualite_pct": 99.2,
+   "retard_moyen_min": 0.8,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 1.9
+  },
+  {
+   "arret": "Vieux-Moulin",
+   "numero": "8592132",
+   "lignes": [
+    "18",
+    "8",
+    "3",
+    "16",
+    "9",
+    "4",
+    "N1",
+    "1"
+   ],
+   "passages": 607,
+   "mesures": 594,
+   "suppressions": 9,
+   "ponctualite_pct": 68.9,
+   "retard_moyen_min": 3.3,
+   "suppressions_pct": 1.5,
+   "retard_p90_min": 9.5
+  },
+  {
+   "arret": "Villard",
+   "numero": "8592134",
+   "lignes": [
+    "21",
+    "3",
+    "20",
+    "N6",
+    "N4",
+    "N1",
+    "N2",
+    "N3"
+   ],
+   "passages": 301,
+   "mesures": 291,
+   "suppressions": 0,
+   "ponctualite_pct": 87.3,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.6
+  },
+  {
+   "arret": "Virgile-Rossel",
+   "numero": "8592136",
+   "lignes": [
+    "6",
+    "N3"
+   ],
+   "passages": 195,
+   "mesures": 189,
+   "suppressions": 2,
+   "ponctualite_pct": 52.9,
+   "retard_moyen_min": 3.9,
+   "suppressions_pct": 1.0,
+   "retard_p90_min": 9.2
+  },
+  {
+   "arret": "Vulliemin",
+   "numero": "8592138",
+   "lignes": [
+    "16"
+   ],
+   "passages": 75,
+   "mesures": 75,
+   "suppressions": 0,
+   "ponctualite_pct": 56.0,
+   "retard_moyen_min": 3.0,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 6.8
+  },
+  {
+   "arret": "Vulliette",
+   "numero": "8587549",
+   "lignes": [
+    "45",
+    "54",
+    "N2"
+   ],
+   "passages": 159,
+   "mesures": 155,
+   "suppressions": 0,
+   "ponctualite_pct": 89.7,
+   "retard_moyen_min": 1.3,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.1
+  },
+  {
+   "arret": "jardin botanique",
+   "numero": "8591985",
+   "lignes": [
+    "1",
+    "25"
+   ],
+   "passages": 227,
+   "mesures": 227,
+   "suppressions": 0,
+   "ponctualite_pct": 86.3,
+   "retard_moyen_min": 1.5,
+   "suppressions_pct": 0.0,
+   "retard_p90_min": 3.5
+  }
+ ],
+ "nb_lignes": 60,
+ "nb_arrets": 203
+}
