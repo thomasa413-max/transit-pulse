@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1030,
- "actives_suisse": 389,
+ "situations_suisse": 1029,
+ "actives_suisse": 392,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,61 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:100001:26d9d878-74c0-473c-9e2a-366c480002ba",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-10-28T12:04:11.427+01:00",
-   "titre": "Restriction Lausanne - Genève-Aéroport",
-   "description": "Les lignes IC 1, IC, IR, IR 90, IR 95 et IR 15",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Restriction Lausanne - Genève-Aéroport",
-     "description": "Les lignes IC 1, IC, IR, IR 90, IR 95 et IR 15",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Einschränkung Lausanne - Genève-Aéroport",
-     "description": "Linien IC 1, IC, IR, IR 90, IR 95 und IR 15",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Limitazioni Lausanne - Genève-Aéroport",
-     "description": "Linee IC 1, IC, IR, IR 90, IR 95 e IR 15",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Limited service: Lausanne - Genève-Aéroport",
-     "description": "Lines IC 1, IC, IR, IR 90, IR 95 and IR 15",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-06T21:06:00+01:00",
-     "fin": "2026-11-09T05:30:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Allaman",
-    "Bern",
-    "Brig",
-    "Chambésy",
-    "Chur",
-    "Coppet",
-    "Creux-de-Genthod",
-    "Etoy",
-    "Genthod-Bellevue",
-    "Genève",
-    "Genève-Aéroport",
-    "Genève-Sécheron"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -156,6 +101,6 @@
    "lignes": []
   }
  ],
- "octets": 135073059,
- "mis_a_jour": "2026-11-09T04:04:18+00:00"
+ "octets": 134794189,
+ "mis_a_jour": "2026-11-09T07:36:45+00:00"
 }
