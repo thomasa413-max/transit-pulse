@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1069,
- "actives_suisse": 391,
+ "situations_suisse": 1068,
+ "actives_suisse": 386,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -46,50 +46,6 @@
    ],
    "lignes": [
     "18"
-   ]
-  },
-  {
-   "id": "ch:1:sstid:100602:prod:6af30fb0b9d82106d0f3d84c",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "serviceDisruption",
-   "source": "pag-out-sx_prod",
-   "cree": "2026-11-10T13:36:00.086+01:00",
-   "titre": "Circulation irrégulière ligne 365 direction Lausanne, Sallaz",
-   "description": "",
-   "consequence": "Retards à prévoir",
-   "textes": {
-    "fr": {
-     "titre": "Circulation irrégulière ligne 365 direction Lausanne, Sallaz",
-     "description": "",
-     "consequence": "Retards à prévoir"
-    },
-    "de": {
-     "titre": "Unregelmässiger Betrieb Linie 365 Richtung Lausanne, Sallaz",
-     "description": "",
-     "consequence": "Verspätungen zu erwarten"
-    },
-    "it": {
-     "titre": "Esercizio irregolare linea 365 direzione Lausanne, Sallaz",
-     "description": "",
-     "consequence": "Sono prevedibile ritardi"
-    },
-    "en": {
-     "titre": "Irregular traffic line 365 towards Lausanne, Sallaz",
-     "description": "",
-     "consequence": "Expect delays"
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-10T13:49:00+01:00",
-     "fin": "2026-11-10T14:42:00+01:00"
-    }
-   ],
-   "lieux": [],
-   "lignes": [
-    "365"
    ]
   },
   {
@@ -145,6 +101,6 @@
    "lignes": []
   }
  ],
- "octets": 134729813,
- "mis_a_jour": "2026-11-10T13:12:38+00:00"
+ "octets": 134644259,
+ "mis_a_jour": "2026-11-10T15:57:13+00:00"
 }
