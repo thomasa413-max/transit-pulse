@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-09",
+ "genere_a": "2026-11-10T05:12:35+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 77,7 % des passages à l'heure, creux à 17 h",
+  "paragraphes": [
+   "Le 9 novembre 2026, 77,7 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard), avec un retard moyen de 1,9 minutes. 9 passages sur 10 ont moins de 4,8 minutes de retard. La veille, la ponctualité était de 78,5 %. La moyenne des 7 jours précédents est de 73,8 %, soit 3,9 points de moins que ce jour.",
+   "Par mode, sur la journée entière : le métro affiche 96,3 % de passages à l'heure, le train 92,8 % et le bus 76,9 %. Parmi les lignes les moins ponctuelles figurent la ligne 435 de PAG (58,9 %), la ligne 18 des TL (61,7 %) et la S41 des SBB (63,4 %). Les plus ponctuelles sont la RR20 du LEB (99,2 %), la ligne 41 des TL (97,8 %) et le m1 (96,3 %).",
+   "L'heure la plus difficile est 17 h, avec 59,0 % de passages à l'heure et un retard moyen de 3,1 minutes. Suivent 8 h (63,2 %) et 16 h (65,1 %). L'arrêt le moins ponctuel de la journée est Molliettes (57,4 %).",
+   "Sur 68'107 passages prévus, 718 ont été supprimés (1,1 %). Le plus gros retard relevé est de 47,6 minutes, pour le bus de la ligne 6 des TL prévu à 18 h 58 à l'arrêt Maladière."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 77,7 % der Fahrten pünktlich, Tiefstwert um 17 Uhr",
+  "paragraphes": [
+   "[\"Am 9. November 2026 waren 77,7 % der in Lausanne erfassten Fahrten pünktlich (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 1,9 Minuten. 9 von 10 Fahrten haben weniger als 4,8 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 78,5 %. Der Durchschnitt der 7 vorangehenden Tage beträgt 73,8 %, also 3,9 Prozentpunkte weniger als an diesem Tag.\", \"Nach Verkehrsmittel, über den ganzen Tag: Die Metro weist 96,3 % pünktliche Fahrten auf, die Bahn 92,8 % und der Bus 76,9 %. Zu den unpünktlichsten Linien gehören die Linie 435 von PAG (58,9 %), die Linie 18 der TL (61,7 %) und die S41 der SBB (63,4 %). Am pünktlichsten sind die RR20 der LEB (99,2 %), die Linie 41 der TL (97,8 %) und die m1 (96,3 %).\", \"Die schwierigste Stunde ist 17 Uhr mit 59,0 % pünktlichen Fahrten und einer durchschnittlichen Verspätung von 3,1 Minuten. Es folgen 8 Uhr (63,2 %) und 16 Uhr (65,1 %). Die unpünktlichste Haltestelle des Tages ist Molliettes (57,4 %).\", \"Von 68'107 planmässigen Fahrten wurden 718 gestrichen (1,1 %). Die grösste erfasste Verspätung beträgt 47,6 Minuten, und zwar beim Bus der Linie 6 der TL, der um 18 Uhr 58 an der Haltestelle Maladière planmässig abfahren sollte.\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Losanna: 77,7% delle corse in orario, punta minima alle ore 17",
+  "paragraphes": [
+   "Il 9 novembre 2026, il 77,7% dei passaggi rilevati a Losanna era in orario (con meno di 3 minuti di ritardo), con un ritardo medio di 1,9 minuti. 9 passaggi su 10 hanno meno di 4,8 minuti di ritardo. Il giorno precedente la puntualità era del 78,5%. La media dei 7 giorni precedenti è del 73,8%, ovvero 3,9 punti in meno rispetto a questo giorno.",
+   "Per modalità, sull'intera giornata: la metro registra il 96,3% di passaggi in orario, il treno il 92,8% e il bus il 76,9%. Tra le linee meno puntuali figurano la linea 435 di PAG (58,9%), la linea 18 dei TL (61,7%) e la S41 delle FFS (63,4%). Le più puntuali sono la RR20 del LEB (99,2%), la linea 41 dei TL (97,8%) e la m1 (96,3%).",
+   "L'ora più difficile è quella delle ore 17, con il 59,0% di passaggi in orario e un ritardo medio di 3,1 minuti. Seguono le ore 8 (63,2%) e le ore 16 (65,1%). La fermata meno puntuale della giornata è Molliettes (57,4%).",
+   "Su 68'107 passaggi previsti, 718 sono stati soppressi (1,1%). Il ritardo maggiore rilevato è di 47,6 minuti, per il bus della linea 6 dei TL previsto alle ore 18:58 alla fermata Maladière."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 77.7% of departures on time, low point at 17:00",
+  "paragraphes": [
+   "[\"On 9 November 2026, 77.7% of the departures measured in Lausanne were on time (less than 3 minutes late), with an average delay of 1.9 minutes. 9 departures out of 10 are less than 4.8 minutes late. The day before, punctuality was 78.5%. The average of the previous 7 days is 73.8%, which is 3.9 points lower than on this day.\", \"By mode, over the whole day: the metro shows 96.3% of departures on time, the train 92.8% and the bus 76.9%. Among the least punctual lines are line 435 of PAG (58.9%), line 18 of the TL (61.7%) and the S41 of the SBB (63.4%). The most punctual are the RR20 of the LEB (99.2%), line 41 of the TL (97.8%) and the m1 (96.3%).\", \"The most difficult hour is 17:00, with 59.0% of departures on time and an average delay of 3.1 minutes. It is followed by 08:00 (63.2%) and 16:00 (65.1%). The least punctual stop of the day is Molliettes (57.4%).\", \"Out of 68'107 scheduled departures, 718 were cancelled (1.1%). The largest delay recorded is 47.6 minutes, for the bus on line 6 of the TL scheduled at 18:58 at the Maladière stop.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
