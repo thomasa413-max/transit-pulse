@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-10",
+ "genere_a": "2026-11-11T05:17:50+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité en recul à Lausanne : 66,8 % des passages à l'heure",
+  "paragraphes": [
+   "Le 10 novembre 2026, 66,8 % des passages étaient à l'heure (moins de 3 minutes de retard), avec un retard moyen de 2,8 minutes. La veille, ce taux était de 77,7 %, et la moyenne des 7 jours précédents de 73,9 %. 9 passages sur 10 ont moins de 7,0 minutes de retard.",
+   "Le métro m1 affiche 98,8 % de passages à l'heure et la ligne RR20 du LEB 98,5 %. Le mode Bus est à 65,6 %. Parmi les lignes de bus TL, la 18 (46,8 %), la 21 (51,9 %) et la 1 (52,6 %) sont les moins ponctuelles de la journée entière.",
+   "L'heure la plus difficile est 18 h : 41,7 % de passages à l'heure, un retard moyen de 5,1 minutes et 136 passages supprimés sur 3'935 prévus. Viennent ensuite 17 h (45,4 %) et 8 h (46,7 %).",
+   "Sur la journée entière, 537 passages ont été supprimés sur 67'951 prévus (0,8 %). Le plus gros retard mesuré est de 79,0 minutes, sur la ligne 7 à Bel-Air, pour un passage prévu à 13 h 23."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit in Lausanne rückläufig: 66,8 % der Fahrten pünktlich",
+  "paragraphes": [
+   "Am 10. November 2026 waren 66,8 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 2,8 Minuten. Am Vortag lag dieser Anteil bei 77,7 %, und der Durchschnitt der vorangegangenen 7 Tage betrug 73,9 %. 9 von 10 Fahrten haben weniger als 7,0 Minuten Verspätung.",
+   "Die Metro m1 verzeichnet 98,8 % pünktliche Fahrten, und die Linie RR20 des LEB 98,5 %. Der Modus Bus liegt bei 65,6 %. Unter den Buslinien der TL sind die Linie 18 (46,8 %), die Linie 21 (51,9 %) und die Linie 1 (52,6 %) über den ganzen Tag gesehen am wenigsten pünktlich.",
+   "Die schwierigste Stunde ist 18 Uhr: 41,7 % der Fahrten waren pünktlich, die durchschnittliche Verspätung betrug 5,1 Minuten, und 136 von 3'935 geplanten Fahrten wurden gestrichen. Danach folgen 17 Uhr (45,4 %) und 8 Uhr (46,7 %).",
+   "Über den ganzen Tag wurden 537 von 67'951 geplanten Fahrten gestrichen (0,8 %). Die grösste gemessene Verspätung beträgt 79,0 Minuten auf der Linie 7 in Bel-Air, für eine Fahrt, die für 13:23 Uhr geplant war."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità in calo a Losanna: il 66,8% dei passaggi in orario",
+  "paragraphes": [
+   "Il 10 novembre 2026, il 66,8% dei passaggi era in orario (meno di 3 minuti di ritardo), con un ritardo medio di 2,8 minuti. Il giorno precedente, questo tasso era del 77,7%, e la media dei 7 giorni precedenti del 73,9%. 9 passaggi su 10 hanno meno di 7,0 minuti di ritardo.",
+   "Il metro m1 registra il 98,8% di passaggi in orario e la linea RR20 del LEB il 98,5%. La modalità Bus si attesta al 65,6%. Tra le linee di bus TL, la 18 (46,8%), la 21 (51,9%) e la 1 (52,6%) sono le meno puntuali dell'intera giornata.",
+   "L'ora più difficile è quella delle ore 18: il 41,7% di passaggi in orario, un ritardo medio di 5,1 minuti e 136 passaggi soppressi su 3'935 previsti. Seguono le ore 17 (45,4%) e le ore 8 (46,7%).",
+   "Nell'arco dell'intera giornata, 537 passaggi sono stati soppressi su 67'951 previsti (0,8%). Il ritardo maggiore misurato è di 79,0 minuti, sulla linea 7 a Bel-Air, per un passaggio previsto alle ore 13:23."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality declining in Lausanne: 66.8% of services on time",
+  "paragraphes": [
+   "[\"On 10 November 2026, 66.8% of services were on time (less than 3 minutes late), with an average delay of 2.8 minutes. The day before, this rate was 77.7%, and the average over the previous 7 days was 73.9%. 9 services out of 10 are less than 7.0 minutes late.\", \"The m1 metro shows 98.8% of services on time, and the RR20 line of the LEB 98.5%. The Bus mode is at 65.6%. Among the TL bus lines, the 18 (46.8%), the 21 (51.9%) and the 1 (52.6%) are the least punctual of the entire day.\", \"The most difficult hour is 18:00: 41.7% of services on time, an average delay of 5.1 minutes and 136 cancelled services out of 3'935 scheduled. Next come 17:00 (45.4%) and 08:00 (46.7%).\", \"Over the entire day, 537 services were cancelled out of 67'951 scheduled (0.8%). The largest recorded delay is 79.0 minutes, on line 7 at Bel-Air, for a service scheduled at 13:23.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
