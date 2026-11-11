@@ -1,5 +1,5 @@
 {
- "situations_suisse": 1057,
+ "situations_suisse": 1058,
  "actives_suisse": 395,
  "lausanne": [
   {
@@ -101,6 +101,6 @@
    "lignes": []
   }
  ],
- "octets": 139569890,
- "mis_a_jour": "2026-11-11T07:25:59+00:00"
+ "octets": 139566218,
+ "mis_a_jour": "2026-11-11T10:08:14+00:00"
 }
