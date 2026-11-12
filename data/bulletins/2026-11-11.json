@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-11",
+ "genere_a": "2026-11-12T05:20:19+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "70,2 % des passages à l'heure à Lausanne, en hausse sur la veille",
+  "paragraphes": [
+   "Le 11 novembre 2026, 70,2 % des passages mesurés à Lausanne sont arrivés à l'heure (moins de 3 minutes de retard). Le retard moyen s'établit à 2,6 minutes, et 9 passages sur 10 ont moins de 6,2 minutes de retard. La veille, la ponctualité était de 66,8 % ; la moyenne des 7 jours précédents est de 72,9 %.",
+   "Le métro affiche 94,4 % de passages à l'heure et le train 90,7 %, contre 69,1 % pour le bus. Parmi les lignes, la 41 des TL est la plus ponctuelle (98,4 %). Les moins ponctuelles sont la 18 (47,9 %), la 21 (48,9 %) et la 9 (54,6 %), toutes des TL.",
+   "L'heure la plus difficile est 17 h : 52,0 % des passages à l'heure et un retard moyen de 4,6 minutes. Viennent ensuite 14 h (53,4 %) et 16 h (55,8 %). À l'échelle de la journée entière, l'arrêt Denantou est le moins ponctuel, avec 45,2 % de passages à l'heure.",
+   "Sur 68'215 passages prévus, 1'156 ont été supprimés (1,7 %). Le plus gros retard relevé est de 43,1 minutes, sur la ligne 16 des TL à l'arrêt Grande-Borde, pour un passage prévu à 19 h 31."
+  ]
+ },
+ "de": {
+  "titre": "70,2 % der Fahrten in Lausanne pünktlich, Anstieg gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 11. November 2026 trafen 70,2 % der gemessenen Fahrten in Lausanne pünktlich ein (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,6 Minuten, und 9 von 10 Fahrten haben weniger als 6,2 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 66,8 %; der Durchschnitt der vorangegangenen 7 Tage liegt bei 72,9 %.",
+   "Die Metro erreicht 94,4 % pünktliche Fahrten und die Bahn 90,7 %, gegenüber 69,1 % beim Bus. Unter den Linien ist die Linie 41 der tl am pünktlichsten (98,4 %). Am wenigsten pünktlich sind die Linien 18 (47,9 %), 21 (48,9 %) und 9 (54,6 %), alle von den tl.",
+   "Die schwierigste Stunde ist 17 Uhr: 52,0 % der Fahrten sind pünktlich, und die durchschnittliche Verspätung beträgt 4,6 Minuten. Es folgen 14 Uhr (53,4 %) und 16 Uhr (55,8 %). Über den gesamten Tag betrachtet ist die Haltestelle Denantou am wenigsten pünktlich, mit 45,2 % pünktlichen Fahrten.",
+   "Von 68'215 geplanten Fahrten wurden 1'156 gestrichen (1,7 %). Die größte gemessene Verspätung beträgt 43,1 Minuten, auf der Linie 16 der tl an der Haltestelle Grande-Borde, bei einer geplanten Fahrt um 19:31 Uhr."
+  ]
+ },
+ "it": {
+  "titre": "Il 70,2% delle corse è puntuale a Losanna, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "L'11 novembre 2026, il 70,2% dei passaggi rilevati a Losanna è arrivato in orario (con un ritardo inferiore a 3 minuti). Il ritardo medio si attesta a 2,6 minuti e 9 passaggi su 10 hanno un ritardo inferiore a 6,2 minuti. Il giorno precedente la puntualità era del 66,8%; la media dei 7 giorni precedenti è del 72,9%.",
+   "Il metro registra il 94,4% di passaggi in orario e il treno il 90,7%, contro il 69,1% del bus. Tra le linee, la 41 dei TL è la più puntuale (98,4%). Le meno puntuali sono la 18 (47,9%), la 21 (48,9%) e la 9 (54,6%), tutte dei TL.",
+   "L'ora più difficile è le ore 17: il 52,0% dei passaggi è in orario e il ritardo medio è di 4,6 minuti. Seguono le ore 14 (53,4%) e le ore 16 (55,8%). Su tutta la giornata, la fermata Denantou è la meno puntuale, con il 45,2% di passaggi in orario.",
+   "Su 68'215 passaggi previsti, 1'156 sono stati soppressi (1,7%). Il ritardo maggiore rilevato è di 43,1 minuti, sulla linea 16 dei TL alla fermata Grande-Borde, per un passaggio previsto alle ore 19:31."
+  ]
+ },
+ "en": {
+  "titre": "70.2% of departures on time in Lausanne, up from the previous day",
+  "paragraphes": [
+   "On 11 November 2026, 70.2% of the measured departures in Lausanne arrived on time (less than 3 minutes late). The average delay was 2.6 minutes, and 9 out of 10 departures were less than 6.2 minutes late. The day before, punctuality stood at 66.8%; the average over the previous 7 days is 72.9%.",
+   "The metro recorded 94.4% of departures on time and the train 90.7%, compared with 69.1% for the bus. Among the lines, the TL 41 is the most punctual (98.4%). The least punctual are the 18 (47.9%), the 21 (48.9%) and the 9 (54.6%), all TL lines.",
+   "The most difficult hour is 17:00: 52.0% of departures were on time, with an average delay of 4.6 minutes. Next come 14:00 (53.4%) and 16:00 (55.8%). Over the whole day, the Denantou stop is the least punctual, with 45.2% of departures on time.",
+   "Out of 68'215 scheduled departures, 1'156 were cancelled (1.7%). The longest delay recorded was 43.1 minutes, on TL line 16 at the Grande-Borde stop, for a departure scheduled at 19:31."
+  ]
+ },
+ "statut": "publie"
+}
