@@ -1,0 +1,45 @@
+{
+ "date": "2026-11-12",
+ "genere_a": "2026-11-13T05:18:01+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité à 59,7 % à Lausanne, en retrait par rapport à la veille",
+  "paragraphes": [
+   "Le 12 novembre 2026, 59,7 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard). Le retard moyen s'établit à 2,3 minutes pour le train et à 4,2 minutes tous modes confondus. 9 passages sur 10 ont moins de 10,6 minutes de retard. La veille, la ponctualité était de 70,2 % ; la moyenne des 7 jours précédents est de 72,5 %.",
+   "Le métro affiche 90,8 % de passages à l'heure et le train 79,6 %, contre 58,4 % pour le bus. Sur 67'537 passages prévus, 2'086 ont été supprimés (3,1 %), dont 2'071 pour le bus. Les lignes TL 18 (41,8 % à l'heure, 8,6 % de suppressions) et 1 (43,2 %) sont les moins ponctuelles. Le RR20 (95,6 %) et la ligne 41 (94,1 %) sont les plus ponctuelles.",
+   "L'heure la plus difficile est 18 h : 22,0 % des passages à l'heure et 12,4 minutes de retard moyen. À 17 h, la part à l'heure est de 22,1 %.",
+   "Le plus gros retard concerne l'IC5 des CFF à Lausanne, prévu à 0 h 26, avec 82,9 minutes. La ligne 41 a aussi enregistré 78,2 minutes de retard à Lausanne, Sallaz, à 17 h 06."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit bei 59,7 % in Lausanne, gegenüber dem Vortag rückläufig",
+  "paragraphes": [
+   "[\"Am 12. November 2026 waren 59,7 % der gemessenen Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,3 Minuten beim Zug und 4,2 Minuten bei allen Verkehrsmitteln zusammen. 9 von 10 Fahrten haben weniger als 10,6 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 70,2 %; der Durchschnitt der 7 vorangehenden Tage beträgt 72,5 %.\", \"Die Metro verzeichnet 90,8 % pünktliche Fahrten und der Zug 79,6 %, gegenüber 58,4 % beim Bus. Von 67'537 geplanten Fahrten wurden 2'086 gestrichen (3,1 %), davon 2'071 beim Bus. Die Linien TL 18 (41,8 % pünktlich, 8,6 % Ausfälle) und 1 (43,2 %) sind am wenigsten pünktlich. Der RR20 (95,6 %) und die Linie 41 (94,1 %) sind am pünktlichsten.\", \"Die schwierigste Stunde ist 18 Uhr: 22,0 % der Fahrten waren pünktlich, und die durchschnittliche Verspätung betrug 12,4 Minuten. Um 17 Uhr liegt der Anteil pünktlicher Fahrten bei 22,1 %.\", \"Die größte Verspätung betrifft den IC5 der CFF in Lausanne, planmäßig um 00:26 Uhr, mit 82,9 Minuten. Die Linie 41 verzeichnete zudem 78,2 Minuten Verspätung in Lausanne, Sallaz, um 17:06 Uhr.\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità al 59,7% a Losanna, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 12 novembre 2026, il 59,7% dei passaggi misurati a Losanna era in orario (con meno di 3 minuti di ritardo). Il ritardo medio è di 2,3 minuti per il treno e di 4,2 minuti considerando tutti i mezzi. 9 passaggi su 10 hanno un ritardo inferiore a 10,6 minuti. Il giorno precedente la puntualità era del 70,2%; la media dei 7 giorni precedenti è del 72,5%.",
+   "La metropolitana registra il 90,8% di passaggi in orario e il treno il 79,6%, contro il 58,4% dell'autobus. Su 67'537 passaggi previsti, 2'086 sono stati soppressi (3,1%), di cui 2'071 per l'autobus. Le linee TL 18 (41,8% in orario, 8,6% di soppressioni) e 1 (43,2%) sono quelle meno puntuali. La RR20 (95,6%) e la linea 41 (94,1%) sono quelle più puntuali.",
+   "L'ora più difficile è quella delle ore 18: il 22,0% dei passaggi è in orario e il ritardo medio è di 12,4 minuti. Alle ore 17 la quota di passaggi in orario è del 22,1%.",
+   "Il ritardo più grave riguarda l'IC5 delle FFS a Losanna, previsto per le ore 0:26, con 82,9 minuti. Anche la linea 41 ha registrato un ritardo di 78,2 minuti a Losanna, Sallaz, alle ore 17:06."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality at 59.7% in Lausanne, down from the previous day",
+  "paragraphes": [
+   "[\"On 12 November 2026, 59.7% of the measured departures in Lausanne were on time (less than 3 minutes late). The average delay is 2.3 minutes for trains and 4.2 minutes across all modes. 9 departures out of 10 are less than 10.6 minutes late. The day before, punctuality was 70.2%; the average of the previous 7 days is 72.5%.\", \"The metro shows 90.8% of departures on time and trains 79.6%, compared with 58.4% for buses. Out of 67'537 scheduled departures, 2'086 were cancelled (3.1%), including 2'071 for buses. The TL lines 18 (41.8% on time, 8.6% cancellations) and 1 (43.2%) are the least punctual. The RR20 (95.6%) and line 41 (94.1%) are the most punctual.\", \"The most difficult hour is 18:00: 22.0% of departures were on time and the average delay was 12.4 minutes. At 17:00, the share on time is 22.1%.\", \"The largest delay concerns the CFF IC5 in Lausanne, scheduled at 00:26, with 82.9 minutes. Line 41 also recorded a delay of 78.2 minutes in Lausanne, Sallaz, at 17:06.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
