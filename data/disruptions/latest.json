@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1065,
- "actives_suisse": 388,
+ "situations_suisse": 1072,
+ "actives_suisse": 392,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,6 +47,51 @@
    "lignes": [
     "18"
    ]
+  },
+  {
+   "id": "ch:1:sstid:100001:864382aa-91d1-4321-8c4c-f06666db9b83",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "undefinedAlertCause",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-11-13T05:32:04.515+01:00",
+   "titre": "Information",
+   "description": "Comme alternative, nous recommandons aux voyageurs à partir de St. Gallen à Zürich HB d'utiliser l'InterCity (IC) 1 (720) en direction de Genève-Aéroport, départ à 07:07 heures.",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Information",
+     "description": "Comme alternative, nous recommandons aux voyageurs à partir de St. Gallen à Zürich HB d'utiliser l'InterCity (IC) 1 (720) en direction de Genève-Aéroport, départ à 07:07 heures.",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Information",
+     "description": "Reisenden ab St. Gallen nach Zürich HB empfehlen wir als Alternative, den InterCity (IC) 1 (720) Richtung Genève-Aéroport um 07:07 Uhr zu benützen.",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Informazione",
+     "description": "In alternativa, si consiglia ai viaggiatori da St. Gallen per Zürich HB di utilizzare l'InterCity (IC) 1 (720) nella direzione di Genève-Aéroport alle ore 07:07.",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Information",
+     "description": "Passengers travelling from St. Gallen to Zürich HB are advised to use the InterCity (IC) 1 (720) to Genève-Aéroport at 07:07.",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-13T05:24:26.293+01:00",
+     "fin": "2026-11-14T03:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Lausanne",
+    "Rorschach"
+   ],
+   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -101,6 +146,6 @@
    "lignes": []
   }
  ],
- "octets": 141105762,
- "mis_a_jour": "2026-11-13T04:01:49+00:00"
+ "octets": 141143037,
+ "mis_a_jour": "2026-11-13T07:27:22+00:00"
 }
