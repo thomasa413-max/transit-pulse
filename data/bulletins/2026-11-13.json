@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-13",
+ "genere_a": "2026-11-14T05:10:54+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 77,5 % à Lausanne, en hausse par rapport à la veille",
+  "paragraphes": [
+   "Le 13 novembre 2026, 77,5 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard). Le retard moyen est de 2,0 minutes et 9 passages sur 10 ont moins de 4,7 minutes de retard. La veille, la ponctualité était de 59,7 % (écart de 17,8 points). La moyenne des 7 jours précédents est de 71,2 % (écart de 6,3 points).",
+   "Sur 68'809 passages prévus, 63'851 ont été mesurés et 302 ont été supprimés (0,4 %). Le métro affiche 98,4 % à l'heure, le train 91,8 % et le bus 76,6 %. La ligne LEB RR20 atteint 99,6 % et la ligne TL 41 99,4 %. À l'inverse, la ligne TL N1 compte 0,0 % de passages à l'heure (53 passages mesurés sur 174 prévus), devant la ligne 18 (57,9 %) et la ligne 7 (63,9 %).",
+   "À 1 h, 56,2 % des passages étaient à l'heure, contre 68,9 % à 12 h et 69,8 % à 17 h. Parmi les arrêts, Pont Marc Dufour est le moins ponctuel, avec 54,2 % de passages à l'heure.",
+   "Le plus gros retard mesuré est de 47,1 minutes, sur la ligne 6 des TL à l'arrêt Halle Sébeillon, pour un passage prévu à 5 h 12."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 77,5 % in Lausanne, höher als am Vortag",
+  "paragraphes": [
+   "[\"Am 13. November 2026 waren 77,5 % der gemessenen Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,0 Minuten, und 9 von 10 Fahrten haben weniger als 4,7 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 59,7 % (Abweichung von 17,8 Prozentpunkten). Der Durchschnitt der 7 vorangegangenen Tage beträgt 71,2 % (Abweichung von 6,3 Prozentpunkten).\", \"Von 68'809 geplanten Fahrten wurden 63'851 gemessen und 302 gestrichen (0,4 %). Die Metro erreicht 98,4 % pünktlich, der Zug 91,8 % und der Bus 76,6 %. Die Linie LEB RR20 erreicht 99,6 % und die Linie TL 41 99,4 %. Umgekehrt weist die Linie TL N1 0,0 % pünktliche Fahrten auf (53 gemessene von 174 geplanten Fahrten), gefolgt von der Linie 18 (57,9 %) und der Linie 7 (63,9 %).\", \"Um 1 Uhr waren 56,2 % der Fahrten pünktlich, gegenüber 68,9 % um 12 Uhr und 69,8 % um 17 Uhr. Unter den Haltestellen ist Pont Marc Dufour am wenigsten pünktlich, mit 54,2 % pünktlichen Fahrten.\", \"Die grösste gemessene Verspätung beträgt 47,1 Minuten, auf der Linie 6 der TL an der Haltestelle Halle Sébeillon, für eine Fahrt, die für 5:12 Uhr geplant war.\"]}"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità del 77,5% a Losanna, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 13 novembre 2026, il 77,5% dei passaggi misurati a Losanna era in orario (con meno di 3 minuti di ritardo). Il ritardo medio è di 2,0 minuti e 9 passaggi su 10 hanno meno di 4,7 minuti di ritardo. Il giorno precedente, la puntualità era del 59,7% (differenza di 17,8 punti). La media dei 7 giorni precedenti è del 71,2% (differenza di 6,3 punti).",
+   "Su 68'809 passaggi previsti, 63'851 sono stati misurati e 302 sono stati soppressi (0,4%). Il metro registra il 98,4% in orario, il treno il 91,8% e il bus il 76,6%. La linea LEB RR20 raggiunge il 99,6% e la linea TL 41 il 99,4%. Al contrario, la linea TL N1 conta lo 0,0% di passaggi in orario (53 passaggi misurati su 174 previsti), seguita dalla linea 18 (57,9%) e dalla linea 7 (63,9%).",
+   "Alle ore 1, il 56,2% dei passaggi era in orario, contro il 68,9% alle ore 12 e il 69,8% alle ore 17. Tra le fermate, Pont Marc Dufour è la meno puntuale, con il 54,2% di passaggi in orario.",
+   "Il ritardo maggiore misurato è di 47,1 minuti, sulla linea 6 dei TL alla fermata Halle Sébeillon, per un passaggio previsto alle ore 5:12."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 77.5% in Lausanne, up from the previous day",
+  "paragraphes": [
+   "On 13 November 2026, 77.5% of the measured services in Lausanne were on time (less than 3 minutes late). The average delay is 2.0 minutes, and 9 out of 10 services were less than 4.7 minutes late. The day before, punctuality was 59.7% (a difference of 17.8 points). The average for the previous 7 days is 71.2% (a difference of 6.3 points).",
+   "Out of 68'809 scheduled services, 63'851 were measured and 302 were cancelled (0.4%). The metro shows 98.4% on time, the train 91.8% and the bus 76.6%. The LEB RR20 line reaches 99.6% and the TL 41 line 99.4%. Conversely, the TL N1 line has 0.0% of services on time (53 services measured out of 174 scheduled), ahead of line 18 (57.9%) and line 7 (63.9%).",
+   "At 01:00, 56.2% of services were on time, compared with 68.9% at 12:00 and 69.8% at 17:00. Among the stops, Pont Marc Dufour is the least punctual, with 54.2% of services on time.",
+   "The largest measured delay is 47.1 minutes, on TL line 6 at the Halle Sébeillon stop, for a service scheduled at 05:12."
+  ]
+ },
+ "statut": "publie"
+}
