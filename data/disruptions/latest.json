@@ -1,5 +1,5 @@
 {
- "situations_suisse": 1067,
+ "situations_suisse": 1065,
  "actives_suisse": 383,
  "lausanne": [
   {
@@ -57,27 +57,27 @@
    "source": "sbb-via-geplant_prod",
    "cree": "2026-10-28T12:25:06.254+01:00",
    "titre": "Restriction Lausanne - Genève-Aéroport",
-   "description": "Les lignes IC 1, IC, IR, IR 90, IR 95 et IR 15",
+   "description": "Concerne: lignes IC 1, IC, IR, IR 90, IR 95 et IR 15",
    "consequence": "",
    "textes": {
     "fr": {
      "titre": "Restriction Lausanne - Genève-Aéroport",
-     "description": "Les lignes IC 1, IC, IR, IR 90, IR 95 et IR 15",
+     "description": "Concerne: lignes IC 1, IC, IR, IR 90, IR 95 et IR 15",
      "consequence": ""
     },
     "de": {
      "titre": "Einschränkung Lausanne - Genève-Aéroport",
-     "description": "Linien IC 1, IC, IR, IR 90, IR 95 und IR 15",
+     "description": "Betrifft: Linien IC 1, IC, IR, IR 90, IR 95 und IR 15",
      "consequence": ""
     },
     "it": {
      "titre": "Limitazioni Lausanne - Genève-Aéroport",
-     "description": "Linee IC 1, IC, IR, IR 90, IR 95 e IR 15",
+     "description": "Interessate: linee IC 1, IC, IR, IR 90, IR 95 e IR 15",
      "consequence": ""
     },
     "en": {
      "titre": "Limited service: Lausanne - Genève-Aéroport",
-     "description": "Lines IC 1, IC, IR, IR 90, IR 95 and IR 15",
+     "description": "Affected: lines IC 1, IC, IR, IR 90, IR 95 and IR 15",
      "consequence": ""
     }
    },
@@ -112,27 +112,27 @@
    "source": "sbb-via-geplant_prod",
    "cree": "2026-10-02T09:30:21.072+02:00",
    "titre": "Restriction Palézieux - Romont FR",
-   "description": "Les lignes IR 15, S 40 et S 41",
+   "description": "Concerne: lignes IR 15, S 40 et S 41",
    "consequence": "",
    "textes": {
     "fr": {
      "titre": "Restriction Palézieux - Romont FR",
-     "description": "Les lignes IR 15, S 40 et S 41",
+     "description": "Concerne: lignes IR 15, S 40 et S 41",
      "consequence": ""
     },
     "de": {
      "titre": "Einschränkung Palézieux - Romont FR",
-     "description": "Linien IR 15, S 40 und S 41",
+     "description": "Betrifft: Linien IR 15, S 40 und S 41",
      "consequence": ""
     },
     "it": {
      "titre": "Limitazioni Palézieux - Romont FR",
-     "description": "Linee IR 15, S 40 e S 41",
+     "description": "Interessate: linee IR 15, S 40 e S 41",
      "consequence": ""
     },
     "en": {
      "titre": "Limited service: Palézieux - Romont FR",
-     "description": "Lines IR 15, S 40 and S 41",
+     "description": "Affected: lines IR 15, S 40 and S 41",
      "consequence": ""
     }
    },
@@ -164,27 +164,27 @@
    "source": "sbb-via-geplant_prod",
    "cree": "2026-10-23T13:39:48.546+02:00",
    "titre": "Restriction Sion - Brig",
-   "description": "Les lignes EC, IR, IR 90, IR 95 et R 91",
+   "description": "Concerne: lignes EC, IR, IR 90, IR 95 et R 91",
    "consequence": "",
    "textes": {
     "fr": {
      "titre": "Restriction Sion - Brig",
-     "description": "Les lignes EC, IR, IR 90, IR 95 et R 91",
+     "description": "Concerne: lignes EC, IR, IR 90, IR 95 et R 91",
      "consequence": ""
     },
     "de": {
      "titre": "Einschränkung Sion - Brig",
-     "description": "Linien EC, IR, IR 90, IR 95 und R 91",
+     "description": "Betrifft: Linien EC, IR, IR 90, IR 95 und R 91",
      "consequence": ""
     },
     "it": {
      "titre": "Limitazioni Sion - Brig",
-     "description": "Linee EC, IR, IR 90, IR 95 e R 91",
+     "description": "Interessate: linee EC, IR, IR 90, IR 95 e R 91",
      "consequence": ""
     },
     "en": {
      "titre": "Limited service: Sion - Brig",
-     "description": "Lines EC, IR, IR 90, IR 95 and R 91",
+     "description": "Affected: lines EC, IR, IR 90, IR 95 and R 91",
      "consequence": ""
     }
    },
@@ -215,6 +215,6 @@
    "lignes": []
   }
  ],
- "octets": 145210589,
- "mis_a_jour": "2026-11-14T13:00:16+00:00"
+ "octets": 145200530,
+ "mis_a_jour": "2026-11-14T15:49:51+00:00"
 }
