@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1055,
- "actives_suisse": 383,
+ "situations_suisse": 1052,
+ "actives_suisse": 377,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,67 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:100001:33110dd5-2154-4396-90b6-84e8ca145f40",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-04-27T09:22:16.562+02:00",
-   "titre": "Interruption Eclépens - Yverdon-les-Bains",
-   "description": "",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Interruption Eclépens - Yverdon-les-Bains",
-     "description": "",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Unterbruch Eclépens - Yverdon-les-Bains",
-     "description": "",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Interruzione Eclépens - Yverdon-les-Bains",
-     "description": "",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Interrupted service: Eclépens - Yverdon-les-Bains",
-     "description": "",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-08T00:50:00+01:00",
-     "fin": "2026-11-08T04:50:00+01:00"
-    },
-    {
-     "debut": "2026-11-15T00:50:00+01:00",
-     "fin": "2026-11-15T04:50:00+01:00"
-    },
-    {
-     "debut": "2026-11-22T00:50:00+01:00",
-     "fin": "2026-11-22T04:50:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Bavois",
-    "Chavornay",
-    "Eclépens",
-    "Eclépens, gare",
-    "Ependes VD",
-    "Essert-Pittet",
-    "Grandson, gare",
-    "Lausanne, gare",
-    "Yverdon-les-Bains",
-    "Yverdon-les-Bains, gare"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:e14e7b14-e594-4057-95a0-08de4a691f0c",
@@ -276,6 +215,6 @@
    "lignes": []
   }
  ],
- "octets": 145109977,
- "mis_a_jour": "2026-11-15T01:17:18+00:00"
+ "octets": 145058309,
+ "mis_a_jour": "2026-11-15T03:59:54+00:00"
 }
