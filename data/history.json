@@ -174,5 +174,13 @@
   "suppressions": 302,
   "passages": 68809,
   "mesures": 63851
+ },
+ {
+  "date": "2026-11-14",
+  "ponctualite_pct": 75.0,
+  "retard_moyen_min": 2.5,
+  "suppressions": 482,
+  "passages": 60043,
+  "mesures": 57421
  }
 ]

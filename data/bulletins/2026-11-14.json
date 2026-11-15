@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-14",
+ "genere_a": "2026-11-15T05:13:45+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 75,0 % à Lausanne, avec un creux en fin d'après-midi",
+  "paragraphes": [
+   "Le 14 novembre 2026, 75,0 % des passages ont été à l'heure (moins de 3 minutes de retard), avec un retard moyen de 2,5 minutes. 9 passages sur 10 ont moins de 5,7 minutes de retard. La veille, la ponctualité était de 77,5 % ; la moyenne des 7 jours précédents est de 71,8 %. Sur 60'043 passages prévus, 57'421 ont été mesurés et 482 supprimés (0,8 %).",
+   "Le métro affiche 99,8 % de passages à l'heure, le train 91,6 % et le bus 74,0 %. Parmi les lignes de bus, la 18 est la moins ponctuelle (46,2 % à l'heure), devant la 7 (49,7 %) et la N1 (56,8 %). La ligne 6 compte 150 passages supprimés (3,2 %).",
+   "Les heures les plus difficiles sont 16 h (52,1 % à l'heure, retard moyen de 4,3 minutes), 17 h (53,0 %) et 18 h (56,4 %). À 18 h, 59 passages ont été supprimés.",
+   "Le plus gros retard mesuré est de 89,9 minutes, sur la ligne 1 des TL à St-François, pour un passage prévu à 21 h 19."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 75,0 % in Lausanne, mit einem Tief am späten Nachmittag",
+  "paragraphes": [
+   "[\"Am 14. November 2026 waren 75,0 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 2,5 Minuten. 9 von 10 Fahrten hatten weniger als 5,7 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 77,5 %; der Durchschnitt der 7 vorangegangenen Tage beträgt 71,8 %. Von 60'043 geplanten Fahrten wurden 57'421 gemessen und 482 gestrichen (0,8 %).\", \"Die Metro erreichte 99,8 % pünktliche Fahrten, der Zug 91,6 % und der Bus 74,0 %. Unter den Buslinien ist die 18 am wenigsten pünktlich (46,2 % pünktlich), vor der 7 (49,7 %) und der N1 (56,8 %). Die Linie 6 verzeichnet 150 gestrichene Fahrten (3,2 %).\", \"Die schwierigsten Stunden sind 16 Uhr (52,1 % pünktlich, durchschnittliche Verspätung von 4,3 Minuten), 17 Uhr (53,0 %) und 18 Uhr (56,4 %). Um 18 Uhr wurden 59 Fahrten gestrichen.\", \"Die größte gemessene Verspätung beträgt 89,9 Minuten auf der Linie 1 der TL in St-François, für eine Fahrt, die für 21:19 Uhr geplant war.\"]}\n\n"
+  ]
+ },
+ "it": {
+  "titre": "Puntualità del 75,0% a Losanna, con un calo nel tardo pomeriggio",
+  "paragraphes": [
+   "Il 14 novembre 2026, il 75,0% dei passaggi è stato puntuale (meno di 3 minuti di ritardo), con un ritardo medio di 2,5 minuti. 9 passaggi su 10 hanno un ritardo inferiore a 5,7 minuti. Il giorno prima, la puntualità era del 77,5%; la media dei 7 giorni precedenti è del 71,8%. Su 60'043 passaggi previsti, 57'421 sono stati misurati e 482 soppressi (0,8%).",
+   "La metropolitana registra il 99,8% di passaggi puntuali, il treno il 91,6% e il bus il 74,0%. Tra le linee di bus, la 18 è la meno puntuale (46,2% puntuale), davanti alla 7 (49,7%) e alla N1 (56,8%). La linea 6 conta 150 passaggi soppressi (3,2%).",
+   "Le ore più difficili sono le ore 16 (52,1% puntuale, ritardo medio di 4,3 minuti), le ore 17 (53,0%) e le ore 18 (56,4%). Alle ore 18, 59 passaggi sono stati soppressi.",
+   "Il ritardo maggiore misurato è di 89,9 minuti, sulla linea 1 dei TL a St-François, per un passaggio previsto alle ore 21:19."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality of 75.0% in Lausanne, with a low point in late afternoon",
+  "paragraphes": [
+   "On 14 November 2026, 75.0% of trips were on time (less than 3 minutes late), with an average delay of 2.5 minutes. 9 trips out of 10 were less than 5.7 minutes late. The day before, punctuality was 77.5%; the average of the previous 7 days is 71.8%. Out of 60'043 scheduled trips, 57'421 were measured and 482 were cancelled (0.8%).",
+   "The metro shows 99.8% of trips on time, the train 91.6% and the bus 74.0%. Among bus lines, the 18 is the least punctual (46.2% on time), ahead of the 7 (49.7%) and the N1 (56.8%). Line 6 has 150 cancelled trips (3.2%).",
+   "The most difficult hours are 16:00 (52.1% on time, average delay of 4.3 minutes), 17:00 (53.0%) and 18:00 (56.4%). At 18:00, 59 trips were cancelled.",
+   "The longest measured delay is 89.9 minutes, on TL line 1 at St-François, for a trip scheduled at 21:19."
+  ]
+ },
+ "statut": "publie"
+}
