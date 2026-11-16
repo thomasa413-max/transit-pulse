@@ -1,20 +1,8 @@
 {
- "at": "2026-11-09T06:49:12+00:00",
+ "at": "2026-11-16T07:24:15+00:00",
  "pages": [
   {
    "path": "/de/bulletin/",
-   "scores": {
-    "performance": 0,
-    "accessibility": 1,
-    "best-practices": 0,
-    "seo": 1
-   },
-   "lcp": "–",
-   "cls": "–",
-   "tbt": "–"
-  },
-  {
-   "path": "/en/about/",
    "scores": {
     "performance": 1,
     "accessibility": 1,
@@ -26,6 +14,18 @@
    "tbt": "0 ms"
   },
   {
+   "path": "/en/about/",
+   "scores": {
+    "performance": 0,
+    "accessibility": 1,
+    "best-practices": 0,
+    "seo": 1
+   },
+   "lcp": "–",
+   "cls": "–",
+   "tbt": "–"
+  },
+  {
    "path": "/fr/",
    "scores": {
     "performance": 0.99,
@@ -33,21 +33,21 @@
     "best-practices": 1,
     "seo": 1
    },
-   "lcp": "1.7 s",
+   "lcp": "1.6 s",
    "cls": "0",
    "tbt": "0 ms"
   },
   {
    "path": "/fr/carte/",
    "scores": {
-    "performance": 0.9,
+    "performance": 0.91,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
    },
-   "lcp": "2.1 s",
+   "lcp": "2.3 s",
    "cls": "0",
-   "tbt": "360 ms"
+   "tbt": "330 ms"
   },
   {
    "path": "/it/agenti/",
@@ -63,9 +63,9 @@
   }
  ],
  "failures": [
-  "/de/bulletin/ performance 0 < 95 ()",
-  "/de/bulletin/ best-practices 0 < 95 ()",
-  "/fr/carte/ performance 90 < 95 ()"
+  "/en/about/ performance 0 < 95 ()",
+  "/en/about/ best-practices 0 < 95 ()",
+  "/fr/carte/ performance 91 < 95 ()"
  ],
  "note": "Objectifs : performance ≥ 95, accessibilité 100, bonnes pratiques ≥ 95, SEO 100 (mobile)."
 }
