@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1026,
- "actives_suisse": 378,
+ "situations_suisse": 1015,
+ "actives_suisse": 369,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -154,67 +154,8 @@
     "Vauderens"
    ],
    "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:100001:24f7745d-8311-422f-85f4-3e70731624b1",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-10-23T13:39:48.546+02:00",
-   "titre": "Restriction Sion - Brig",
-   "description": "Concerne: lignes EC, IR, IR 90, IR 95 et R 91",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Restriction Sion - Brig",
-     "description": "Concerne: lignes EC, IR, IR 90, IR 95 et R 91",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Einschränkung Sion - Brig",
-     "description": "Betrifft: Linien EC, IR, IR 90, IR 95 und R 91",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Limitazioni Sion - Brig",
-     "description": "Interessate: linee EC, IR, IR 90, IR 95 e R 91",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Limited service: Sion - Brig",
-     "description": "Affected: lines EC, IR, IR 90, IR 95 and R 91",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-13T22:40:00+01:00",
-     "fin": "2026-11-16T04:00:00+01:00"
-    },
-    {
-     "debut": "2026-11-20T22:40:00+01:00",
-     "fin": "2026-11-23T04:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Brig",
-    "Domodossola (I)",
-    "Gampel-Steg",
-    "Genève",
-    "Genève-Aéroport",
-    "Lausanne",
-    "Leuk",
-    "Martigny",
-    "Milano Centrale",
-    "Monthey",
-    "Raron",
-    "Salgesch"
-   ],
-   "lignes": []
   }
  ],
- "octets": 144797203,
- "mis_a_jour": "2026-11-16T01:33:08+00:00"
+ "octets": 143115868,
+ "mis_a_jour": "2026-11-16T04:29:40+00:00"
 }
