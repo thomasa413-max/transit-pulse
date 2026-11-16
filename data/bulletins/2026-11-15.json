@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-15",
+ "genere_a": "2026-11-16T05:43:29+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "82,9 % de passages à l'heure à Lausanne, au-dessus des jours précédents",
+  "paragraphes": [
+   "Le 15 novembre 2026, 82,9 % des passages ont été à l'heure (moins de 3 minutes de retard) à Lausanne, avec un retard moyen de 1,7 minutes. 9 passages sur 10 ont moins de 4,0 minutes de retard. La veille, la ponctualité était de 75,0 %, soit 7,9 points de moins. La moyenne des 7 jours précédents s'établit à 72,2 %, soit 10,7 points de moins.",
+   "Le métro affiche 100,0 % de passages à l'heure, le train 91,6 % et le bus 82,3 %. Parmi les lignes les moins ponctuelles sur la journée : le bus 18 des TL (53,5 %), le train S41 des SBB (63,4 %) et le bus 8 des TL (63,6 %). L'arrêt Pavement est le moins ponctuel, avec 49,3 % de passages à l'heure.",
+   "L'heure la moins ponctuelle est 17 h : 72,3 % de passages à l'heure, un retard moyen de 2,5 minutes et 56 passages supprimés sur 3'119 prévus.",
+   "Sur la journée entière, 214 passages ont été supprimés sur 54'733 prévus (0,4 %). Pour le train, la part de suppressions atteint 2,1 %. Le plus gros retard relevé est de 47,9 minutes, sur la ligne 7 des TL à l'arrêt Riponne-M.Béjart, pour un passage prévu à 14 h 23."
+  ]
+ },
+ "de": {
+  "titre": "82,9 % Pünktlichkeit in Lausanne, über den Vortagen",
+  "paragraphes": [
+   "Am 15. November 2026 kamen 82,9 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung) in Lausanne an, bei einer durchschnittlichen Verspätung von 1,7 Minuten. 9 von 10 Fahrten hatten weniger als 4,0 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 75,0 %, also 7,9 Prozentpunkte weniger. Der Durchschnitt der vorangegangenen 7 Tage beträgt 72,2 %, also 10,7 Prozentpunkte weniger.",
+   "Die Metro erreicht 100,0 % pünktliche Fahrten, der Zug 91,6 % und der Bus 82,3 %. Zu den im Tagesverlauf unpünktlichsten Linien gehören der Bus 18 der TL (53,5 %), der Zug S41 der SBB (63,4 %) und der Bus 8 der TL (63,6 %). Die Haltestelle Pavement ist die unpünktlichste, mit 49,3 % pünktlichen Fahrten.",
+   "Die unpünktlichste Stunde ist 17 Uhr: 72,3 % der Fahrten waren pünktlich, die durchschnittliche Verspätung betrug 2,5 Minuten, und 56 von 3'119 geplanten Fahrten wurden gestrichen.",
+   "Im gesamten Tagesverlauf wurden 214 von 54'733 geplanten Fahrten gestrichen (0,4 %). Beim Zug beträgt der Anteil der Streichungen 2,1 %. Die grösste erfasste Verspätung beträgt 47,9 Minuten, auf der Linie 7 der TL an der Haltestelle Riponne-M.Béjart, bei einer Fahrt, die für 14 Uhr 23 geplant war."
+  ]
+ },
+ "it": {
+  "titre": "82,9 % di corse puntuali a Losanna, sopra i giorni precedenti",
+  "paragraphes": [
+   "Il 15 novembre 2026, l'82,9 % delle corse è stato puntuale (con meno di 3 minuti di ritardo) a Losanna, con un ritardo medio di 1,7 minuti. 9 corse su 10 hanno un ritardo inferiore a 4,0 minuti. Il giorno precedente, la puntualità era del 75,0 %, ovvero 7,9 punti in meno. La media dei 7 giorni precedenti si attesta al 72,2 %, ovvero 10,7 punti in meno.",
+   "La metropolitana registra il 100,0 % di corse puntuali, il treno il 91,6 % e l'autobus l'82,3 %. Tra le linee meno puntuali della giornata: l'autobus 18 dei TL (53,5 %), il treno S41 delle SBB (63,4 %) e l'autobus 8 dei TL (63,6 %). La fermata Pavement è la meno puntuale, con il 49,3 % di corse puntuali.",
+   "L'ora meno puntuale è quella delle ore 17: il 72,3 % di corse puntuali, un ritardo medio di 2,5 minuti e 56 corse soppresse su 3'119 previste.",
+   "Nell'intera giornata, 214 corse sono state soppresse su 54'733 previste (0,4 %). Per il treno, la quota di soppressioni raggiunge il 2,1 %. Il ritardo più grande rilevato è di 47,9 minuti, sulla linea 7 dei TL alla fermata Riponne-M.Béjart, per una corsa prevista alle ore 14:23."
+  ]
+ },
+ "en": {
+  "titre": "82.9% of services on time in Lausanne, above previous days",
+  "paragraphes": [
+   "[\"On 15 November 2026, 82.9% of services were on time (less than 3 minutes late) in Lausanne, with an average delay of 1.7 minutes. 9 out of 10 services were less than 4.0 minutes late. The day before, punctuality stood at 75.0%, or 7.9 points lower. The average of the previous 7 days was 72.2%, or 10.7 points lower.\", \"The metro recorded 100.0% of services on time, the train 91.6% and the bus 82.3%. Among the least punctual lines over the day were TL bus 18 (53.5%), SBB train S41 (63.4%) and TL bus 8 (63.6%). The Pavement stop was the least punctual, with 49.3% of services on time.\", \"The least punctual hour was 17:00: 72.3% of services were on time, with an average delay of 2.5 minutes and 56 cancelled services out of 3'119 scheduled.\", \"Over the whole day, 214 services were cancelled out of 54'733 scheduled (0.4%). For trains, the share of cancellations reached 2.1%. The largest delay recorded was 47.9 minutes, on TL line 7 at the Riponne-M.Béjart stop, for a service scheduled at 14:23.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
