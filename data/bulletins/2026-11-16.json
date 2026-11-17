@@ -1,0 +1,42 @@
+{
+ "date": "2026-11-16",
+ "genere_a": "2026-11-17T05:17:37+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité de 75,1 % à Lausanne, creux à 17 h et 18 h",
+  "paragraphes": [
+   "Le 16 novembre 2026, 75,1 % des passages mesurés à Lausanne étaient à l'heure (moins de 3 minutes de retard). Le retard moyen s'élève à 2,3 minutes et 9 passages sur 10 ont moins de 5,5 minutes de retard. La veille, la ponctualité atteignait 82,9 %. La moyenne des 7 jours précédents est de 72,8 %, soit un écart de 2,3 points.",
+   "Sur 67'929 passages prévus, 63'083 ont été mesurés et 804 supprimés (1,2 %). Le bus affiche 74,6 % à l'heure, le train 83,3 % et le métro 87,3 %, avec 4,7 % de passages supprimés pour le métro. Côté lignes, la S41 (SBB) arrive au rang 1 des moins ponctuelles avec 46,3 %, suivie de la ligne 18 (TL) avec 57,9 %. La ligne 41 (TL) est la plus ponctuelle, à 97,8 %.",
+   "Le moment le plus difficile se situe à 17 h, avec 45,3 % de passages à l'heure et un retard moyen de 5,1 minutes, puis à 18 h avec 46,9 %. À 8 h, la proportion est de 63,9 %.",
+   "Le plus gros retard mesuré, 46,0 minutes, concerne la ligne 18 (TL) à Chauderon, pour un passage prévu à 16 h 24."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit von 75,1 % in Lausanne, Tiefpunkte um 17 Uhr und 18 Uhr",
+  "paragraphes": [
+   "Am 16. November 2026 waren 75,1 % der gemessenen Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 2,3 Minuten, und 9 von 10 Fahrten haben weniger als 5,5 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 82,9 %. Der Durchschnitt der 7 vorangegangenen Tage liegt bei 72,8 %, was einer Abweichung von 2,3 Punkten entspricht.",
+   "Von 67'929 geplanten Fahrten wurden 63'083 gemessen und 804 gestrichen (1,2 %). Der Bus liegt bei 74,6 % pünktlich, der Zug bei 83,3 % und die Metro bei 87,3 %, wobei bei der Metro 4,7 % der Fahrten gestrichen wurden. Bei den Linien liegt die S41 (SBB) mit 46,3 % auf Rang 1 der unpünktlichsten Linien, gefolgt von der Linie 18 (TL) mit 57,9 %. Die Linie 41 (TL) ist mit 97,8 % die pünktlichste.",
+   "Der schwierigste Moment liegt um 17 Uhr, mit 45,3 % pünktlichen Fahrten und einer durchschnittlichen Verspätung von 5,1 Minuten, danach um 18 Uhr mit 46,9 %. Um 8 Uhr beträgt der Anteil 63,9 %.",
+   "Die grösste gemessene Verspätung von 46,0 Minuten betrifft die Linie 18 (TL) in Chauderon, bei einer geplanten Abfahrt um 16:24 Uhr."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality at 75.1% in Lausanne, low point at 17:00 and 18:00",
+  "paragraphes": [
+   "On 16 November 2026, 75.1% of the measured departures in Lausanne were on time (less than 3 minutes late). The average delay is 2.3 minutes, and 9 out of 10 departures are less than 5.5 minutes late. The day before, punctuality reached 82.9%. The average of the previous 7 days is 72.8%, a difference of 2.3 points.",
+   "Out of 67'929 scheduled departures, 63'083 were measured and 804 cancelled (1.2%). Buses show 74.6% on time, trains 83.3% and metro 87.3%, with 4.7% of metro departures cancelled. By line, the S41 (SBB) ranks 1st for least punctuality with 46.3%, followed by line 18 (TL) with 57.9%. Line 41 (TL) is the most punctual, at 97.8%.",
+   "The most difficult time is 17:00, with 45.3% of departures on time and an average delay of 5.1 minutes, then 18:00 with 46.9%. At 08:00, the proportion is 63.9%.",
+   "The largest measured delay, 46.0 minutes, concerns line 18 (TL) at Chauderon, for a departure scheduled at 16:24."
+  ]
+ },
+ "statut": "publie"
+}
