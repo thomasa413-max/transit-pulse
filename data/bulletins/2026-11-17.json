@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-17",
+ "genere_a": "2026-11-18T05:20:21+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 60,8 % des passages à l'heure, en nette baisse",
+  "paragraphes": [
+   "Le 17 novembre 2026, 60,8 % des passages étaient à l'heure (moins de 3 minutes de retard), pour un retard moyen de 3,8 minutes. 9 passages sur 10 ont moins de 10,3 minutes de retard. La veille, le taux était de 75,1 %, et la moyenne des 7 jours précédents de 72,5 %.",
+   "Le train affiche 85,0 % de passages à l'heure et le métro 77,1 %, contre 59,9 % pour le bus (retard moyen de 3,9 minutes). Parmi les lignes les moins ponctuelles figurent les lignes TL 18 (35,3 %), 21 (38,2 %) et 1 (42,4 %). La ligne TL 41 est la plus ponctuelle, avec 96,2 %.",
+   "L'heure la plus difficile est 17 h : 28,9 % de passages à l'heure et 9,2 minutes de retard moyen. Viennent ensuite 8 h (34,6 %) et 18 h (35,8 %).",
+   "Sur 67'730 passages prévus, 1'114 ont été supprimés (1,6 %). Le plus gros retard relevé est de 86,5 minutes, sur la ligne TL 8 à l'arrêt Lausanne, Alpes, pour un passage prévu à 10 h 52."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 60,8 % der Fahrten pünktlich, deutlicher Rückgang",
+  "paragraphes": [
+   "Am 17. November 2026 waren 60,8 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 3,8 Minuten. 9 von 10 Fahrten hatten weniger als 10,3 Minuten Verspätung. Am Vortag lag der Anteil bei 75,1 %, und der Durchschnitt der 7 vorangehenden Tage betrug 72,5 %.",
+   "Der Zug erreichte 85,0 % pünktliche Fahrten und das Metro 77,1 %, gegenüber 59,9 % beim Bus (durchschnittliche Verspätung 3,9 Minuten). Zu den am wenigsten pünktlichen Linien gehören die Linien TL 18 (35,3 %), 21 (38,2 %) und 1 (42,4 %). Die Linie TL 41 ist am pünktlichsten, mit 96,2 %.",
+   "Die schwierigste Stunde ist 17 Uhr: 28,9 % pünktliche Fahrten und 9,2 Minuten durchschnittliche Verspätung. Danach folgen 8 Uhr (34,6 %) und 18 Uhr (35,8 %).",
+   "Von 67'730 geplanten Fahrten wurden 1'114 gestrichen (1,6 %). Die größte gemessene Verspätung beträgt 86,5 Minuten, auf der Linie TL 8 an der Haltestelle Lausanne, Alpes, für eine Fahrt, die um 10:52 Uhr geplant war."
+  ]
+ },
+ "it": {
+  "titre": "Losanna: 60,8 % dei passaggi in orario, in netto calo",
+  "paragraphes": [
+   "Il 17 novembre 2026, il 60,8 % dei passaggi era in orario (con meno di 3 minuti di ritardo), con un ritardo medio di 3,8 minuti. 9 passaggi su 10 hanno meno di 10,3 minuti di ritardo. Il giorno precedente la quota era del 75,1 %, mentre la media dei 7 giorni precedenti era del 72,5 %.",
+   "Il treno registra l'85,0 % di passaggi in orario e il metro il 77,1 %, contro il 59,9 % del bus (ritardo medio di 3,9 minuti). Tra le linee meno puntuali figurano le linee TL 18 (35,3 %), 21 (38,2 %) e 1 (42,4 %). La linea TL 41 è la più puntuale, con il 96,2 %.",
+   "L'ora più difficile è ore 17: il 28,9 % di passaggi in orario e un ritardo medio di 9,2 minuti. Seguono ore 8 (34,6 %) e ore 18 (35,8 %).",
+   "Su 67'730 passaggi previsti, 1'114 sono stati soppressi (1,6 %). Il ritardo più grande rilevato è di 86,5 minuti, sulla linea TL 8 alla fermata Lausanne, Alpes, per un passaggio previsto alle ore 10:52."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 60.8% of departures on time, a marked decline",
+  "paragraphes": [
+   "[\"On 17 November 2026, 60.8% of departures were on time (less than 3 minutes late), with an average delay of 3.8 minutes. 9 out of 10 departures were less than 10.3 minutes late. The day before, the rate was 75.1%, and the average for the previous 7 days was 72.5%.\", \"The train recorded 85.0% of departures on time and the metro 77.1%, compared with 59.9% for the bus (average delay of 3.9 minutes). Among the least punctual lines were TL 18 (35.3%), 21 (38.2%) and 1 (42.4%). TL 41 is the most punctual line, with 96.2%.\", \"The most difficult hour is 17:00: 28.9% of departures on time and an average delay of 9.2 minutes. Next come 08:00 (34.6%) and 18:00 (35.8%).\", \"Out of 67'730 scheduled departures, 1'114 were cancelled (1.6%). The largest delay recorded was 86.5 minutes, on TL line 8 at the Lausanne, Alpes stop, for a departure scheduled at 10:52.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
