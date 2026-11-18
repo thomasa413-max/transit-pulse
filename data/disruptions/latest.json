@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1115,
- "actives_suisse": 398,
+ "situations_suisse": 1113,
+ "actives_suisse": 375,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,51 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:100001:b3520797-1c7d-4b7f-93a7-2408765fae63",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "undefinedAlertCause",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-11-17T04:33:00.352+01:00",
-   "titre": "Information",
-   "description": "Comme alternative, nous recommandons aux voyageurs à partir de Givisiez à Fribourg/Freiburg d'utiliser le train S20 14216 en direction de Fribourg/Freiburg, départ à 08:07 heures.",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Information",
-     "description": "Comme alternative, nous recommandons aux voyageurs à partir de Givisiez à Fribourg/Freiburg d'utiliser le train S20 14216 en direction de Fribourg/Freiburg, départ à 08:07 heures.",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Information",
-     "description": "Reisenden ab Givisiez nach Fribourg/Freiburg empfehlen wir als Alternative, den Zug S20 14216 Richtung Fribourg/Freiburg um 08:07 Uhr zu benützen.",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Informazione",
-     "description": "In alternativa, si consiglia ai viaggiatori da Givisiez per Fribourg/Freiburg di utilizzare il treno S20 14216 nella direzione di Fribourg/Freiburg alle ore 08:07.",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Information",
-     "description": "Passengers travelling from Givisiez to Fribourg/Freiburg are advised to use the train S20 14216 to Fribourg/Freiburg at 08:07.",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-17T04:31:36.226+01:00",
-     "fin": "2026-11-18T03:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Lausanne",
-    "Yverdon-les-Bains"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -146,6 +101,6 @@
    "lignes": []
   }
  ],
- "octets": 144836267,
- "mis_a_jour": "2026-11-17T22:52:41+00:00"
+ "octets": 143733320,
+ "mis_a_jour": "2026-11-18T07:27:46+00:00"
 }
