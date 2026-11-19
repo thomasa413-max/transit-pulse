@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-18",
+ "genere_a": "2026-11-19T13:26:00+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 72,4 % des passages à l'heure, en nette hausse sur la veille",
+  "paragraphes": [
+   "Le 18 novembre 2026, 72,4 % des passages ont été à l'heure (moins de 3 minutes de retard) à Lausanne, pour un retard moyen de 2,6 minutes. 9 passages sur 10 ont moins de 6,0 minutes de retard. La veille, la ponctualité était de 60,8 %, soit 11,6 points de moins. La moyenne des 7 jours précédents s'établit à 71,6 %.",
+   "Le train affiche 88,7 % de passages à l'heure et le métro 83,1 %, contre 71,8 % pour le bus. Parmi les lignes les moins ponctuelles, la ligne 21 des TL est à 44,8 % (retard moyen de 5,7 minutes), suivie de la ligne 1 à 54,0 % et de la ligne 7 à 57,8 %. Les plus ponctuelles sont la ligne RR20 du LEB (96,9 %) et la ligne 24 des TL (95,7 %).",
+   "Le moment le plus difficile se situe en fin d'après-midi : à 17 h, 47,7 % des passages étaient à l'heure, avec un retard moyen de 5,5 minutes. À 16 h, la part est de 54,7 %, et à 18 h de 57,6 %.",
+   "Sur la journée, 1'003 passages ont été supprimés sur 67'991 prévus (1,5 %). Le plus gros retard relevé est de 65,2 minutes, sur la ligne 19 des TL à Chauderon, pour un passage prévu à 10 h 48."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 72,4 % der Fahrten pünktlich, deutlicher Anstieg gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 18. November 2026 waren 72,4 % der Fahrten in Lausanne pünktlich (weniger als 3 Minuten Verspätung), bei einer durchschnittlichen Verspätung von 2,6 Minuten. 9 von 10 Fahrten hatten weniger als 6,0 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 60,8 %, also 11,6 Prozentpunkte tiefer. Der Durchschnitt der vorangegangenen 7 Tage beträgt 71,6 %.",
+   "Der Zug erreicht 88,7 % pünktliche Fahrten und die Metro 83,1 %, gegenüber 71,8 % beim Bus. Zu den unpünktlichsten Linien gehört die Linie 21 der TL mit 44,8 % (durchschnittliche Verspätung von 5,7 Minuten), gefolgt von der Linie 1 mit 54,0 % und der Linie 7 mit 57,8 %. Am pünktlichsten sind die Linie RR20 des LEB (96,9 %) und die Linie 24 der TL (95,7 %).",
+   "Der schwierigste Moment liegt am späten Nachmittag: Um 17 Uhr waren 47,7 % der Fahrten pünktlich, bei einer durchschnittlichen Verspätung von 5,5 Minuten. Um 16 Uhr betrug der Anteil 54,7 %, um 18 Uhr 57,6 %.",
+   "Im Laufe des Tages wurden 1'003 von 67'991 geplanten Fahrten gestrichen (1,5 %). Die grösste gemessene Verspätung betrug 65,2 Minuten auf der Linie 19 der TL in Chauderon, bei einer Fahrt, die für 10:48 Uhr geplant war."
+  ]
+ },
+ "it": {
+  "titre": "Lausanne: 72,4 % dei passaggi in orario, in netto aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 18 novembre 2026, il 72,4 % dei passaggi è stato in orario (con meno di 3 minuti di ritardo) a Losanna, con un ritardo medio di 2,6 minuti. 9 passaggi su 10 hanno un ritardo inferiore a 6,0 minuti. Il giorno precedente, la puntualità era del 60,8 %, cioè 11,6 punti in meno. La media dei 7 giorni precedenti si attesta al 71,6 %.",
+   "Il treno registra l'88,7 % di passaggi in orario e il metro l'83,1 %, contro il 71,8 % del bus. Tra le linee meno puntuali, la linea 21 dei TL è al 44,8 % (ritardo medio di 5,7 minuti), seguita dalla linea 1 con il 54,0 % e dalla linea 7 con il 57,8 %. Le più puntuali sono la linea RR20 del LEB (96,9 %) e la linea 24 dei TL (95,7 %).",
+   "Il momento più critico si colloca nel tardo pomeriggio: alle ore 17, il 47,7 % dei passaggi era in orario, con un ritardo medio di 5,5 minuti. Alle ore 16 la quota è del 54,7 %, e alle ore 18 del 57,6 %.",
+   "Nell'arco della giornata, 1'003 passaggi sono stati soppressi su 67'991 previsti (1,5 %). Il ritardo maggiore rilevato è di 65,2 minuti, sulla linea 19 dei TL a Chauderon, per un passaggio previsto alle ore 10:48."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 72.4% of departures on time, a clear rise from the previous day",
+  "paragraphes": [
+   "On 18 November 2026, 72.4% of departures were on time (less than 3 minutes late) in Lausanne, with an average delay of 2.6 minutes. 9 departures out of 10 were less than 6.0 minutes late. The day before, punctuality stood at 60.8%, that is 11.6 points less. The average for the previous 7 days is 71.6%.",
+   "Trains recorded 88.7% of departures on time and the metro 83.1%, compared with 71.8% for the bus. Among the least punctual lines, TL line 21 stands at 44.8% (average delay of 5.7 minutes), followed by line 1 at 54.0% and line 7 at 57.8%. The most punctual lines are LEB line RR20 (96.9%) and TL line 24 (95.7%).",
+   "The most difficult time is late afternoon: at 17:00, 47.7% of departures were on time, with an average delay of 5.5 minutes. At 16:00, the share is 54.7%, and at 18:00 it is 57.6%.",
+   "Over the day, 1'003 departures were cancelled out of 67'991 scheduled (1.5%). The largest delay recorded is 65.2 minutes, on TL line 19 at Chauderon, for a departure scheduled at 10:48."
+  ]
+ },
+ "statut": "publie"
+}
