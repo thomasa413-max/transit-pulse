@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-13T05:17:24+00:00",
+ "maj": "2026-11-20T13:05:57+00:00",
  "source": "actual-date-swiss-service-point.csv",
  "canton": "VD",
  "arrets": {
@@ -10707,12 +10707,6 @@
    "Ecublens VD, Pontet",
    "Ecublens (VD)"
   ],
-  "8588872": [
-   6.541673,
-   46.526151,
-   "Denges, Les Oches",
-   "Denges"
-  ],
   "8588841": [
    6.579356,
    46.546811,
@@ -16646,6 +16640,12 @@
    46.876703,
    "Avenches, Milavy",
    "Avenches"
+  ],
+  "8588872": [
+   6.54161,
+   46.526762,
+   "Denges, Les Oches",
+   "Denges"
   ]
  }
 }

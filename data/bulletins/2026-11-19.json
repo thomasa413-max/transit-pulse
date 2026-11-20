@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-19",
+ "genere_a": "2026-11-20T13:06:20+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité en recul à Lausanne : 64,7 % des passages à l'heure",
+  "paragraphes": [
+   "Le 19 novembre 2026, 64,7 % des passages mesurés sont à l'heure (moins de 3 minutes de retard). Le retard moyen est de 3,6 minutes et 9 passages sur 10 ont moins de 8,6 minutes de retard. La veille, 72,4 % des passages étaient à l'heure ; la moyenne des 7 jours précédents est de 71,9 %. Sur 67'840 passages prévus, 556 ont été supprimés (0,8 %).",
+   "Le train affiche 85,4 % de passages à l'heure, contre 64,3 % pour le bus et 65,0 % pour le métro, dont le retard moyen atteint 6,2 minutes. La ligne TL 21 est la moins ponctuelle sur la journée entière (31,3 % à l'heure), devant la ligne 1 (46,1 %) et la ligne 9 (48,3 %). La ligne LEB RR20 est la plus ponctuelle (99,2 %).",
+   "L'heure la plus difficile est 18 h : 33,1 % des passages à l'heure et un retard moyen de 9,7 minutes. Suivent 17 h (37,0 %) et 8 h (47,6 %).",
+   "Les plus gros retards sont de 86,9 minutes pour la ligne 8 à Lausanne, Forêt (prévu à 7 h 37), 86,1 minutes à Lausanne, Motte (7 h 39), et 82,8 minutes pour la ligne 21 à Lausanne, gare (12 h 54)."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit in Lausanne rückläufig: 64,7 % der Fahrten pünktlich",
+  "paragraphes": [
+   "Am 19. November 2026 sind 64,7 % der gemessenen Fahrten pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung beträgt 3,6 Minuten, und 9 von 10 Fahrten haben weniger als 8,6 Minuten Verspätung. Am Vortag waren 72,4 % der Fahrten pünktlich; der Durchschnitt der 7 vorangegangenen Tage liegt bei 71,9 %. Von 67'840 geplanten Fahrten wurden 556 gestrichen (0,8 %).",
+   "Der Zug erreicht 85,4 % pünktliche Fahrten, verglichen mit 64,3 % beim Bus und 65,0 % bei der Metro, deren durchschnittliche Verspätung 6,2 Minuten erreicht. Die Linie TL 21 ist über den ganzen Tag gesehen am wenigsten pünktlich (31,3 % pünktlich), vor der Linie 1 (46,1 %) und der Linie 9 (48,3 %). Die Linie LEB RR20 ist am pünktlichsten (99,2 %).",
+   "Die schwierigste Stunde ist 18 Uhr: 33,1 % der Fahrten sind pünktlich, und die durchschnittliche Verspätung beträgt 9,7 Minuten. Es folgen 17 Uhr (37,0 %) und 8 Uhr (47,6 %).",
+   "Die grössten Verspätungen betragen 86,9 Minuten für die Linie 8 in Lausanne, Forêt (planmässig um 7 Uhr 37), 86,1 Minuten in Lausanne, Motte (7 Uhr 39) und 82,8 Minuten für die Linie 21 in Lausanne, gare (12 Uhr 54)."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità in calo a Losanna: il 64,7% dei passaggi è in orario",
+  "paragraphes": [
+   "[\"Il 19 novembre 2026, il 64,7% dei passaggi misurati è in orario (meno di 3 minuti di ritardo). Il ritardo medio è di 3,6 minuti e 9 passaggi su 10 hanno meno di 8,6 minuti di ritardo. Il giorno prima, il 72,4% dei passaggi era in orario; la media dei 7 giorni precedenti è del 71,9%. Su 67'840 passaggi previsti, 556 sono stati soppressi (0,8%).\", \"Il treno registra l'85,4% di passaggi in orario, contro il 64,3% per il bus e il 65,0% per il metro, il cui ritardo medio raggiunge 6,2 minuti. La linea TL 21 è la meno puntuale sull'intera giornata (31,3% in orario), davanti alla linea 1 (46,1%) e alla linea 9 (48,3%). La linea LEB RR20 è la più puntuale (99,2%).\", \"L'ora più difficile è quella delle ore 18: il 33,1% dei passaggi è in orario e il ritardo medio è di 9,7 minuti. Seguono le ore 17 (37,0%) e le ore 8 (47,6%).\", \"I ritardi più consistenti sono di 86,9 minuti per la linea 8 a Losanna, Forêt (previsto alle ore 7:37), 86,1 minuti a Losanna, Motte (ore 7:39) e 82,8 minuti per la linea 21 a Losanna, stazione (ore 12:54).\"]}"
+  ]
+ },
+ "en": {
+  "titre": "Punctuality declines in Lausanne: 64.7% of trips on time",
+  "paragraphes": [
+   "On 19 November 2026, 64.7% of measured trips were on time (less than 3 minutes late). The average delay was 3.6 minutes, and 9 trips out of 10 were less than 8.6 minutes late. The day before, 72.4% of trips were on time; the average for the previous 7 days was 71.9%. Out of 67'840 scheduled trips, 556 were cancelled (0.8%).",
+   "The train recorded 85.4% of trips on time, compared with 64.3% for the bus and 65.0% for the metro, whose average delay reached 6.2 minutes. Line TL 21 was the least punctual over the full day (31.3% on time), ahead of line 1 (46.1%) and line 9 (48.3%). Line LEB RR20 was the most punctual (99.2%).",
+   "The most difficult hour was 18:00: 33.1% of trips were on time, with an average delay of 9.7 minutes. It was followed by 17:00 (37.0%) and 08:00 (47.6%).",
+   "The largest delays were 86.9 minutes for line 8 at Lausanne, Forêt (scheduled for 07:37), 86.1 minutes at Lausanne, Motte (07:39), and 82.8 minutes for line 21 at Lausanne, gare (12:54)."
+  ]
+ },
+ "statut": "publie"
+}
