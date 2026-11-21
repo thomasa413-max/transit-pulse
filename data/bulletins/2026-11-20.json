@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-20",
+ "genere_a": "2026-11-21T12:47:06+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 2,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 69,3 % des passages à l'heure, en hausse sur la veille",
+  "paragraphes": [
+   "Le 20 novembre 2026, 69,3 % des passages mesurés à Lausanne étaient à l'heure, c'est-à-dire avec moins de 3 minutes de retard. Le retard moyen est de 2,8 minutes, et 9 passages sur 10 ont moins de 6,8 minutes de retard. La veille, le taux était de 64,7 %, soit 4,6 points de moins. La moyenne des 7 jours précédents est de 72,6 %.",
+   "Par mode, le métro affiche 92,6 % de passages à l'heure et le train 87,0 %, contre 68,3 % pour le bus. Parmi les lignes de bus TL, les moins ponctuelles sont la N1 (22,6 % à l'heure), la 21 (38,5 %) et la 1 (55,2 %).",
+   "L'heure la plus difficile est 19 h : 47,0 % des passages à l'heure, un retard moyen de 5,2 minutes et 4,9 % de passages supprimés.",
+   "Sur la journée entière, 797 passages ont été supprimés, soit 1,2 % des passages prévus. Le plus gros retard relevé est de 54,2 minutes, sur la ligne 16 à l'arrêt Hermitage, pour un passage prévu à 21 h 12."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 69,3 % der Fahrten pünktlich, Anstieg gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 20. November 2026 waren 69,3 % der gemessenen Fahrten in Lausanne pünktlich, das heisst mit weniger als 3 Minuten Verspätung. Die durchschnittliche Verspätung beträgt 2,8 Minuten, und 9 von 10 Fahrten hatten weniger als 6,8 Minuten Verspätung. Am Vortag lag der Anteil bei 64,7 %, also 4,6 Prozentpunkte weniger. Der Durchschnitt der 7 vorangehenden Tage beträgt 72,6 %.",
+   "Nach Verkehrsmittel verzeichnet die Metro 92,6 % pünktliche Fahrten und die Bahn 87,0 %, gegenüber 68,3 % beim Bus. Unter den Buslinien der tl sind die N1 (22,6 % pünktlich), die 21 (38,5 %) und die 1 (55,2 %) am wenigsten pünktlich.",
+   "Die schwierigste Stunde ist 19 Uhr: 47,0 % der Fahrten waren pünktlich, mit einer durchschnittlichen Verspätung von 5,2 Minuten und 4,9 % gestrichenen Fahrten.",
+   "Über den ganzen Tag wurden 797 Fahrten gestrichen, das sind 1,2 % der geplanten Fahrten. Die grösste erfasste Verspätung beträgt 54,2 Minuten, auf der Linie 16 an der Haltestelle Hermitage, bei einer geplanten Abfahrt um 21 Uhr 12."
+  ]
+ },
+ "it": {
+  "titre": "Losanna: 69,3% delle corse in orario, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "[\"Il 20 novembre 2026, il 69,3% delle corse rilevate a Losanna era in orario, ossia con meno di 3 minuti di ritardo. Il ritardo medio è di 2,8 minuti e 9 corse su 10 hanno meno di 6,8 minuti di ritardo. Il giorno precedente il tasso era del 64,7%, cioè 4,6 punti in meno. La media dei 7 giorni precedenti è del 72,6%.\", \"Per modalità di trasporto, la metropolitana registra il 92,6% di corse in orario e il treno l'87,0%, contro il 68,3% del bus. Tra le linee di bus TL, le meno puntuali sono la N1 (22,6% in orario), la 21 (38,5%) e la 1 (55,2%).\", \"L'ora più critica è ore 19: il 47,0% delle corse è in orario, con un ritardo medio di 5,2 minuti e il 4,9% di corse soppresse.\", \"Nell'arco dell'intera giornata, 797 corse sono state soppresse, pari all'1,2% delle corse previste. Il ritardo più grave rilevato è di 54,2 minuti, sulla linea 16 alla fermata Hermitage, per una corsa prevista alle ore 21:12.\"]}"
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 69.3% of services on time, up from the previous day",
+  "paragraphes": [
+   "On 20 November 2026, 69.3% of measured services in Lausanne were on time, meaning with less than 3 minutes of delay. The average delay is 2.8 minutes, and 9 out of 10 services have less than 6.8 minutes of delay. The day before, the rate was 64.7%, i.e. 4.6 points lower. The average of the previous 7 days is 72.6%.",
+   "By mode, the metro shows 92.6% of services on time and the train 87.0%, compared with 68.3% for the bus. Among the TL bus lines, the least punctual are the N1 (22.6% on time), the 21 (38.5%) and the 1 (55.2%).",
+   "The most difficult hour is 19:00: 47.0% of services on time, an average delay of 5.2 minutes and 4.9% of services cancelled.",
+   "Over the whole day, 797 services were cancelled, i.e. 1.2% of the planned services. The largest delay recorded is 54.2 minutes, on line 16 at the Hermitage stop, for a service planned at 21:12."
+  ]
+ },
+ "statut": "publie"
+}
