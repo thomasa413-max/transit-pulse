@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1150,
- "actives_suisse": 360,
+ "situations_suisse": 1148,
+ "actives_suisse": 367,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,6 +47,116 @@
    "lignes": [
     "18"
    ]
+  },
+  {
+   "id": "ch:1:sstid:100001:87fac5cd-723e-4403-9237-b78fe7192078",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-08-18T10:17:23.692+02:00",
+   "titre": "Restriction Lausanne - Genève",
+   "description": "Concerne: ligne RE 33",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Lausanne - Genève",
+     "description": "Concerne: ligne RE 33",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Lausanne - Genève",
+     "description": "Betrifft: Linie RE 33",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Lausanne - Genève",
+     "description": "Interessata: linea RE 33",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Lausanne - Genève",
+     "description": "Affected: line RE 33",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-21T06:00:00+01:00",
+     "fin": "2026-11-22T23:59:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Annemasse",
+    "Chambésy",
+    "Coppet",
+    "Creux-de-Genthod",
+    "Etoy",
+    "Genthod-Bellevue",
+    "Genève",
+    "Genève-Aéroport",
+    "Genève-Sécheron",
+    "Gland",
+    "Lausanne"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:6097c69f-2718-4ce5-9cd9-f76fd451d9be",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-08-18T08:46:37.88+02:00",
+   "titre": "Restriction Lausanne - Genève-Aéroport",
+   "description": "Concerne: lignes IR, IR 90 et IR 95",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Lausanne - Genève-Aéroport",
+     "description": "Concerne: lignes IR, IR 90 et IR 95",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Lausanne - Genève-Aéroport",
+     "description": "Betrifft: Linien IR, IR 90 und IR 95",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Lausanne - Genève-Aéroport",
+     "description": "Interessate: linee IR, IR 90 e IR 95",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Lausanne - Genève-Aéroport",
+     "description": "Affected: lines IR, IR 90 and IR 95",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-21T06:00:00+01:00",
+     "fin": "2026-11-22T23:59:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Brig",
+    "Chambésy",
+    "Coppet",
+    "Creux-de-Genthod",
+    "Etoy",
+    "Genthod-Bellevue",
+    "Genève",
+    "Genève-Aéroport",
+    "Genève-Sécheron",
+    "Gland",
+    "Lausanne"
+   ],
+   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -97,6 +207,58 @@
     "Palézieux",
     "Romont FR",
     "Vauderens"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:08dab293-c949-4af4-b369-fe10209a2335",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-08-18T10:45:24.191+02:00",
+   "titre": "Restriction Renens VD - Allaman",
+   "description": "",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-21T06:00:00+01:00",
+     "fin": "2026-11-22T23:59:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Etoy",
+    "Lausanne",
+    "Lonay-Préverenges",
+    "Luzern",
+    "Morges",
+    "Morges-St-Jean",
+    "Renens VD",
+    "St-Prex"
    ],
    "lignes": []
   },
@@ -160,6 +322,6 @@
    "lignes": []
   }
  ],
- "octets": 144161771,
- "mis_a_jour": "2026-11-21T02:13:28+00:00"
+ "octets": 144149141,
+ "mis_a_jour": "2026-11-21T10:59:48+00:00"
 }
