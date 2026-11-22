@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1141,
- "actives_suisse": 384,
+ "situations_suisse": 1116,
+ "actives_suisse": 371,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,6 +47,120 @@
    "lignes": [
     "18"
    ]
+  },
+  {
+   "id": "ch:1:sstid:100001:33110dd5-2154-4396-90b6-84e8ca145f40",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-04-27T09:22:16.562+02:00",
+   "titre": "Interruption Eclépens - Yverdon-les-Bains",
+   "description": "",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Interruption Eclépens - Yverdon-les-Bains",
+     "description": "",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Unterbruch Eclépens - Yverdon-les-Bains",
+     "description": "",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Interruzione Eclépens - Yverdon-les-Bains",
+     "description": "",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Interrupted service: Eclépens - Yverdon-les-Bains",
+     "description": "",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-08T00:50:00+01:00",
+     "fin": "2026-11-08T04:50:00+01:00"
+    },
+    {
+     "debut": "2026-11-15T00:50:00+01:00",
+     "fin": "2026-11-15T04:50:00+01:00"
+    },
+    {
+     "debut": "2026-11-22T00:50:00+01:00",
+     "fin": "2026-11-22T04:50:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Bavois",
+    "Chavornay",
+    "Eclépens",
+    "Eclépens, gare",
+    "Ependes VD",
+    "Essert-Pittet",
+    "Grandson, gare",
+    "Lausanne, gare",
+    "Yverdon-les-Bains",
+    "Yverdon-les-Bains, gare"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:4b1a1ded-aaca-4ff0-9922-9b51e5f0469b",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-08-18T10:27:48.37+02:00",
+   "titre": "Interruption Renens VD - Allaman",
+   "description": "",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Interruption Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Unterbruch Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Interruzione Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Interrupted service: Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-22T00:00:00+01:00",
+     "fin": "2026-11-22T04:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Etoy",
+    "Genève-Aéroport",
+    "Lausanne",
+    "Lonay-Préverenges",
+    "Morges",
+    "Morges-St-Jean",
+    "Renens VD",
+    "St-Prex",
+    "Vevey"
+   ],
+   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:87fac5cd-723e-4403-9237-b78fe7192078",
@@ -263,6 +377,58 @@
    "lignes": []
   },
   {
+   "id": "ch:1:sstid:100001:fc0b5400-8d5e-4272-85a4-9b2f94649481",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-08-18T10:53:35.559+02:00",
+   "titre": "Restriction Renens VD - Allaman",
+   "description": "",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Renens VD - Allaman",
+     "description": "",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-22T00:00:00+01:00",
+     "fin": "2026-11-22T04:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Etoy",
+    "Lausanne",
+    "Lonay-Préverenges",
+    "Morges",
+    "Morges-St-Jean",
+    "Renens VD",
+    "Sion",
+    "St-Prex"
+   ],
+   "lignes": []
+  },
+  {
    "id": "ch:1:sstid:100001:24f7745d-8311-422f-85f4-3e70731624b1",
    "progres": "published",
    "planifie": true,
@@ -322,6 +488,6 @@
    "lignes": []
   }
  ],
- "octets": 144085925,
- "mis_a_jour": "2026-11-21T19:14:53+00:00"
+ "octets": 143746688,
+ "mis_a_jour": "2026-11-22T01:18:18+00:00"
 }
