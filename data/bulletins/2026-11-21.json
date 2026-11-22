@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-21",
+ "genere_a": "2026-11-22T12:40:38+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "73,6 % de passages à l'heure à Lausanne, la ligne 18 de TL en queue de classement",
+  "paragraphes": [
+   "Le 21 novembre 2026, 73,6 % des passages mesurés à Lausanne sont passés à l'heure (moins de 3 minutes de retard). Le retard moyen est de 2,6 minutes et 9 passages sur 10 ont moins de 6,2 minutes de retard. La veille, la ponctualité était de 69,3 %. La moyenne des 7 jours précédents est de 71,5 %.",
+   "Le métro affiche 98,6 % à l'heure et le train 94,7 %, contre 72,4 % pour le bus. Les lignes les plus ponctuelles sont la RR20 du LEB (99,2 %), la 41 de TL (99,1 %) et le m1 (98,6 %). Les moins ponctuelles sont la 18 de TL (34,7 % à l'heure, retard moyen de 6,9 minutes), la N5 (37,3 %) et la N1 (50,3 %).",
+   "Le moment le plus difficile se situe en fin d'après-midi : 42,7 % à l'heure à 17 h, 43,9 % à 18 h et 52,5 % à 16 h. À 17 h, le retard moyen atteint 6,0 minutes.",
+   "Sur la journée entière, 484 passages ont été supprimés sur 60'084 prévus, soit 0,8 %. Le plus gros retard concerne la ligne 24 de TL : 61,8 minutes à l'arrêt Pêcheurs, pour un passage prévu à 20 h 21."
+  ]
+ },
+ "de": {
+  "titre": "73.6 % der Fahrten in Lausanne pünktlich, Linie 18 von TL auf dem letzten Platz",
+  "paragraphes": [
+   "Am 21. November 2026 kamen 73.6 % der gemessenen Fahrten in Lausanne pünktlich an (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung betrug 2.6 Minuten, und 9 von 10 Fahrten hatten weniger als 6.2 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 69.3 %. Der Durchschnitt der 7 vorangegangenen Tage beträgt 71.5 %.",
+   "Die Metro erreichte 98.6 % Pünktlichkeit und der Zug 94.7 %, gegenüber 72.4 % beim Bus. Die pünktlichsten Linien sind die RR20 der LEB (99.2 %), die 41 von TL (99.1 %) und die m1 (98.6 %). Die unpünktlichsten sind die 18 von TL (34.7 % pünktlich, durchschnittliche Verspätung von 6.9 Minuten), die N5 (37.3 %) und die N1 (50.3 %).",
+   "Am schwierigsten ist der späte Nachmittag: 42.7 % pünktlich um 17 Uhr, 43.9 % um 18 Uhr und 52.5 % um 16 Uhr. Um 17 Uhr erreicht die durchschnittliche Verspätung 6.0 Minuten.",
+   "Im gesamten Tagesverlauf wurden 484 von 60'084 geplanten Fahrten gestrichen, das entspricht 0.8 %. Die grösste Verspätung betrifft die Linie 24 von TL: 61.8 Minuten an der Haltestelle Pêcheurs, bei einer geplanten Abfahrt um 20:21 Uhr."
+  ]
+ },
+ "it": {
+  "titre": "73.6% dei passaggi in orario a Losanna, la linea 18 di TL in coda alla classifica",
+  "paragraphes": [
+   "[\"Il 21 novembre 2026, il 73,6 % dei passaggi misurati a Losanna è avvenuto in orario (meno di 3 minuti di ritardo). Il ritardo medio è di 2,6 minuti e 9 passaggi su 10 hanno un ritardo inferiore a 6,2 minuti. Il giorno precedente la puntualità era del 69,3 %. La media dei 7 giorni precedenti è del 71,5 %.\", \"La metropolitana registra il 98,6 % di puntualità e il treno il 94,7 %, contro il 72,4 % del bus. Le linee più puntuali sono la RR20 del LEB (99,2 %), la 41 di TL (99,1 %) e la m1 (98,6 %). Le meno puntuali sono la 18 di TL (34,7 % in orario, ritardo medio di 6,9 minuti), la N5 (37,3 %) e la N1 (50,3 %).\", \"Il momento più difficile si colloca nel tardo pomeriggio: 42,7 % in orario alle ore 17, 43,9 % alle ore 18 e 52,5 % alle ore 16. Alle ore 17 il ritardo medio raggiunge i 6,0 minuti.\", \"Nell'intera giornata, 484 passaggi sono stati soppressi su 60'084 previsti, pari allo 0,8 %. Il ritardo più grave riguarda la linea 24 di TL: 61,8 minuti alla fermata Pêcheurs, per un passaggio previsto alle ore 20:21.\"]}"
+  ]
+ },
+ "statut": "publie"
+}
