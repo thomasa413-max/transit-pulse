@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-22",
+ "genere_a": "2026-11-23T14:51:33+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Ponctualité à 82,1 % à Lausanne, en hausse par rapport à la veille",
+  "paragraphes": [
+   "Le 22 novembre 2026, 82,1 % des passages étaient à l'heure (moins de 3 minutes de retard). Le retard moyen atteignait 1,7 minute, et 9 passages sur 10 ont moins de 4,1 minutes de retard. La veille, le taux était de 73,6 % (écart de 8,5 points), et la moyenne des 7 jours précédents de 71,3 %. Sur 54'736 passages prévus, 53'910 ont été mesurés et 403 supprimés (0,7 %).",
+   "Le métro affiche 92,7 % de passages à l'heure, le train 88,2 % et le bus 81,7 %. Le train compte 44 passages supprimés (4,3 %). Parmi les lignes, la N1 de TL est la moins ponctuelle (27,6 %), devant la N3 (51,9 %) et la 18 (67,4 %). Les lignes 42 et 60 de TL ont atteint 100,0 %.",
+   "Sur la journée entière, les arrêts les moins ponctuels sont Pavement (63,1 %) et Lausanne, Prélaz (63,9 %). Côté horaires, 3 h est l'heure la moins ponctuelle (62,0 %), suivie de 17 h (68,7 %) et de 4 h (70,9 %).",
+   "Le plus gros retard mesuré est de 102,2 minutes, sur la ligne 18 de TL à Lausanne, Mémise, pour un passage prévu à 21 h 35."
+  ]
+ },
+ "de": {
+  "titre": "Pünktlichkeit bei 82,1 % in Lausanne, gegenüber dem Vortag gestiegen",
+  "paragraphes": [
+   "Am 22. November 2026 waren 82,1 % der Fahrten pünktlich (weniger als 3 Minuten Verspätung). Die durchschnittliche Verspätung betrug 1,7 Minuten, und 9 von 10 Fahrten haben weniger als 4,1 Minuten Verspätung. Am Vortag lag der Anteil bei 73,6 % (Abweichung von 8,5 Prozentpunkten), und der Mittelwert der vorangegangenen 7 Tage bei 71,3 %. Von 54'736 geplanten Fahrten wurden 53'910 gemessen und 403 gestrichen (0,7 %).",
+   "Die Metro erreicht 92,7 % pünktliche Fahrten, der Zug 88,2 % und der Bus 81,7 %. Beim Zug wurden 44 Fahrten gestrichen (4,3 %). Unter den Linien ist die N1 der tl am wenigsten pünktlich (27,6 %), vor der N3 (51,9 %) und der 18 (67,4 %). Die Linien 42 und 60 der tl erreichten 100,0 %.",
+   "Über den gesamten Tag gesehen sind die Haltestellen Pavement (63,1 %) und Lausanne, Prélaz (63,9 %) am wenigsten pünktlich. Bei den Uhrzeiten ist 3 Uhr die unpünktlichste Stunde (62,0 %), gefolgt von 17 Uhr (68,7 %) und 4 Uhr (70,9 %).",
+   "Die grösste gemessene Verspätung beträgt 102,2 Minuten, auf der Linie 18 der tl in Lausanne, Mémise, bei einer geplanten Abfahrt um 21:35 Uhr."
+  ]
+ },
+ "it": {
+  "titre": "Puntualità all'82.1% a Losanna, in aumento rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 22 novembre 2026, l'82.1% dei passaggi era in orario (meno di 3 minuti di ritardo). Il ritardo medio ammontava a 1.7 minuti e 9 passaggi su 10 hanno meno di 4.1 minuti di ritardo. Il giorno precedente il tasso era del 73.6% (scarto di 8.5 punti) e la media dei 7 giorni precedenti del 71.3%. Su 54'736 passaggi previsti, 53'910 sono stati misurati e 403 soppressi (0.7%).",
+   "La metropolitana registra il 92.7% di passaggi in orario, il treno l'88.2% e l'autobus l'81.7%. Il treno conta 44 passaggi soppressi (4.3%). Tra le linee, la N1 di TL è la meno puntuale (27.6%), davanti alla N3 (51.9%) e alla 18 (67.4%). Le linee 42 e 60 di TL hanno raggiunto il 100.0%.",
+   "Nell'arco dell'intera giornata, le fermate meno puntuali sono Pavement (63.1%) e Lausanne, Prélaz (63.9%). Per quanto riguarda gli orari, le ore 3 sono l'ora meno puntuale (62.0%), seguite dalle ore 17 (68.7%) e dalle ore 4 (70.9%).",
+   "Il ritardo misurato più grande è di 102.2 minuti, sulla linea 18 di TL a Losanna, Mémise, per un passaggio previsto alle ore 21:35."
+  ]
+ },
+ "en": {
+  "titre": "Punctuality at 82.1% in Lausanne, up from the previous day",
+  "paragraphes": [
+   "On 22 November 2026, 82.1% of departures were on time (less than 3 minutes late). The average delay was 1.7 minutes, and 9 out of 10 departures were less than 4.1 minutes late. The day before, the rate was 73.6% (a difference of 8.5 points), and the average of the previous 7 days was 71.3%. Out of 54'736 scheduled departures, 53'910 were measured and 403 were cancelled (0.7%).",
+   "The metro recorded 92.7% of departures on time, the train 88.2% and the bus 81.7%. The train had 44 cancelled departures (4.3%). Among the lines, TL's N1 was the least punctual (27.6%), ahead of the N3 (51.9%) and the 18 (67.4%). TL lines 42 and 60 reached 100.0%.",
+   "Over the whole day, the least punctual stops were Pavement (63.1%) and Lausanne, Prélaz (63.9%). In terms of hours, 03:00 was the least punctual hour (62.0%), followed by 17:00 (68.7%) and 04:00 (70.9%).",
+   "The largest measured delay was 102.2 minutes, on TL's line 18 at Lausanne, Mémise, for a departure scheduled at 21:35."
+  ]
+ },
+ "statut": "publie"
+}
