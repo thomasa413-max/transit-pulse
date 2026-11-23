@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T07:24:15+00:00",
+ "at": "2026-11-23T06:53:16+00:00",
  "pages": [
   {
    "path": "/de/bulletin/",
@@ -28,26 +28,26 @@
   {
    "path": "/fr/",
    "scores": {
-    "performance": 0.99,
+    "performance": 0.98,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
    },
-   "lcp": "1.6 s",
+   "lcp": "1.8 s",
    "cls": "0",
-   "tbt": "0 ms"
+   "tbt": "40 ms"
   },
   {
    "path": "/fr/carte/",
    "scores": {
-    "performance": 0.91,
+    "performance": 0.95,
     "accessibility": 1,
     "best-practices": 1,
     "seo": 1
    },
-   "lcp": "2.3 s",
+   "lcp": "2.2 s",
    "cls": "0",
-   "tbt": "330 ms"
+   "tbt": "220 ms"
   },
   {
    "path": "/it/agenti/",
@@ -64,8 +64,7 @@
  ],
  "failures": [
   "/en/about/ performance 0 < 95 ()",
-  "/en/about/ best-practices 0 < 95 ()",
-  "/fr/carte/ performance 91 < 95 ()"
+  "/en/about/ best-practices 0 < 95 ()"
  ],
  "note": "Objectifs : performance ≥ 95, accessibilité 100, bonnes pratiques ≥ 95, SEO 100 (mobile)."
 }
