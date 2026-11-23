@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1091,
- "actives_suisse": 374,
+ "situations_suisse": 1097,
+ "actives_suisse": 394,
  "lausanne": [
   {
    "id": "ch:1:sstid:1:dc41f631-1626-5146-ae5f-70a5beb8c1c5",
@@ -47,56 +47,6 @@
    "lignes": [
     "18"
    ]
-  },
-  {
-   "id": "ch:1:sstid:100001:ce397865-029f-46ad-83a0-2b25bad194b0",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-06-03T12:21:09.915+02:00",
-   "titre": "Interruption Lausanne - La Conversion et Pully",
-   "description": "",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Interruption Lausanne - La Conversion et Pully",
-     "description": "",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Unterbruch Lausanne - La Conversion sowie Pully",
-     "description": "",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Interruzione Lausanne - La Conversion e Pully",
-     "description": "",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Interrupted service: Lausanne - La Conversion and Pully",
-     "description": "",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-23T00:30:00+01:00",
-     "fin": "2026-11-23T04:30:00+01:00"
-    }
-   ],
-   "lieux": [
-    "La Conversion",
-    "La Conversion, gare",
-    "Lausanne",
-    "Lausanne, gare",
-    "Pully",
-    "Pully, gare",
-    "Pully-Nord"
-   ],
-   "lignes": []
   },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
@@ -149,67 +99,8 @@
     "Vauderens"
    ],
    "lignes": []
-  },
-  {
-   "id": "ch:1:sstid:100001:24f7745d-8311-422f-85f4-3e70731624b1",
-   "progres": "published",
-   "planifie": true,
-   "gravite": "",
-   "cause": "constructionWork",
-   "source": "sbb-via-geplant_prod",
-   "cree": "2026-10-23T13:39:48.546+02:00",
-   "titre": "Restriction Sion - Brig",
-   "description": "Concerne: lignes EC, IR, IR 90, IR 95 et R 91",
-   "consequence": "",
-   "textes": {
-    "fr": {
-     "titre": "Restriction Sion - Brig",
-     "description": "Concerne: lignes EC, IR, IR 90, IR 95 et R 91",
-     "consequence": ""
-    },
-    "de": {
-     "titre": "Einschränkung Sion - Brig",
-     "description": "Betrifft: Linien EC, IR, IR 90, IR 95 und R 91",
-     "consequence": ""
-    },
-    "it": {
-     "titre": "Limitazioni Sion - Brig",
-     "description": "Interessate: linee EC, IR, IR 90, IR 95 e R 91",
-     "consequence": ""
-    },
-    "en": {
-     "titre": "Limited service: Sion - Brig",
-     "description": "Affected: lines EC, IR, IR 90, IR 95 and R 91",
-     "consequence": ""
-    }
-   },
-   "periodes": [
-    {
-     "debut": "2026-11-13T22:40:00+01:00",
-     "fin": "2026-11-16T04:00:00+01:00"
-    },
-    {
-     "debut": "2026-11-20T22:40:00+01:00",
-     "fin": "2026-11-23T04:00:00+01:00"
-    }
-   ],
-   "lieux": [
-    "Brig",
-    "Domodossola (I)",
-    "Gampel-Steg",
-    "Genève",
-    "Genève-Aéroport",
-    "Lausanne",
-    "Leuk",
-    "Martigny",
-    "Milano Centrale",
-    "Monthey",
-    "Raron",
-    "Salgesch"
-   ],
-   "lignes": []
   }
  ],
- "octets": 142735241,
- "mis_a_jour": "2026-11-23T01:42:21+00:00"
+ "octets": 142343870,
+ "mis_a_jour": "2026-11-23T12:37:36+00:00"
 }
