@@ -1,7 +1,51 @@
 {
- "situations_suisse": 1104,
- "actives_suisse": 390,
+ "situations_suisse": 1077,
+ "actives_suisse": 372,
  "lausanne": [
+  {
+   "id": "ch:1:sstid:100602:prod:6b06864fb9d82106d0f42094",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "vehicleFailure",
+   "source": "pag-out-sx_prod",
+   "cree": "2026-11-25T07:55:11.813+01:00",
+   "titre": "Course annulée ligne 365 direction Moudon, gare départ à 08:57 de Lausanne, Sallaz",
+   "description": "",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Course annulée ligne 365 direction Moudon, gare départ à 08:57 de Lausanne, Sallaz",
+     "description": "",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Kursausfall: Linie 365 Richtung Moudon, gare Abfahrt um 08:57 ab Lausanne, Sallaz",
+     "description": "",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Linea 365 direzione Moudon, gare, la corsa delle 08:57 da Lausanne, Sallaz è cancellata",
+     "description": "",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Route line 365 towards Moudon, gare departing at 08:57 from Lausanne, Sallaz is cancelled",
+     "description": "",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-25T08:57:00+01:00",
+     "fin": "2026-11-25T09:44:00+01:00"
+    }
+   ],
+   "lieux": [],
+   "lignes": [
+    "365"
+   ]
+  },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
    "progres": "published",
@@ -55,6 +99,6 @@
    "lignes": []
   }
  ],
- "octets": 144593279,
- "mis_a_jour": "2026-11-24T23:53:55+00:00"
+ "octets": 144382641,
+ "mis_a_jour": "2026-11-25T08:32:35+00:00"
 }
