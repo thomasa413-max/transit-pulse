@@ -1,0 +1,51 @@
+{
+ "date": "2026-11-24",
+ "genere_a": "2026-11-25T14:32:58+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 72,3 % de passages à l'heure, 7,8 points sous la veille",
+  "paragraphes": [
+   "Le 24 novembre 2026, 72,3 % des passages ont été à l'heure (moins de 3 minutes de retard), avec 66'100 passages mesurés pour 67'847 prévus. Le retard moyen est de 2,8 minutes ; 9 passages sur 10 ont moins de 6,2 minutes de retard. La veille, la ponctualité atteignait 80,1 %. La moyenne des 7 jours précédents est de 71,9 %, soit un écart de +0,4 point.",
+   "Sur la journée entière, le train affiche 91,7 % de passages à l'heure et le métro 84,8 %, contre 71,5 % pour le bus. Parmi les lignes les moins ponctuelles figurent les lignes 362 (56,5 %) et 435 (57,1 %) de PAG, puis la ligne 21 des TL (59,1 %). La ligne RR20 du LEB est la plus ponctuelle, à 98,7 %.",
+   "Les heures les plus difficiles sont 19 h (42,7 % à l'heure, retard moyen de 7,8 minutes), 18 h (47,5 %) et 21 h (57,8 %).",
+   "Sur la journée, 1'097 passages prévus ont été supprimés, soit 1,6 %. Le plus gros retard relevé concerne la ligne 18 des TL : 123,8 minutes à l'arrêt Halle Sébeillon, pour un passage prévu à 18 h 26."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 72,3 % der Fahrten pünktlich, 7,8 Punkte unter dem Vortag",
+  "paragraphes": [
+   "Am 24. November 2026 sind 72,3 % der Fahrten pünktlich gewesen (weniger als 3 Minuten Verspätung), bei 66'100 gemessenen Fahrten von 67'847 geplanten. Die durchschnittliche Verspätung beträgt 2,8 Minuten; 9 von 10 Fahrten hatten weniger als 6,2 Minuten Verspätung. Am Vortag lag die Pünktlichkeit bei 80,1 %. Der Durchschnitt der 7 vorangehenden Tage beträgt 71,9 %, was einer Abweichung von +0,4 Punkten entspricht.",
+   "Über den ganzen Tag gesehen waren beim Zug 91,7 % der Fahrten pünktlich und bei der Metro 84,8 %, verglichen mit 71,5 % beim Bus. Zu den unpünktlichsten Linien gehören die Linien 362 (56,5 %) und 435 (57,1 %) von PAG sowie die Linie 21 der TL (59,1 %). Die Linie RR20 der LEB ist mit 98,7 % am pünktlichsten.",
+   "Die schwierigsten Stunden sind 19 Uhr (42,7 % pünktlich, durchschnittliche Verspätung von 7,8 Minuten), 18 Uhr (47,5 %) und 21 Uhr (57,8 %).",
+   "Im Tagesverlauf wurden 1'097 geplante Fahrten gestrichen, das entspricht 1,6 %. Die grösste erfasste Verspätung betrifft die Linie 18 der TL: 123,8 Minuten an der Haltestelle Halle Sébeillon, bei einer planmässigen Abfahrt um 18 Uhr 26."
+  ]
+ },
+ "it": {
+  "titre": "Lausanne: 72,3 % di passaggi in orario, 7,8 punti in meno rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 24 novembre 2026, il 72,3 % dei passaggi è stato in orario (con meno di 3 minuti di ritardo), con 66'100 passaggi rilevati su 67'847 previsti. Il ritardo medio è di 2,8 minuti; 9 passaggi su 10 hanno meno di 6,2 minuti di ritardo. Il giorno precedente, la puntualità aveva raggiunto l'80,1 %. La media dei 7 giorni precedenti è del 71,9 %, pari a uno scarto di +0,4 punti.",
+   "Nell'arco dell'intera giornata, il treno registra il 91,7 % di passaggi in orario e il metro l'84,8 %, contro il 71,5 % del bus. Tra le linee meno puntuali figurano le linee 362 (56,5 %) e 435 (57,1 %) di PAG, seguite dalla linea 21 dei TL (59,1 %). La linea RR20 del LEB è la più puntuale, con il 98,7 %.",
+   "Le ore più difficili sono le 19 (42,7 % in orario, ritardo medio di 7,8 minuti), le 18 (47,5 %) e le 21 (57,8 %).",
+   "Nell'arco della giornata, 1'097 passaggi previsti sono stati soppressi, pari all'1,6 %. Il ritardo più grave rilevato riguarda la linea 18 dei TL: 123,8 minuti alla fermata Halle Sébeillon, per un passaggio previsto alle ore 18:26."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 72.3% of departures on time, 7.8 points below the previous day",
+  "paragraphes": [
+   "On 24 November 2026, 72.3% of departures were on time (less than 3 minutes late), with 66'100 departures measured out of 67'847 scheduled. The average delay is 2.8 minutes; 9 departures out of 10 are less than 6.2 minutes late. The previous day, punctuality stood at 80.1%. The average of the previous 7 days is 71.9%, a difference of +0.4 point.",
+   "Over the full day, trains recorded 91.7% of departures on time and the metro 84.8%, compared with 71.5% for buses. Among the least punctual lines are lines 362 (56.5%) and 435 (57.1%) operated by PAG, followed by line 21 operated by TL (59.1%). The RR20 line of the LEB is the most punctual, at 98.7%.",
+   "The most difficult hours are 19:00 (42.7% on time, average delay of 7.8 minutes), 18:00 (47.5%) and 21:00 (57.8%).",
+   "Over the day, 1'097 scheduled departures were cancelled, or 1.6%. The largest delay recorded concerns TL line 18: 123.8 minutes at the Halle Sébeillon stop, for a departure scheduled at 18:26."
+  ]
+ },
+ "statut": "publie"
+}
