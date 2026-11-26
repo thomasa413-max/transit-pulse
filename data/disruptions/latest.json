@@ -1,7 +1,52 @@
 {
- "situations_suisse": 1130,
- "actives_suisse": 371,
+ "situations_suisse": 1171,
+ "actives_suisse": 387,
  "lausanne": [
+  {
+   "id": "ch:1:sstid:100001:f3c0f385-fe1e-48c1-9b55-62c72f94c341",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "undefinedAlertCause",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-11-26T10:46:17.988+01:00",
+   "titre": "Information",
+   "description": "Ce train circule avec une composition réduite. Comme alternative, nous recommandons aux voyageurs à partir de Solothurn à Olten d'utiliser le RER 20 en direction de Olten, départ à 10:50 heures.",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Information",
+     "description": "Ce train circule avec une composition réduite. Comme alternative, nous recommandons aux voyageurs à partir de Solothurn à Olten d'utiliser le RER 20 en direction de Olten, départ à 10:50 heures.",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Information",
+     "description": "Dieser Zug wird verkürzt geführt. Reisenden ab Solothurn nach Olten empfehlen wir als Alternative, die S-Bahn 20 Richtung Olten um 10:50 Uhr zu benützen.",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Informazione",
+     "description": "Questo treno circola con una composizione ridotta. In alternativa, si consiglia ai viaggiatori da Solothurn per Olten di utilizzare la S-Bahn 20 nella direzione di Olten alle ore 10:50.",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Information",
+     "description": "This train is operating with fewer coaches than usual. Passengers travelling from Solothurn to Olten are advised to use the S-Bahn 20 to Olten at 10:50.",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-26T10:45:01.149+01:00",
+     "fin": "2026-11-27T03:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Lausanne",
+    "Rorschach"
+   ],
+   "lignes": []
+  },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
    "progres": "published",
@@ -55,6 +100,6 @@
    "lignes": []
   }
  ],
- "octets": 144888486,
- "mis_a_jour": "2026-11-26T03:34:26+00:00"
+ "octets": 145895954,
+ "mis_a_jour": "2026-11-26T16:53:08+00:00"
 }
