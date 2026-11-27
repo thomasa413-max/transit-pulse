@@ -1,7 +1,114 @@
 {
- "situations_suisse": 1183,
- "actives_suisse": 389,
+ "situations_suisse": 1160,
+ "actives_suisse": 371,
  "lausanne": [
+  {
+   "id": "ch:1:sstid:100001:107f05c3-0110-4ed6-b826-df6b994a05a0",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-06-18T08:56:19.58+02:00",
+   "titre": "Restriction Effretikon - Kemptthal",
+   "description": "",
+   "consequence": "Ligne IC1: suppression Zürich HB - Winterthur",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Effretikon - Kemptthal",
+     "description": "",
+     "consequence": "Ligne IC1: suppression Zürich HB - Winterthur"
+    },
+    "de": {
+     "titre": "Einschränkung Effretikon - Kemptthal",
+     "description": "",
+     "consequence": "Linie IC1: Ausfall Zürich HB - Winterthur"
+    },
+    "it": {
+     "titre": "Limitazioni Effretikon - Kemptthal",
+     "description": "",
+     "consequence": "Linea IC1: soppressione Zürich HB - Winterthur"
+    },
+    "en": {
+     "titre": "Limited service: Effretikon - Kemptthal",
+     "description": "",
+     "consequence": "Line IC1: no service Zürich HB - Winterthur"
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-27T21:21:00+01:00",
+     "fin": "2026-11-30T05:18:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Bern",
+    "Effretikon",
+    "Fribourg/Freiburg",
+    "Genève-Aéroport",
+    "Kemptthal",
+    "Lausanne",
+    "St. Gallen",
+    "Winterthur",
+    "Zürich HB"
+   ],
+   "lignes": []
+  },
+  {
+   "id": "ch:1:sstid:100001:4c48a1ee-fbd2-44a3-a029-e6d09095d458",
+   "progres": "published",
+   "planifie": true,
+   "gravite": "",
+   "cause": "constructionWork",
+   "source": "sbb-via-geplant_prod",
+   "cree": "2026-10-28T12:40:04.909+01:00",
+   "titre": "Restriction Lausanne - Genève-Aéroport",
+   "description": "Concerne: lignes IC 1, IC, IR 15, IR, IR 90, IR 95 et EC",
+   "consequence": "",
+   "textes": {
+    "fr": {
+     "titre": "Restriction Lausanne - Genève-Aéroport",
+     "description": "Concerne: lignes IC 1, IC, IR 15, IR, IR 90, IR 95 et EC",
+     "consequence": ""
+    },
+    "de": {
+     "titre": "Einschränkung Lausanne - Genève-Aéroport",
+     "description": "Betrifft: Linien IC 1, IC, IR 15, IR, IR 90, IR 95 und EC",
+     "consequence": ""
+    },
+    "it": {
+     "titre": "Limitazioni Lausanne - Genève-Aéroport",
+     "description": "Interessate: linee IC 1, IC, IR 15, IR, IR 90, IR 95 e EC",
+     "consequence": ""
+    },
+    "en": {
+     "titre": "Limited service: Lausanne - Genève-Aéroport",
+     "description": "Affected: lines IC 1, IC, IR 15, IR, IR 90, IR 95 and EC",
+     "consequence": ""
+    }
+   },
+   "periodes": [
+    {
+     "debut": "2026-11-27T20:30:00+01:00",
+     "fin": "2026-11-30T04:00:00+01:00"
+    }
+   ],
+   "lieux": [
+    "Allaman",
+    "Bern",
+    "Brig",
+    "Chambésy",
+    "Chur",
+    "Coppet",
+    "Creux-de-Genthod",
+    "Domodossola (I)",
+    "Etoy",
+    "Genthod-Bellevue",
+    "Genève",
+    "Genève-Aéroport"
+   ],
+   "lignes": []
+  },
   {
    "id": "ch:1:sstid:100001:02fdb099-46f9-4970-8c44-9d5e22bbed65",
    "progres": "published",
@@ -55,6 +162,6 @@
    "lignes": []
   }
  ],
- "octets": 147025007,
- "mis_a_jour": "2026-11-27T12:17:21+00:00"
+ "octets": 147358236,
+ "mis_a_jour": "2026-11-27T23:27:13+00:00"
 }
