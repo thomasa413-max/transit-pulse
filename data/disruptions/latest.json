@@ -1,6 +1,6 @@
 {
- "situations_suisse": 1171,
- "actives_suisse": 387,
+ "situations_suisse": 1154,
+ "actives_suisse": 385,
  "lausanne": [
   {
    "id": "ch:1:sstid:100001:f3c0f385-fe1e-48c1-9b55-62c72f94c341",
@@ -100,6 +100,6 @@
    "lignes": []
   }
  ],
- "octets": 145895954,
- "mis_a_jour": "2026-11-26T16:53:08+00:00"
+ "octets": 145726648,
+ "mis_a_jour": "2026-11-27T01:43:25+00:00"
 }
