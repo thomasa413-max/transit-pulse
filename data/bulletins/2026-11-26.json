@@ -1,0 +1,48 @@
+{
+ "date": "2026-11-26",
+ "genere_a": "2026-11-27T13:58:49+00:00",
+ "modele": "claude-sonnet-5-5",
+ "modele_traduction": "claude-haiku-5-5",
+ "modele_controle": "claude-sonnet-5-5",
+ "prompt_version": "v2",
+ "tentatives": 1,
+ "controle": {
+  "passed": true,
+  "problems": [],
+  "unknown_numbers": []
+ },
+ "fr": {
+  "titre": "Lausanne : 70,0 % des passages à l'heure, en recul sur la veille",
+  "paragraphes": [
+   "Le 26 novembre 2026, 70,0 % des passages ont été à l'heure (moins de 3 minutes de retard). La veille, le taux était de 71,9 % ; la moyenne des 7 jours précédents était de 73,4 %. Le retard moyen atteint 2,7 minutes, et 9 passages sur 10 ont moins de 6,6 minutes de retard. Sur 49'818 passages prévus, 534 ont été supprimés (1,1 %).",
+   "Le bus affiche 68,9 % de passages à l'heure, contre 93,9 % pour le métro et 88,0 % pour le train. Parmi les lignes les moins ponctuelles figurent la ligne 21 des TL (35,0 %), la ligne 1 (47,6 %, avec 191 passages supprimés) et la ligne 64 (58,6 %). La ligne 41 des TL est en tête du classement avec 96,6 % à l'heure.",
+   "Les heures les plus difficiles sont 18 h (39,3 % à l'heure, retard moyen de 5,6 minutes), 17 h (43,5 %) et 16 h (58,6 %). Sur la journée entière, l'arrêt Denantou compte 29,0 % de passages à l'heure.",
+   "Deux retards dépassent 50 minutes : un TGV SBB à Lausanne, prévu à 11 h 39 (57,4 minutes), et un bus de la ligne 1 à Lausanne, gare, prévu à 10 h 21 (50,2 minutes)."
+  ]
+ },
+ "de": {
+  "titre": "Lausanne: 70.0 % der Abfahrten pünktlich, Rückgang gegenüber dem Vortag",
+  "paragraphes": [
+   "Am 26. November 2026 waren 70.0 % der Abfahrten pünktlich (weniger als 3 Minuten Verspätung). Am Vortag lag der Wert bei 71.9 %; der Durchschnitt der 7 vorangegangenen Tage betrug 73.4 %. Die mittlere Verspätung beträgt 2.7 Minuten, und 9 von 10 Abfahrten haben weniger als 6.6 Minuten Verspätung. Von 49'818 geplanten Abfahrten wurden 534 gestrichen (1.1 %).",
+   "Der Bus erreicht 68.9 % pünktliche Abfahrten, verglichen mit 93.9 % beim Metro und 88.0 % beim Zug. Zu den unpünktlichsten Linien gehören die Linie 21 der TL (35.0 %), die Linie 1 (47.6 %, mit 191 gestrichenen Abfahrten) und die Linie 64 (58.6 %). Die Linie 41 der TL liegt mit 96.6 % pünktlichen Abfahrten an der Spitze des Rankings.",
+   "Die schwierigsten Stunden sind 18 Uhr (39.3 % pünktlich, mittlere Verspätung von 5.6 Minuten), 17 Uhr (43.5 %) und 16 Uhr (58.6 %). Über den ganzen Tag gerechnet kommt die Haltestelle Denantou auf 29.0 % pünktliche Abfahrten.",
+   "Zwei Verspätungen übersteigen 50 Minuten: ein TGV der SBB in Lausanne, planmässig um 11:39 Uhr (57.4 Minuten), und ein Bus der Linie 1 in Lausanne, Gare, planmässig um 10:21 Uhr (50.2 Minuten)."
+  ]
+ },
+ "it": {
+  "titre": "Losanna: il 70,0% delle corse in orario, in calo rispetto al giorno precedente",
+  "paragraphes": [
+   "Il 26 novembre 2026, il 70,0% delle corse è stato in orario (con meno di 3 minuti di ritardo). Il giorno precedente la quota era del 71,9%; la media dei 7 giorni precedenti era del 73,4%. Il ritardo medio raggiunge 2,7 minuti e 9 corse su 10 hanno un ritardo inferiore a 6,6 minuti. Su 49'818 corse previste, 534 sono state soppresse (1,1%).",
+   "Il bus registra il 68,9% di corse in orario, contro il 93,9% del metro e l'88,0% del treno. Tra le linee meno puntuali figurano la linea 21 dei TL (35,0%), la linea 1 (47,6%, con 191 corse soppresse) e la linea 64 (58,6%). La linea 41 dei TL è in testa alla classifica con il 96,6% di corse in orario.",
+   "Le fasce orarie più critiche sono quelle delle ore 18 (39,3% in orario, ritardo medio di 5,6 minuti), delle ore 17 (43,5%) e delle ore 16 (58,6%). Sull'intera giornata, la fermata Denantou registra il 29,0% di corse in orario.",
+   "Due ritardi superano i 50 minuti: un TGV SBB a Losanna, previsto alle ore 11:39 (57,4 minuti), e un bus della linea 1 a Losanna, stazione, previsto alle ore 10:21 (50,2 minuti)."
+  ]
+ },
+ "en": {
+  "titre": "Lausanne: 70.0% of departures on time, down from the previous day",
+  "paragraphes": [
+   "[\"On 26 November 2026, 70.0% of departures were on time (less than 3 minutes late). The day before, the rate was 71.9%; the average over the previous 7 days was 73.4%. The average delay reached 2.7 minutes, and 9 out of 10 departures were less than 6.6 minutes late. Out of 49'818 scheduled departures, 534 were cancelled (1.1%).\", \"Buses recorded 68.9% of departures on time, compared with 93.9% for the metro and 88.0% for the train. Among the least punctual lines were TL line 21 (35.0%), line 1 (47.6%, with 191 cancelled departures) and line 64 (58.6%). TL line 41 topped the ranking with 96.6% on time.\", \"The most difficult hours were 18:00 (39.3% on time, average delay of 5.6 minutes), 17:00 (43.5%) and 16:00 (58.6%). Over the whole day, the Denantou stop recorded 29.0% of departures on time.\", \"Two delays exceeded 50 minutes: an SBB TGV in Lausanne, scheduled at 11:39 (57.4 minutes), and a bus on line 1 in Lausanne, gare, scheduled at 10:21 (50.2 minutes).\"]}"
+  ]
+ },
+ "statut": "publie"
+}
